@@ -1,0 +1,82 @@
+:root {
+	/* Paleta institucional estimada del documento de diseño. */
+	--color-primary: #f47023;
+	--color-secondary: #050506;
+	--color-background: #e6e1de;
+	--color-surface: #ffffff;
+	--color-text: #050506;
+	--color-muted: #5b5755;
+	--color-border: #050506;
+	--color-on-primary: #050506;
+	--color-on-secondary: #ffffff;
+	--color-focus: #165dff;
+
+	/* Familias: las fuentes de marca se activan cuando estén licenciadas/alojadas. */
+	--font-family-body: "Montserrat", "Avenir Next", Avenir, system-ui, -apple-system, "Segoe UI", sans-serif;
+	--font-family-display: "Forma DJR Banner", "Montserrat", "Arial Black", system-ui, sans-serif;
+	--font-weight-light: 300;
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--font-weight-black: 900;
+
+	--font-size-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.875rem);
+	--font-size-sm: clamp(0.875rem, 0.84rem + 0.16vw, 1rem);
+	--font-size-base: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+	--font-size-lg: clamp(1.25rem, 1.14rem + 0.5vw, 1.625rem);
+	--font-size-xl: clamp(1.75rem, 1.5rem + 1.1vw, 2.5rem);
+	--font-size-2xl: clamp(2.5rem, 1.84rem + 2.9vw, 4.5rem);
+	--font-size-3xl: clamp(3.25rem, 2.18rem + 4.7vw, 6.5rem);
+	--line-height-tight: 0.98;
+	--line-height-heading: 1.08;
+	--line-height-body: 1.6;
+	--line-height-loose: 1.75;
+	--letter-spacing-tight: -0.025em;
+	--letter-spacing-wide: 0.08em;
+
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-5: 1.5rem;
+	--space-6: 2rem;
+	--space-7: clamp(2.5rem, 4vw, 4rem);
+	--space-8: clamp(3.5rem, 7vw, 8rem);
+	--space-9: clamp(5rem, 10vw, 11rem);
+
+	--border-width: 2px;
+	--radius-sm: 1rem;
+	--radius-md: 1.75rem;
+	--radius-lg: clamp(2rem, 4vw, 4rem);
+	--radius-pill: 999px;
+	--shadow-none: none;
+	--shadow-sm: 0 1px 2px rgb(5 5 6 / 8%);
+	--shadow-md: 0 0.75rem 2rem rgb(5 5 6 / 12%);
+	--shadow-focus: 0 0 0 3px rgb(22 93 255 / 35%);
+
+	--container-wide: 112rem;
+	--container-content: 75rem;
+	--container-reading: 48rem;
+	--container-gutter: clamp(1rem, 3vw, 3.5rem);
+	--section-spacing: var(--space-8);
+
+	/* Referencia documental; las media queries usan valores literales. */
+	--breakpoint-narrow: 360px;
+	--breakpoint-mobile: 768px;
+	--breakpoint-tablet: 1024px;
+	--breakpoint-notebook: 1200px;
+	--breakpoint-wide: 1600px;
+
+	--transition-fast: 160ms ease;
+	--transition-base: 240ms ease;
+	--z-header: 20;
+	--z-overlay: 100;
+}
+
+@media (max-width: 47.9375rem) {
+	:root {
+		--font-size-2xl: clamp(2rem, 9vw, 3rem);
+		--font-size-3xl: clamp(2.5rem, 11vw, 3.5rem);
+	}
+}

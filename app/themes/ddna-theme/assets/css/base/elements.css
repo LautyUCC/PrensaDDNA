@@ -1,0 +1,52 @@
+a {
+	color: inherit;
+	text-decoration-color: var(--color-primary);
+	text-decoration-thickness: 0.12em;
+	text-underline-offset: 0.18em;
+}
+
+a:hover {
+	text-decoration-thickness: 0.18em;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+img,
+video {
+	height: auto;
+}
+
+figure {
+	max-width: 100%;
+}
+
+input,
+textarea,
+select {
+	max-width: 100%;
+	border: var(--border-width) solid var(--color-border);
+	border-radius: var(--radius-sm);
+	background: var(--color-surface);
+	color: var(--color-text);
+}
+
+input,
+select {
+	min-height: 2.75rem;
+	padding: var(--space-2) var(--space-3);
+}
+
+textarea {
+	padding: var(--space-3);
+}
+
+::selection {
+	background: var(--color-primary);
+	color: var(--color-on-primary);
+}

@@ -1,0 +1,13 @@
+/*
+Theme Name: DDNA Theme
+Theme URI: https://ddna.cba.gov.ar/
+Author: Equipo DDNA
+Description: Tema institucional personalizado para la Defensoría de los Derechos de Niñas, Niños y Adolescentes de la Provincia de Córdoba.
+Version: 0.2.0
+Requires at least: 6.6
+Tested up to: 7.0
+Requires PHP: 8.1
+Text Domain: ddna-theme
+*/
+
+/* La arquitectura CSS modular se carga desde inc/enqueue.php. */

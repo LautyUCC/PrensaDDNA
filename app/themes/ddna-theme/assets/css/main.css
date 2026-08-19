@@ -1,0 +1,48 @@
+/* Compatibilidad de las plantillas interiores provisionales existentes. */
+.page-header,
+.entry,
+.error-404 {
+	width: min(100%, var(--container-reading));
+	margin-inline: auto;
+	padding-block: var(--space-7);
+}
+
+.entry-title,
+.page-header h1 { margin-bottom: var(--space-4); }
+
+.entry-meta {
+	color: var(--color-muted);
+	font-size: var(--font-size-sm);
+}
+
+.entry-author::before { content: " · "; }
+.entry-content > * { max-width: 100%; }
+
+.card-grid,
+.content-grid {
+	display: grid;
+	min-width: 0;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+	gap: var(--space-5);
+}
+
+.entry-summary,
+.no-results {
+	padding: var(--space-5);
+	border: var(--border-width) solid var(--color-border);
+	border-radius: var(--radius-md);
+	background: var(--color-surface);
+}
+
+.search-form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-2);
+	margin-block: var(--space-5);
+}
+
+.search-field { flex: 1 1 16rem; }
+
+@media (max-width: 47.9375rem) {
+	.section-header__row { align-items: start; flex-direction: column; }
+}

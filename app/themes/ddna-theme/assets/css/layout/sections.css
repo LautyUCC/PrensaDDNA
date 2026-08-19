@@ -1,0 +1,29 @@
+.section {
+	padding-block: var(--section-spacing);
+}
+
+.section--compact {
+	padding-block: var(--space-7);
+}
+
+.section--spacious {
+	padding-block: var(--space-9);
+}
+
+.section-header {
+	display: grid;
+	gap: var(--space-3);
+	margin-bottom: var(--space-7);
+}
+
+.section-header__row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: space-between;
+	gap: var(--space-4);
+}
+
+.section-title {
+	max-width: 18ch;
+}

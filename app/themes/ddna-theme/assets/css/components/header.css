@@ -1,0 +1,19 @@
+.site-header {
+	position: relative;
+	z-index: var(--z-header);
+	background: var(--color-background);
+}
+
+.site-header__inner {
+	display: flex;
+	min-height: clamp(5rem, 6.5vw, 7.7rem);
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 74.9375rem) {
+	.site-header__inner {
+		min-height: 5rem;
+		justify-content: flex-end;
+	}
+}
