@@ -28,6 +28,9 @@ function ddna_seed_post( $type, $title, $slug, $excerpt, $thumbnail_id = 0, $cat
 }
 
 $base = 'assets/images/content-samples/';
+$logo_id = ddna_seed_media( 'assets/images/logos/ddna-horizontal.png', 'DDNA Córdoba', 'Defensoría de los Derechos de Niñas, Niños y Adolescentes' );
+set_theme_mod( 'custom_logo', $logo_id );
+
 $program_media = array(
 	'entre-pantallas' => ddna_seed_media( $base . 'programa-entre-pantallas.webp', 'Entre Pantallas', 'Estudiantes participando de un taller en un aula' ),
 	'detras-del-humo' => ddna_seed_media( $base . 'programa-detras-del-humo.webp', 'Detrás del Humo', 'Adolescentes participando de una producción audiovisual' ),

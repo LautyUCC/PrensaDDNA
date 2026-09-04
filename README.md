@@ -43,7 +43,15 @@ WordPress Core, la base de datos y los uploads se guardan en volúmenes Docker p
    docker compose ps
    ```
 
-4. Abrir <http://localhost:8080>. En la instalación inicial preparada para este repositorio, los datos de acceso local se encuentran en las variables `WP_ADMIN_*` de `.env`.
+4. Esperar a que el servicio `init` termine correctamente:
+
+   ```sh
+   docker compose ps --all
+   ```
+
+5. Abrir <http://localhost:8080>. Los datos de acceso local se encuentran en las variables `WP_ADMIN_*` de `.env`.
+
+El servicio `init` hace reproducible la demostración en un clon limpio: instala WordPress si hace falta, activa `ddna-core` y `ddna-theme`, configura la portada y los menús, y carga el contenido demostrativo incluido en el repositorio. Es idempotente: puede ejecutarse nuevamente sin duplicar el contenido administrado.
 
 Si se cambia `WP_PORT`, también se debe actualizar `WP_URL`.
 
@@ -65,6 +73,9 @@ docker compose --profile tools run --rm cli core version
 
 # Comprobar que WordPress está instalado
 docker compose --profile tools run --rm cli core is-installed
+
+# Reaplicar la configuración reproducible de la demo
+docker compose run --rm init
 
 # Detener sin borrar datos
 docker compose down

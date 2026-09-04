@@ -80,6 +80,37 @@ services:
     entrypoint: ["wp"]
     command: ["--info"]
 
+  init:
+    image: wordpress:${WP_CLI_VERSION:-cli-php8.3}
+    restart: "no"
+    user: "0:0"
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_started
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_TABLE_PREFIX: ${WP_TABLE_PREFIX:-wp_}
+      WP_URL: ${WP_URL:-http://localhost:8080}
+      WP_SITE_TITLE: ${WP_SITE_TITLE:-DDNA Cordoba - Desarrollo}
+      WP_ADMIN_USER: ${WP_ADMIN_USER:-ddna_admin}
+      WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD:-change-admin-password}
+      WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL:-admin@example.test}
+    volumes:
+      - wordpress_core:/var/www/html
+      - wordpress_uploads:/var/www/html/wp-content/uploads
+      - ./app/themes/ddna-theme:/var/www/html/wp-content/themes/ddna-theme
+      - ./app/plugins/ddna-core:/var/www/html/wp-content/plugins/ddna-core
+      - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
+      - ./scripts:/var/www/html/scripts:ro
+    networks:
+      - ddna
+    entrypoint: ["sh", "/var/www/html/scripts/bootstrap-local.sh"]
+
 volumes:
   db_data:
   wordpress_core:
