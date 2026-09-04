@@ -19,6 +19,7 @@ function ddna_theme_enqueue_assets() {
 
 	$styles = array(
 		'ddna-theme-tokens'        => 'settings/tokens.css',
+		'ddna-theme-fonts'         => 'base/fonts.css',
 		'ddna-theme-reset'         => 'base/reset.css',
 		'ddna-theme-typography'    => 'base/typography.css',
 		'ddna-theme-elements'      => 'base/elements.css',
@@ -35,6 +36,10 @@ function ddna_theme_enqueue_assets() {
 		'ddna-theme-campaigns'     => 'components/home-campaigns.css',
 		'ddna-theme-news'          => 'components/home-news.css',
 		'ddna-theme-footer'        => 'components/footer.css',
+		'ddna-theme-folder'        => 'components/folder.css',
+		'ddna-theme-home-panels'   => 'components/home-panels.css',
+		'ddna-theme-knowledge'     => 'components/knowledge-panel.css',
+		'ddna-theme-institutional' => 'components/institutional-navigation.css',
 		'ddna-theme-accessibility' => 'utilities/accessibility.css',
 	);
 
@@ -74,6 +79,15 @@ function ddna_theme_enqueue_assets() {
 			true
 		);
 		wp_script_add_data( 'ddna-theme-carousel', 'strategy', 'defer' );
+
+		wp_enqueue_script(
+			'ddna-theme-home-panels',
+			$theme_uri . '/assets/js/home-panels.js',
+			array(),
+			file_exists( $theme_path . '/assets/js/home-panels.js' ) ? (string) filemtime( $theme_path . '/assets/js/home-panels.js' ) : $theme_version,
+			true
+		);
+		wp_script_add_data( 'ddna-theme-home-panels', 'strategy', 'defer' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ddna_theme_enqueue_assets' );

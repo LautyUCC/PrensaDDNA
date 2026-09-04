@@ -1,8 +1,8 @@
 :root {
 	/* Paleta institucional estimada del documento de diseño. */
-	--color-primary: #f47023;
+	--color-primary: #ff7f11;
 	--color-secondary: #050506;
-	--color-background: #e6e1de;
+	--color-background: #e9e7e7;
 	--color-surface: #ffffff;
 	--color-text: #050506;
 	--color-muted: #5b5755;
@@ -12,8 +12,8 @@
 	--color-focus: #165dff;
 
 	/* Familias: las fuentes de marca se activan cuando estén licenciadas/alojadas. */
-	--font-family-body: "Montserrat", "Avenir Next", Avenir, system-ui, -apple-system, "Segoe UI", sans-serif;
-	--font-family-display: "Forma DJR Banner", "Montserrat", "Arial Black", system-ui, sans-serif;
+	--font-family-body: "Forma DJR Text", "Avenir Next", Avenir, system-ui, -apple-system, "Segoe UI", sans-serif;
+	--font-family-display: "Forma DJR Display", "Arial Black", system-ui, sans-serif;
 	--font-weight-light: 300;
 	--font-weight-regular: 400;
 	--font-weight-medium: 500;

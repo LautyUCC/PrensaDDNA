@@ -35,3 +35,6 @@ app/**/.phpunit.result.cache
 *.sql.gz
 *.tar.gz
 backups/
+
+# Paquete fuente de diseño local; sólo se versionan los assets usados dentro del tema
+RECURSOS GRÁFICOS - WEB DDNA 2026/

@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Forma DJR Text";
+	src: url("../../fonts/forma-djr/forma-djr-text-regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Forma DJR Text";
+	src: url("../../fonts/forma-djr/forma-djr-text-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Forma DJR Display";
+	src: url("../../fonts/forma-djr/forma-djr-display-black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}

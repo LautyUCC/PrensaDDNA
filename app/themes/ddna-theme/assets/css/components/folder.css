@@ -1,0 +1,147 @@
+.ddna-folder {
+	padding-block: clamp(2rem, 4vw, 4rem);
+}
+
+.ddna-folder[hidden] { display: none; }
+
+.ddna-folder > .container {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	opacity: 0;
+	transform: translateY(0.5rem);
+	transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.ddna-folder.is-open > .container {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.ddna-folder__tab {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	width: fit-content;
+	max-width: calc(100% - 2rem);
+	min-width: min(25rem, calc(100% - 2rem));
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: calc(0rem - var(--border-width));
+	padding: 1rem 1.5rem 1rem 2rem;
+	border: var(--border-width) solid var(--color-border);
+	border-bottom: 0;
+	border-radius: 1.75rem 1.75rem 0 0;
+	background: var(--color-primary);
+}
+
+.ddna-folder__tab::after {
+	position: absolute;
+	right: -1.75rem;
+	bottom: 0;
+	width: 1.75rem;
+	height: 1.75rem;
+	background: radial-gradient(circle at top right, transparent 1.5rem, var(--color-border) 1.5rem, var(--color-border) calc(1.5rem + var(--border-width)), var(--color-background) calc(1.5rem + var(--border-width)));
+	content: "";
+	pointer-events: none;
+}
+
+.ddna-folder__title {
+	font-size: clamp(2rem, 3.5vw, 4rem);
+	font-weight: var(--font-weight-black);
+	line-height: 0.95;
+	text-transform: uppercase;
+}
+
+.ddna-folder__subtitle {
+	margin-top: 0.2rem;
+	font-size: var(--font-size-sm);
+	line-height: 1.15;
+}
+
+.ddna-folder__close {
+	position: relative;
+	flex: 0 0 2.75rem;
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0;
+	border-color: var(--color-border);
+	border-radius: 50%;
+	background: transparent;
+	color: var(--color-text);
+}
+
+.ddna-folder__close span::before,
+.ddna-folder__close span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1rem;
+	height: 2px;
+	background: currentColor;
+	content: "";
+}
+
+.ddna-folder__close span::before { transform: translate(-50%, -50%) rotate(45deg); }
+.ddna-folder__close span::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+.ddna-folder__content {
+	position: relative;
+	z-index: 1;
+	padding: clamp(2rem, 4vw, 4.5rem);
+	border: var(--border-width) solid var(--color-border);
+	border-radius: 0 clamp(1.75rem, 3vw, 3rem) clamp(1.75rem, 3vw, 3rem);
+	background: var(--color-background);
+}
+
+.ddna-folder__content--collections {
+	display: grid;
+	gap: clamp(3.5rem, 6vw, 6rem);
+}
+
+.ddna-subfolder {
+	position: relative;
+	padding: clamp(4rem, 6vw, 6rem) clamp(1rem, 3vw, 3rem) clamp(2rem, 4vw, 4rem);
+	border: var(--border-width) solid var(--color-border);
+	border-radius: 0 1.75rem 1.75rem;
+}
+
+.ddna-subfolder__title {
+	position: absolute;
+	top: 0;
+	left: calc(0rem - var(--border-width));
+	max-width: min(90%, 42rem);
+	padding: 0.45rem 1.5rem 0.75rem 0;
+	background: var(--color-background);
+	font-size: clamp(2rem, 4vw, 4.5rem);
+	font-weight: var(--font-weight-black);
+	line-height: 0.95;
+	transform: translateY(-35%);
+}
+
+.ddna-subfolder__title::after {
+	position: absolute;
+	top: 35%;
+	right: -1.75rem;
+	width: 1.75rem;
+	height: 65%;
+	border-right: var(--border-width) solid var(--color-border);
+	border-bottom: var(--border-width) solid var(--color-border);
+	border-radius: 0 0 1.25rem;
+	content: "";
+}
+
+@media (max-width: 47.9375rem) {
+	.ddna-folder__tab { min-width: 0; padding: 0.85rem 1rem; border-radius: 1.25rem 1.25rem 0 0; }
+	.ddna-folder__tab::after { right: -1.25rem; width: 1.25rem; height: 1.25rem; background: radial-gradient(circle at top right, transparent 1rem, var(--color-border) 1rem, var(--color-border) calc(1rem + var(--border-width)), var(--color-background) calc(1rem + var(--border-width))); }
+	.ddna-folder__title { font-size: clamp(1.5rem, 8vw, 2.4rem); }
+	.ddna-folder__subtitle { font-size: 0.8rem; }
+	.ddna-folder__close { flex-basis: 2.5rem; width: 2.5rem; height: 2.5rem; }
+	.ddna-folder__content { padding: 2rem 1rem; border-radius: 0 1.4rem 1.4rem; }
+	.ddna-subfolder { padding: 4rem 0.75rem 1.5rem; }
+	.ddna-subfolder__title { max-width: calc(100% - 2rem); font-size: clamp(1.8rem, 10vw, 3rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ddna-folder > .container { transition: none; }
+}

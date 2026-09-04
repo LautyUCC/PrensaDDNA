@@ -1,7 +1,7 @@
 <?php
 /** Definitive institutional footer. @package DDNA_Theme */
 $details = function_exists( 'ddna_core_get_institutional_settings' ) ? ddna_core_get_institutional_settings() : array();
-$logo_id = (int) get_theme_mod( 'custom_logo' );
+$footer_logo = get_template_directory_uri() . '/assets/images/logos/ddna-footer.png';
 $socials = array(
 	'facebook' => array( 'Facebook', $details['facebook_url'] ?? '' ),
 	'instagram' => array( 'Instagram', $details['instagram_url'] ?? '' ),
@@ -18,7 +18,7 @@ $lines = array(
 	<div class="container container--wide site-footer__inner">
 		<div class="site-footer__identity">
 			<a class="site-footer__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Ir al inicio', 'ddna-theme' ); ?>">
-				<?php if ( $logo_id ) : ?><?php echo wp_get_attachment_image( $logo_id, 'full', false, array( 'class' => 'site-footer__logo', 'alt' => '' ) ); ?><?php else : ?><span class="site-footer__wordmark">DDNA</span><?php endif; ?>
+				<img class="site-footer__logo" src="<?php echo esc_url( $footer_logo ); ?>" alt="" width="870" height="688" loading="lazy" decoding="async">
 			</a>
 		</div>
 
