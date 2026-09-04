@@ -118,12 +118,6 @@
 		} );
 	} );
 
-	root.querySelectorAll( '[data-home-panel-close]' ).forEach( function ( button ) {
-		button.addEventListener( 'click', function () {
-			activate( '', { history: true, restoreFocus: true } );
-		} );
-	} );
-
 	document.addEventListener( 'keydown', function ( event ) {
 		if ( 'Escape' === event.key && activeId ) {
 			event.preventDefault();

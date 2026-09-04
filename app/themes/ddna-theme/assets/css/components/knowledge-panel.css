@@ -1,5 +1,7 @@
-.knowledge-panel { gap: clamp(4rem, 7vw, 7rem); }
-.knowledge-block { padding-top: clamp(4.5rem, 7vw, 7rem); }
+.knowledge-panel {
+	display: grid;
+	gap: clamp(2rem, 4vw, 4rem);
+}
 
 .knowledge-document-grid {
 	display: grid;
@@ -34,6 +36,17 @@
 	object-fit: contain;
 }
 
+.knowledge-document-grid--reports .knowledge-item--document {
+	min-height: 5.25rem;
+	gap: 1rem;
+}
+
+.knowledge-document-grid--reports .knowledge-item--document .knowledge-item__icon {
+	width: clamp(2.5rem, 3.5vw, 3.5rem);
+	height: clamp(2.5rem, 3.5vw, 3.5rem);
+	flex-basis: clamp(2.5rem, 3.5vw, 3.5rem);
+}
+
 a.knowledge-item:hover { text-decoration: underline; text-underline-offset: 0.18em; }
 .knowledge-item.is-unavailable { cursor: default; }
 .knowledge-item--document.is-unavailable { opacity: 0.92; }
@@ -65,8 +78,8 @@ a.knowledge-item:hover { text-decoration: underline; text-underline-offset: 0.18
 }
 
 .knowledge-item--guide .knowledge-item__icon {
-	width: clamp(3.6rem, 5vw, 5rem);
-	height: clamp(3.6rem, 5vw, 5rem);
+	width: clamp(4.5rem, 6vw, 6.25rem);
+	height: clamp(4.5rem, 6vw, 6.25rem);
 	object-fit: contain;
 }
 
@@ -81,6 +94,12 @@ a.knowledge-item:hover { text-decoration: underline; text-underline-offset: 0.18
 .knowledge-document-grid--statements .knowledge-item--document {
 	min-height: 4.8rem;
 	text-transform: none;
+}
+
+.knowledge-document-grid--statements .knowledge-item--document .knowledge-item__icon {
+	width: clamp(2.75rem, 3.5vw, 3.5rem);
+	height: clamp(2.75rem, 3.5vw, 3.5rem);
+	flex-basis: clamp(2.75rem, 3.5vw, 3.5rem);
 }
 
 .knowledge-accordions { display: grid; gap: 1rem; }
@@ -125,8 +144,8 @@ a.knowledge-item:hover { text-decoration: underline; text-underline-offset: 0.18
 
 .knowledge-item--material { min-height: 10.5rem; }
 .knowledge-item--material .knowledge-item__icon {
-	width: 3.5rem;
-	height: 3.5rem;
+	width: clamp(4.5rem, 6vw, 6.25rem);
+	height: clamp(4.5rem, 6vw, 6.25rem);
 	object-fit: contain;
 	filter: invert(49%) sepia(96%) saturate(1878%) hue-rotate(350deg) brightness(103%) contrast(101%);
 }
@@ -153,8 +172,7 @@ a.knowledge-item:hover { text-decoration: underline; text-underline-offset: 0.18
 }
 
 @media (max-width: 47.9375rem) {
-	.knowledge-panel { gap: 4.5rem; }
-	.knowledge-block { padding-top: 5rem; }
+	.knowledge-panel { gap: 1.5rem; }
 	.knowledge-document-grid,
 	.knowledge-document-grid--statements { grid-template-columns: 1fr; }
 	.knowledge-item--document { min-height: 4rem; }

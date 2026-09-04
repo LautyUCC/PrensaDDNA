@@ -15,8 +15,13 @@
 <?php wp_body_open(); ?>
 <a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e( 'Saltar al contenido', 'ddna-theme' ); ?></a>
 <div class="site" id="page">
-	<header class="site-header">
+	<header class="site-header<?php echo is_front_page() ? ' site-header--home' : ''; ?>">
 		<div class="container container--wide site-header__inner">
+			<?php if ( is_front_page() ) : ?>
+				<a class="site-header__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logos/ddna-horizontal.png' ); ?>" alt="<?php esc_attr_e( 'Defensoría de los Derechos de Niñas, Niños y Adolescentes', 'ddna-theme' ); ?>" width="3202" height="794">
+				</a>
+			<?php endif; ?>
 			<?php get_template_part( 'template-parts/navigation/primary' ); ?>
 		</div>
 	</header>

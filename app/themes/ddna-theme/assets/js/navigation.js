@@ -13,6 +13,7 @@
 	const menu = navigation.querySelector( '#primary-menu' );
 	const submenuButtons = navigation.querySelectorAll( '.submenu-toggle' );
 	const mobileQuery = window.matchMedia( '(max-width: 74.9375rem)' );
+	const homePanelMenu = navigation.classList.contains( 'primary-navigation--home' );
 	const openLabel = menuButton ? menuButton.dataset.openLabel : '';
 	const closeLabel = menuButton ? menuButton.dataset.closeLabel : '';
 
@@ -46,6 +47,12 @@
 		menuButton.setAttribute( 'aria-expanded', String( isOpen ) );
 		menuButton.setAttribute( 'aria-label', isOpen ? closeLabel : openLabel );
 		document.body.classList.toggle( 'menu-is-open', isOpen );
+	} );
+
+	menu.addEventListener( 'click', function ( event ) {
+		if ( homePanelMenu && event.target.closest( '[data-home-panel-trigger]' ) ) {
+			closeMenu( false );
+		}
 	} );
 
 	submenuButtons.forEach( function ( button ) {
@@ -83,7 +90,7 @@
 	} );
 
 	document.addEventListener( 'click', function ( event ) {
-		if ( mobileQuery.matches && navigation.classList.contains( 'is-open' ) && ! navigation.contains( event.target ) ) {
+		if ( ( mobileQuery.matches || homePanelMenu ) && navigation.classList.contains( 'is-open' ) && ! navigation.contains( event.target ) ) {
 			closeMenu( false );
 		}
 	} );

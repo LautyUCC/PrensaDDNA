@@ -11,9 +11,9 @@ $query_args       = isset( $args['query'] ) && is_array( $args['query'] ) ? $arg
 $query_args       = wp_parse_args( $query_args, array( 'post_status' => 'publish', 'posts_per_page' => 12, 'no_found_rows' => true, 'update_post_term_cache' => false ) );
 $collection       = new WP_Query( $query_args );
 ?>
-<section class="panel-section ddna-subfolder" aria-labelledby="<?php echo esc_attr( $collection_id ); ?>-title">
-	<h3 class="ddna-subfolder__title" id="<?php echo esc_attr( $collection_id ); ?>-title"><?php echo esc_html( $collection_title ); ?></h3>
-	<div class="ddna-subfolder__content">
+<section class="panel-section home-panel__section" aria-labelledby="<?php echo esc_attr( $collection_id ); ?>-title">
+	<h3 class="home-panel__section-title" id="<?php echo esc_attr( $collection_id ); ?>-title"><?php echo esc_html( $collection_title ); ?></h3>
+	<div class="home-panel__section-content">
 		<?php if ( $collection->have_posts() ) : ?>
 			<div class="content-collection">
 				<?php while ( $collection->have_posts() ) : $collection->the_post(); ?>

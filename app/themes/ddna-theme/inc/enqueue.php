@@ -36,7 +36,6 @@ function ddna_theme_enqueue_assets() {
 		'ddna-theme-campaigns'     => 'components/home-campaigns.css',
 		'ddna-theme-news'          => 'components/home-news.css',
 		'ddna-theme-footer'        => 'components/footer.css',
-		'ddna-theme-folder'        => 'components/folder.css',
 		'ddna-theme-home-panels'   => 'components/home-panels.css',
 		'ddna-theme-knowledge'     => 'components/knowledge-panel.css',
 		'ddna-theme-institutional' => 'components/institutional-navigation.css',
@@ -71,6 +70,15 @@ function ddna_theme_enqueue_assets() {
 	wp_script_add_data( 'ddna-theme-navigation', 'strategy', 'defer' );
 
 	if ( is_front_page() ) {
+		wp_enqueue_script(
+			'ddna-theme-hero-video',
+			$theme_uri . '/assets/js/hero-video.js',
+			array(),
+			file_exists( $theme_path . '/assets/js/hero-video.js' ) ? (string) filemtime( $theme_path . '/assets/js/hero-video.js' ) : $theme_version,
+			true
+		);
+		wp_script_add_data( 'ddna-theme-hero-video', 'strategy', 'defer' );
+
 		wp_enqueue_script(
 			'ddna-theme-carousel',
 			$theme_uri . '/assets/js/carousel.js',

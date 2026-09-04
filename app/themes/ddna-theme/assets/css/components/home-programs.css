@@ -1,6 +1,6 @@
 .carousel--programs {
 	grid-auto-flow: column;
-	grid-auto-columns: calc(33.333% - 1rem);
+	grid-auto-columns: calc(50% - 0.75rem);
 	gap: var(--space-5);
 	padding: var(--space-3);
 	margin: calc(0rem - var(--space-3));
@@ -17,7 +17,7 @@
 .program-card__link {
 	position: relative;
 	display: block;
-	min-height: clamp(31rem, 39vw, 44rem);
+	min-height: clamp(24rem, 30vw, 32rem);
 	overflow: hidden;
 	border: var(--border-width) solid var(--color-border);
 	border-radius: var(--radius-lg);
@@ -51,9 +51,25 @@
 	background: var(--color-surface);
 }
 
-.program-card__title { display: -webkit-box; overflow: hidden; font-size: clamp(1.75rem, 2.8vw, 3.5rem); line-height: 0.95; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
-.program-card__excerpt { display: -webkit-box; margin-top: var(--space-2); overflow: hidden; font-size: clamp(1rem, 1.3vw, 1.5rem); line-height: 1.25; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+.program-card__title { display: -webkit-box; overflow: hidden; font-size: clamp(1.6rem, 2.1vw, 2.7rem); line-height: 0.98; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+.program-card__excerpt { display: -webkit-box; margin-top: var(--space-2); overflow: hidden; font-size: clamp(0.95rem, 1.1vw, 1.25rem); line-height: 1.25; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
 .program-card__excerpt p { margin: 0; }
+
+#panel-quiero-conocer .home-programs .carousel-controls {
+	--program-control-offset: clamp(2rem, 3vw, 3.5rem);
+	left: calc(0rem - var(--program-control-offset));
+	width: calc(100% + var(--program-control-offset) + var(--program-control-offset));
+}
+
+#panel-quiero-conocer .home-programs .carousel-control {
+	color: var(--color-text);
+}
+
+#panel-quiero-conocer .home-programs .carousel-control:hover {
+	color: var(--color-primary);
+}
+
+#panel-quiero-conocer .home-programs .carousel-control[disabled] { opacity: 1; }
 
 @media (max-width: 74.9375rem) {
 	.carousel--programs { grid-auto-columns: calc(50% - 0.75rem); }
@@ -62,4 +78,5 @@
 @media (max-width: 47.9375rem) {
 	.carousel--programs { grid-auto-columns: 90%; gap: var(--space-4); }
 	.program-card__link { min-height: clamp(25rem, 125vw, 32rem); }
+	#panel-quiero-conocer .home-programs .carousel-controls { right: var(--space-4); left: auto; width: auto; }
 }
