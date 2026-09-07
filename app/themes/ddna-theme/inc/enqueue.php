@@ -38,6 +38,7 @@ function ddna_theme_enqueue_assets() {
 		'ddna-theme-footer'        => 'components/footer.css',
 		'ddna-theme-home-panels'   => 'components/home-panels.css',
 		'ddna-theme-knowledge'     => 'components/knowledge-panel.css',
+		'ddna-theme-territory'     => 'components/territory.css',
 		'ddna-theme-institutional' => 'components/institutional-navigation.css',
 		'ddna-theme-accessibility' => 'utilities/accessibility.css',
 	);
@@ -96,6 +97,15 @@ function ddna_theme_enqueue_assets() {
 			true
 		);
 		wp_script_add_data( 'ddna-theme-home-panels', 'strategy', 'defer' );
+
+		wp_enqueue_script(
+			'ddna-theme-territory',
+			$theme_uri . '/assets/js/territory.js',
+			array(),
+			file_exists( $theme_path . '/assets/js/territory.js' ) ? (string) filemtime( $theme_path . '/assets/js/territory.js' ) : $theme_version,
+			true
+		);
+		wp_script_add_data( 'ddna-theme-territory', 'strategy', 'defer' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ddna_theme_enqueue_assets' );
