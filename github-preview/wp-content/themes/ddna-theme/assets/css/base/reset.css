@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+}
+
+ul[role="list"],
+ol[role="list"] {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}

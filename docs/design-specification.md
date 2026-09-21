@@ -45,7 +45,7 @@ No se observan breadcrumbs, buscador, CTA dentro del hero, bloque de asistencia 
 | Token propuesto | Valor estimado | Uso visible | Certeza |
 |---|---:|---|---|
 | `--color-canvas` | `#E6E1DE` | Header, fondo general y fondo interior de secciones | A, muestreo directo |
-| `--color-accent` | `#F47023` | Campañas, botones “Leer más”, iconos rápidos, footer y detalles | A, muestreo directo |
+| `--color-accent` | `#FF8C00` | Campañas, botones “Leer más”, iconos rápidos, footer y detalles | Definición institucional vigente |
 | `--color-ink` | `#050506` | Texto, contornos, iconos y flechas | A, muestreo directo |
 | `--color-surface` | `#FFFFFF` | Accesos rápidos y placas de texto sobre Programas | A |
 | `--color-overlay` | negro, aproximadamente 55–70% | Oscurecimiento uniforme sobre fotografía del hero | A en presencia; opacidad estimada |
@@ -450,7 +450,7 @@ No añadir dots hasta que diseño los apruebe.
 
 ### A — Visible
 
-- Franja naranja `#F47023` a ancho completo, de aproximadamente **327 px** de alto en la mesa original.
+- Franja naranja `#FF8C00` a ancho completo, de aproximadamente **327 px** de alto en la mesa original.
 - Columna izquierda: logo DDNA vertical negro.
 - Centro-izquierda: dos botones/píldoras delineadas en negro con icono WhatsApp:
   - Línea Asistencia — 351 4020503;

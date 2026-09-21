@@ -7,6 +7,7 @@
 if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 	return;
 }
+if ( get_option( 'ddna_content_version' ) ) { WP_CLI::log( 'Navegación final presente; conservar ediciones del administrador.' ); return; }
 
 /**
  * Obtiene o crea una pagina publicada, sin reemplazar contenido existente.

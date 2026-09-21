@@ -130,3 +130,20 @@ Valores predeterminados:
 ## Alcance y permisos
 
 Los usuarios necesitan permisos para editar el tipo de contenido correspondiente. Las opciones de portada requieren `edit_theme_options`; los datos institucionales requieren `manage_options`. No se modificaron contenidos históricos, URLs productivas, páginas internas ni el modelo de migración.
+# Actualización editorial septiembre 2026
+
+Esta sección prevalece sobre instrucciones anteriores sobre contenidos temporales.
+
+- Páginas → La Defensoría: textos institucionales y control Dossier Institucional.
+- Páginas → Necesito Ayuda (slug asistencia): contenido compartido entre página y Home. Conservar `[ddna_contact]` y `[ddna_adolescence_line]` para no duplicar datos.
+- Páginas: convenios, tres páginas de programas, Agenda, Prensa, Medios, Normativas y Comunicados. No añadir material antiguo como aprobado sin validación.
+- Apariencia → Menús → Accesos rápidos: títulos y descripciones de los seis controles de portada, y textos/orden del menú Home. Mantener sus IDs/hashes y seis elementos. Orden central conserva la especificación final.
+- Apariencia → Menús → Navegación principal: menú de páginas interiores y submenús, editable como antes.
+- Programas/Campañas: título, imagen destacada, extracto, URL externa, destacado y orden. “Destino pendiente de aprobación” evita enlaces falsos cuando no hay URL. Completar URL real para habilitar recurso.
+- Ajustes → Recursos institucionales: dossiers, carpeta de materiales y los tres enlaces de comunicados. Vacíos hasta aprobación. Comunicados muestra títulos por año; también resuelve publicaciones/documentos con título exacto.
+- Ajustes → Datos institucionales: teléfonos, ambos correos, domicilio y redes; compartidos por footer, Contacto y Asistencia.
+- Entradas → Novedades: arquitectura nativa, imagen, fecha, título, extracto, permalink y archivo. No borrar historia. No hay Elementor instalado en este entorno.
+- Capacitaciones: editar la diplomatura IA, completar contenido o URL real de inscripción; Seminarios sigue pendiente.
+- Guías: títulos/archivos individuales requieren validación, pues la fuente nueva solo establece cantidades. No importar PDFs automáticamente.
+
+La actualización inicial es idempotente: reiniciar Docker no reemplaza ediciones del administrador. Pendientes completos en `final-sept-2026-pending.md`.

@@ -24,6 +24,7 @@ require_once DDNA_CORE_PATH . 'inc/meta-fields.php';
 require_once DDNA_CORE_PATH . 'inc/admin.php';
 require_once DDNA_CORE_PATH . 'inc/institutional-settings.php';
 require_once DDNA_CORE_PATH . 'inc/home-management.php';
+require_once DDNA_CORE_PATH . 'inc/editorial-links.php';
 
 /**
  * Prepara reglas y términos básicos al activar el plugin.

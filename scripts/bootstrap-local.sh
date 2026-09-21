@@ -35,6 +35,7 @@ wp_run rewrite structure '/%postname%/' --hard
 wp_run eval-file /var/www/html/scripts/setup-home-content.php
 wp_run eval-file /var/www/html/scripts/setup-navigation.php
 wp_run eval-file /var/www/html/scripts/setup-institutional-settings.php
+wp_run eval-file /var/www/html/scripts/apply-final-sept-2026.php
 chown -R 33:33 wp-content/uploads
 
 echo "DDNA local quedó instalado y configurado."

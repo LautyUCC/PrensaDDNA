@@ -10,6 +10,14 @@ if ( is_front_page() ) {
 		'territorio'     => 'Territorio',
 		'actualidad'     => 'Actualidad',
 	);
+	$locations = get_theme_mod( 'nav_menu_locations', array() );
+	$items = ! empty( $locations['quick_access'] ) ? wp_get_nav_menu_items( $locations['quick_access'] ) : array();
+	$managed_links = array();
+	foreach ( $items ?: array() as $item ) {
+		$id = get_post_meta( $item->ID, '_ddna_home_panel_id', true );
+		if ( isset( $panel_links[ $id ] ) ) { $managed_links[ $id ] = 'observatorio' === $id ? 'Observatorio' : $item->title; }
+	}
+	if ( 6 === count( $managed_links ) ) { $panel_links = $managed_links; }
 	?>
 	<nav class="primary-navigation primary-navigation--home" aria-label="<?php esc_attr_e( 'Explorar contenidos de la Defensoría', 'ddna-theme' ); ?>">
 		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="<?php esc_attr_e( 'Abrir menú principal', 'ddna-theme' ); ?>" data-open-label="<?php esc_attr_e( 'Abrir menú principal', 'ddna-theme' ); ?>" data-close-label="<?php esc_attr_e( 'Cerrar menú principal', 'ddna-theme' ); ?>">

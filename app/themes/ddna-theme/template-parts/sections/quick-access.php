@@ -1,13 +1,25 @@
 <?php
 /** Main controls for the interactive Home landing. @package DDNA_Theme */
 $accesses = array(
-	array( 'id' => 'necesito-ayuda', 'title' => 'Necesito ayuda', 'description' => 'Asesoramiento y Consultas', 'icon' => 15 ),
+	array( 'id' => 'necesito-ayuda', 'title' => 'Necesito ayuda', 'description' => 'Asistencia, orientación y consultas', 'icon' => 15 ),
 	array( 'id' => 'quiero-saber', 'title' => 'Quiero saber', 'description' => 'Información sobre derechos, recursos y herramientas', 'icon' => 17 ),
-	array( 'id' => 'quiero-conocer', 'title' => 'Quiero conocer', 'description' => 'Programas y acciones que ofrece la Defensoría', 'icon' => 19 ),
-	array( 'id' => 'observatorio', 'title' => 'Observatorio', 'description' => 'Informes, estudios e indicadores sobre la situación de NNyA', 'icon' => 23 ),
-	array( 'id' => 'territorio', 'title' => 'Territorio', 'description' => 'Nuestras subsedes', 'icon' => 21 ),
+	array( 'id' => 'quiero-conocer', 'title' => 'Quiero conocer', 'description' => 'Programas, talleres y acciones de la Defensoría', 'icon' => 19 ),
+	array( 'id' => 'observatorio', 'title' => 'Observatorio de Niñez, Adolescencia, Familia y Comunidad', 'description' => 'Datos, informes e investigaciones sobre la situación de NNyA', 'icon' => 23 ),
+	array( 'id' => 'territorio', 'title' => 'Territorio', 'description' => 'Nuestras subsedes y municipios MUNA', 'icon' => 21 ),
 	array( 'id' => 'actualidad', 'title' => 'Actualidad', 'description' => 'Novedades, agenda y prensa', 'icon' => 25 ),
 );
+$locations = get_theme_mod( 'nav_menu_locations', array() );
+$menu_items = ! empty( $locations['quick_access'] ) ? wp_get_nav_menu_items( $locations['quick_access'] ) : array();
+foreach ( $accesses as &$access ) {
+	foreach ( $menu_items ?: array() as $item ) {
+		if ( $access['id'] === get_post_meta( $item->ID, '_ddna_home_panel_id', true ) ) {
+			$access['title'] = $item->title;
+			$access['description'] = $item->description;
+			break;
+		}
+	}
+}
+unset( $access );
 $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
 ?>
 <nav class="quick-access" aria-labelledby="quick-access-title">

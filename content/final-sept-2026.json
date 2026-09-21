@@ -1,0 +1,191 @@
+{
+  "version": "final-sept-2026",
+  "source": "DDNA_CONTENIDOS_FINAL_SEPT_2026_Codex.md",
+  "accesses": [
+    {
+      "id": "necesito-ayuda",
+      "title": "NECESITO AYUDA",
+      "description": "Asistencia, orientación y consultas",
+      "icon": 15
+    },
+    {
+      "id": "quiero-saber",
+      "title": "QUIERO SABER",
+      "description": "Información sobre derechos, recursos y herramientas",
+      "icon": 17
+    },
+    {
+      "id": "quiero-conocer",
+      "title": "QUIERO CONOCER",
+      "description": "Programas, talleres y acciones de la Defensoría",
+      "icon": 19
+    },
+    {
+      "id": "observatorio",
+      "title": "OBSERVATORIO DE NIÑEZ, ADOLESCENCIA, FAMILIA Y COMUNIDAD",
+      "description": "Datos, informes e investigaciones sobre la situación de NNyA",
+      "icon": 23
+    },
+    {
+      "id": "territorio",
+      "title": "TERRITORIO",
+      "description": "Nuestras subsedes y municipios MUNA",
+      "icon": 21
+    },
+    {
+      "id": "actualidad",
+      "title": "ACTUALIDAD",
+      "description": "Novedades, agenda y prensa",
+      "icon": 25
+    }
+  ],
+  "pages": [
+    {
+      "slug": "defensoria",
+      "title": "La Defensoría",
+      "content": "<h2>¿Quiénes somos?</h2>\n<p>Somos un organismo estatal autónomo dedicado a promover, proteger y defender los derechos de las niñas, niños y adolescentes, trabajando para que sean escuchados y sus derechos se respeten plenamente.</p>\n<h2>¿Qué hacemos?</h2>\n<ul><li>Brindamos orientación y atención personalizada a niñas, niños, adolescentes y sus familias.</li><li>Recibimos consultas y acompañamos en la búsqueda de soluciones.</li><li>Ofrecemos asistencia jurídica gratuita a niñas, niños y adolescentes con discapacidad.</li><li>Promovemos acciones de sensibilización, capacitación y trabajo conjunto con organismos e instituciones de toda la provincia.</li></ul>\n<h2>Nuestra misión</h2>\n<p>Promover el pleno ejercicio de los derechos de niñas, niños y adolescentes, impulsando una cultura basada en el respeto, la participación y la escucha activa, reconociéndolos como sujetos de derecho.</p>\n<h2>Visión</h2>\n<p>Construir una sociedad donde niñas, niños y adolescentes ejerzan plenamente sus derechos y participen activamente como protagonistas de su presente y su futuro.</p>\n<h2>Objetivos</h2>\n<ul><li>Garantizar la defensa de los derechos de las niñas, niños y adolescentes ante las instituciones públicas y privadas.</li><li>Desarrollar acciones de promoción, investigación y formación en derechos de la niñez y adolescencia.</li><li>Supervisar el funcionamiento del sistema de protección integral de derechos.</li><li>Impulsar políticas públicas que fortalezcan la participación de niñas, niños y adolescentes.</li><li>Promover la adecuación de la normativa provincial a la Convención sobre los Derechos del Niño y a la legislación vigente.</li></ul>\n[ddna_resource key=\"institutional_dossier\" label=\"Dossier Institucional\"]\n<h2>Informes de Gestión</h2>"
+    },
+    {
+      "slug": "asistencia",
+      "title": "Necesito Ayuda",
+      "content": "<h2>Asistencia, orientación y consultas</h2>\n<p>¿Tenés una duda, conoces o estás atravesando una situación que afecta a una niña, niño o adolescente o no sabés dónde recurrir?</p>\n<p>En la Defensoría podemos escucharte, asesorarte y orientarte sobre los pasos a seguir.</p>\n<p>Brindamos atención gratuita, orientación y asesoramiento ante situaciones que involucren los derechos de niñas, niños y adolescentes.</p>\n<p>No es necesario que sepas qué organismo debe intervenir. Podés comunicarte con nosotros y te orientaremos.</p><details class=\"panel-accordion\"><summary>¿En qué podemos ayudarte?</summary><div class=\"panel-accordion__content\"><p><strong>Podés consultar con la Defensoría ante situaciones relacionadas con:</strong></p>\n<h3>Violencia, maltrato y abuso</h3>\n<ul><li>Violencia física, psicológica o verbal.</li><li>Maltrato hacia niñas, niños o adolescentes.</li><li>Situaciones de abuso sexual o sospecha de abuso.</li><li>Otras situaciones de vulneración de derechos.</li></ul>\n<h3>Convivencia y vínculos</h3>\n<ul><li>Bullying o acoso entre pares.</li><li>Cyberbullying y conflictos en entornos digitales.</li><li>Conflictos familiares que afecten a niñas, niños o adolescentes.</li><li>Situaciones vinculadas con responsabilidad parental, régimen de comunicación, tutela o delegación de la responsabilidad parental.</li></ul>\n<h3>Internet y redes sociales</h3>\n<ul><li>Grooming.</li><li>Acoso o violencia en redes sociales.</li><li>Situaciones que afecten la privacidad, la identidad o la seguridad digital.</li><li>Otras vulneraciones de derechos en internet y entornos digitales.</li></ul>\n<h3>Educación</h3>\n<ul><li>Dificultades para ingresar o permanecer en la escuela.</li><li>Problemas para acceder a recursos o apoyos educativos.</li><li>Situaciones que afecten el derecho a la educación.</li></ul>\n<h3>Salud</h3>\n<ul><li>Dificultades para acceder a atención médica.</li><li>Problemas para acceder a tratamientos, prestaciones o insumos.</li><li>Situaciones relacionadas con obras sociales o prepagas que afecten el acceso a prestaciones de niñas, niños o adolescentes.</li></ul>\n<h3>Identidad y documentación</h3>\n<ul><li>Dificultades relacionadas con el DNI.</li><li>Situaciones vinculadas con el derecho a la identidad.</li><li>Problemas para acceder a documentación de niñas, niños y adolescentes.</li></ul>\n<h3>Consumos problemáticos</h3>\n<ul><li>Situaciones relacionadas con el consumo de sustancias.</li><li>Dificultades para acceder a orientación, atención o acompañamiento.</li></ul></div></details><details class=\"panel-accordion\"><summary>Derecho a ser escuchado</summary><div class=\"panel-accordion__content\"><p><strong>¿Sos niña, niño o adolescente y necesitás hablar con alguien?</strong></p>\n<p>Tenés derecho a ser escuchado y a que tu opinión sea tenida en cuenta en las situaciones que te afectan.</p>\n<p>Podés comunicarte directamente con la Defensoría al:</p>\n<p>[ddna_adolescence_line]</p></div></details><details class=\"panel-accordion\"><summary>¿Quién te asesora?</summary><div class=\"panel-accordion__content\"><p>Las consultas son recibidas por un equipo interdisciplinario de profesionales, integrado por abogados, trabajadores sociales y psicólogos.</p>\n<p>El equipo brinda escucha, orientación y asesoramiento, teniendo en cuenta las características y necesidades de cada situación.</p>\n<p>Cuando corresponde, se realiza el seguimiento y la articulación con otros organismos o instituciones.</p>\n<p>La atención es gratuita.</p></div></details><details class=\"panel-accordion\"><summary>¿Cómo podés comunicarte?</summary><div class=\"panel-accordion__content\"><p><strong>Elegí el canal que te resulte más cómodo:</strong></p>[ddna_contact]<p>También contamos con subsedes en el interior de la provincia.</p></div></details><details class=\"panel-accordion\"><summary>¿No sabés si tu consulta corresponde a la Defensoría?</summary><div class=\"panel-accordion__content\"><p>No te preocupes. Comunicate igualmente.</p>\n<p>Podemos escucharte, orientarte y, si corresponde, indicarte a qué organismo o institución podés recurrir.</p></div></details>"
+    },
+    {
+      "slug": "contacto",
+      "title": "Contacto",
+      "content": "[ddna_contact]"
+    },
+    {
+      "slug": "normativas",
+      "title": "Normativas",
+      "content": ""
+    },
+    {
+      "slug": "convenios",
+      "title": "Convenios",
+      "content": "<ul><li>Rotary International (Distrito 4851)</li><li>Fundación Arcor</li><li>Asociación de Mujeres Jueces de Argentina (AMJA)</li><li>Facultad de Ciencias Sociales de la UNC — Convenio marco de Pasantías</li><li>Fundación Tecnológica con Propósito (TWP)</li><li>Colegio Universitario Politécnico (CUP) — Convenio marco de Pasantías</li><li>Universidad Empresarial Siglo 21 — Convenio marco de Pasantías</li><li>Universidad Católica de Córdoba (UCC)</li><li>Facultad de Derecho UNC — Convenio marco de Pasantías</li><li>Universidad Nacional de Villa María</li><li>Escuela Dante Alighieri — Convenio marco de Pasantías</li><li>UNICEF — Convenio marco de colaboración para el desarrollo de planes de trabajo específicos</li></ul>"
+    },
+    {
+      "slug": "programas-participacion-nnya",
+      "title": "Programas de Participación para NNyA",
+      "content": "<h2>Foros de participación de NNyA</h2>\n<p>Son herramientas participativas para conocer lo que piensan, sienten, opinan niñas, niños y adolescentes de la provincia de Córdoba.</p>\n<p>Representan espacios fundamentales para, no sólo promover la escucha activa, sino también para construir de manera intergeneracional poniendo el foco en la voz de chicas y chicos como ciudadanos protagonistas.</p>\n<h2>Protagonismo Ciudadano Adolescente: Escuela de Facilitadores de Participación Ciudadana</h2>\n<p>Es una propuesta de formación y participación para adolescentes. Esta iniciativa tiene como objetivo principal fomentar el liderazgo entre pares y capacitar líderes adolescentes.</p>\n<p>Es una herramienta estratégica para el fortalecimiento en el territorio de las políticas de construcción de ciudadanía y un espacio de capacitación para el desarrollo de inspiradores y multiplicadores de inteligencia colectiva a lo largo y a lo ancho del territorio provincial.</p>\n<p><a href=\"https://drive.google.com/file/d/1aJjEncMr6-MAK71I0Xqi453qa2gDX0px/view\" target=\"_blank\" rel=\"noopener noreferrer\">Protagonismo Ciudadano Adolescente<span class=\"screen-reader-text\"> (abre en otra pestaña)</span></a></p>\n<p><a href=\"https://drive.google.com/file/d/1sYqvOkO-w-LxhtP5NAiCIOWgHx_UAeMi/view\" target=\"_blank\" rel=\"noopener noreferrer\">Mapa de Córdoba — Proyectos de Adolescentes<span class=\"screen-reader-text\"> (abre en otra pestaña)</span></a></p>\n<h2>Activá Participación Adolescente</h2>\n<p>Este espacio está integrado por adolescentes que han sido parte de diferentes experiencias de participación de la DDNA y adolescentes egresados de la escuela de facilitadores en ediciones anteriores.</p>\n<p><strong>Este grupo tiene como objetivos:</strong></p>\n<ul><li>Generar propuestas que sean del interés de las y los adolescentes que formen parte.</li><li>Participar de las propuestas de la Defensoría en diferentes espacios con NNyA.</li><li>Promover la colaboración y el trabajo intergeneracional para generar iniciativas innovadoras.</li></ul>"
+    },
+    {
+      "slug": "acompanamiento-formacion-adultos",
+      "title": "Acompañamiento y Formación para Adultos",
+      "content": "<p>Brindamos talleres y capacitaciones en diversas temáticas que permiten el reconocimiento de los NNyA como sujetos de derechos y las responsabilidades de los adultos para el pleno ejercicio de los mismos.</p>"
+    },
+    {
+      "slug": "cooperacion-internacional-interinstitucional",
+      "title": "Cooperación Internacional e Interinstitucional",
+      "content": "<h2>¿Qué hacemos?</h2>\n<ul><li>Promovemos la cooperación y la articulación entre organismos públicos, organizaciones de la sociedad civil, empresas, universidades y organismos internacionales para fortalecer las políticas públicas destinadas a niñas, niños y adolescentes.</li><li>Identificamos oportunidades de cooperación, asistencia técnica, formación y financiamiento que permitan ampliar las capacidades institucionales y territoriales para la promoción y protección de derechos.</li><li>Impulsamos alianzas estratégicas y espacios de trabajo colaborativo para desarrollar iniciativas innovadoras que respondan a las necesidades de niñas, niños y adolescentes de la provincia de Córdoba.</li><li>Acompañamos a gobiernos locales y organizaciones sociales en el diseño, la planificación, la implementación y el seguimiento de políticas, programas y proyectos con enfoque de derechos.</li><li>Promovemos el intercambio de experiencias, conocimientos y buenas prácticas entre instituciones, favoreciendo la construcción de respuestas integrales, sostenibles y con alcance territorial.</li></ul>\n<h2>Programa Municipio Unido por la Niñez y la Adolescencia (MUNA)</h2>\n<p>MUNA es una iniciativa de UNICEF que busca fortalecer las capacidades de los gobiernos locales para diseñar, implementar y monitorear políticas públicas destinadas a garantizar los derechos de niñas, niños y adolescentes. En la provincia de Córdoba, la Defensoría acompaña a los municipios participantes durante un proceso de formación, planificación y asistencia técnica.</p>\n<p>A partir de un autodiagnóstico local, cada municipio identifica los principales desafíos que atraviesan las infancias y adolescencias de su comunidad y elabora un plan de acción orientado a mejorar sus políticas públicas.</p>\n<h2>El programa promueve:</h2>\n<ul><li>La incorporación del enfoque de derechos de NNyA en la gestión municipal.</li><li>El fortalecimiento de las capacidades de los equipos locales.</li><li>La planificación de políticas basadas en información y evidencia.</li><li>La articulación entre áreas municipales, organizaciones e instituciones de la comunidad.</li><li>La participación de niñas, niños y adolescentes en las decisiones que afectan sus vidas.</li><li>El seguimiento de los avances y resultados alcanzados por cada municipio.</li></ul>\n<p>MUNA permite consolidar una red provincial de gobiernos locales comprometidos con la construcción de comunidades más inclusivas, participativas y respetuosas de los derechos de las infancias y adolescencias.</p>\n<h2>Municipios MUNA</h2>\n<p>Actualmente, <strong>20 municipios de la provincia</strong> participan de MUNA distribuidos en 4 cohortes:</p>\n<h3>Cohorte 1 — 3 años de implementación</h3>\n<ul><li>Córdoba</li><li>Cosquín</li><li>Río Cuarto</li><li>Río Tercero</li><li>Villa María</li></ul>\n<h3>Cohorte 2 — 2 años de implementación</h3>\n<ul><li>Las Varillas</li><li>San Francisco</li><li>Estación Juárez Celman</li><li>Laguna Larga</li><li>Despeñaderos</li><li>La Carlota</li></ul>\n<h3>Cohorte 3 — 1 año de implementación</h3>\n<ul><li>Colonia Caroya</li><li>Morteros</li><li>Salsipuedes</li><li>Justiniano Posse</li><li>Cruz del Eje</li></ul>\n<h3>Cohorte 4 — diagnóstico y planificación</h3>\n<ul><li>Villa Huidobro</li><li>Monte Maíz</li><li>Alta Gracia</li><li>Villa Nueva</li></ul>"
+    },
+    {
+      "slug": "agenda",
+      "title": "Agenda",
+      "content": ""
+    },
+    {
+      "slug": "prensa",
+      "title": "Prensa",
+      "content": "[ddna_press_links]"
+    },
+    {
+      "slug": "defensoria-en-los-medios",
+      "title": "La Defensoría en los Medios",
+      "content": ""
+    },
+    {
+      "slug": "comunicados",
+      "title": "Comunicados",
+      "content": "[ddna_statements]"
+    }
+  ],
+  "records": [
+    {
+      "type": "programa",
+      "slug": "programas-participacion-nnya",
+      "title": "Programas de Participación para NNyA",
+      "page": "programas-participacion-nnya",
+      "order": 1
+    },
+    {
+      "type": "programa",
+      "slug": "acompanamiento-formacion-adultos",
+      "title": "Acompañamiento y Formación para Adultos",
+      "page": "acompanamiento-formacion-adultos",
+      "order": 2
+    },
+    {
+      "type": "programa",
+      "slug": "programa-va-con-vos",
+      "title": "Va con Vos",
+      "pending": true,
+      "order": 3
+    },
+    {
+      "type": "programa",
+      "slug": "programa-entre-pantallas",
+      "title": "Entre Pantallas",
+      "pending": true,
+      "order": 4
+    },
+    {
+      "type": "programa",
+      "slug": "cooperacion-internacional-interinstitucional",
+      "title": "Cooperación Internacional e Interinstitucional",
+      "page": "cooperacion-internacional-interinstitucional",
+      "order": 5
+    },
+    {
+      "type": "programa",
+      "slug": "desarrollo-integral-primeros-anos-vida",
+      "title": "Desarrollo Integral en los Primeros Años de Vida",
+      "pending": true,
+      "order": 6
+    },
+    {
+      "type": "campana",
+      "slug": "hay-otra-forma",
+      "title": "HAY OTRA FORMA",
+      "excerpt": "Prevención del Maltrato hacia NNyA",
+      "pending": true,
+      "order": 1
+    },
+    {
+      "type": "campana",
+      "slug": "hay-otra-forma-bullying",
+      "title": "HAY OTRA FORMA",
+      "excerpt": "Prevención de Bullying y Ciberbullying",
+      "pending": true,
+      "order": 2
+    },
+    {
+      "type": "campana",
+      "slug": "consumo-problematico",
+      "title": "CONSUMO PROBLEMÁTICO",
+      "pending": true,
+      "order": 3
+    },
+    {
+      "type": "capacitacion",
+      "slug": "diplomatura-ia-derechos-digitales-nnya",
+      "title": "Diplomatura Inteligencia Artificial y Derechos Digitales de NNyA",
+      "order": 1
+    }
+  ],
+  "statements": [
+    {
+      "year": 2025,
+      "title": "COMUNICADO CONJUNTO DE LAS DEFENSORÍAS DE NNyA DEL PAÍS ANTE EL VETO PRESIDENCIAL A LA LEY DE EMERGENCIA PEDIÁTRICA."
+    },
+    {
+      "year": 2025,
+      "title": "COMUNICADO SOBRE EL VETO A LA LEY DE EMERGENCIA EN DISCAPACIDAD"
+    },
+    {
+      "year": 2022,
+      "title": "LEY DE RESPONSABILIDAD PENAL JUVENIL: DEROGACIÓN DEL DECRETO-LEY 22.278."
+    }
+  ]
+}

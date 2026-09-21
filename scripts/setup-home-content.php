@@ -1,6 +1,7 @@
 <?php
 /** Seed idempotente del contenido demostrativo de la Home. */
 if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) { return; }
+if ( get_option( 'ddna_content_version' ) ) { WP_CLI::log( 'Contenido final presente; no reintroducir contenido demostrativo.' ); return; }
 
 function ddna_seed_media( $relative_path, $title, $alt ) {
 	$existing = get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'posts_per_page' => 1, 'meta_key' => '_ddna_seed_source', 'meta_value' => $relative_path, 'fields' => 'ids' ) );

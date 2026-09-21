@@ -1,0 +1,35 @@
+.site-branding {
+	display: flex;
+	min-width: 0;
+	align-items: center;
+	gap: var(--space-3);
+}
+
+.custom-logo {
+	width: auto;
+	max-height: 4.25rem;
+}
+
+.site-title {
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-bold);
+	letter-spacing: 0;
+}
+
+.site-title a,
+.footer-menu a { text-decoration: none; }
+
+.site-description {
+	color: var(--color-muted);
+	font-size: var(--font-size-xs);
+}
+
+.footer-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-2) var(--space-5);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

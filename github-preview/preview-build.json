@@ -1,0 +1,33 @@
+{
+    "publicOrigin":  "https://lautyucc.github.io",
+    "pages":  [
+                  "/",
+                  "/novedades/",
+                  "/defensoria/",
+                  "/asistencia/",
+                  "/contacto/",
+                  "/normativas/",
+                  "/convenios/",
+                  "/programas-participacion-nnya/",
+                  "/acompanamiento-formacion-adultos/",
+                  "/cooperacion-internacional-interinstitucional/",
+                  "/agenda/",
+                  "/prensa/",
+                  "/defensoria-en-los-medios/",
+                  "/comunicados/",
+                  "/muna/",
+                  "/pronunciamiento-conjunto/",
+                  "/unicef-ddna-municipios/",
+                  "/seminario-violencias/",
+                  "/defensoria/quienes-somos/",
+                  "/biblioteca/",
+                  "/tipo-documento/informe-anual/",
+                  "/tipo-documento/guia/",
+                  "/tipo-documento/pronunciamiento/",
+                  "/tipo-documento/folleto/"
+              ],
+    "generatedAt":  "2026-09-21T19:19:08.4610674Z",
+    "basePath":  "/PrensaDDNA/",
+    "assetCount":  95,
+    "generator":  "ddna-github-preview-v1"
+}

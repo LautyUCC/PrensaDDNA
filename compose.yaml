@@ -36,7 +36,7 @@ services:
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
       WORDPRESS_TABLE_PREFIX: ${WP_TABLE_PREFIX:-wp_}
       WORDPRESS_DEBUG: ${WP_DEBUG:-0}
-      WORDPRESS_CONFIG_EXTRA: |
+      WORDPRESS_CONFIG_EXTRA: &ddna_config_extra |
         define('WP_ENVIRONMENT_TYPE', '${WP_ENVIRONMENT_TYPE:-local}');
         define('WP_HOME', '${WP_URL:-http://localhost:8080}');
         define('WP_SITEURL', '${WP_URL:-http://localhost:8080}');
@@ -69,12 +69,15 @@ services:
       WORDPRESS_DB_USER: ${DB_USER}
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
       WORDPRESS_TABLE_PREFIX: ${WP_TABLE_PREFIX:-wp_}
+      WORDPRESS_CONFIG_EXTRA: *ddna_config_extra
     volumes:
       - wordpress_core:/var/www/html
       - wordpress_uploads:/var/www/html/wp-content/uploads
       - ./app/themes/ddna-theme:/var/www/html/wp-content/themes/ddna-theme
       - ./app/plugins/ddna-core:/var/www/html/wp-content/plugins/ddna-core
       - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
+      - ./scripts:/var/www/html/scripts:ro
+      - ./content:/var/www/html/content:ro
     networks:
       - ddna
     entrypoint: ["wp"]
@@ -95,6 +98,7 @@ services:
       WORDPRESS_DB_USER: ${DB_USER}
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
       WORDPRESS_TABLE_PREFIX: ${WP_TABLE_PREFIX:-wp_}
+      WORDPRESS_CONFIG_EXTRA: *ddna_config_extra
       WP_URL: ${WP_URL:-http://localhost:8080}
       WP_SITE_TITLE: ${WP_SITE_TITLE:-DDNA Cordoba - Desarrollo}
       WP_ADMIN_USER: ${WP_ADMIN_USER:-ddna_admin}
@@ -107,6 +111,7 @@ services:
       - ./app/plugins/ddna-core:/var/www/html/wp-content/plugins/ddna-core
       - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
       - ./scripts:/var/www/html/scripts:ro
+      - ./content:/var/www/html/content:ro
     networks:
       - ddna
     entrypoint: ["sh", "/var/www/html/scripts/bootstrap-local.sh"]

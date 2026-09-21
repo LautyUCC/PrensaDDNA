@@ -1,6 +1,7 @@
 :root {
 	/* Paleta institucional estimada del documento de diseño. */
-	--color-primary: #ff7f11;
+	--ddna-orange: #ff8c00;
+	--color-primary: var(--ddna-orange);
 	--color-secondary: #050506;
 	--color-background: #e9e7e7;
 	--color-surface: #ffffff;

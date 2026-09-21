@@ -2,10 +2,12 @@
 /** Institutional navigation before the footer. @package DDNA_Theme */
 $defensoria = get_page_by_path( 'defensoria' );
 $contacto   = get_page_by_path( 'contacto' );
+$normativas = get_page_by_path( 'normativas' );
+$convenios = get_page_by_path( 'convenios' );
 $items      = array(
 	array( 'label' => 'La Defensoría', 'url' => $defensoria ? get_permalink( $defensoria ) : home_url( '/defensoria/' ), 'icon' => 27 ),
-	array( 'label' => 'Normativas', 'url' => add_query_arg( 'tipo_documento', 'normativa', get_post_type_archive_link( 'documento' ) ?: home_url( '/biblioteca/' ) ), 'icon' => 29 ),
-	array( 'label' => 'Convenios', 'url' => add_query_arg( 'tipo_documento', 'convenio', get_post_type_archive_link( 'documento' ) ?: home_url( '/biblioteca/' ) ), 'icon' => 31 ),
+	array( 'label' => 'Normativas', 'url' => $normativas ? get_permalink( $normativas ) : home_url( '/normativas/' ), 'icon' => 29 ),
+	array( 'label' => 'Convenios', 'url' => $convenios ? get_permalink( $convenios ) : home_url( '/convenios/' ), 'icon' => 31 ),
 	array( 'label' => 'Contacto', 'url' => $contacto ? get_permalink( $contacto ) : home_url( '/contacto/' ), 'icon' => 33 ),
 );
 $icon_uri = get_template_directory_uri() . '/assets/icons/institutional/';

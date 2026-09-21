@@ -1,0 +1,48 @@
+name: Deploy temporary DDNA preview
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Check generated preview
+        shell: bash
+        run: |
+          test -f github-preview/index.html
+          test -f github-preview/.nojekyll
+          test -f github-preview/preview-build.json
+          if grep -RIE 'localhost|127\.0\.0\.1|DB_PASSWORD|AUTH_KEY' github-preview --include='*.html' --include='*.css' --include='*.js' --include='*.json'; then
+            echo 'Preview contains local references or sensitive configuration.' >&2
+            exit 1
+          fi
+          if find github-preview -type l -print -quit | grep -q .; then
+            echo 'Preview must not contain symbolic links.' >&2
+            exit 1
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload only static preview
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: github-preview/
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
