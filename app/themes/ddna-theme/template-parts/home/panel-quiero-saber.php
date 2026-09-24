@@ -46,10 +46,6 @@ $render_item = static function ( array $item, $variant = 'document' ) use ( $res
 	<?php
 };
 
-$annual_reports = array();
-foreach ( array( 2025, 2024, 2023, 2022, 2021, 2020 ) as $year ) { $annual_reports[] = array( 'label' => 'INFORME ANUAL ' . $year, 'aliases' => array( 'informe-anual-' . $year ), 'icon' => 'documents/annual-report.png' ); }
-$annual_reports[] = array( 'label' => 'ANEXOS INFORME ANUAL 2020', 'icon' => 'documents/annual-report.png' );
-foreach ( array( 2019, 2018, 2017, 2016 ) as $year ) { $annual_reports[] = array( 'label' => 'INFORME ANUAL ' . $year, 'aliases' => array( 'informe-anual-' . $year ), 'icon' => 'documents/annual-report.png' ); }
 $prevention_guides = array(
 	array( 'label' => 'Guía de Navegación Segura', 'icon' => 'guides/guide-47.png' ),
 	array( 'label' => 'Guía de Juegos en Línea', 'icon' => 'guides/guide-48.png' ),
@@ -66,28 +62,19 @@ $care_guides = array(
 	array( 'label' => 'Hablemos de Crianza', 'icon' => 'guides/guide-56.png' ),
 	array( 'label' => '¿Cómo acompañar la prevención del consumo de sustancias?', 'icon' => 'guides/guide-57.png' ),
 );
-$statements = array(
-	'Comunicado conjunto a los medios de prensa', 'Recomendación conjunta Defensorías',
-	'Pronunciamiento conjunto 40 años de democracia', 'Pronunciamiento conjunto Enero 2024',
-	'Consideraciones de la Defensora de los Derechos de NNyA sobre el Proyecto de Ley Bases y Puntos de Partida para la Libertad de los Argentinos',
-	'Declaración Conjunta: Sobre los anteproyectos de ley de Justicia Juvenil',
-	'Observaciones sobre la Baja de edad de imputabilidad', 'Observación General N° 5/2024 - Adultizar no es ampliar derechos',
-	'Pronunciamiento conjunto Marzo 2025', 'Pronunciamiento Conjunto de Defensoras y Defensores provinciales de NNyA',
-);
-$institutional_materials = array( 'Institucional', 'Manual de Identidad Visual', 'Flyer Institucional', 'QRs', 'Centro de Mediación', 'Derechos', 'Prevención del Consumo', 'Buenas prácticas periodísticas', 'Beneficios de la vacunación' );
 ?>
 <section class="home-panel" id="panel-quiero-saber" data-home-panel="quiero-saber" aria-label="<?php esc_attr_e( 'Quiero saber', 'ddna-theme' ); ?>" hidden>
 	<div class="container container--content">
 		<div class="knowledge-panel">
-			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-prevention-title"><h3 class="home-panel__section-title" id="knowledge-prevention-title">Guías para la Prevención</h3><div class="knowledge-guide-grid knowledge-guide-grid--four"><?php foreach ( $prevention_guides as $item ) { $render_item( $item, 'guide' ); } ?></div></section>
-			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-care-title"><h3 class="home-panel__section-title" id="knowledge-care-title">Guías para una Crianza Cuidada</h3><div class="knowledge-guide-grid knowledge-guide-grid--care"><?php foreach ( $care_guides as $item ) { $render_item( $item, 'guide' ); } ?></div></section>
+			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-prevention-title"><h2 class="home-panel__section-title" id="knowledge-prevention-title">Guías para la Prevención</h2><div class="knowledge-guide-grid knowledge-guide-grid--four"><?php foreach ( $prevention_guides as $item ) { $render_item( $item, 'guide' ); } ?></div></section>
+			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-care-title"><h2 class="home-panel__section-title" id="knowledge-care-title">Guías para una Crianza Cuidada</h2><div class="knowledge-guide-grid knowledge-guide-grid--care"><?php foreach ( $care_guides as $item ) { $render_item( $item, 'guide' ); } ?></div></section>
 			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-materials-title">
-				<h3 class="home-panel__section-title" id="knowledge-materials-title">Materiales Gráficos Descargables</h3>
-				<p class="panel-empty-state">La carpeta de materiales gráficos descargables estará disponible próximamente.</p>
+				<h2 class="home-panel__section-title" id="knowledge-materials-title">Materiales Gráficos Descargables</h2>
+				<?php echo ddna_theme_resource_control( 'graphic_materials', 'Materiales Gráficos Descargables' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</section>
-			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-didactic-title">
-				<h3 class="home-panel__section-title" id="knowledge-didactic-title">Recursos Didácticos</h3>
-				<a class="knowledge-item knowledge-item--material" href="https://youtube.com/playlist?list=PLXdxSIZhcTKwT-P10dblC2tN3dKWRXXxg&amp;si=Il_0hYxrd_vQ-TTH" target="_blank" rel="noopener noreferrer"><img class="knowledge-item__icon" src="<?php echo esc_url( $theme_icon( 'documents/material-download.png' ) ); ?>" alt="" width="96" height="96"><span class="knowledge-item__label">Ver recursos didácticos</span><span class="screen-reader-text"> <?php esc_html_e( '(se abre en una pestaña nueva)', 'ddna-theme' ); ?></span></a>
+			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-resources-title">
+				<h2 class="home-panel__section-title" id="knowledge-resources-title">Recursos Didácticos</h2>
+				<a class="button" href="https://youtube.com/playlist?list=PLXdxSIZhcTKwT-P10dblC2tN3dKWRXXxg&amp;si=Il_0hYxrd_vQ-TTH" target="_blank" rel="noopener noreferrer">Recursos Didácticos<span class="screen-reader-text"> (abre en otra pestaña)</span></a>
 			</section>
 		</div>
 	</div>

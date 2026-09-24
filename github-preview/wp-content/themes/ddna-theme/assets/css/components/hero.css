@@ -1,0 +1,13 @@
+.home-hero {
+	width: 100%;
+	overflow: hidden;
+	background: var(--color-secondary);
+	line-height: 0;
+}
+
+.home-hero__video {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}

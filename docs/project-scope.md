@@ -125,8 +125,15 @@ La ausencia de una prohibición en una tarea futura no debe interpretarse como a
 
 ## 8. Referencias
 
+### Ampliación local autorizada — 14 de septiembre de 2026
+
+La solicitud explícita de actualización global con `DDNA_CONTENIDOS_FINAL_SEPT_2026_Codex.md` amplía la etapa local: contenidos finales de Home/institucional, nueve páginas nuevas (incluidas tres páginas de programas), convenios, estructura de Agenda/Prensa/Comunicados y contacto final. Se conserva el lenguaje visual; páginas/CPT existentes se reutilizan sin importar historia productiva.
+
+Esta ampliación NO autoriza migración histórica completa, importación masiva, eliminación de archivos, escritura en producción, cambios de DNS/URLs productivas, redirecciones definitivas o despliegue. Los antiguos mockups solo siguen rigiendo el lenguaje visual cuando son compatibles con el contenido final. El WordPress local real no tiene Elementor: no se instaló ningún page builder.
+
+Consultar `final-sept-2026-gap-analysis.md`, `final-sept-2026-implementation-report.md` y `final-sept-2026-pending.md` para el estado vigente y las limitaciones.
+
 - `docs/current-site-audit.md`: inventario de referencia; no es una orden de migración.
 - `docs/design-specification.md`: especificación visual de la Home.
 - `docs/content-model.md`: preparación del modelo administrable; no obliga a importar contenido histórico.
 - `Home WEB NUEVA DDNA 2026-02.pdf`: referencia gráfica oficial de la Home.
-

@@ -45,7 +45,8 @@ function ddna_core_render_institutional_settings_page() {
 	$fields = array(
 		'assistance_label' => array( 'Etiqueta de la línea de asistencia', 'text' ), 'assistance_phone' => array( 'Teléfono de asistencia', 'text' ),
 		'adolescence_label' => array( 'Etiqueta de la línea de adolescencia', 'text' ), 'adolescence_phone' => array( 'Teléfono de adolescencia', 'text' ),
-		'address' => array( 'Dirección', 'text' ), 'phone' => array( 'Teléfono general', 'text' ), 'email' => array( 'Correo institucional', 'email' ), 'case_email' => array( 'Correo de asistencia', 'email' ),
+		'address' => array( 'Dirección', 'text' ), 'phone' => array( 'Teléfono general', 'text' ), 'email' => array( 'Correo institucional', 'email' ),
+		'case_email' => array( 'Correo de asistencia', 'email' ),
 		'facebook_url' => array( 'Facebook', 'url' ), 'instagram_url' => array( 'Instagram', 'url' ), 'x_url' => array( 'X', 'url' ),
 		'youtube_url' => array( 'YouTube', 'url' ), 'google_play_url' => array( 'Google Play', 'url' ),
 	);

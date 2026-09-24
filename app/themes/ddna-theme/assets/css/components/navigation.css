@@ -193,7 +193,7 @@
 
 .primary-menu__panel-link:hover,
 .primary-menu__panel-link[aria-expanded="true"] {
-	background: #fff2e9;
+	background: rgb(255 140 0 / 10%);
 	color: var(--color-text);
 }
 

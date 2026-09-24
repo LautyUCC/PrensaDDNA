@@ -1,15 +1,13 @@
 <?php
 /** Dynamic campaign card. @package DDNA_Theme */
-$external_url = get_post_meta( get_the_ID(), '_ddna_external_url', true );
-$campaign_url = $external_url ? $external_url : get_permalink();
-$link_pending = (bool) get_post_meta( get_the_ID(), '_ddna_link_pending', true );
+$campaign_url = ddna_theme_card_destination( get_the_ID() );
+$link_tag = $campaign_url ? 'a' : 'div';
 $heading_tag  = isset( $args['heading_level'] ) && 4 === (int) $args['heading_level'] ? 'h4' : 'h3';
 $campaign_slug = get_post_field( 'post_name', get_the_ID() );
 $campaign_icons = array(
+	'hay-otra-forma-bullying' => 'bullying-prevention.png',
+	'consumo-problematico' => 'substance-prevention.png',
 	'hay-otra-forma'                         => 'hay-otra-forma.png',
-	'hay-otra-forma-maltrato'                => 'hay-otra-forma.png',
-	'hay-otra-forma-bullying'                => 'bullying-prevention.png',
-	'consumo-problematico'                   => 'substance-prevention.png',
 	'prevencion-de-bullying-y-ciberbullying' => 'bullying-prevention.png',
 	'guias-para-la-prevencion'               => 'bullying-prevention.png',
 	'prevencion-del-abuso-sexual'             => 'abuse-prevention.png',
@@ -22,8 +20,9 @@ $campaign_icon = isset( $campaign_icons[ $campaign_slug ] ) ? $campaign_icons[ $
 $campaign_icon_class = 'hay-otra-forma' === $campaign_slug ? ' campaign-card__icon--native' : '';
 ?>
 <article <?php post_class( 'campaign-card carousel__item' ); ?>>
-	<?php if ( $link_pending ) : ?><div class="campaign-card__link<?php echo $campaign_icon ? '' : ' campaign-card__link--without-icon'; ?>" aria-disabled="true"><?php else : ?><a class="campaign-card__link<?php echo $campaign_icon ? '' : ' campaign-card__link--without-icon'; ?>" href="<?php echo esc_url( $campaign_url ); ?>"><?php endif; ?>
+	<<?php echo esc_html( $link_tag ); ?> class="campaign-card__link<?php echo $campaign_icon ? '' : ' campaign-card__link--without-icon'; ?>"<?php if ( $campaign_url ) : ?> href="<?php echo esc_url( $campaign_url ); ?>"<?php if ( wp_parse_url( $campaign_url, PHP_URL_HOST ) !== wp_parse_url( home_url(), PHP_URL_HOST ) ) : ?> target="_blank" rel="noopener noreferrer"<?php endif; ?><?php else : ?> aria-disabled="true"<?php endif; ?>>
 		<?php if ( $campaign_icon ) : ?><img class="campaign-card__icon<?php echo esc_attr( $campaign_icon_class ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/icons/campaigns/' . $campaign_icon ); ?>" alt="" width="100" height="100" decoding="async"><?php endif; ?>
 		<div class="campaign-card__content"><?php printf( '<%1$s class="campaign-card__title">%2$s</%1$s>', esc_attr( $heading_tag ), esc_html( get_the_title() ) ); ?><div class="campaign-card__excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></div></div>
-	<?php if ( $link_pending ) : ?></div><?php else : ?></a><?php endif; ?>
+		<?php if ( ! $campaign_url ) : ?><span class="screen-reader-text">Enlace pendiente de publicación</span><?php endif; ?>
+	</<?php echo esc_html( $link_tag ); ?>>
 </article>

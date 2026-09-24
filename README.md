@@ -102,3 +102,39 @@ El contenido y el código personalizado no deben depender de nombres de contened
 No se incluyen Elementor, Divi ni otros page builders.
 
 La preparacion de los entornos `local`, `staging` y `production`, incluida la integracion portable con `wp-config.php`, esta documentada en [`docs/staging-hostinger.md`](docs/staging-hostinger.md). No usar `compose.yaml` como configuracion del hosting compartido.
+# Contenidos finales — septiembre 2026
+
+El rebuild local incorpora `content/final-sept-2026.json`. La especificación de septiembre prevalece sobre contenidos demo anteriores, manteniendo el lenguaje visual. No se migró producción.
+
+Para aplicar a una instalación LOCAL existente:
+
+```powershell
+docker compose up -d db wordpress
+docker compose run --rm cli eval-file /var/www/html/scripts/apply-final-sept-2026.php
+docker compose run --rm cli eval-file /var/www/html/scripts/verify-final-sept-2026.php
+```
+
+En una instalación nueva, el bootstrap aplica automáticamente el manifiesto. El actualizador guarda un respaldo editorial local, valida LOCAL/loopback y no sobrescribe cambios posteriores si ya está aplicada la versión. No usar en staging/producción. Base y uploads siguen siendo volúmenes, no archivos Git.
+
+Pruebas responsive/teclado con Chrome local (sin dependencias del sitio):
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-final-sept-2026.ps1
+```
+
+Documentación vigente: `docs/final-sept-2026-gap-analysis.md`, `docs/final-sept-2026-implementation-report.md` y `docs/final-sept-2026-pending.md`. Los recursos no entregados siguen pendientes y no tienen destinos inventados.
+# Demo temporal GitHub Pages
+
+WordPress sigue en http://localhost:8080/. Para exportar antes de un push manual:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/update-github-preview.ps1
+```
+
+Para probar la copia por HTTP bajo la ruta real del repo:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/serve-github-preview.ps1
+```
+
+URL local de preview: http://localhost:4173/PrensaDDNA/. GitHub → Settings → Pages → Source: GitHub Actions. El workflow publica solo github-preview; no genera ni accede al WordPress local. Guía completa: `docs/github-pages-temporary-preview.md`.

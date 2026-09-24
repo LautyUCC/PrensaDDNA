@@ -8,6 +8,18 @@ $accesses = array(
 	array( 'id' => 'territorio', 'title' => 'Territorio', 'description' => 'Nuestras subsedes y municipios MUNA', 'icon' => 21 ),
 	array( 'id' => 'actualidad', 'title' => 'Actualidad', 'description' => 'Novedades, agenda y prensa', 'icon' => 25 ),
 );
+$locations = get_theme_mod( 'nav_menu_locations', array() );
+$menu_items = ! empty( $locations['quick_access'] ) ? wp_get_nav_menu_items( $locations['quick_access'] ) : array();
+foreach ( $accesses as &$access ) {
+	foreach ( $menu_items ?: array() as $item ) {
+		if ( $access['id'] === get_post_meta( $item->ID, '_ddna_home_panel_id', true ) ) {
+			$access['title'] = $item->title;
+			$access['description'] = $item->description;
+			break;
+		}
+	}
+}
+unset( $access );
 $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
 ?>
 <nav class="quick-access" aria-labelledby="quick-access-title">

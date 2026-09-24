@@ -24,6 +24,7 @@ function ddna_core_get_field_groups() {
 
 	return array(
 		'programa' => array(
+			'_ddna_destination_pending' => array( 'label' => __( 'Destino pendiente de aprobación', 'ddna-core' ), 'type' => 'checkbox', 'description' => __( 'Sin URL externa, la tarjeta no enlaza a una página temporal.', 'ddna-core' ) ),
 			'_ddna_home_order'   => array( 'label' => __( 'Orden en la portada', 'ddna-core' ), 'type' => 'number', 'min' => 0, 'description' => __( 'Los números menores aparecen primero.', 'ddna-core' ) ),
 			'_ddna_status'       => array( 'label' => __( 'Estado', 'ddna-core' ), 'type' => 'select', 'options' => $status_options, 'default' => 'active' ),
 			'_ddna_start_date'   => array( 'label' => __( 'Fecha de inicio', 'ddna-core' ), 'type' => 'date' ),
@@ -34,6 +35,7 @@ function ddna_core_get_field_groups() {
 			'_ddna_featured'     => array( 'label' => __( 'Destacar en listados', 'ddna-core' ), 'type' => 'checkbox' ),
 		),
 		'campana' => array(
+			'_ddna_destination_pending' => array( 'label' => __( 'Destino pendiente de aprobación', 'ddna-core' ), 'type' => 'checkbox' ),
 			'_ddna_home_order'   => array( 'label' => __( 'Orden en la portada', 'ddna-core' ), 'type' => 'number', 'min' => 0, 'description' => __( 'Los números menores aparecen primero.', 'ddna-core' ) ),
 			'_ddna_status'       => array( 'label' => __( 'Estado', 'ddna-core' ), 'type' => 'select', 'options' => $status_options, 'default' => 'active' ),
 			'_ddna_start_date'   => array( 'label' => __( 'Fecha de inicio', 'ddna-core' ), 'type' => 'date' ),
