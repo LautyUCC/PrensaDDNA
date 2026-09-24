@@ -6,7 +6,7 @@ function ddna_core_get_institutional_defaults() {
 	return array(
 		'assistance_label' => 'Línea Asistencia', 'assistance_phone' => '',
 		'adolescence_label' => 'Línea Adolescencia', 'adolescence_phone' => '',
-		'address' => '', 'phone' => '', 'email' => '',
+		'address' => '', 'phone' => '', 'email' => '', 'case_email' => '',
 		'facebook_url' => '', 'instagram_url' => '', 'x_url' => '', 'youtube_url' => '', 'google_play_url' => '',
 	);
 }
@@ -22,7 +22,7 @@ function ddna_core_sanitize_institutional_settings( $input ) {
 	foreach ( $defaults as $key => $default ) {
 		$value = isset( $input[ $key ] ) ? $input[ $key ] : $default;
 		$value = is_scalar( $value ) ? (string) $value : '';
-		if ( 'email' === $key ) { $output[ $key ] = sanitize_email( $value ); }
+		if ( in_array( $key, array( 'email', 'case_email' ), true ) ) { $output[ $key ] = sanitize_email( $value ); }
 		elseif ( str_ends_with( $key, '_url' ) ) { $output[ $key ] = esc_url_raw( $value ); }
 		else { $output[ $key ] = sanitize_text_field( $value ); }
 	}
@@ -45,7 +45,7 @@ function ddna_core_render_institutional_settings_page() {
 	$fields = array(
 		'assistance_label' => array( 'Etiqueta de la línea de asistencia', 'text' ), 'assistance_phone' => array( 'Teléfono de asistencia', 'text' ),
 		'adolescence_label' => array( 'Etiqueta de la línea de adolescencia', 'text' ), 'adolescence_phone' => array( 'Teléfono de adolescencia', 'text' ),
-		'address' => array( 'Dirección', 'text' ), 'phone' => array( 'Teléfono general', 'text' ), 'email' => array( 'Correo institucional', 'email' ),
+		'address' => array( 'Dirección', 'text' ), 'phone' => array( 'Teléfono general', 'text' ), 'email' => array( 'Correo institucional', 'email' ), 'case_email' => array( 'Correo de asistencia', 'email' ),
 		'facebook_url' => array( 'Facebook', 'url' ), 'instagram_url' => array( 'Instagram', 'url' ), 'x_url' => array( 'X', 'url' ),
 		'youtube_url' => array( 'YouTube', 'url' ), 'google_play_url' => array( 'Google Play', 'url' ),
 	);

@@ -30,6 +30,7 @@ function ddna_core_get_field_groups() {
 			'_ddna_end_date'     => array( 'label' => __( 'Fecha de finalización', 'ddna-core' ), 'type' => 'date' ),
 			'_ddna_contact_email'=> array( 'label' => __( 'Correo de contacto', 'ddna-core' ), 'type' => 'email' ),
 			'_ddna_external_url' => array( 'label' => __( 'Sitio o micrositio', 'ddna-core' ), 'type' => 'url' ),
+			'_ddna_link_pending' => array( 'label' => __( 'Enlace pendiente de definición', 'ddna-core' ), 'type' => 'checkbox' ),
 			'_ddna_featured'     => array( 'label' => __( 'Destacar en listados', 'ddna-core' ), 'type' => 'checkbox' ),
 		),
 		'campana' => array(
@@ -39,6 +40,7 @@ function ddna_core_get_field_groups() {
 			'_ddna_end_date'     => array( 'label' => __( 'Fecha de finalización', 'ddna-core' ), 'type' => 'date' ),
 			'_ddna_cta_label'    => array( 'label' => __( 'Texto del llamado a la acción', 'ddna-core' ), 'type' => 'text' ),
 			'_ddna_external_url' => array( 'label' => __( 'URL de campaña o acción', 'ddna-core' ), 'type' => 'url' ),
+			'_ddna_link_pending' => array( 'label' => __( 'Enlace pendiente de definición', 'ddna-core' ), 'type' => 'checkbox' ),
 			'_ddna_featured'     => array( 'label' => __( 'Destacar en listados', 'ddna-core' ), 'type' => 'checkbox' ),
 		),
 		'documento' => array(

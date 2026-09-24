@@ -2,23 +2,23 @@
 ( function () {
 	'use strict';
 
-	const root = document.querySelector( '[data-home-panels]' );
-	const triggers = Array.from( document.querySelectorAll( '[data-home-panel-trigger]' ) );
-	const panels = Array.from( document.querySelectorAll( '[data-home-panel]' ) );
+	const roots = Array.from( document.querySelectorAll( '[data-home-panels], [data-institutional-panels]' ) );
+	const triggers = Array.from( document.querySelectorAll( '[data-home-panel-trigger], [data-institutional-panel-trigger]' ) );
+	const panels = Array.from( document.querySelectorAll( '[data-home-panel], [data-institutional-panel]' ) );
 	const reducedMotion = window.matchMedia( '(prefers-reduced-motion: reduce)' );
 	const closeTimers = new WeakMap();
 	let activeId = '';
 
-	if ( ! root || ! triggers.length || ! panels.length ) {
+	if ( ! roots.length || ! triggers.length || ! panels.length ) {
 		return;
 	}
 
 	function getPanel( id ) {
-		return panels.find( function ( panel ) { return panel.dataset.homePanel === id; } );
+		return panels.find( function ( panel ) { return panel.dataset.homePanel === id || panel.dataset.institutionalPanel === id; } );
 	}
 
 	function getTrigger( id ) {
-		return triggers.find( function ( trigger ) { return trigger.dataset.homePanelTrigger === id; } );
+		return triggers.find( function ( trigger ) { return trigger.dataset.homePanelTrigger === id || trigger.dataset.institutionalPanelTrigger === id; } );
 	}
 
 	function closePanel( panel, immediate ) {
@@ -73,7 +73,8 @@
 		} );
 
 		triggers.forEach( function ( trigger ) {
-			trigger.setAttribute( 'aria-expanded', String( trigger.dataset.homePanelTrigger === id && Boolean( nextPanel ) ) );
+			const triggerId = trigger.dataset.homePanelTrigger || trigger.dataset.institutionalPanelTrigger;
+			trigger.setAttribute( 'aria-expanded', String( triggerId === id && Boolean( nextPanel ) ) );
 		} );
 
 		activeId = nextPanel ? id : '';
@@ -97,7 +98,7 @@
 
 	triggers.forEach( function ( trigger ) {
 		trigger.addEventListener( 'click', function () {
-			const id = trigger.dataset.homePanelTrigger;
+			const id = trigger.dataset.homePanelTrigger || trigger.dataset.institutionalPanelTrigger;
 			if ( activeId === id ) {
 				activate( '', { history: true } );
 				return;
@@ -106,8 +107,8 @@
 		} );
 	} );
 
-	root.querySelectorAll( '[data-inner-accordion]' ).forEach( function ( accordion ) {
-		accordion.querySelectorAll( '.knowledge-accordion__trigger' ).forEach( function ( trigger ) {
+	document.querySelectorAll( '[data-inner-accordion], [data-institutional-accordion]' ).forEach( function ( accordion ) {
+		accordion.querySelectorAll( '.knowledge-accordion__trigger, .institutional-accordion__trigger' ).forEach( function ( trigger ) {
 			trigger.addEventListener( 'click', function () {
 				const panel = document.getElementById( trigger.getAttribute( 'aria-controls' ) );
 				if ( ! panel ) { return; }

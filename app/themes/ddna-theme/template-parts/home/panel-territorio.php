@@ -63,7 +63,7 @@ $map_uri = get_template_directory_uri() . '/assets/images/territorio/mapa-cordob
 <section class="home-panel territory-panel" id="panel-territorio" data-home-panel="territorio" aria-labelledby="territory-title" hidden>
 	<div class="container container--content">
 		<div class="territory-card" data-territory-map>
-			<header class="territory-card__header"><h2 class="territory-card__title" id="territory-title"><?php esc_html_e( 'Territorio', 'ddna-theme' ); ?></h2><p><?php esc_html_e( 'Subsedes', 'ddna-theme' ); ?></p></header>
+			<header class="territory-card__header"><h2 class="territory-card__title" id="territory-title"><?php esc_html_e( 'Territorio', 'ddna-theme' ); ?></h2><p><?php esc_html_e( 'Nuestras subsedes y municipios MUNA', 'ddna-theme' ); ?></p></header>
 			<div class="territory-map">
 				<img class="territory-map__image" src="<?php echo esc_url( $map_uri ); ?>" alt="<?php esc_attr_e( 'Mapa de la provincia de Córdoba dividido por departamentos', 'ddna-theme' ); ?>" width="1024" height="1536" decoding="async">
 				<?php foreach ( $venues as $venue ) : ?>

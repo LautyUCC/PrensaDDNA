@@ -26,7 +26,7 @@ if ( is_front_page() ) {
 	return;
 }
 ?>
-<nav class="primary-navigation" aria-label="<?php esc_attr_e( 'Navegación principal', 'ddna-theme' ); ?>">
+<nav class="primary-navigation<?php echo is_page( 'novedades' ) ? ' primary-navigation--compact' : ''; ?>" aria-label="<?php esc_attr_e( 'Navegación principal', 'ddna-theme' ); ?>">
 	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="<?php esc_attr_e( 'Abrir menú principal', 'ddna-theme' ); ?>" data-open-label="<?php esc_attr_e( 'Abrir menú principal', 'ddna-theme' ); ?>" data-close-label="<?php esc_attr_e( 'Cerrar menú principal', 'ddna-theme' ); ?>">
 		<span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
 		<span class="menu-toggle__label"><?php esc_html_e( 'Menú', 'ddna-theme' ); ?></span>

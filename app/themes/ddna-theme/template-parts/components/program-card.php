@@ -2,11 +2,12 @@
 /** Dynamic program card. @package DDNA_Theme */
 $external_url = get_post_meta( get_the_ID(), '_ddna_external_url', true );
 $program_url  = $external_url ? $external_url : get_permalink();
+$link_pending = (bool) get_post_meta( get_the_ID(), '_ddna_link_pending', true );
 $heading_tag  = isset( $args['heading_level'] ) && 4 === (int) $args['heading_level'] ? 'h4' : 'h3';
 ?>
 <article <?php post_class( 'program-card carousel__item' ); ?>>
-	<a class="program-card__link" href="<?php echo esc_url( $program_url ); ?>">
+	<?php if ( $link_pending ) : ?><div class="program-card__link" aria-disabled="true"><?php else : ?><a class="program-card__link" href="<?php echo esc_url( $program_url ); ?>"><?php endif; ?>
 		<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'ddna-program-card', array( 'class' => 'program-card__image', 'sizes' => '(min-width: 1200px) 30vw, (min-width: 768px) 48vw, 88vw', 'loading' => 'lazy', 'decoding' => 'async' ) ); } ?>
 		<div class="program-card__content"><?php printf( '<%1$s class="program-card__title">%2$s</%1$s>', esc_attr( $heading_tag ), esc_html( get_the_title() ) ); ?><div class="program-card__excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></div></div>
-	</a>
+	<?php if ( $link_pending ) : ?></div><?php else : ?></a><?php endif; ?>
 </article>

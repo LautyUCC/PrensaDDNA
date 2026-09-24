@@ -79,15 +79,15 @@ $institutional_materials = array( 'Institucional', 'Manual de Identidad Visual',
 <section class="home-panel" id="panel-quiero-saber" data-home-panel="quiero-saber" aria-label="<?php esc_attr_e( 'Quiero saber', 'ddna-theme' ); ?>" hidden>
 	<div class="container container--content">
 		<div class="knowledge-panel">
-			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-reports-title"><h3 class="home-panel__section-title" id="knowledge-reports-title">Informes Anuales</h3><div class="knowledge-document-grid knowledge-document-grid--reports"><?php foreach ( $annual_reports as $item ) { $render_item( $item ); } ?></div></section>
 			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-prevention-title"><h3 class="home-panel__section-title" id="knowledge-prevention-title">Guías para la Prevención</h3><div class="knowledge-guide-grid knowledge-guide-grid--four"><?php foreach ( $prevention_guides as $item ) { $render_item( $item, 'guide' ); } ?></div></section>
 			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-care-title"><h3 class="home-panel__section-title" id="knowledge-care-title">Guías para una Crianza Cuidada</h3><div class="knowledge-guide-grid knowledge-guide-grid--care"><?php foreach ( $care_guides as $item ) { $render_item( $item, 'guide' ); } ?></div></section>
-			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-statements-title"><h3 class="home-panel__section-title" id="knowledge-statements-title">Comunicados y Pronunciamientos</h3><div class="knowledge-document-grid knowledge-document-grid--statements"><?php foreach ( $statements as $label ) { $render_item( array( 'label' => $label, 'icon' => 'documents/statements.png' ) ); } ?></div></section>
 			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-materials-title">
 				<h3 class="home-panel__section-title" id="knowledge-materials-title">Materiales Gráficos Descargables</h3>
-				<div class="knowledge-accordions" data-inner-accordion>
-					<div class="knowledge-accordion"><button class="knowledge-accordion__trigger" type="button" aria-expanded="true" aria-controls="knowledge-materials-institutional" id="knowledge-materials-institutional-trigger">Institucional<span aria-hidden="true"></span></button><div class="knowledge-accordion__panel" id="knowledge-materials-institutional" role="region" aria-labelledby="knowledge-materials-institutional-trigger"><div class="knowledge-material-grid"><?php foreach ( $institutional_materials as $label ) { $render_item( array( 'label' => $label, 'icon' => 'documents/annual-report.png' ), 'material' ); } ?></div></div></div>
-				</div>
+				<p class="panel-empty-state">La carpeta de materiales gráficos descargables estará disponible próximamente.</p>
+			</section>
+			<section class="home-panel__content knowledge-block" aria-labelledby="knowledge-didactic-title">
+				<h3 class="home-panel__section-title" id="knowledge-didactic-title">Recursos Didácticos</h3>
+				<a class="knowledge-item knowledge-item--material" href="https://youtube.com/playlist?list=PLXdxSIZhcTKwT-P10dblC2tN3dKWRXXxg&amp;si=Il_0hYxrd_vQ-TTH" target="_blank" rel="noopener noreferrer"><img class="knowledge-item__icon" src="<?php echo esc_url( $theme_icon( 'documents/material-download.png' ) ); ?>" alt="" width="96" height="96"><span class="knowledge-item__label">Ver recursos didácticos</span><span class="screen-reader-text"> <?php esc_html_e( '(se abre en una pestaña nueva)', 'ddna-theme' ); ?></span></a>
 			</section>
 		</div>
 	</div>

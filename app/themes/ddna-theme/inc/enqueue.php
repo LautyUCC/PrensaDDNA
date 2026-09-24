@@ -43,6 +43,10 @@ function ddna_theme_enqueue_assets() {
 		'ddna-theme-accessibility' => 'utilities/accessibility.css',
 	);
 
+	if ( is_page( 'novedades' ) ) {
+		$styles['ddna-theme-news-archive'] = 'components/news-archive.css';
+	}
+
 	if ( ! is_front_page() ) {
 		$styles['ddna-theme-cards']      = 'components/cards.css';
 		$styles['ddna-theme-site-shell'] = 'components/site-shell.css';

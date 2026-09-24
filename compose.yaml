@@ -53,6 +53,7 @@ services:
       - ./app/plugins/ddna-core:/var/www/html/wp-content/plugins/ddna-core
       - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
       - ./docker/wordpress/server-name.conf:/etc/apache2/conf-enabled/server-name.conf:ro
+      - ./docker/wordpress/wordpress.htaccess:/var/www/html/.htaccess:ro
     networks:
       - ddna
 

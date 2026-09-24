@@ -38,6 +38,7 @@ $lines = array(
 			<address class="site-footer__address">
 				<?php if ( ! empty( $details['address'] ) ) : ?><span><?php echo esc_html( $details['address'] ); ?></span><?php endif; ?>
 				<?php if ( ! empty( $details['email'] ) ) : ?><a href="mailto:<?php echo esc_attr( $details['email'] ); ?>"><?php echo esc_html( $details['email'] ); ?></a><?php endif; ?>
+				<?php if ( ! empty( $details['case_email'] ) ) : ?><a href="mailto:<?php echo esc_attr( $details['case_email'] ); ?>"><?php echo esc_html( $details['case_email'] ); ?></a><?php endif; ?>
 				<?php if ( ! empty( $details['phone'] ) ) : ?><a href="<?php echo esc_url( ddna_theme_phone_uri( $details['phone'] ) ); ?>"><?php echo esc_html( $details['phone'] ); ?></a><?php endif; ?>
 			</address>
 		</div>

@@ -14,6 +14,9 @@ Thumbs.db
 
 # Runtime and generated WordPress content
 wordpress/
+!docker/wordpress/
+!docker/wordpress/server-name.conf
+!docker/wordpress/wordpress.htaccess
 app/uploads/
 app/languages/
 app/upgrade/

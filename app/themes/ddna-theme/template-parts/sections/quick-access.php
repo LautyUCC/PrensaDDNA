@@ -1,11 +1,11 @@
 <?php
 /** Main controls for the interactive Home landing. @package DDNA_Theme */
 $accesses = array(
-	array( 'id' => 'necesito-ayuda', 'title' => 'Necesito ayuda', 'description' => 'Asesoramiento y Consultas', 'icon' => 15 ),
+	array( 'id' => 'necesito-ayuda', 'title' => 'Necesito ayuda', 'description' => 'Asistencia, orientación y consultas', 'icon' => 15 ),
 	array( 'id' => 'quiero-saber', 'title' => 'Quiero saber', 'description' => 'Información sobre derechos, recursos y herramientas', 'icon' => 17 ),
-	array( 'id' => 'quiero-conocer', 'title' => 'Quiero conocer', 'description' => 'Programas y acciones que ofrece la Defensoría', 'icon' => 19 ),
-	array( 'id' => 'observatorio', 'title' => 'Observatorio', 'description' => 'Informes, estudios e indicadores sobre la situación de NNyA', 'icon' => 23 ),
-	array( 'id' => 'territorio', 'title' => 'Territorio', 'description' => 'Nuestras subsedes', 'icon' => 21 ),
+	array( 'id' => 'quiero-conocer', 'title' => 'Quiero conocer', 'description' => 'Programas, talleres y acciones de la Defensoría', 'icon' => 19 ),
+	array( 'id' => 'observatorio', 'title' => 'Observatorio de Niñez, Adolescencia, Familia y Comunidad', 'description' => 'Datos, informes e investigaciones sobre la situación de NNyA', 'icon' => 23 ),
+	array( 'id' => 'territorio', 'title' => 'Territorio', 'description' => 'Nuestras subsedes y municipios MUNA', 'icon' => 21 ),
 	array( 'id' => 'actualidad', 'title' => 'Actualidad', 'description' => 'Novedades, agenda y prensa', 'icon' => 25 ),
 );
 $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
