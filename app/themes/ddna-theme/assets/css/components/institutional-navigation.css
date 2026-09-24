@@ -5,13 +5,16 @@
 }
 
 .institutional-navigation__list {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	max-width: var(--container-wide);
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 }
+
+.institutional-navigation__list > li { min-width: 0; flex: 1 1 20%; }
 
 .institutional-navigation__list a,
 .institutional-navigation__list button {
@@ -44,6 +47,9 @@
 	height: clamp(2rem, 3vw, 3.25rem);
 	object-fit: contain;
 }
+
+/* The supplied annual-report asset is white; match the black default icon set. */
+.institutional-navigation__icon--black { filter: brightness(0) saturate(100%); }
 
 .institutional-navigation__list a:hover img,
 .institutional-navigation__list button:hover img,
@@ -132,8 +138,12 @@
 .institutional-table td { border-bottom: 1px solid rgb(5 5 6 / 50%); }
 .institutional-table tbody tr:last-child td { border-bottom: 0; }
 
+@media (max-width: 74.9375rem) {
+	.institutional-navigation__list > li { flex: 0 1 33.333%; }
+}
+
 @media (max-width: 47.9375rem) {
-	.institutional-navigation__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.institutional-navigation__list > li { flex-basis: 50%; }
 	.institutional-navigation__list a,
 	.institutional-navigation__list button { min-height: 5rem; justify-content: flex-start; }
 	.institutional-panel__content { padding: 2rem 1rem; border-radius: var(--radius-md); }
@@ -144,7 +154,7 @@
 }
 
 @media (max-width: 22rem) {
-	.institutional-navigation__list { grid-template-columns: 1fr; }
+	.institutional-navigation__list > li { flex-basis: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

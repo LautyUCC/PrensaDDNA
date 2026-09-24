@@ -5,9 +5,9 @@ $link_tag = $campaign_url ? 'a' : 'div';
 $heading_tag  = isset( $args['heading_level'] ) && 4 === (int) $args['heading_level'] ? 'h4' : 'h3';
 $campaign_slug = get_post_field( 'post_name', get_the_ID() );
 $campaign_icons = array(
-	'hay-otra-forma-bullying' => 'bullying-prevention.png',
+	'hay-otra-forma-bullying' => 'hay-otra-forma-official.png',
 	'consumo-problematico' => 'substance-prevention.png',
-	'hay-otra-forma'                         => 'hay-otra-forma.png',
+	'hay-otra-forma'                         => 'hay-otra-forma-official.png',
 	'prevencion-de-bullying-y-ciberbullying' => 'bullying-prevention.png',
 	'guias-para-la-prevencion'               => 'bullying-prevention.png',
 	'prevencion-del-abuso-sexual'             => 'abuse-prevention.png',
@@ -17,7 +17,7 @@ $campaign_icons = array(
 	'vida-viaje-unico'                        => 'substance-prevention.png',
 );
 $campaign_icon = isset( $campaign_icons[ $campaign_slug ] ) ? $campaign_icons[ $campaign_slug ] : '';
-$campaign_icon_class = 'hay-otra-forma' === $campaign_slug ? ' campaign-card__icon--native' : '';
+$campaign_icon_class = in_array( $campaign_slug, array( 'hay-otra-forma', 'hay-otra-forma-bullying' ), true ) ? ' campaign-card__icon--native' : '';
 ?>
 <article <?php post_class( 'campaign-card carousel__item' ); ?>>
 	<<?php echo esc_html( $link_tag ); ?> class="campaign-card__link<?php echo $campaign_icon ? '' : ' campaign-card__link--without-icon'; ?>"<?php if ( $campaign_url ) : ?> href="<?php echo esc_url( $campaign_url ); ?>"<?php if ( wp_parse_url( $campaign_url, PHP_URL_HOST ) !== wp_parse_url( home_url(), PHP_URL_HOST ) ) : ?> target="_blank" rel="noopener noreferrer"<?php endif; ?><?php else : ?> aria-disabled="true"<?php endif; ?>>

@@ -68,10 +68,19 @@ function ddna_theme_render_editorial_page( $slug ) {
 	if ( $page && 'publish' === $page->post_status ) { echo apply_filters( 'the_content', $page->post_content ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
 
+function ddna_theme_program_dossier_key( $post_id ) {
+	$keys = array(
+		'programa-va-con-vos'                          => 'va_con_vos_dossier',
+		'programa-entre-pantallas'                     => 'entre_pantallas_dossier',
+		'desarrollo-integral-primeros-anos-vida'       => 'desarrollo_integral_dossier',
+	);
+	$slug = get_post_field( 'post_name', $post_id );
+	return $keys[ $slug ] ?? '';
+}
+
 function ddna_theme_card_destination( $post_id ) {
 	$external = get_post_meta( $post_id, '_ddna_external_url', true );
-	$keys = array( 'programa-va-con-vos' => 'va_con_vos_dossier', 'programa-entre-pantallas' => 'entre_pantallas_dossier', 'desarrollo-integral-primeros-anos-vida' => 'desarrollo_integral_dossier' );
-	$slug = get_post_field( 'post_name', $post_id );
-	$resource = isset( $keys[ $slug ] ) ? ddna_theme_editorial_url( $keys[ $slug ] ) : '';
-	return $external ?: ( $resource ?: ( get_post_meta( $post_id, '_ddna_destination_pending', true ) ? '' : get_permalink( $post_id ) ) );
+	$dossier_key = ddna_theme_program_dossier_key( $post_id );
+	$resource = $dossier_key ? ddna_theme_editorial_url( $dossier_key ) : '';
+	return $resource ?: ( $external ?: ( get_post_meta( $post_id, '_ddna_destination_pending', true ) ? '' : get_permalink( $post_id ) ) );
 }

@@ -47,6 +47,14 @@ function ddna_theme_enqueue_assets() {
 		$styles['ddna-theme-news-archive'] = 'components/news-archive.css';
 	}
 
+	if ( is_page( 'informes-anuales' ) ) {
+		$styles['ddna-theme-annual-reports'] = 'components/annual-reports.css';
+	}
+
+	if ( is_page( array( 'hay-otra-forma-prevencion-maltrato', 'hay-otra-forma-prevencion-bullying' ) ) ) {
+		$styles['ddna-theme-hay-otra-forma'] = 'components/hay-otra-forma.css';
+	}
+
 	if ( ! is_front_page() ) {
 		$styles['ddna-theme-cards']      = 'components/cards.css';
 		$styles['ddna-theme-site-shell'] = 'components/site-shell.css';

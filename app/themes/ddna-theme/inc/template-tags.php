@@ -35,6 +35,61 @@ function ddna_theme_container_classes( $classes = array() ) {
 }
 
 /**
+ * Determines whether the current page belongs to the institutional area.
+ *
+ * Institutional child pages inherit the Home header and its panel menu,
+ * without duplicating that header or the Home hero.
+ *
+ * @return bool
+ */
+function ddna_theme_is_institutional_page() {
+	if ( ! is_page() ) {
+		return false;
+	}
+
+	$institutional_slugs = array( 'defensoria', 'informes-anuales', 'normativas', 'convenios', 'contacto', 'hay-otra-forma-prevencion-maltrato', 'hay-otra-forma-prevencion-bullying' );
+	$page_id             = get_queried_object_id();
+
+	while ( $page_id ) {
+		$page = get_post( $page_id );
+		if ( ! $page ) {
+			return false;
+		}
+
+		if ( in_array( $page->post_name, $institutional_slugs, true ) ) {
+			return true;
+		}
+
+		$page_id = (int) $page->post_parent;
+	}
+
+	return false;
+}
+
+/** Returns the environment-configured public URL for the Observatory. */
+function ddna_theme_observatory_url() {
+	$url   = defined( 'DDNA_OBSERVATORIO_URL' ) ? trim( (string) DDNA_OBSERVATORIO_URL ) : '';
+	$parts = $url ? wp_parse_url( $url ) : false;
+	if ( ! $parts || empty( $parts['host'] ) || empty( $parts['scheme'] ) || ! in_array( $parts['scheme'], array( 'http', 'https' ), true ) ) {
+		return '';
+	}
+	return esc_url_raw( $url );
+}
+
+/**
+ * Returns a Home panel URL that works both on the Home and on inner pages.
+ *
+ * @param string $panel_id Home panel identifier.
+ * @return string
+ */
+function ddna_theme_home_panel_url( $panel_id ) {
+	if ( 'observatorio' === $panel_id ) {
+		return ddna_theme_observatory_url();
+	}
+	return home_url( '/#' . rawurlencode( $panel_id ) );
+}
+
+/**
  * Muestra una navegación básica cuando todavía no existe un menú asignado.
  */
 function ddna_theme_primary_menu_fallback() {

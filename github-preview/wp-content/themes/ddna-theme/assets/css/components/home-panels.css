@@ -232,6 +232,48 @@ a.contact-card:focus-visible { outline: 3px solid var(--color-focus); outline-of
 	overflow-wrap: anywhere;
 }
 
+/* Contact is the only full-page use of this card collection. Its wider desktop
+ * container avoids compressing three channels into unreadable columns. */
+@media (min-width: 48rem) {
+	.site-container--contact {
+		width: min(calc(100% - var(--container-gutter) - var(--container-gutter)), 100rem);
+	}
+
+	.site-container--contact .entry--page { width: 100%; }
+
+	.site-container--contact .contact-cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.site-container--contact .contact-card {
+		display: grid;
+		grid-template-columns: clamp(2.75rem, 3vw, 3.5rem) minmax(0, 1fr);
+		min-height: 0;
+		gap: clamp(0.75rem, 1.25vw, 1rem);
+		padding: clamp(1rem, 1.5vw, 1.25rem);
+	}
+
+	.site-container--contact .contact-card__icon {
+		width: 100%;
+		height: auto;
+	}
+
+	.site-container--contact .contact-card a[href^="tel:"] {
+		overflow-wrap: normal;
+		white-space: nowrap;
+	}
+
+	.site-container--contact .contact-card a[href^="mailto:"] {
+		overflow-wrap: break-word;
+		word-break: normal;
+	}
+}
+
+@media (min-width: 75rem) {
+	.site-container--contact .contact-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 .content-collection {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));

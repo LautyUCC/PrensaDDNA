@@ -1,0 +1,31 @@
+# Servicio local independiente del Dashboard del Observatorio.
+# No comparte red, volumen ni base de datos con WordPress.
+services:
+  dashboard:
+    image: ddna-dashboard:local
+    build:
+      context: ../ddna-dashboard
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BASE_PATH: /observatorio
+        # Next.js embeds NEXT_PUBLIC_* values in browser bundles at build time.
+        # Invoke Compose with --env-file ../ddna-dashboard/.env.local so these
+        # public settings come from the ignored local file, never from Git.
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY:-}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${DASHBOARD_PORT:-3001}:3000"
+    env_file:
+      - ../ddna-dashboard/.env.local
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      NEXT_PUBLIC_BASE_PATH: /observatorio
+    networks:
+      - observatorio
+
+networks:
+  observatorio:
+    name: ddna-observatorio-local
+    driver: bridge

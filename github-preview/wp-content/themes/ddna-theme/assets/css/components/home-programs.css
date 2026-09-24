@@ -44,16 +44,19 @@
 	right: var(--space-4);
 	bottom: var(--space-5);
 	left: var(--space-4);
-	padding: var(--space-3) var(--space-4);
 	max-height: calc(100% - (2 * var(--space-5)));
 	overflow: hidden;
-	border-radius: var(--radius-sm);
-	background: var(--color-surface);
 }
 
-.program-card__title { font-size: clamp(1.35rem, 1.9vw, 2.5rem); line-height: 1.05; overflow-wrap: anywhere; }
-.program-card__excerpt { display: -webkit-box; margin-top: var(--space-2); overflow: hidden; font-size: clamp(0.95rem, 1.1vw, 1.25rem); line-height: 1.25; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
-.program-card__excerpt p { margin: 0; }
+.program-card__title { margin: 0; font-size: clamp(1.35rem, 1.9vw, 2.5rem); line-height: 1.12; overflow-wrap: anywhere; }
+.program-card__excerpt { margin: 0.45rem 0 0; font-size: clamp(0.95rem, 1.1vw, 1.25rem); line-height: 1.32; overflow-wrap: anywhere; }
+.program-card__text-shape {
+	padding: 0.12em 0.38em 0.18em;
+	border-radius: 0.38em;
+	background: var(--color-surface);
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+}
 
 #panel-quiero-conocer .home-programs .carousel-controls {
 	--program-control-offset: clamp(2rem, 3vw, 3.5rem);

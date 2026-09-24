@@ -1,0 +1,40 @@
+.hof-campaign { --hof-ink:#352522; --hof-paper:#ebe9e9; --hof-sand:#dab89f; --hof-green:#00e698; --hof-rose:#b44b84; color:var(--hof-ink); background:var(--hof-paper); font-family:var(--font-family-base); overflow:hidden; }
+.hof-campaign *, .hof-campaign *::before, .hof-campaign *::after { box-sizing:border-box; }
+.hof-campaign img { display:block; max-width:100%; height:auto; }
+.hof-campaign__container { width:min(70rem, calc(100% - 2 * var(--space-5))); margin-inline:auto; }
+.hof-campaign__hero, .hof-campaign__section { padding-block:clamp(3rem, 7vw, 6rem); }
+.hof-campaign__hero { background:var(--hof-paper); }
+.hof-campaign__hero-grid, .hof-campaign__split { display:grid; grid-template-columns:minmax(0, 1.05fr) minmax(18rem, .95fr); gap:clamp(2rem, 6vw, 4.5rem); align-items:center; }
+.hof-campaign__logo { width:min(21rem, 100%); margin:0 0 var(--space-5); object-fit:contain; }
+.hof-campaign__eyebrow { margin:0 0 var(--space-3); color:var(--hof-rose); font-size:.8rem; font-weight:var(--font-weight-black); letter-spacing:.08em; text-transform:uppercase; }
+.hof-campaign h1, .hof-campaign h2, .hof-campaign h3 { margin:0; color:var(--hof-ink); font-weight:var(--font-weight-black); line-height:1; text-wrap:balance; }
+.hof-campaign h1 { font-size:clamp(2.5rem, 5.2vw, 4.8rem); }
+.hof-campaign h2 { font-size:clamp(2rem, 4.2vw, 3.6rem); }
+.hof-campaign h3 { font-size:clamp(1.3rem, 2.3vw, 1.75rem); }
+.hof-campaign__lead { max-width:42rem; margin:var(--space-5) 0 0; font-size:clamp(1.05rem, 1.8vw, 1.35rem); line-height:1.4; }
+.hof-campaign__hero-art img { width:100%; max-height:34rem; object-fit:contain; }
+.hof-campaign__nav { display:flex; flex-wrap:wrap; gap:.65rem; margin-top:var(--space-5); }
+.hof-campaign__nav a { min-height:2.6rem; display:inline-flex; align-items:center; padding:.5rem .85rem; border:2px solid var(--hof-ink); border-radius:.45rem; background:#fff; box-shadow:4px 4px 0 var(--hof-green); color:var(--hof-ink); font-size:.88rem; font-weight:var(--font-weight-bold); text-decoration:none; }
+.hof-campaign__nav a:hover, .hof-campaign__nav a:focus-visible { transform:translate(2px, 2px); box-shadow:2px 2px 0 var(--hof-green); }
+.hof-campaign__section--white { background:#fff; }
+.hof-campaign__section--sand { background:var(--hof-sand); }
+.hof-campaign__section--paper { background:var(--hof-paper); }
+.hof-campaign__section-heading { max-width:48rem; margin:0 auto clamp(2rem, 4vw, 3.5rem); text-align:center; }
+.hof-campaign__section-heading p { margin:var(--space-4) 0 0; line-height:1.45; }
+.hof-campaign__videos { display:grid; grid-template-columns:minmax(0, 1.15fr) minmax(18rem, .85fr); gap:var(--space-5); }
+.hof-campaign__video-frame { overflow:hidden; aspect-ratio:16/9; border:2px solid var(--hof-ink); border-radius:.55rem; background:#111; box-shadow:8px 8px 0 rgb(53 37 34 / 16%); }
+.hof-campaign__video-frame iframe { width:100%; height:100%; border:0; }
+.hof-campaign__video-list { display:grid; gap:.9rem; align-content:start; }
+.hof-campaign__video-link { display:grid; grid-template-columns:8rem minmax(0, 1fr); gap:1rem; align-items:center; min-height:6.25rem; padding:.75rem; border:2px solid var(--hof-ink); border-radius:.55rem; background:#fff; box-shadow:5px 5px 0 rgb(53 37 34 / 16%); color:var(--hof-ink); text-decoration:none; }
+.hof-campaign__video-link img { width:8rem; aspect-ratio:16/9; object-fit:cover; border-radius:.25rem; }
+.hof-campaign__video-link strong, .hof-campaign__video-link small { display:block; line-height:1.18; }.hof-campaign__video-link small { margin-top:.35rem; }
+.hof-campaign__quote-grid, .hof-campaign__tip-grid, .hof-campaign__role-grid, .hof-campaign__stat-grid, .hof-campaign__download-grid { display:grid; gap:var(--space-4); }
+.hof-campaign__quote-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.hof-campaign__tip-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }.hof-campaign__role-grid, .hof-campaign__stat-grid, .hof-campaign__download-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.hof-campaign__quote-grid article, .hof-campaign__tip-grid article, .hof-campaign__role-grid article, .hof-campaign__stat-grid article { padding:clamp(1.15rem,2vw,1.6rem); border:2px solid var(--hof-ink); border-radius:.55rem; background:#fff; box-shadow:7px 7px 0 rgb(53 37 34 / 16%); }
+.hof-campaign__quote-grid h3 { font-family:cursive; font-size:clamp(1.65rem,3.5vw,2.4rem); }.hof-campaign__quote-grid p, .hof-campaign__tip-grid p, .hof-campaign__role-grid p, .hof-campaign__stat-grid p { margin:var(--space-3) 0 0; line-height:1.38; }
+.hof-campaign__tip-grid img { width:3.5rem; height:3.5rem; margin-bottom:var(--space-3); object-fit:contain; }.hof-campaign__role-grid article, .hof-campaign__stat-grid article { text-align:center; }.hof-campaign__role-grid img { height:7rem; margin:0 auto var(--space-3); object-fit:contain; }
+.hof-campaign__guide { width:min(25rem,100%); margin-bottom:var(--space-4); }.hof-campaign__guide-art { display:grid; gap:var(--space-4); }.hof-campaign__guide-art img { width:100%; }
+.hof-campaign__number-logo, .hof-campaign__roles-logo { width:min(24rem,90%); margin:0 auto var(--space-4); object-fit:contain; }.hof-campaign__stat-grid strong { color:var(--hof-green); font-family:cursive; font-size:clamp(3rem,6vw,4.5rem); line-height:1; -webkit-text-stroke:1px var(--hof-ink); }.hof-campaign__stat-grid small { display:block; margin-top:var(--space-3); font-style:italic; }
+.hof-campaign__download-grid a { overflow:hidden; border:2px solid var(--hof-ink); border-radius:.55rem; background:#fff; box-shadow:7px 7px 0 rgb(53 37 34 / 16%); color:var(--hof-ink); text-align:center; text-decoration:none; }.hof-campaign__download-grid img { width:100%; aspect-ratio:9/16; object-fit:cover; }.hof-campaign__download-grid span { display:block; padding:var(--space-3); font-weight:var(--font-weight-bold); }
+@media (max-width:63.9375rem) { .hof-campaign__hero-grid, .hof-campaign__split, .hof-campaign__videos { grid-template-columns:1fr; }.hof-campaign__hero-art { max-width:34rem; margin-inline:auto; }.hof-campaign__tip-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:47.9375rem) { .hof-campaign__container { width:min(100% - 2rem,70rem); }.hof-campaign__quote-grid, .hof-campaign__tip-grid, .hof-campaign__role-grid, .hof-campaign__stat-grid, .hof-campaign__download-grid { grid-template-columns:1fr; }.hof-campaign__video-link { grid-template-columns:1fr; }.hof-campaign__video-link img { width:100%; }.hof-campaign__nav a { flex:1 1 auto; justify-content:center; } }

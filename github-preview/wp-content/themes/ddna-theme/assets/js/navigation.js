@@ -14,6 +14,7 @@
 	const submenuButtons = navigation.querySelectorAll( '.submenu-toggle' );
 	const mobileQuery = window.matchMedia( '(max-width: 74.9375rem)' );
 	const homePanelMenu = navigation.classList.contains( 'primary-navigation--home' );
+	const compactMenu = navigation.classList.contains( 'primary-navigation--compact' );
 	const openLabel = menuButton ? menuButton.dataset.openLabel : '';
 	const closeLabel = menuButton ? menuButton.dataset.closeLabel : '';
 
@@ -90,7 +91,7 @@
 	} );
 
 	document.addEventListener( 'click', function ( event ) {
-		if ( ( mobileQuery.matches || homePanelMenu ) && navigation.classList.contains( 'is-open' ) && ! navigation.contains( event.target ) ) {
+		if ( ( mobileQuery.matches || homePanelMenu || compactMenu ) && navigation.classList.contains( 'is-open' ) && ! navigation.contains( event.target ) ) {
 			closeMenu( false );
 		}
 	} );

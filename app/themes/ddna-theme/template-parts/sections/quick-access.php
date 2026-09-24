@@ -20,6 +20,14 @@ foreach ( $accesses as &$access ) {
 	}
 }
 unset( $access );
+
+foreach ( $accesses as &$access ) {
+	if ( 'observatorio' === $access['id'] ) {
+		$access['title'] = 'OBSERVATORIO';
+		break;
+	}
+}
+unset( $access );
 $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
 ?>
 <nav class="quick-access" aria-labelledby="quick-access-title">
@@ -27,7 +35,8 @@ $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
 		<h2 class="screen-reader-text" id="quick-access-title"><?php esc_html_e( 'Explorar contenidos de la Defensoría', 'ddna-theme' ); ?></h2>
 		<ul class="quick-access__grid" role="list">
 			<?php foreach ( $accesses as $access ) : ?>
-				<li><button class="quick-access-card" type="button" data-home-panel-trigger="<?php echo esc_attr( $access['id'] ); ?>" aria-expanded="false" aria-controls="panel-<?php echo esc_attr( $access['id'] ); ?>">
+				<?php $is_observatory = 'observatorio' === $access['id']; $observatory_url = $is_observatory ? ddna_theme_observatory_url() : ''; ?>
+				<li><?php if ( $is_observatory && $observatory_url ) : ?><a class="quick-access-card" href="<?php echo esc_url( $observatory_url ); ?>" aria-label="<?php esc_attr_e( 'Abrir el Dashboard del Observatorio', 'ddna-theme' ); ?>"><?php else : ?><button class="quick-access-card" type="button" data-home-panel-trigger="<?php echo esc_attr( $access['id'] ); ?>" aria-expanded="false" aria-controls="panel-<?php echo esc_attr( $access['id'] ); ?>"><?php endif; ?>
 					<span class="quick-access-card__icons" aria-hidden="true">
 						<img class="quick-access-card__icon quick-access-card__icon--closed" src="<?php echo esc_url( $icons_uri . 'home-' . $access['icon'] . '.png' ); ?>" alt="" width="350" height="321">
 						<img class="quick-access-card__icon quick-access-card__icon--open" src="<?php echo esc_url( $icons_uri . 'home-' . ( $access['icon'] + 1 ) . '.png' ); ?>" alt="" width="350" height="321">
@@ -35,7 +44,7 @@ $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
 					<strong class="quick-access-card__title"><?php echo esc_html( $access['title'] ); ?></strong>
 					<span class="quick-access-card__description"><?php echo esc_html( $access['description'] ); ?></span>
 					<span class="quick-access-card__indicator" aria-hidden="true"></span>
-				</button></li>
+				<?php echo $is_observatory && $observatory_url ? '</a>' : '</button>'; ?></li>
 			<?php endforeach; ?>
 		</ul>
 	</div>
