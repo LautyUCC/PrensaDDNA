@@ -69,6 +69,10 @@ function ddna_theme_is_institutional_page() {
 /** Returns the environment-configured public URL for the Observatory. */
 function ddna_theme_observatory_url() {
 	$url   = defined( 'DDNA_OBSERVATORIO_URL' ) ? trim( (string) DDNA_OBSERVATORIO_URL ) : '';
+	// A root-relative Observatory URL stays on the WordPress origin.
+	if ( str_starts_with( $url, '/' ) && ! str_starts_with( $url, '//' ) ) {
+		return esc_url_raw( home_url( $url ) );
+	}
 	$parts = $url ? wp_parse_url( $url ) : false;
 	if ( ! $parts || empty( $parts['host'] ) || empty( $parts['scheme'] ) || ! in_array( $parts['scheme'], array( 'http', 'https' ), true ) ) {
 		return '';
