@@ -13,15 +13,30 @@
 	}
 
 	maps.forEach( function ( map ) {
-		map.querySelectorAll( '[data-territory-marker]' ).forEach( function ( marker ) {
+		const markers = Array.from( map.querySelectorAll( '[data-territory-marker]' ) );
+		map.addEventListener( 'click', function ( event ) {
+			let marker = event.target.closest( '[data-territory-marker]' );
+			if ( ! marker || ! map.contains( marker ) ) { return; }
+
+			// Partition overlapping hit areas by their nearest centre. Pin anchors and
+			// venue coordinates remain unchanged; keyboard activation keeps its target.
+			if ( event.detail !== 0 ) {
+				let nearestDistance = Infinity;
+				markers.forEach( function ( candidate ) {
+					const rect = candidate.getBoundingClientRect();
+					if ( ! rect.width || ! rect.height || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom ) { return; }
+					const distance = Math.hypot( event.clientX - rect.left - rect.width / 2, event.clientY - rect.top - rect.height / 2 );
+					if ( distance < nearestDistance ) { nearestDistance = distance; marker = candidate; }
+				} );
+			}
+
 			const popover = document.getElementById( marker.getAttribute( 'aria-controls' ) );
 			if ( ! popover ) { return; }
-			marker.addEventListener( 'click', function () {
-				const opening = 'true' !== marker.getAttribute( 'aria-expanded' );
-				maps.forEach( function ( item ) { closeMap( item, false ); } );
-				marker.setAttribute( 'aria-expanded', String( opening ) );
-				popover.hidden = ! opening;
-			} );
+			const opening = 'true' !== marker.getAttribute( 'aria-expanded' );
+			maps.forEach( function ( item ) { closeMap( item, false ); } );
+			marker.setAttribute( 'aria-expanded', String( opening ) );
+			popover.hidden = ! opening;
+			marker.focus( { preventScroll: true } );
 		} );
 		map.querySelectorAll( '[data-territory-close]' ).forEach( function ( close ) {
 			close.addEventListener( 'click', function () { closeMap( map, true ); } );
