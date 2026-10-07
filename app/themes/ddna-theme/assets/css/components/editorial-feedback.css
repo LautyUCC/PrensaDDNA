@@ -1,0 +1,48 @@
+/* Shared width and breathing room for institutional and program pages. */
+.editorial-page-layout { padding-block: clamp(2rem, 4vw, 4rem) clamp(3rem, 6vw, 6rem); }
+.site-container--editorial { width: min(calc(100% - var(--container-gutter) - var(--container-gutter)), var(--container-wide)); }
+.editorial-page-layout .entry--page { width: 100%; padding: clamp(1.25rem, 3vw, 3rem); }
+.editorial-page-layout .entry--page .entry-header { margin-bottom: 2rem; }
+.editorial-page-layout .entry--page .entry-content { min-width: 0; }
+.entry-content .panel-accordion summary { max-width: 100%; }
+.entry-content .panel-accordion__content > h3 { margin-block: 1.75rem 0.75rem; }
+.entry-content .panel-accordion__content > h3:first-child { margin-top: 0; }
+.entry-content .panel-accordion__content > p { margin-block: 0.8rem; }
+.entry-content .panel-accordion__content > ul { margin-block: 0.5rem 1.5rem; }
+.panel-accordion--contact .contact-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.contact-card__content { min-width: 0; }
+.contact-card__value { overflow-wrap: anywhere; word-break: normal; }
+.editorial-page-layout--defensoria .entry-content > .panel-accordion:last-of-type { margin-bottom: 2rem; }
+.conventions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: center; justify-items: center; }
+.conventions-grid > img { display: block; width: 100%; height: auto; min-width: 0; object-fit: contain; }
+.normativa-section { margin-bottom: 2rem; }
+.normativa-section h2 { margin: 0 0 1.25rem; }
+.normativa-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.normativa-document { white-space: normal; text-align: center; min-width: 0; }
+/* Flex wrapping centres both the five-card first row and four-card second row. */
+.knowledge-guide-grid--care { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 62rem; margin-inline: auto; }
+.knowledge-guide-grid--care .knowledge-item { flex: 0 1 calc((100% - 4rem) / 5); transform: none; }
+.knowledge-guide-grid--care .knowledge-item:nth-child(n + 6) { transform: none; }
+/* Source program images already include their own title and border. */
+.program-card { transform: none; background: transparent; }
+.program-card__link { min-height: 0; border: 0; background: transparent; transform: none; }
+.program-card__link::after { content: none; }
+.program-card__image { position: static; display: block; width: 100%; height: auto; object-fit: contain; }
+.program-card__link:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.home-news.home-section--nested { padding: 0; }
+.home-news.home-section--nested .section-frame__header { position: static; margin: 0 0 var(--space-5); padding: 0; background: transparent; transform: none; }
+.home-news.home-section--nested .section-frame__header::after { content: none; }
+.home-news.home-section--nested .section-frame__title { font-size: clamp(2rem, 4vw, 4.5rem); }
+@media (min-width: 48rem) {
+	.site-container--editorial .contact-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 63.9375rem) {
+	.knowledge-guide-grid--care .knowledge-item { flex-basis: calc((100% - 2rem) / 3); }
+}
+@media (max-width: 47.9375rem) {
+	.conventions-grid, .normativa-links, .panel-accordion--contact .contact-cards { grid-template-columns: 1fr; }
+	.knowledge-guide-grid--care .knowledge-item { flex-basis: calc((100% - 1rem) / 2); }
+}
+@media (max-width: 23.4375rem) {
+	.knowledge-guide-grid--care .knowledge-item { flex-basis: 100%; }
+}

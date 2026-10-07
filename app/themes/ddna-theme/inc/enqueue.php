@@ -61,6 +61,8 @@ function ddna_theme_enqueue_assets() {
 		$styles['ddna-theme-main']       = 'main.css';
 	}
 
+	$styles['ddna-theme-editorial-feedback'] = 'components/editorial-feedback.css';
+
 	foreach ( $styles as $handle => $relative_path ) {
 		$file_path = $theme_path . '/assets/css/' . $relative_path;
 		$version   = file_exists( $file_path ) ? (string) filemtime( $file_path ) : $theme_version;

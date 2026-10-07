@@ -125,6 +125,16 @@ La ausencia de una prohibición en una tarea futura no debe interpretarse como a
 
 ## 8. Referencias
 
+### Publicación controlada aprobada — 7 de octubre de 2026
+
+El usuario respondió `APROBADO PARA PUBLICAR` luego de las dos rondas de revisión local. Autoriza preparar/publicar el lote editorial y visual aprobado en el WordPress del VPS de revisión (http://179.199.132.207), con manifiesto de nueve guías y cinco normativas e importación WP-CLI acotada; se preservan contenido histórico, uploads anteriores y demás servicios. No autoriza tocar https://ddna.cba.gov.ar/, CI/CD, Dashboard, Supabase, Caddy, DNS ni sustituir/restaurar bases de datos. El respaldo previo es obligatorio para la operación controlada. Los iconos faltantes de las dos campañas se informaron antes de la aprobación.
+
+### Feedback de Prensa — octubre de 2026, exclusivamente local
+
+La solicitud explícita de este lote autoriza los ajustes de presentación y contenidos institucionales, contacto, guías, convenios, programas, campañas, territorio y novedades detallados en `feedback-prensa-octubre.md`. Incluye importar en Media Library local nueve guías provistas y los cinco PDFs enlazados en la fuente canónica de Normativa, con manifiesto y WP-CLI reproducibles. Los informes y tres dossiers ya presentes en los recursos del repositorio se usan como fixtures de revisión en una DB local independiente; no se copió una DB ni una biblioteca productiva.
+
+Se trabaja en `feature/feedback-prensa-octubre`, desde `9945d18e38d3c2abbef920f13602c0304a142b7d`, sin commit, push, PR, merge, acceso al VPS o deploy. La frase `APROBADO PARA PUBLICAR` habilitará preparar una publicación controlada futura; esta solicitud no autoriza ejecutarla ahora ni modificar infraestructura, Dashboard o datos productivos.
+
 ### Ampliación local autorizada — 14 de septiembre de 2026
 
 La solicitud explícita de actualización global con `DDNA_CONTENIDOS_FINAL_SEPT_2026_Codex.md` amplía la etapa local: contenidos finales de Home/institucional, nueve páginas nuevas (incluidas tres páginas de programas), convenios, estructura de Agenda/Prensa/Comunicados y contacto final. Se conserva el lenguaje visual; páginas/CPT existentes se reutilizan sin importar historia productiva.

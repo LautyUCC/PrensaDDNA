@@ -16,7 +16,8 @@ foreach ( $manifest['pages'] as $item ) {
 	$page = get_page_by_path( $item['slug'] );
 	if ( ! $page || 'publish' !== $page->post_status || $page->post_title !== $item['title'] ) { $errors[] = 'Página: ' . $item['slug']; }
 }
-foreach ( array( 'programa' => 6, 'campana' => 3 ) as $type => $expected ) {
+$campaign_count = get_option( 'ddna_feedback_prensa_octubre_digest' ) ? 5 : 3;
+foreach ( array( 'programa' => 6, 'campana' => $campaign_count ) as $type => $expected ) {
 	$posts = get_posts( array( 'post_type' => $type, 'posts_per_page' => -1, 'meta_key' => '_ddna_featured', 'meta_value' => '1' ) );
 	if ( count( $posts ) !== $expected ) { $errors[] = 'Selección: ' . $type; }
 }
@@ -31,4 +32,4 @@ if ( '' !== $input['case_email'] || str_contains( $input['phone'], '<' ) ) { $er
 if ( ! str_contains( do_shortcode( '[ddna_contact]' ), 'tel:+543514288881' ) ) { $errors[] = 'Contacto no utiliza tel correcto'; }
 WP_CLI::log( 'Archivos PHP comprobados: ' . $count );
 if ( $errors ) { WP_CLI::error( implode( "\n", $errors ) ); }
-WP_CLI::success( 'PHP, páginas, selección 6/3, contacto, shortcodes y preservación de registros verificados.' );
+WP_CLI::success( 'PHP, páginas, selección 6/' . $campaign_count . ', contacto, shortcodes y preservación de registros verificados.' );

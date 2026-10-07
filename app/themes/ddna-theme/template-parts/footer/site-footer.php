@@ -6,7 +6,7 @@
  */
 
 $details          = function_exists( 'ddna_core_get_institutional_settings' ) ? ddna_core_get_institutional_settings() : array();
-$footer_logo      = get_template_directory_uri() . '/assets/images/logos/ddna-footer-2026.png';
+$footer_logo      = get_template_directory_uri() . '/assets/images/logos/ddna-footer-negativo.png';
 $whatsapp_icon    = get_template_directory_uri() . '/assets/icons/contact/contact-whatsapp.png';
 $assistance_phone = $details['assistance_phone'] ?? '';
 $whatsapp_number  = preg_replace( '/\D+/', '', $assistance_phone );
@@ -49,7 +49,7 @@ if ( isset( $address_parts[1] ) && 'Nueva Córdoba' === $address_parts[1] ) {
 	<div class="container container--wide site-footer__inner">
 		<div class="site-footer__identity">
 			<a class="site-footer__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img class="site-footer__logo" src="<?php echo esc_url( $footer_logo ); ?>" alt="<?php esc_attr_e( 'Defensoría de los Derechos de Niñas, Niños y Adolescentes', 'ddna-theme' ); ?>" width="2197" height="1498" loading="lazy" decoding="async">
+				<img class="site-footer__logo" src="<?php echo esc_url( $footer_logo ); ?>" alt="<?php esc_attr_e( 'Defensoría de los Derechos de Niñas, Niños y Adolescentes', 'ddna-theme' ); ?>" width="875" height="680" loading="lazy" decoding="async">
 			</a>
 		</div>
 

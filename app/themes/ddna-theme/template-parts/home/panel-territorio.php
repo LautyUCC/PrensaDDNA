@@ -31,7 +31,7 @@ $muna_logo_uri = get_template_directory_uri() . '/assets/images/territorio/muna-
 			<header class="territory-card__header"><h2 class="territory-card__title" id="territory-title"><?php esc_html_e( 'Territorio', 'ddna-theme' ); ?></h2><p><?php esc_html_e( 'Nuestras subsedes y municipios MUNA', 'ddna-theme' ); ?></p></header>
 			<div class="territory-map">
 				<div class="territory-map__canvas">
-				<img class="territory-map__image" src="<?php echo esc_url( $map_uri ); ?>" alt="<?php esc_attr_e( 'Mapa de la provincia de Córdoba dividido por departamentos', 'ddna-theme' ); ?>" width="1024" height="1536" decoding="async">
+				<img class="territory-map__image" src="<?php echo esc_url( $map_uri ); ?>" alt="<?php esc_attr_e( 'Mapa de la provincia de Córdoba dividido por departamentos', 'ddna-theme' ); ?>" width="1009" height="1559" decoding="async">
 				<?php foreach ( $venues as $venue ) : ?>
 					<button class="territory-marker" type="button" style="--marker-left: <?php echo esc_attr( $venue['left'] ); ?>; --marker-top: <?php echo esc_attr( $venue['top'] ); ?>; --marker-stack: <?php echo esc_attr( $venue['stack'] ?? 3 ); ?>;" aria-label="<?php echo esc_attr( sprintf( __( 'Abrir información de la subsede %s', 'ddna-theme' ), $venue['name'] ) ); ?>" aria-expanded="false" aria-controls="territory-popover-<?php echo esc_attr( $venue['id'] ); ?>" data-territory-marker>
 						<svg viewBox="0 0 48 64" aria-hidden="true" focusable="false"><path d="M24 2C11.85 2 2 11.85 2 24c0 16.5 22 38 22 38s22-21.5 22-38C46 11.85 36.15 2 24 2Z"/><circle cx="24" cy="24" r="8"/></svg>

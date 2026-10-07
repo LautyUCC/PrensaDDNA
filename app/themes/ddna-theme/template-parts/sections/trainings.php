@@ -2,8 +2,7 @@
 /** Diplomatura aprobada y estructura de Seminarios, sin oferta inventada. */
 $training = get_page_by_path( 'diplomatura-ia-derechos-digitales-nnya', OBJECT, 'capacitacion' );
 $label = $training ? get_the_title( $training ) : 'Diplomatura Inteligencia Artificial y Derechos Digitales de NNyA';
-$url = $training ? get_post_meta( $training->ID, '_ddna_registration_url', true ) : '';
-if ( ! $url && $training && trim( $training->post_content ) ) { $url = get_permalink( $training ); }
+$url = 'https://www.ucasal.edu.ar/educacioncontinua/diplomatura-inteligencia-artificial-y-derechos-digitales-de-ninas-ninos-y-adolescentes-2daedicion';
 ?>
 <section class="home-panel__content home-panel__content--conocer home-trainings" aria-labelledby="capacitaciones-title">
 	<h2 class="home-panel__section-title" id="capacitaciones-title">Capacitaciones</h2>
@@ -16,8 +15,5 @@ if ( ! $url && $training && trim( $training->post_content ) ) { $url = get_perma
 			</li></ul>
 		</div>
 	</details>
-	<details class="panel-accordion home-trainings__accordion">
-		<summary>Seminarios</summary>
-		<div class="panel-accordion__content"></div>
-	</details>
+
 </section>
