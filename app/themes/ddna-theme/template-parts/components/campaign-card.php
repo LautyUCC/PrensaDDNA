@@ -5,6 +5,7 @@ $link_tag      = $campaign_url ? 'a' : 'div';
 $campaign_slug = get_post_field( 'post_name', get_the_ID() );
 $campaign_images = array(
 	'hay-otra-forma'          => 'HOF-02.png',
+	'hay-otra-forma-maltrato' => 'HOF-02.png',
 	'hay-otra-forma-bullying' => 'HOF-01.png',
 	'consumo-problematico'    => 'consumo.png',
 	'cuidar-la-crianza'       => 'crianza.png',
