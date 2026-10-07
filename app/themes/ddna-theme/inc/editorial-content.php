@@ -28,7 +28,7 @@ add_shortcode( 'ddna_contact', static function () {
 add_shortcode( 'ddna_adolescence_line', static function () {
 	$data = function_exists( 'ddna_core_get_institutional_settings' ) ? ddna_core_get_institutional_settings() : array();
 	$phone = $data['adolescence_phone'] ?? '';
-	return $phone ? '<a href="' . esc_url( ddna_theme_phone_uri( $phone ) ) . '">' . esc_html( $phone . ' — ' . ( $data['adolescence_label'] ?? '' ) ) . '</a>' : '';
+	return $phone ? '<a href="' . esc_url( ddna_theme_phone_uri( $phone ) ) . '">' . esc_html( $phone . ' (' . ( $data['adolescence_label'] ?? '' ) . ')' ) . '</a>' : '';
 } );
 
 function ddna_theme_page_link( $slug, $label ) {
@@ -84,3 +84,37 @@ function ddna_theme_card_destination( $post_id ) {
 	$resource = $dossier_key ? ddna_theme_editorial_url( $dossier_key ) : '';
 	return $resource ?: ( $external ?: ( get_post_meta( $post_id, '_ddna_destination_pending', true ) ? '' : get_permalink( $post_id ) ) );
 }
+
+/** Logos informativos de convenios; no son enlaces ni controles interactivos. */
+add_shortcode( 'ddna_conventions', static function () {
+	$items = get_option( 'ddna_feedback_conventions', array() );
+	ob_start();
+	?><div class="conventions-grid"><?php foreach ( $items as $item ) : ?>
+			<?php if ( ! empty( $item['logo'] ) ) : ?><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/convenios/' . basename( $item['logo'] ) ); ?>" alt="<?php echo esc_attr( $item['name'] ); ?>" loading="lazy" decoding="async"><?php endif; ?>
+	<?php endforeach; ?></div><?php
+	return ob_get_clean();
+} );
+
+/** Categorías y documentos canónicos; los enlaces resuelven media del WordPress actual. */
+add_shortcode( 'ddna_normativa', static function () {
+	$sections = get_option( 'ddna_normativa_sections', array() );
+	ob_start();
+	foreach ( $sections as $section ) : ?>
+		<section class="normativa-section">
+			<h2><?php echo esc_html( $section['title'] ); ?></h2>
+			<div class="normativa-links">
+			<?php foreach ( $section['documents'] as $item ) :
+				$post = $item['slug'] ? get_page_by_path( $item['slug'], OBJECT, 'documento' ) : null;
+				$id = $post ? absint( get_post_meta( $post->ID, '_ddna_file_id', true ) ) : 0;
+				$url = $id ? wp_get_attachment_url( $id ) : '';
+				if ( $url ) : ?>
+					<a class="button normativa-document" href="<?php echo esc_url( $url ); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html( $item['title'] ); ?><span class="screen-reader-text"> (PDF, abre en otra pestaña)</span></a>
+				<?php else : ?>
+					<span class="button normativa-document resource-unavailable" aria-disabled="true"><?php echo esc_html( $item['title'] ); ?><span class="screen-reader-text"> — sin enlace en la fuente original</span></span>
+				<?php endif;
+			endforeach; ?>
+			</div>
+		</section>
+	<?php endforeach;
+	return ob_get_clean();
+} );

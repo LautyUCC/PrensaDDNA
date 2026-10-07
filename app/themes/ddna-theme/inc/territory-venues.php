@@ -2,7 +2,7 @@
 /**
  * Datos públicos del mapa de subsedes.
  *
- * Las coordenadas se anclan al lienzo 1024 × 1536 de mapa-cordoba.png. Se
+ * Las coordenadas se anclan al lienzo 1009 × 1559 de mapa-cordoba.png. Se
  * conservaron los seis puntos ya calibrados y los nuevos se ubicaron tomando
  * esas referencias y la posición geográfica relativa de cada localidad.
  *
@@ -68,7 +68,7 @@ function ddna_theme_territory_venues( array $institutional = array() ) {
 			'id' => 'rio-tercero', 'name' => 'Río Tercero', 'department' => 'Tercero Arriba',
 			'address' => 'Hilario Cuadros 433', 'phone' => '3571570950 / 3571649583', 'email' => 'ddnariotercero@gmail.com',
 			'hours' => 'Lunes a viernes, 8:00 a 13:00 hs.', 'map_url' => '',
-			'left' => '43.2%', 'top' => '43.3%', 'stack' => 3, 'popover_left' => '51%', 'popover_top' => '36%',
+			'left' => '43.2%', 'top' => '47.3%', 'stack' => 3, 'popover_left' => '51%', 'popover_top' => '36%',
 			'muna' => true, 'muna_participation_note' => '',
 		),
 		array(
@@ -96,7 +96,7 @@ function ddna_theme_territory_venues( array $institutional = array() ) {
 			'id' => 'villa-cura-brochero', 'name' => 'Villa Cura Brochero', 'department' => 'San Alberto',
 			'address' => 'Av. Cura Gaucho 52', 'phone' => '3544 614290', 'email' => 'defensoriacurabrochero@gmail.com',
 			'hours' => 'Presencial: martes, miércoles y jueves, 9:00 a 14:00 hs. Online: lunes y viernes, 9:00 a 14:00 hs.', 'map_url' => '',
-			'left' => '21.5%', 'top' => '45.5%', 'stack' => 3, 'popover_left' => '34%', 'popover_top' => '38%',
+			'left' => '21.5%', 'top' => '41.5%', 'stack' => 3, 'popover_left' => '34%', 'popover_top' => '38%',
 			'muna' => false, 'muna_participation_note' => '',
 		),
 		array(
@@ -117,7 +117,7 @@ function ddna_theme_territory_venues( array $institutional = array() ) {
 			'id' => 'justiniano-posse', 'name' => 'Justiniano Posse', 'department' => 'Unión',
 			'address' => '9 de Julio y Belgrano', 'phone' => '3518006748', 'email' => 'defensoria.jposse@gmail.com',
 			'hours' => 'Lunes a viernes, 8:00 a 14:00 hs.', 'map_url' => 'https://maps.app.goo.gl/o78SrNxFpaE1Cw9v8',
-			'left' => '69.5%', 'top' => '51.5%', 'stack' => 3, 'popover_left' => '35%', 'popover_top' => '43%',
+			'left' => '70%', 'top' => '55.5%', 'stack' => 3, 'popover_left' => '35%', 'popover_top' => '43%',
 			'muna' => true, 'muna_participation_note' => 'sin participación',
 		),
 		array(

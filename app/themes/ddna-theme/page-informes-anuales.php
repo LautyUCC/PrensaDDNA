@@ -81,7 +81,7 @@ $get_document_file = static function ( $slug ) {
 				<?php if ( $management_file['available'] ) : ?>
 					<a class="annual-report-card" href="<?php echo esc_url( $management_file['url'] ); ?>" target="_blank" rel="noopener noreferrer">
 						<img src="<?php echo esc_url( $document_icon ); ?>" alt="" width="350" height="321" loading="lazy" decoding="async">
-						<span><?php esc_html_e( 'Abrir Memoria de Gestión 2016–2026', 'ddna-theme' ); ?></span>
+						<span><?php esc_html_e( 'Memoria de Gestión 2016–2026', 'ddna-theme' ); ?></span>
 					</a>
 				<?php else : ?>
 					<p class="annual-reports__pending"><?php esc_html_e( 'Documento próximamente disponible', 'ddna-theme' ); ?></p>

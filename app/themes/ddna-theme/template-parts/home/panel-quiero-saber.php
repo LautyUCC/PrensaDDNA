@@ -34,7 +34,14 @@ $resolve_item = static function ( array $aliases ) use ( $knowledge_items ) {
 };
 $theme_icon = static function ( $path ) { return get_template_directory_uri() . '/assets/icons/knowledge/' . ltrim( $path, '/' ); };
 $render_item = static function ( array $item, $variant = 'document' ) use ( $resolve_item, $theme_icon ) {
-	$url = $resolve_item( array_merge( array( $item['label'] ), $item['aliases'] ?? array() ) );
+	$url = '';
+	if ( ! empty( $item['slug'] ) ) {
+		$document = get_page_by_path( $item['slug'], OBJECT, 'documento' );
+		$file_id = $document ? absint( get_post_meta( $document->ID, '_ddna_file_id', true ) ) : 0;
+		$url = $file_id ? wp_get_attachment_url( $file_id ) : '';
+	} else {
+		$url = $resolve_item( array_merge( array( $item['label'] ), $item['aliases'] ?? array() ) );
+	}
 	$tag = $url ? 'a' : 'span';
 	$attributes = $url ? ' href="' . esc_url( $url ) . '"' : ' aria-disabled="true" title="' . esc_attr__( 'Contenido pendiente de carga en WordPress', 'ddna-theme' ) . '"';
 	?>
@@ -52,16 +59,7 @@ $prevention_guides = array(
 	array( 'label' => 'Guía sobre abuso sexual hacia NNyA', 'icon' => 'guides/guide-49.png' ),
 	array( 'label' => 'Guía sobre Bullying', 'icon' => 'guides/guide-50.png' ),
 );
-$care_guides = array(
-	array( 'label' => 'Juegos en Línea', 'icon' => 'guides/guide-47.png' ),
-	array( 'label' => 'Apuestas en Línea', 'icon' => 'guides/guide-51.png' ),
-	array( 'label' => 'Acompañar a NNyA en Entornos Virtuales', 'icon' => 'guides/guide-52.png' ),
-	array( 'label' => 'Prevención del Abuso', 'icon' => 'guides/guide-53.png' ),
-	array( 'label' => 'Prevención del Bullying', 'icon' => 'guides/guide-54.png' ),
-	array( 'label' => 'Entornos Seguros y Libres de Violencia hacia NNyA', 'icon' => 'guides/guide-55.png' ),
-	array( 'label' => 'Hablemos de Crianza', 'icon' => 'guides/guide-56.png' ),
-	array( 'label' => '¿Cómo acompañar la prevención del consumo de sustancias?', 'icon' => 'guides/guide-57.png' ),
-);
+$care_guides = get_option( 'ddna_care_guides', array() );
 ?>
 <section class="home-panel" id="panel-quiero-saber" data-home-panel="quiero-saber" aria-label="<?php esc_attr_e( 'Quiero saber', 'ddna-theme' ); ?>" hidden>
 	<div class="container container--content">
