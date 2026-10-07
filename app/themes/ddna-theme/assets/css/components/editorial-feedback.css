@@ -46,3 +46,26 @@
 @media (max-width: 23.4375rem) {
 	.knowledge-guide-grid--care .knowledge-item { flex-basis: 100%; }
 }
+
+.adolescence-line-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 2.75rem;
+ max-width: 100%;
+ margin-block: .5rem;
+ padding: .75rem 1.25rem;
+ border: 2px solid var(--color-secondary);
+ border-radius: var(--radius-pill);
+ background: var(--ddna-orange);
+ color: var(--color-secondary);
+ text-decoration: none;
+ font-weight: var(--font-weight-bold);
+ line-height: 1.4;
+ text-align: center;
+ overflow-wrap: anywhere;
+}
+.adolescence-line-button:hover { background: var(--color-surface); }
+.statement-titles { display: grid; gap: 1.25rem; padding-left: 1.5rem; }
+.statement-titles li, .statement-titles a { white-space: normal; overflow-wrap: anywhere; }
+.statement-titles a { display: inline-block; min-height: 2.75rem; padding-block: .5rem; }

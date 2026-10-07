@@ -36,7 +36,7 @@ $icons_uri = get_template_directory_uri() . '/assets/icons/home/';
 		<ul class="quick-access__grid" role="list">
 			<?php foreach ( $accesses as $access ) : ?>
 				<?php $is_observatory = 'observatorio' === $access['id']; $observatory_url = $is_observatory ? ddna_theme_observatory_url() : ''; ?>
-				<li><?php if ( $is_observatory && $observatory_url ) : ?><a class="quick-access-card" href="<?php echo esc_url( $observatory_url ); ?>" aria-label="<?php esc_attr_e( 'Abrir el Dashboard del Observatorio', 'ddna-theme' ); ?>"><?php else : ?><button class="quick-access-card" type="button" data-home-panel-trigger="<?php echo esc_attr( $access['id'] ); ?>" aria-expanded="false" aria-controls="panel-<?php echo esc_attr( $access['id'] ); ?>"><?php endif; ?>
+				<li><?php if ( $is_observatory && $observatory_url ) : ?><a class="quick-access-card quick-access-card--observatorio" href="<?php echo esc_url( $observatory_url ); ?>" aria-label="<?php esc_attr_e( 'Abrir el Dashboard del Observatorio', 'ddna-theme' ); ?>"><?php else : ?><button class="quick-access-card" type="button" data-home-panel-trigger="<?php echo esc_attr( $access['id'] ); ?>" aria-expanded="false" aria-controls="panel-<?php echo esc_attr( $access['id'] ); ?>"><?php endif; ?>
 					<span class="quick-access-card__icons" aria-hidden="true">
 						<img class="quick-access-card__icon quick-access-card__icon--closed" src="<?php echo esc_url( $icons_uri . 'home-' . $access['icon'] . '.png' ); ?>" alt="" width="350" height="321">
 						<img class="quick-access-card__icon quick-access-card__icon--open" src="<?php echo esc_url( $icons_uri . 'home-' . ( $access['icon'] + 1 ) . '.png' ); ?>" alt="" width="350" height="321">

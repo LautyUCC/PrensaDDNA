@@ -7,7 +7,7 @@
 
 get_header();
 ?>
-<main class="site-main" id="main-content">
+<main class="site-main<?php echo 'diplomatura-ia-derechos-digitales-nnya' === get_post_field( 'post_name', get_queried_object_id() ) ? ' diplomatura-ia' : ''; ?>" id="main-content">
 	<div class="<?php echo esc_attr( ddna_theme_container_classes() ); ?>">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>

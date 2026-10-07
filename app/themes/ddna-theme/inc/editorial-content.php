@@ -28,7 +28,7 @@ add_shortcode( 'ddna_contact', static function () {
 add_shortcode( 'ddna_adolescence_line', static function () {
 	$data = function_exists( 'ddna_core_get_institutional_settings' ) ? ddna_core_get_institutional_settings() : array();
 	$phone = $data['adolescence_phone'] ?? '';
-	return $phone ? '<a href="' . esc_url( ddna_theme_phone_uri( $phone ) ) . '">' . esc_html( $phone . ' (' . ( $data['adolescence_label'] ?? '' ) . ')' ) . '</a>' : '';
+	return $phone ? '<a class="adolescence-line-button" href="' . esc_url( ddna_theme_phone_uri( $phone ) ) . '">' . esc_html( $phone . ' (' . ( $data['adolescence_label'] ?? '' ) . ')' ) . '</a>' : '';
 } );
 
 function ddna_theme_page_link( $slug, $label ) {
@@ -36,14 +36,19 @@ function ddna_theme_page_link( $slug, $label ) {
 	return $page && 'publish' === $page->post_status ? '<a class="button" href="' . esc_url( get_permalink( $page ) ) . '">' . esc_html( $label ) . '</a>' : '<span>' . esc_html( $label ) . '</span>';
 }
 add_shortcode( 'ddna_press_links', static function () {
-	return '<div class="editorial-actions">' . ddna_theme_page_link( 'defensoria-en-los-medios', 'La Defensoría en los Medios' ) . ddna_theme_page_link( 'comunicados', 'Comunicados' ) . '</div>';
+	return '<div class="editorial-actions">' . ddna_theme_page_link( 'comunicados', 'Comunicados y pronunciamientos' ) . '</div>';
 } );
 
 add_shortcode( 'ddna_statements', static function () {
 	$statements = get_option( 'ddna_final_statements', array() );
-	$link_keys = array( 'statement_health_2025', 'statement_disability_2025', 'statement_juvenile_2022' );
+	$link_keys = array(
+		'COMUNICADO CONJUNTO DE LAS DEFENSORÍAS DE NNyA DEL PAÍS ANTE EL VETO PRESIDENCIAL A LA LEY DE EMERGENCIA PEDIÁTRICA.' => 'statement_health_2025',
+		'COMUNICADO SOBRE EL VETO A LA LEY DE EMERGENCIA EN DISCAPACIDAD' => 'statement_disability_2025',
+		'LEY DE RESPONSABILIDAD PENAL JUVENIL: DEROGACIÓN DEL DECRETO-LEY 22.278.' => 'statement_juvenile_2022',
+	);
+	usort( $statements, static fn( $a, $b ) => (int) $b['year'] <=> (int) $a['year'] );
 	$output = ''; $year = null;
-	foreach ( $statements as $index => $item ) {
+	foreach ( $statements as $item ) {
 		if ( $year !== (int) $item['year'] ) {
 			if ( null !== $year ) { $output .= '</ul>'; }
 			$year = (int) $item['year'];
@@ -51,7 +56,7 @@ add_shortcode( 'ddna_statements', static function () {
 		}
 		$posts = get_posts( array( 'post_type' => array( 'post', 'documento' ), 'post_status' => 'publish', 'posts_per_page' => 1, 'title' => $item['title'], 'no_found_rows' => true ) );
 		$post = $posts ? $posts[0] : null;
-		$url = ddna_theme_editorial_url( $link_keys[ $index ] ?? '' );
+		$url = ( $item['url'] ?? '' ) ?: ddna_theme_editorial_url( $link_keys[ $item['title'] ] ?? '' );
 		if ( ! $url && $post ) {
 			$file = absint( get_post_meta( $post->ID, '_ddna_file_id', true ) );
 			$url = $file ? wp_get_attachment_url( $file ) : get_post_meta( $post->ID, '_ddna_external_url', true );
@@ -90,6 +95,8 @@ add_shortcode( 'ddna_conventions', static function () {
 	$items = get_option( 'ddna_feedback_conventions', array() );
 	ob_start();
 	?><div class="conventions-grid"><?php foreach ( $items as $item ) : ?>
+			<?php // Última institución verificada del orden actual; ocultar solo su presentación.
+			if ( 'convenio-92.png' === ( $item['logo'] ?? '' ) && 'Secretaría de Fortalecimiento Vecinal, Cultura y Deportes' === ( $item['name'] ?? '' ) ) { continue; } ?>
 			<?php if ( ! empty( $item['logo'] ) ) : ?><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/convenios/' . basename( $item['logo'] ) ); ?>" alt="<?php echo esc_attr( $item['name'] ); ?>" loading="lazy" decoding="async"><?php endif; ?>
 	<?php endforeach; ?></div><?php
 	return ob_get_clean();

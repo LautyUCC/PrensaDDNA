@@ -58,7 +58,7 @@ $muna_logo_uri = get_template_directory_uri() . '/assets/images/territorio/muna-
 		</div>
 		<section class="home-panel__content territory-muna" aria-labelledby="territory-muna-title">
 			<h2 class="home-panel__section-title" id="territory-muna-title">Municipios MUNA</h2>
-			<?php echo ddna_theme_page_link( 'cooperacion-internacional-interinstitucional', 'Conocer los 20 municipios y sus cohortes' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php echo ddna_theme_page_link( 'cooperacion-internacional-interinstitucional', 'Conocé los 20 municipios y sus cohortes' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</section>
 	</div>
 </section>

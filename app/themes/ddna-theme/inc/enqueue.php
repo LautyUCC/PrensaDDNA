@@ -62,6 +62,7 @@ function ddna_theme_enqueue_assets() {
 	}
 
 	$styles['ddna-theme-editorial-feedback'] = 'components/editorial-feedback.css';
+	$styles['ddna-theme-additional-adjustments'] = 'components/additional-adjustments.css';
 
 	foreach ( $styles as $handle => $relative_path ) {
 		$file_path = $theme_path . '/assets/css/' . $relative_path;
@@ -85,6 +86,9 @@ function ddna_theme_enqueue_assets() {
 	wp_script_add_data( 'ddna-theme-navigation', 'strategy', 'defer' );
 
 	if ( is_front_page() ) {
+		wp_enqueue_style( 'ddna-theme-back-to-top', $theme_uri . '/assets/css/components/back-to-top.css', array( 'ddna-theme-tokens' ), (string) filemtime( $theme_path . '/assets/css/components/back-to-top.css' ) );
+		wp_enqueue_script( 'ddna-theme-back-to-top', $theme_uri . '/assets/js/back-to-top.js', array(), (string) filemtime( $theme_path . '/assets/js/back-to-top.js' ), true );
+		wp_script_add_data( 'ddna-theme-back-to-top', 'strategy', 'defer' );
 		wp_enqueue_script(
 			'ddna-theme-hero-video',
 			$theme_uri . '/assets/js/hero-video.js',

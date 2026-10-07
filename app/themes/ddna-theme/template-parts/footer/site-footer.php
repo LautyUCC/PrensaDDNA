@@ -9,12 +9,6 @@ $details          = function_exists( 'ddna_core_get_institutional_settings' ) ? 
 $footer_logo      = get_template_directory_uri() . '/assets/images/logos/ddna-footer-negativo.png';
 $whatsapp_icon    = get_template_directory_uri() . '/assets/icons/contact/contact-whatsapp.png';
 $assistance_phone = $details['assistance_phone'] ?? '';
-$whatsapp_number  = preg_replace( '/\D+/', '', $assistance_phone );
-
-if ( $whatsapp_number && ! str_starts_with( $whatsapp_number, '54' ) ) {
-	$whatsapp_number = '54' . $whatsapp_number;
-}
-
 $socials = array(
 	'instagram' => array(
 		'label' => 'Instagram',
@@ -24,9 +18,13 @@ $socials = array(
 		'label' => 'Facebook',
 		'url'   => $details['facebook_url'] ?? '',
 	),
-	'whatsapp'  => array(
-		'label' => 'WhatsApp',
-		'url'   => $whatsapp_number ? 'https://wa.me/' . $whatsapp_number : '',
+	'x' => array(
+		'label' => 'X',
+		'url' => 'https://x.com/DefensoriaCba',
+	),
+	'youtube' => array(
+		'label' => 'YouTube',
+		'url' => 'https://www.youtube.com/@defensoria_nnya',
 	),
 );
 
@@ -74,19 +72,11 @@ if ( isset( $address_parts[1] ) && 'Nueva Córdoba' === $address_parts[1] ) {
 					<li>
 						<?php if ( $social['url'] ) : ?>
 							<a href="<?php echo esc_url( $social['url'] ); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr( $social['label'] ); ?>">
-								<?php if ( 'whatsapp' === $network ) : ?>
-									<img class="social-icon social-icon--whatsapp" src="<?php echo esc_url( $whatsapp_icon ); ?>" alt="" width="382" height="321" loading="lazy" decoding="async">
-								<?php else : ?>
-									<?php get_template_part( 'template-parts/components/social-icon', null, array( 'network' => $network ) ); ?>
-								<?php endif; ?>
+								<?php get_template_part( 'template-parts/components/social-icon', null, array( 'network' => $network ) ); ?>
 							</a>
 						<?php else : ?>
 							<span class="social-links__unavailable" role="img" aria-label="<?php echo esc_attr( $social['label'] ); ?>">
-								<?php if ( 'whatsapp' === $network ) : ?>
-									<img class="social-icon social-icon--whatsapp" src="<?php echo esc_url( $whatsapp_icon ); ?>" alt="" width="382" height="321" loading="lazy" decoding="async">
-								<?php else : ?>
-									<?php get_template_part( 'template-parts/components/social-icon', null, array( 'network' => $network ) ); ?>
-								<?php endif; ?>
+								<?php get_template_part( 'template-parts/components/social-icon', null, array( 'network' => $network ) ); ?>
 							</span>
 						<?php endif; ?>
 					</li>
