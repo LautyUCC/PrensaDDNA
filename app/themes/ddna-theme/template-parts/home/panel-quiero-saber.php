@@ -38,12 +38,14 @@ $render_item = static function ( array $item, $variant = 'document' ) use ( $res
 	if ( ! empty( $item['slug'] ) ) {
 		$document = get_page_by_path( $item['slug'], OBJECT, 'documento' );
 		$file_id = $document ? absint( get_post_meta( $document->ID, '_ddna_file_id', true ) ) : 0;
-		$url = $file_id ? wp_get_attachment_url( $file_id ) : '';
+		$url = $file_id ? wp_get_attachment_url( $file_id ) : ( $document ? get_post_meta( $document->ID, '_ddna_external_url', true ) : '' );
 	} else {
 		$url = $resolve_item( array_merge( array( $item['label'] ), $item['aliases'] ?? array() ) );
 	}
 	$tag = $url ? 'a' : 'span';
 	$attributes = $url ? ' href="' . esc_url( $url ) . '"' : ' aria-disabled="true" title="' . esc_attr__( 'Contenido pendiente de carga en WordPress', 'ddna-theme' ) . '"';
+	$external = $url && wp_parse_url( $url, PHP_URL_HOST ) !== wp_parse_url( home_url(), PHP_URL_HOST );
+	if ( $external ) { $attributes .= ' target="_blank" rel="noopener noreferrer"'; }
 	?>
 	<<?php echo esc_html( $tag ); ?> class="knowledge-item knowledge-item--<?php echo esc_attr( $variant ); ?><?php echo $url ? '' : ' is-unavailable'; ?>"<?php echo $attributes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 		<img class="knowledge-item__icon" src="<?php echo esc_url( $theme_icon( $item['icon'] ) ); ?>" alt="" width="96" height="96" decoding="async">
@@ -54,10 +56,10 @@ $render_item = static function ( array $item, $variant = 'document' ) use ( $res
 };
 
 $prevention_guides = array(
-	array( 'label' => 'Guía de Navegación Segura', 'icon' => 'guides/guide-47.png' ),
-	array( 'label' => 'Guía de Juegos en Línea', 'icon' => 'guides/guide-48.png' ),
-	array( 'label' => 'Guía sobre abuso sexual hacia NNyA', 'icon' => 'guides/guide-49.png' ),
-	array( 'label' => 'Guía sobre Bullying', 'icon' => 'guides/guide-50.png' ),
+	array( 'slug' => 'prevencion-navegacion-segura', 'label' => 'Guía de Navegación Segura', 'icon' => 'guides/guide-47.png' ),
+	array( 'slug' => 'prevencion-juegos-en-linea', 'label' => 'Guía de Juegos en Línea', 'icon' => 'guides/guide-48.png' ),
+	array( 'slug' => 'prevencion-abuso-sexual', 'label' => 'Guía sobre abuso sexual hacia NNyA', 'icon' => 'guides/guide-49.png' ),
+	array( 'slug' => 'prevencion-bullying', 'label' => 'Guía sobre Bullying', 'icon' => 'guides/guide-50.png' ),
 );
 $care_guides = get_option( 'ddna_care_guides', array() );
 ?>

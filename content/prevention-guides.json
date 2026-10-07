@@ -1,0 +1,44 @@
+{
+  "version": "prevention-guides-2026-v1",
+  "source": "https://ddna.cba.gov.ar/guias-para-la-prevencion-2/",
+  "guides": [
+    {
+      "label": "Guía de Navegación Segura",
+      "source_url": "https://drive.google.com/file/d/1gF1JkFpE3MZ9MJtt7teQpS3za6j5MhF2/view",
+      "slug": "prevencion-navegacion-segura",
+      "icon": "guides/guide-47.png",
+      "type": "external",
+      "action": "Mantener Drive original"
+    },
+    {
+      "label": "Guía de Juegos en Línea",
+      "source_url": "https://ddna.cba.gov.ar/wp-content/uploads/2025/07/Guía-Juegos-en-Línea.pdf",
+      "slug": "prevencion-juegos-en-linea",
+      "icon": "guides/guide-48.png",
+      "type": "pdf",
+      "action": "Migrar PDF a Medios (deduplicar por SHA256)",
+      "file": "media/prevention/guia-prevencion-juegos-en-linea.pdf",
+      "sha256": "aea368d609eebb01b99f9218e055687beb0cc833dc7eb1149c62629b9843bdef",
+      "size": 3501241
+    },
+    {
+      "label": "Guía sobre abuso sexual hacia NNyA",
+      "source_url": "https://ddna.cba.gov.ar/wp-content/uploads/2025/07/Guía-para-la-prevención-del-Abuso-y-el-Acoso-Sexual-hacia-NNyA-2.pdf",
+      "slug": "prevencion-abuso-sexual",
+      "icon": "guides/guide-49.png",
+      "type": "pdf",
+      "action": "Migrar PDF a Medios (deduplicar por SHA256)",
+      "file": "media/prevention/guia-prevencion-abuso-sexual.pdf",
+      "sha256": "2dc12f10d0c02cdc07dff81f5fbde329abcf49e0a8b6a8f8bbdf2a9f9b6894d7",
+      "size": 1181660
+    },
+    {
+      "label": "Guía sobre Bullying",
+      "source_url": "https://drive.google.com/file/d/1Y7D2JJpMqpAUn0ypyD3E7kmu5uElzYwY/view",
+      "slug": "prevencion-bullying",
+      "icon": "guides/guide-50.png",
+      "type": "external",
+      "action": "Mantener Drive original"
+    }
+  ]
+}

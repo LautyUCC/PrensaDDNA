@@ -23,6 +23,11 @@ function ddna_core_get_field_groups() {
 	);
 
 	return array(
+		'agenda_evento' => array(
+			'_agenda_fecha' => array( 'label' => __( 'Fecha del evento', 'ddna-core' ), 'type' => 'date' ),
+			'_agenda_hora' => array( 'label' => __( 'Hora local', 'ddna-core' ), 'type' => 'time' ),
+			'_agenda_lugar' => array( 'label' => __( 'Lugar', 'ddna-core' ), 'type' => 'text' ),
+		),
 		'programa' => array(
 			'_ddna_destination_pending' => array( 'label' => __( 'Destino pendiente de aprobación', 'ddna-core' ), 'type' => 'checkbox', 'description' => __( 'Sin URL externa, la tarjeta no enlaza a una página temporal.', 'ddna-core' ) ),
 			'_ddna_home_order'   => array( 'label' => __( 'Orden en la portada', 'ddna-core' ), 'type' => 'number', 'min' => 0, 'description' => __( 'Los números menores aparecen primero.', 'ddna-core' ) ),
@@ -112,6 +117,8 @@ function ddna_core_sanitize_field( $value, $type ) {
 			return esc_url_raw( $value );
 		case 'textarea':
 			return sanitize_textarea_field( $value );
+		case 'time':
+			return is_scalar( $value ) && preg_match( '/^(?:[01][0-9]|2[0-3]):[0-5][0-9]$/D', (string) $value ) ? (string) $value : '';
 		case 'date':
 			if ( ! is_scalar( $value ) || ! preg_match( '/^(\d{4})-(\d{2})-(\d{2})$/', (string) $value, $matches ) ) {
 				return '';

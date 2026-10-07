@@ -22,7 +22,7 @@ $territory_phone_uri = static function ( $phone ) {
 	if ( $digits && str_starts_with( $digits, '35' ) ) { $digits = '54' . $digits; }
 	return $digits ? 'tel:+' . $digits : '';
 };
-$map_uri = get_template_directory_uri() . '/assets/images/territorio/mapa-cordoba.png';
+$map_uri = get_template_directory_uri() . '/assets/images/territorio/mapa-cordoba-2026.png';
 $muna_logo_uri = get_template_directory_uri() . '/assets/images/territorio/muna-isologotipo-02.png';
 ?>
 <section class="home-panel territory-panel" id="panel-territorio" data-home-panel="territorio" aria-labelledby="territory-title" hidden>

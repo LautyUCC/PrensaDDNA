@@ -43,7 +43,13 @@ function ddna_theme_enqueue_assets() {
 		'ddna-theme-accessibility' => 'utilities/accessibility.css',
 	);
 
-	if ( is_page( 'novedades' ) ) {
+	if ( is_page( 'agenda' ) ) {
+		$styles['ddna-theme-agenda'] = 'components/agenda.css';
+		wp_enqueue_script( 'ddna-theme-agenda', $theme_uri . '/assets/js/agenda.js', array(), (string) filemtime( $theme_path . '/assets/js/agenda.js' ), true );
+		wp_script_add_data( 'ddna-theme-agenda', 'strategy', 'defer' );
+	}
+
+	if ( is_page( 'novedades' ) || is_category( 'novedades' ) ) {
 		$styles['ddna-theme-news-archive'] = 'components/news-archive.css';
 	}
 

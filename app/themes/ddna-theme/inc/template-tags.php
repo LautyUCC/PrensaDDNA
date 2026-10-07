@@ -43,11 +43,14 @@ function ddna_theme_container_classes( $classes = array() ) {
  * @return bool
  */
 function ddna_theme_is_institutional_page() {
+	if ( is_category( 'novedades' ) ) {
+		return true;
+	}
 	if ( ! is_page() ) {
 		return false;
 	}
 
-	$institutional_slugs = array( 'defensoria', 'informes-anuales', 'normativas', 'normativa', 'convenios', 'contacto', 'hay-otra-forma-prevencion-maltrato', 'hay-otra-forma-prevencion-bullying' );
+	$institutional_slugs = array( 'agenda', 'novedades', 'defensoria', 'informes-anuales', 'normativas', 'normativa', 'convenios', 'contacto', 'hay-otra-forma-prevencion-maltrato', 'hay-otra-forma-prevencion-bullying' );
 	$page_id             = get_queried_object_id();
 
 	while ( $page_id ) {
