@@ -15,7 +15,7 @@ $query_args    = array(
 	'post_status'         => 'publish',
 	'posts_per_page'      => 12,
 	'paged'               => $current_page,
-	'orderby'             => array( 'date' => 'DESC', 'ID' => 'DESC' ),
+	'orderby'             => 'date',
 	'order'               => 'DESC',
 	'ignore_sticky_posts' => true,
 );

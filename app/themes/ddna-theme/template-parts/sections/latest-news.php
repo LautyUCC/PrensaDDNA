@@ -1,7 +1,7 @@
 <?php
 /** Latest native WordPress posts. @package DDNA_Theme */
 $home_settings = function_exists( 'ddna_core_get_home_settings' ) ? ddna_core_get_home_settings() : array( 'news_count' => 12 );
-$query_args = array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => $home_settings['news_count'], 'ignore_sticky_posts' => true, 'no_found_rows' => true, 'update_post_term_cache' => false, 'tag' => 'novedad', 'orderby' => array( 'date' => 'DESC', 'ID' => 'DESC' ) );
+$query_args = array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => $home_settings['news_count'], 'ignore_sticky_posts' => true, 'no_found_rows' => true, 'update_post_term_cache' => false, 'tag' => 'novedad', 'orderby' => 'date' );
 $latest_news = new WP_Query( $query_args );
 $nested = ! empty( $args['nested'] );
 if ( ! $latest_news->have_posts() ) { return; }

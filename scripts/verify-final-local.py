@@ -55,7 +55,7 @@ try:
     assert hashlib.sha256(data).digest() == hashlib.sha256(source.read_bytes()).digest()
     checks.append('Territorio sirve HTTP 200 y bytes idénticos al nuevo PNG')
     # Create only marked disposable local posts. Never import production content.
-    ids = json.loads(cli('''$c=get_category_by_slug('novedades'); if(!$c){WP_CLI::error('Falta categoría');} $ids=[]; for($n=1;$n<=13;$n++){ $id=wp_insert_post(['post_type'=>'post','post_status'=>'publish','post_title'=>'DDNALOCALVERIFY noticia '.$n,'post_content'=>'Fixture descartable local','post_category'=>[$c->term_id],'meta_input'=>['_ddna_local_ui_test'=>1]],true); if(is_wp_error($id)){WP_CLI::error($id->get_error_message());} $ids[]=$id;} echo wp_json_encode($ids);'''))
+    ids = json.loads(cli('''$c=get_category_by_slug('novedades'); if(!$c){WP_CLI::error('Falta categoría');} $ids=[]; for($n=1;$n<=13;$n++){ $id=wp_insert_post(['post_type'=>'post','post_status'=>'publish','post_title'=>'DDNALOCALVERIFY noticia '.$n,'post_content'=>'Fixture descartable local','post_date'=>wp_date('Y-m-d H:i:s',time()-$n),'post_category'=>[$c->term_id],'meta_input'=>['_ddna_local_ui_test'=>1,'_ddna_news_enabled'=>true]],true); if(is_wp_error($id)){WP_CLI::error($id->get_error_message());} $ids[]=$id;} echo wp_json_encode($ids);'''))
     first = read('/category/novedades/'); second = read('/category/novedades/?paged=2')
     assert len(Page(first).cards) == 12 and len(Page(second).cards) >= 1
     assert not set(Page(first).cards) & set(Page(second).cards)

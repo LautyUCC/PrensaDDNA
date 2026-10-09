@@ -50,6 +50,10 @@ def build():
         return key
     for group in sorted(p for p in SOURCE.iterdir() if p.is_dir()):
         for folder in sorted(p for p in group.iterdir() if p.is_dir()):
+            # Historical entries now have their own authoritative manifest.
+            number = re.match(r"^(\d+)\)", folder.name)
+            if group.name != "FALTA PUBLICAR" or not number or int(number[1]) not in (1, 2, 3):
+                continue
             docs = sorted(p for p in folder.rglob('*') if p.suffix.lower() in ['.pdf', '.docx'])
             parsed = [(p, *source_document(p)) for p in docs]
             usable = [d for d in parsed if d[1]]
@@ -58,7 +62,7 @@ def build():
             # PDF exports retain embedded links that some companion DOCXs omit.
             links = sorted(set(links + [l for _, _, ls in parsed for l in ls]))
             title = paragraphs.pop(0) if paragraphs else folder.name
-            pending = ['Fecha de publicación original: PENDIENTE DE DEFINICIÓN (no confundir fechas de eventos con publicación).']
+            pending = []
             if not chosen: pending += ['Texto y confirmación de título editorial: PENDIENTE DE DEFINICIÓN; título conservado del nombre de carpeta.']
             images = sorted(p for p in folder.rglob('*') if p.suffix.lower() in ['.jpg', '.jpeg', '.png', '.webp'])
             def is_aux(p):return any(t in str(p.relative_to(folder)).lower() for t in ['miniatura', 'botón', 'boton'])
@@ -110,19 +114,27 @@ def build():
             photos = [p for p in images if not is_aux(p) and p != main and p not in inline]
             def natural(p):return [int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', p.name)]
             photos.sort(key=natural)
+            # PORTADA and numbered photo may be byte-identical exports.
+            seen_photos = {digest(main)} if main else set()
+            distinct = []
+            for photo in photos:
+                checksum = digest(photo)
+                if checksum not in seen_photos:
+                    distinct.append(photo); seen_photos.add(checksum)
+            photos = distinct
             # User approved carousel for all multiple-photo news. Inline photos stay inline.
             carousel = 'CARRUSEL' in all_source_text.upper() or (len(photos)+(1 if main else 0) > 1)
             if carousel and not photos:pending += ['Carrusel indicado pero sin fotos adicionales disponibles.']
             if photos:pending += ['Orden de fotos sin numeración editorial expresa: orden natural del filename; revisar.']
             gallery = [asset(p, title) for p in photos]
             main_key = asset(main, title) if main else None
-            entry = {'source_id': 'ddna-news-'+hashlib.sha256(str(folder.relative_to(SOURCE)).encode()).hexdigest()[:20], 'origin':str(folder.relative_to(SOURCE)), 'original_group':group.name, 'title':title, 'slug':slug(title), 'original_publication_date':None, 'date_policy':'first_import_time', 'content':content, 'featured_image':main_key, 'carousel':carousel, 'gallery':gallery, 'inline_images':[asset(p,title) for p in inline], 'attachments':[asset(p,title) for p in attachments], 'links':sorted(set(u for u,_ in links)), 'tag':'novedad', 'status':'publish', 'instructions':sorted(set(p for p in paragraphs if 'CARRUSEL' in p or p in ['FOTO','FOTOS'])), 'pending':pending, 'sources':[{'path':str(p.relative_to(SOURCE)), 'sha256':digest(p)} for p in docs], 'available_images':[str(p.relative_to(SOURCE)) for p in images]}
+            entry = {'source_id': 'ddna-news-'+hashlib.sha256(str(folder.relative_to(SOURCE)).encode()).hexdigest()[:20], 'origin':str(folder.relative_to(SOURCE)), 'original_group':group.name, 'title':title, 'slug':slug(title), 'original_publication_date':'2026-10-09', 'date_policy':'user_confirmed_publication_date', 'content':content, 'featured_image':main_key, 'carousel':carousel, 'gallery':gallery, 'inline_images':[asset(p,title) for p in inline], 'attachments':[asset(p,title) for p in attachments], 'links':sorted(set(u for u,_ in links)), 'tag':'novedad', 'status':'publish', 'instructions':sorted(set(p for p in paragraphs if 'CARRUSEL' in p or p in ['FOTO','FOTOS'])), 'pending':pending, 'sources':[{'path':str(p.relative_to(SOURCE)), 'sha256':digest(p)} for p in docs], 'available_images':[str(p.relative_to(SOURCE)) for p in images]}
             entries.append(entry)
     seen = set()
     for item in entries:
         if item['slug'] in seen:item['slug'] += '-'+item['source_id'][-8:]
         seen.add(item['slug'])
-    result = {'version':'ddna-novedades-2026-v1', 'source_root':'RECURSOS GRÁFICOS - WEB DDNA 2026/novedades', 'editorial_decisions':{'multiple_photos':'carousel approved by user', 'missing_publication_date':'first import timestamp, never event dates', 'main_image':'explicit PORTADA filename/folder; Novedades Web for PRECONGRESO'}, 'assets':assets, 'entries':entries}
+    result = {'version':'ddna-novedades-2026-v1', 'source_root':'RECURSOS GRÁFICOS - WEB DDNA 2026/novedades', 'editorial_decisions':{'multiple_photos':'carousel approved by user', 'publication_date':'2026-10-09 explicitly supplied by user for local 1–3; historical manifest separate', 'main_image':'explicit PORTADA filename/folder; Novedades Web for PRECONGRESO'}, 'assets':assets, 'entries':entries}
     path = ROOT / 'content/novedades-manifest.json'
     path.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
     print(f'{len(entries)} novedades; {len(assets)} assets únicos; {sum(e["carousel"] for e in entries)} carruseles; {sum(bool(e["featured_image"]) for e in entries)} portadas')

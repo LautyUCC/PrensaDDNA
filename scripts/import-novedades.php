@@ -26,6 +26,7 @@ foreach ( $manifest['assets'] as $key => $asset ) {
 }
 $seen = array(); $existing_ids = array();
 foreach ( $manifest['entries'] as $entry ) {
+	if ( ! preg_match( '~^FALTA PUBLICAR/([123])\)~', $entry['origin'] ) ) { WP_CLI::error( 'Fuente excluida por reconciliación: ' . $entry['origin'] ); }
 	$source_id = $entry['source_id'];
 	if ( isset( $seen[ $source_id ] ) || empty( $entry['title'] ) || empty( $entry['slug'] ) || 'novedad' !== $entry['tag'] || 'publish' !== $entry['status'] ) { WP_CLI::error( 'Entrada inválida o repetida.' ); }
 	$seen[ $source_id ] = true;
@@ -69,16 +70,7 @@ $media_id = static function ( $key ) use ( &$media_index, $manifest, $resolve, &
 	$media_index[ $key ] = $id;
 	return $id;
 };
-// Preserve prior news and their category URLs, adding only the required identification tag.
-$category = get_category_by_slug( 'novedades' );
-if ( $category ) {
-	foreach ( get_posts( array( 'post_type' => 'post', 'post_status' => 'any', 'posts_per_page' => -1, 'cat' => $category->term_id, 'fields' => 'ids' ) ) as $id ) {
-		if ( ! has_term( 'novedad', 'post_tag', $id ) ) {
-			$receipt['legacy_posts_tagged'][ $id ] = wp_get_post_terms( $id, 'post_tag', array( 'fields' => 'ids' ) ); $save_receipt();
-			ddna_core_news_assign_terms( $id );
-		}
-	}
-}
+// Classification is scoped to the three approved entries below.
 $created = 0; $updated = 0; $skipped = 0;
 foreach ( $manifest['entries'] as $entry ) {
 	$id = $existing_ids[ $entry['source_id'] ];

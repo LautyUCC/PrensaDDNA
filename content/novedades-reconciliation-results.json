@@ -1,0 +1,4809 @@
+{
+  "version": "ddna-news-local-reconciliation-20261009",
+  "branch": "feature/novedades-reconciliation",
+  "counts": {
+    "official_pages": 22,
+    "historical": 219,
+    "existing_historical": 33,
+    "created_historical": 186,
+    "new_local": 3,
+    "retired_found": 7,
+    "review_local": 1,
+    "not_found_but_excluded": [
+      11,
+      12,
+      13
+    ],
+    "published_final": 222,
+    "downloaded_historical_images": 874,
+    "downloaded_historical_pdfs": 27,
+    "new_media": 682,
+    "reused_media": 219
+  },
+  "initial_receipt": {
+    "rows": [
+      {
+        "id": 386,
+        "historical_id": 6510,
+        "title": "“La mejor jugada es cuidarlos” ¿Cómo prevenir las apuestas online en chichas y chicos durante el Mundial?",
+        "date": "2026-06-26 17:14:37",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/la-mejor-jugada-es-cuidarlos-como-prevenir-las-apuestas-online-en-chicas-y-chicos-durante-el-mundial/"
+      },
+      {
+        "id": 550,
+        "historical_id": 6490,
+        "title": "Participamos de una jornada de formación sobre desarrollo infantil temprano en Ushuaia",
+        "date": "2026-06-26 14:41:57",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/participamos-de-una-jornada-de-formacion-sobre-desarrollo-infantil-temprano-en-ushuaia/"
+      },
+      {
+        "id": 404,
+        "historical_id": 6483,
+        "title": "Realizamos la charla abierta “Construir entornos seguros: ¿Cómo acompañar a chicas y chicos dentro y fuera de las pantallas?”",
+        "date": "2026-06-26 14:31:05",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/realizamos-la-charla-abierta-construir-entornos-seguros-como-acompanar-a-chicas-y-chicos-dentro-y-fuera-de-las-pantallas/"
+      },
+      {
+        "id": 539,
+        "historical_id": 6463,
+        "title": "Llevamos adelante jornadas de trabajo, escucha y participación en el sur provincial",
+        "date": "2026-06-17 15:39:23",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/llevamos-adelante-jornadas-de-trabajo-escucha-y-participacion-en-el-sur-provincial/"
+      },
+      {
+        "id": 512,
+        "historical_id": 6153,
+        "title": "Presentamos el informe “Adolescencias entre transformaciones y búsquedas: Una mirada sobre el bienestar adolescente en Córdoba”",
+        "date": "2026-03-20 17:20:38",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/presentamos-el-informe-adolescencias-entre-transformaciones-y-busquedas-una-mirada-sobre-el-bienestar-adolescente-en-cordoba/"
+      },
+      {
+        "id": 402,
+        "historical_id": 6127,
+        "title": "Se realizó el Encuentro de reconocimiento a Municipios MUNA de Córdoba:“Entornos que cuidan: promoviendo la corresponsabilidad”",
+        "date": "2026-03-20 17:07:34",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-realizo-el-encuentro-de-reconocimiento-a-municipios-muna-de-cordoba-entornos-que-cuidan-promoviendo-la-corresponsabilidad/"
+      },
+      {
+        "id": 417,
+        "historical_id": 6076,
+        "title": "Justicia juvenil entre el castigo y la reparación: jornada de reflexión interdisciplinaria",
+        "date": "2025-09-29 12:27:54",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/justicia-juvenil-entre-el-castigo-y-la-reparacion-jornada-de-reflexion-interdisciplinaria/"
+      },
+      {
+        "id": 498,
+        "historical_id": 6058,
+        "title": "Se realizó en Chubut el Primer Encuentro Interprovincial de Municipios MUNA",
+        "date": "2025-09-22 14:12:41",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-realizo-en-chubut-el-primer-encuentro-interprovincial-de-municipios-muna/"
+      },
+      {
+        "id": 552,
+        "historical_id": 6054,
+        "title": "Comunicado conjunto de las Defensorías de Niñas, Niños y Adolescentes del país ante el veto presidencial a la Ley de Emergencia Pediátrica",
+        "date": "2025-09-16 14:53:29",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/comunicado-conjunto-de-las-defensorias-de-ninas-ninos-y-adolescentes-del-pais-ante-el-veto-presidencial-a-la-ley-de-emergencia-pediatrica/"
+      },
+      {
+        "id": 432,
+        "historical_id": 6051,
+        "title": "Participamos del I Congreso Internacional de Ciudadanía Digital con Entre Pantallas, nuestro programa de Protección Digital",
+        "date": "2025-09-16 14:25:19",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/participamos-del-i-congreso-internacional-de-ciudadania-digital-con-entre-pantallas-nuestro-programa-de-proteccion-digital/"
+      },
+      {
+        "id": 457,
+        "historical_id": 6015,
+        "title": "La Defensora participó en la apertura y las tres jornadas de la Primera Cumbre Global sobre Derechos Humanos en El Salvador",
+        "date": "2025-09-10 16:39:33",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/la-defensora-participo-en-la-apertura-y-las-tres-jornadas-de-la-primera-cumbre-global-sobre-derechos-humanos-en-el-salvador/"
+      },
+      {
+        "id": 419,
+        "historical_id": 6007,
+        "title": "Comunicado sobre el veto a la Ley de Emergencia en Discapacidad",
+        "date": "2025-08-21 14:03:26",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/comunicado-sobre-el-veto-a-la-ley-de-emergencia-en-discapacidad/"
+      },
+      {
+        "id": 528,
+        "historical_id": 5990,
+        "title": "El Seminario Internacional “(CON)VIVIR en clave de derechos de infancias y adolescencias” reunió a referentes locales, adolescentes y organizaciones en tres espacios de diálogo y formación",
+        "date": "2025-08-13 13:11:58",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/el-seminario-internacional-con-vivir-en-clave-de-derechos-de-infancias-y-adolescencias-reunio-a-referentes-locales-adolescentes-y-organizaciones-en-tres-espacios-de-dialogo-y-formacion/"
+      },
+      {
+        "id": 500,
+        "historical_id": 5978,
+        "title": "Córdoba será sede del Seminario Internacional “(CON)VIVIR en clave de derechos de Infancias y Adolescencias”",
+        "date": "2025-07-17 18:38:29",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/cordoba-sera-sede-del-seminario-internacional-con-vivir-en-clave-de-derechos-de-infancias-y-adolescencias/"
+      },
+      {
+        "id": 638,
+        "historical_id": 5951,
+        "title": "III Conversatorio sobre Justicia Juvenil: Municipios de Córdoba y Buenos Aires compartieron experiencias en el marco de MUNA",
+        "date": "2025-07-03 15:59:11",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/iii-conversatorio-sobre-justicia-juvenil-municipios-de-cordoba-y-buenos-aires-compartieron-experiencias-en-el-marco-de-muna/"
+      },
+      {
+        "id": 729,
+        "historical_id": 5932,
+        "title": "PRONUNCIAMIENTO CONJUNTO DE DEFENSORAS Y DEFENSORES PROVINCIALES DE NIÑAS, NIÑOS Y ADOLESCENTES.",
+        "date": "2025-05-30 22:00:15",
+        "status": "CREATED",
+        "url": "http://localhost:8080/pronunciamiento-conjunto-de-defensoras-y-defensores-provinciales-de-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 378,
+        "historical_id": 5918,
+        "title": "Encuentro Federal “Cuidar la Crianza”: dos jornadas de reflexión y acción por la primera infancia junto a UNICEF Argentina y la Legislatura provincial",
+        "date": "2025-05-28 00:48:19",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/encuentro-federal-cuidar-la-crianza-dos-jornadas-de-reflexion-y-accion-por-la-primera-infancia-junto-a-unicef-argentina-y-la-legislatura-provincial/"
+      },
+      {
+        "id": 476,
+        "historical_id": 5897,
+        "title": "Lanzamiento de formaciones en derechos de niñez y adolescencia para profesionales con la Conferencia Magistral del Dr. Luis Pedernera",
+        "date": "2025-04-16 22:27:24",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/lanzamiento-de-formaciones-en-derechos-de-ninez-y-adolescencia-para-profesionales-con-la-conferencia-magistral-del-dr-luis-pedernera/"
+      },
+      {
+        "id": 364,
+        "historical_id": 5878,
+        "title": "Se llevó adelante el primer evento de la Red de Municipios MUNA",
+        "date": "2025-04-14 00:51:12",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-llevo-adelante-el-primer-evento-de-la-red-de-municipios-muna/"
+      },
+      {
+        "id": 353,
+        "historical_id": 5847,
+        "title": "Firma de Convenio de Cooperación Mutua con la Universidad Siglo 21",
+        "date": "2025-03-08 02:57:14",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/firma-de-convenio-de-cooperacion-mutua-con-la-universidad-siglo-21/"
+      },
+      {
+        "id": 465,
+        "historical_id": 5832,
+        "title": "Detrás del Humo: un stream hecho por jóvenes para jóvenes",
+        "date": "2025-03-07 02:47:10",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/detras-del-humo-un-stream-hecho-por-jovenes-para-jovenes/"
+      },
+      {
+        "id": 444,
+        "historical_id": 5812,
+        "title": "Se realizó la Firma de Convenio para la Apertura de las Subsedes en Bell Ville y Justiniano Posse",
+        "date": "2025-02-19 02:30:00",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-realizo-la-firma-de-convenio-para-la-apertura-de-las-subsedes-en-bell-ville-y-justiniano-posse/"
+      },
+      {
+        "id": 563,
+        "historical_id": 5752,
+        "title": "Llevamos a cabo la firma de Convenio para la apertura de Subsede en Salsipuedes",
+        "date": "2024-10-22 21:35:45",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/llevamos-a-cabo-la-firma-de-convenio-para-la-apertura-de-subsede-en-salsipuedes/"
+      },
+      {
+        "id": 514,
+        "historical_id": 5743,
+        "title": "Comunicado de la Defensora Amelia López ante la Resolución General 1023/2024 emitida por la Comisión Nacional de Valores",
+        "date": "2024-10-14 12:11:01",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/comunicado-de-la-defensora-amelia-lopez-ante-la-resolucion-general-1023-2024-emitida-por-la-comision-nacional-de-valores/"
+      },
+      {
+        "id": 487,
+        "historical_id": 5739,
+        "title": "Recibimos la visita del equipo de la Defensoría de los Derechos de Niñas, Niños y Adolescentes de Jujuy",
+        "date": "2024-10-02 02:46:37",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/recibimos-la-visita-del-equipo-de-la-defensoria-de-los-derechos-de-ninas-ninos-y-adolescentes-de-jujuy/"
+      },
+      {
+        "id": 742,
+        "historical_id": 5715,
+        "title": "El Programa de Protección Digital fue GALARDONADO INTERNACIONALMENTE con el segundo puesto en la 5º edición del Premio Iberoamericano de Educación en Derechos Humanos “Oscar Arnulfo Romero”.",
+        "date": "2024-09-09 10:25:49",
+        "status": "CREATED",
+        "url": "http://localhost:8080/el-programa-de-proteccion-digital-fue-galardonado-internacionalmente-con-el-segundo-puesto-en-la-5o-edicion-del-premio-iberoamericano-de-educacion-en-derechos-humanos-oscar-arnulfo-romero/"
+      },
+      {
+        "id": 629,
+        "historical_id": 5712,
+        "title": "Se realizó el lanzamiento del Trayecto Formativo “Derechos de Niñas, Niños y Adolescentes: territorialidad y políticas públicas”",
+        "date": "2024-09-09 10:20:34",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-realizo-el-lanzamiento-del-trayecto-formativo-derechos-de-ninas-ninos-y-adolescentes-territorialidad-y-politicas-publicas/"
+      },
+      {
+        "id": 615,
+        "historical_id": 5709,
+        "title": "Se llevó adelante el Seminario Abierto de Profundización “Justicia Penal Juvenil: Entre la madurez progresiva y la protección especial”",
+        "date": "2024-09-05 02:49:35",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-llevo-adelante-el-seminario-abierto-de-profundizacion-justicia-penal-juvenil-entre-la-madurez-progresiva-y-la-proteccion-especial/"
+      },
+      {
+        "id": 617,
+        "historical_id": 5625,
+        "title": "Se realizará el Seminario de profundización ̈Justicia penal juvenil: entre la madurez progresiva y la protección especial”",
+        "date": "2024-08-19 02:28:44",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-realizara-el-seminario-de-profundizacion-justicia-penal-juvenil-entre-la-madurez-progresiva-y-la-proteccion-especial/"
+      },
+      {
+        "id": 366,
+        "historical_id": 5611,
+        "title": "Defensores Nacionales y Defensores Provinciales presentan una “Declaración Conjunta: Sobre los anteproyectos de ley de Justicia Juvenil”",
+        "date": "2024-08-07 20:53:55",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/defensores-nacionales-y-defensores-provinciales-presentan-una-declaracion-conjunta-sobre-los-anteproyectos-de-ley-de-justicia-juvenil/"
+      },
+      {
+        "id": 749,
+        "historical_id": 5596,
+        "title": "Baja de edad de imputabilidad",
+        "date": "2024-08-01 02:46:51",
+        "status": "CREATED",
+        "url": "http://localhost:8080/baja-de-edad-de-imputabilidad/"
+      },
+      {
+        "id": 640,
+        "historical_id": 5549,
+        "title": "El Programa de Protección Digital de la DDNA ha sido galardonado con el Premio Iberoamericano de Educación en Derechos Humanos “Oscar Arnulfo Romero”",
+        "date": "2024-07-29 09:11:54",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/premio-programa-proteccion-digital/"
+      },
+      {
+        "id": 566,
+        "historical_id": 5524,
+        "title": "Ciclo de Diálogo y Formación “Cuidar para Crecer”. Estrategia Integral de Acompañamiento para una Crianza Cuidada",
+        "date": "2024-07-24 21:46:47",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/ciclo-de-dialogo-y-formacion-cuidar-para-crecer-estrategia-integral-de-acompanamiento-para-una-crianza-cuidada/"
+      },
+      {
+        "id": 590,
+        "historical_id": 5521,
+        "title": "Se realizó la segunda jornada de lanzamiento del Ciclo de Diálogo y Formación “Cuidar para Crecer”",
+        "date": "2024-07-24 21:40:56",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-realizo-la-segunda-jornada-de-lanzamiento-del-ciclo-de-dialogo-y-formacion-cuidar-para-crecer/"
+      },
+      {
+        "id": 594,
+        "historical_id": 5501,
+        "title": "Defensores Nacionales y Provinciales insisten en su Recomendación Conjunta de mayo 2022",
+        "date": "2024-07-24 21:28:02",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/defensores-nacionales-y-provinciales-insisten-en-su-recomendacion-conjunta-de-mayo-2022/"
+      },
+      {
+        "id": 604,
+        "historical_id": 5489,
+        "title": "Claves para la implementación y efectividad de la figura de Abogadas/os de NNyA. Evolución de la Jurisprudencia. Honorarios",
+        "date": "2024-07-24 21:22:54",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/se-llevo-adelante-el-seminario-claves-para-la-implementacion-y-efectividad-de-la-figura-de-abogadas-os-de-nnya-evolucion-de-la-jurisprudencia-honorarios/"
+      },
+      {
+        "id": 767,
+        "historical_id": 4843,
+        "title": "Llevamos adelante la 1a reunión del año de la Mesa MUNA (Municipio Unido por la Niñez y la Adolescencia)",
+        "date": "2024-05-02 00:11:54",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llevamos-adelante-la-1a-reunion-del-ano-de-la-mesa-muna-municipio-unido-por-la-ninez-y-la-adolescencia/"
+      },
+      {
+        "id": 779,
+        "historical_id": 4813,
+        "title": "Se llevó adelante la reapertura de la Subsede de Cruz del Eje",
+        "date": "2024-04-28 01:28:13",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-llevo-adelante-la-reapertura-de-la-subsede-de-cruz-del-eje/"
+      },
+      {
+        "id": 790,
+        "historical_id": 4774,
+        "title": "Se realizó el lanzamiento de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia – Abogada/o de NNyA 2024",
+        "date": "2024-04-23 03:01:00",
+        "status": "CREATED",
+        "url": "http://localhost:8080/lanzamiento-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescencia-abogada-o-de-nnya-2024/"
+      },
+      {
+        "id": 803,
+        "historical_id": 4748,
+        "title": "Se presentaron las líneas de trabajo 2024 para municipios MUNA",
+        "date": "2024-03-13 01:57:05",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-presentaron-las-lineas-de-trabajo-2024-para-municipios-muna/"
+      },
+      {
+        "id": 805,
+        "historical_id": 4737,
+        "title": "MUNA (Municipio Unido por la Niñez y la Adolescencia) junto a UNICEF Argentina",
+        "date": "2024-02-29 01:30:42",
+        "status": "CREATED",
+        "url": "http://localhost:8080/muna-municipio-unido-por-la-ninez-y-la-adolescencia-junto-unicef-argentina/"
+      },
+      {
+        "id": 808,
+        "historical_id": 4707,
+        "title": "Consideraciones de la Defensora de los Derechos de las Niñas, Niños y Adolescentes sobre el Proyecto de Ley Bases y Puntos de Partida para la Libertad de los Argentinos",
+        "date": "2024-01-18 13:07:03",
+        "status": "CREATED",
+        "url": "http://localhost:8080/consideraciones-de-la-defensora-de-los-derechos-de-las-ninas-ninos-y-adolescentes-sobre-el-proyecto-de-ley-bases-y-puntos-de-partida-para-la-libertad-de-los-argentinos/"
+      },
+      {
+        "id": 819,
+        "historical_id": 4584,
+        "title": "UNICEF y la DDNA buscan que más municipios cordobeses se  comprometan con la niñez y la adolescencia",
+        "date": "2023-09-21 16:40:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/unicef-y-la-ddna-buscan-que-mas-municipios-cordobeses-se-comprometan-con-la-ninez-y-la-adolescencia/"
+      },
+      {
+        "id": 822,
+        "historical_id": 4569,
+        "title": "Seminario: Abordajes de las violencias hacia Niñas, Niños y Adolescentes. Desafíos y aportes frente a la complejidad",
+        "date": "2023-09-14 02:20:35",
+        "status": "CREATED",
+        "url": "http://localhost:8080/seminario-abordajes-de-las-violencias-hacia-ninas-ninos-y-adolescentes-desafios-y-aportes-frente-la-complejidad/"
+      },
+      {
+        "id": 825,
+        "historical_id": 4472,
+        "title": "PRONUNCIAMIENTO CONJUNTO A 40 AÑOS DE DEMOCRACIA",
+        "date": "2023-09-03 21:06:20",
+        "status": "CREATED",
+        "url": "http://localhost:8080/pronunciamiento-conjunto-40-anos-de-democracia/"
+      },
+      {
+        "id": 829,
+        "historical_id": 4452,
+        "title": "Seminario Internacional: Abordajes de las violencias hacia Niñas, Niños y Adolescentes. Desafíos y aportes frente a la complejidad",
+        "date": "2023-08-31 05:13:27",
+        "status": "CREATED",
+        "url": "http://localhost:8080/seminario-internacional-abordajes-de-las-violencias-hacia-ninas-ninos-y-adolescentes-desafios-y-aportes-frente-la-complejidad/"
+      },
+      {
+        "id": 834,
+        "historical_id": 4430,
+        "title": "Juegos en línea: Guía para acompañar a niñas, niños y adolescentes",
+        "date": "2023-08-24 17:24:31",
+        "status": "CREATED",
+        "url": "http://localhost:8080/juegos-en-linea-guia-para-acompanar-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 835,
+        "historical_id": 4423,
+        "title": "Juegos en línea: acompañando a niñas y niños en el mundo digital",
+        "date": "2023-08-11 19:49:22",
+        "status": "CREATED",
+        "url": "http://localhost:8080/juegos-en-linea-mundo-digital-2/"
+      },
+      {
+        "id": 837,
+        "historical_id": 4389,
+        "title": "Nuevo video institucional",
+        "date": "2023-08-10 02:23:59",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nuevo-video-institucional-2/"
+      },
+      {
+        "id": 840,
+        "historical_id": 4378,
+        "title": "Seminario Internacional de Profundización “Hacia un cambio Pragmático: Justicia  Penal Juvenil y Prácticas Restaurativas”",
+        "date": "2023-08-09 21:30:39",
+        "status": "CREATED",
+        "url": "http://localhost:8080/seminario-internacional-de-profundizacion-hacia-un-cambio-pragmatico-justicia-penal-juvenil-y-practicas-restaurativas/"
+      },
+      {
+        "id": 843,
+        "historical_id": 4321,
+        "title": "COMUNICADO A LOS MEDIOS DE PRENSA",
+        "date": "2023-07-12 17:39:38",
+        "status": "CREATED",
+        "url": "http://localhost:8080/comunicado-los-medios-de-prensa/"
+      },
+      {
+        "id": 855,
+        "historical_id": 4308,
+        "title": "Llevamos adelante el Laboratorio de Participación Ciudadana para adolescentes de provincia",
+        "date": "2023-06-22 18:59:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llevamos-adelante-el-laboratorio-de-participacion-ciudadana-para-adolescentes-de-provincia/"
+      },
+      {
+        "id": 866,
+        "historical_id": 4276,
+        "title": "Seminario de Profundización: “Derechos Humanos de Infancias y Adolescencias: un cambio de paradigma”",
+        "date": "2023-06-22 17:39:46",
+        "status": "CREATED",
+        "url": "http://localhost:8080/seminario-de-profundizacion-derechos-humanos-de-infancias-y-adolescencias-un-cambio-de-paradigma/"
+      },
+      {
+        "id": 877,
+        "historical_id": 4259,
+        "title": "Inauguramos una nueva Subsede Regional en San Francisco",
+        "date": "2023-06-14 18:21:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/inauguramos-una-nueva-subsede-regional-en-san-francisco/"
+      },
+      {
+        "id": 889,
+        "historical_id": 4250,
+        "title": "La Defensoría del Público y UNICEF Argentina presentaron una guía periodística para el abordaje de la comunicación de la niñez y la adolescencia",
+        "date": "2023-06-12 13:41:18",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-del-publico-y-unicef-argentina-presentaron-una-guia-periodistica-para-el-abordaje-de-la-comunicacion-de-la-ninez-y-la-adolescencia/"
+      },
+      {
+        "id": 891,
+        "historical_id": 4227,
+        "title": "Se dictará el Seminario de Profundización: “Derechos Humanos de Infancias y Adolescencias: un cambio de paradigma” de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia Abogada/o de NNyA",
+        "date": "2023-06-05 15:06:49",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-dictara-el-seminario-de-profundizacion-derechos-humanos-de-infancias-y-adolescencias-un-cambio-de-paradigma-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescenci/"
+      },
+      {
+        "id": 893,
+        "historical_id": 4217,
+        "title": "Lanzamos la Diplomatura en Niñeces y Adolescencias en el Mundo Digital",
+        "date": "2023-05-04 19:42:59",
+        "status": "CREATED",
+        "url": "http://localhost:8080/lanzamos-la-diplomatura-en-nineces-y-adolescencias-en-el-mundo-digital/"
+      },
+      {
+        "id": 905,
+        "historical_id": 4193,
+        "title": "UNICEF y la DDNA reconocen la labor de municipios de Córdoba comprometidos con la niñez y la adolescencia",
+        "date": "2023-04-26 04:44:05",
+        "status": "CREATED",
+        "url": "http://localhost:8080/unicef-y-la-ddna-reconocen-la-labor-de-municipios-de-cordoba-comprometidos-con-la-ninez-y-la-adolescencia/"
+      },
+      {
+        "id": 914,
+        "historical_id": 4180,
+        "title": "Se inauguró una nueva Subsede de la Defensoría de Niñas, Niños y Adolescentes de la Provincia de Córdoba en Villa Cura Brochero",
+        "date": "2023-04-21 15:56:33",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-inauguro-una-nueva-subsede-de-la-defensoria-de-ninas-ninos-y-adolescentes-de-la-provincia-de-cordoba-en-villa-cura-brochero/"
+      },
+      {
+        "id": 925,
+        "historical_id": 4141,
+        "title": "Se realizó el lanzamiento de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia – Abogada/o de NNyA",
+        "date": "2023-04-04 02:23:38",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-realizo-el-lanzamiento-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescencia-abogada-o-de-nnya/"
+      },
+      {
+        "id": 936,
+        "historical_id": 4114,
+        "title": "III Foro Mundial de Derechos Humanos 2023",
+        "date": "2023-03-31 18:25:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/iii-foro-mundial-de-derechos-humanos-2023/"
+      },
+      {
+        "id": 946,
+        "historical_id": 4075,
+        "title": "Las adolescencias y juventudes dijeron presente en el Encuentro Suprarregional de Mujeres",
+        "date": "2023-02-14 18:35:52",
+        "status": "CREATED",
+        "url": "http://localhost:8080/las-adolescencias-y-juventudes-dijeron-presente-en-el-encuentro-suprarregional-de-mujeres/"
+      },
+      {
+        "id": 957,
+        "historical_id": 4052,
+        "title": "Con propuestas, reclamos y compromisos, cerró el IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+        "date": "2022-11-25 18:51:26",
+        "status": "CREATED",
+        "url": "http://localhost:8080/con-propuestas-reclamos-y-compromisos-cerro-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/"
+      },
+      {
+        "id": 968,
+        "historical_id": 4037,
+        "title": "Se llevó a cabo la segunda jornada del IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+        "date": "2022-11-18 18:09:25",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-llevo-cabo-la-segunda-jornada-del-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/"
+      },
+      {
+        "id": 980,
+        "historical_id": 4021,
+        "title": "Comenzó el IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+        "date": "2022-11-17 12:24:51",
+        "status": "CREATED",
+        "url": "http://localhost:8080/comenzo-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/"
+      },
+      {
+        "id": 989,
+        "historical_id": 4009,
+        "title": "Llevamos adelante la Reunión Red Córdoba Primera Infancia",
+        "date": "2022-10-25 02:53:13",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llevamos-adelante-la-reunion-red-cordoba-primera-infancia/"
+      },
+      {
+        "id": 997,
+        "historical_id": 3997,
+        "title": "Acompañamos el Seminario Internacional: “Igualdad en la Educación: brechas, debates y oportunidades” de Fundación Arcor",
+        "date": "2022-10-25 02:43:46",
+        "status": "CREATED",
+        "url": "http://localhost:8080/acompanamos-el-seminario-internacional-igualdad-en-la-educacion-brechas-debates-y-oportunidades-de-fundacion-arcor/"
+      },
+      {
+        "id": 1007,
+        "historical_id": 3993,
+        "title": "Se celebró el Encuentro de Presentación y Entrega de Reconocimientos a las Buenas Prácticas en Primera Infancia",
+        "date": "2022-10-25 02:34:01",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-celebro-el-encuentro-de-presentacion-y-entrega-de-reconocimientos-las-buenas-practicas-en-primera-infancia/"
+      },
+      {
+        "id": 1017,
+        "historical_id": 3986,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Santiago del Estero y Jornada Preparatoria en La Rioja",
+        "date": "2022-10-25 02:17:27",
+        "status": "CREATED",
+        "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-santiago-del-estero-y-jornada-preparatoria-en-la-rioja/"
+      },
+      {
+        "id": 1026,
+        "historical_id": 3907,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Chaco",
+        "date": "2022-10-11 16:53:32",
+        "status": "CREATED",
+        "url": "http://localhost:8080/precongreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia-chaco-argentina/"
+      },
+      {
+        "id": 1037,
+        "historical_id": 3890,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Partido de La Costa",
+        "date": "2022-10-05 20:15:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-partido-de-la-costa/"
+      },
+      {
+        "id": 1048,
+        "historical_id": 3876,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso La Pampa",
+        "date": "2022-10-04 02:28:47",
+        "status": "CREATED",
+        "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-la-pampa/"
+      },
+      {
+        "id": 1060,
+        "historical_id": 3854,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Casa de Córdoba",
+        "date": "2022-09-09 20:36:41",
+        "status": "CREATED",
+        "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-casa-de-cordoba/"
+      },
+      {
+        "id": 1069,
+        "historical_id": 3839,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso San Francisco.",
+        "date": "2022-08-30 03:29:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-san-francisco/"
+      },
+      {
+        "id": 1078,
+        "historical_id": 3821,
+        "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Lanús",
+        "date": "2022-08-26 20:17:59",
+        "status": "CREATED",
+        "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-lanus/"
+      },
+      {
+        "id": 1085,
+        "historical_id": 3809,
+        "title": "Jornada de trabajo en Ciudad de Córdoba, Malvinas Argentinas y Río Tercero en el marco del Programa MUNA",
+        "date": "2022-08-11 14:22:41",
+        "status": "CREATED",
+        "url": "http://localhost:8080/jornada-de-trabajo-en-ciudad-de-cordoba-malvinas-argentinas-y-rio-tercero-en-el-marco-del-programa-muna/"
+      },
+      {
+        "id": 1093,
+        "historical_id": 3787,
+        "title": "Villa María, Cosquín y Río Cuarto se suman al Programa MUNA",
+        "date": "2022-06-28 15:31:55",
+        "status": "CREATED",
+        "url": "http://localhost:8080/villa-maria-cosquin-y-rio-cuarto-se-suman-al-programa-muna/"
+      },
+      {
+        "id": 1104,
+        "historical_id": 3774,
+        "title": "Diálogo sobre infancias, adolescencias y noticias con periodistas de Córdoba",
+        "date": "2022-06-16 19:46:52",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dialogo-sobre-infancias-adolescencias-y-noticias-con-periodistas-de-cordoba/"
+      },
+      {
+        "id": 1108,
+        "historical_id": 3754,
+        "title": "Campaña Hay Otra forma: Hablemos de Bullying",
+        "date": "2022-06-13 19:52:37",
+        "status": "CREATED",
+        "url": "http://localhost:8080/campana-hay-otra-forma-hablemos-de-bullying/"
+      },
+      {
+        "id": 1111,
+        "historical_id": 3749,
+        "title": "La ONU designó a la Dra. Mary Beloff como miembro del Comité de los Derechos del Niño",
+        "date": "2022-06-07 17:59:19",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-onu-designo-la-dra-mary-beloff-como-miembro-del-comite-de-los-derechos-del-nino/"
+      },
+      {
+        "id": 1119,
+        "historical_id": 3728,
+        "title": "Participamos del Encuentro Nacional de Vicegobernadoras/es y Legisladoras/es Provinciales por las Infancias y Adolescencias en Argentina",
+        "date": "2022-06-03 19:59:43",
+        "status": "CREATED",
+        "url": "http://localhost:8080/participamos-del-encuentro-nacional-de-vicegobernadoras-es-y-legisladoras-es-provinciales-por-las-infancias-y-adolescencias-en-argentina/"
+      },
+      {
+        "id": 1124,
+        "historical_id": 3677,
+        "title": "Se lanzó el Programa Provincial “MUNA” (Municipios Unidos por la Niñez y la Adolescencia)",
+        "date": "2022-05-06 19:47:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-lanzo-el-programa-provincial-muna-municipios-unidos-por-la-ninez-y-la-adolescencia/"
+      },
+      {
+        "id": 1136,
+        "historical_id": 3658,
+        "title": "Hay Otra Forma: unidos para derribar mitos y costumbres",
+        "date": "2022-04-29 13:30:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/hay-otra-forma-unidos-para-derribar-mitos-y-costumbres/"
+      },
+      {
+        "id": 1141,
+        "historical_id": 3647,
+        "title": "Nos visitó Victor Giorgi, Director General del Instituto Interamericano del Niño, la Niña y Adolescentes de la OEA",
+        "date": "2022-04-21 19:20:56",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nos-visito-victor-giorgi-director-general-del-instituto-interamericano-del-nino-la-nina-y-adolescentes-de-la-oea/"
+      },
+      {
+        "id": 1143,
+        "historical_id": 3640,
+        "title": "Hay Otra Forma: Una campaña contra el maltrato en las infancias",
+        "date": "2022-04-20 16:29:39",
+        "status": "CREATED",
+        "url": "http://localhost:8080/hay-otra-forma-una-campana-contra-el-maltrato-en-las-infancias/"
+      },
+      {
+        "id": 1157,
+        "historical_id": 3598,
+        "title": "Realizamos la Jornada de Lanzamiento de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia Abogada/o de NNyA",
+        "date": "2022-04-12 20:49:08",
+        "status": "CREATED",
+        "url": "http://localhost:8080/realizamos-la-jornada-de-lanzamiento-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescencia-abogada-o-de-nnya/"
+      },
+      {
+        "id": 1165,
+        "historical_id": 3585,
+        "title": "Realizamos el Lanzamiento Nacional del IX Congreso Mundial por los Derechos de la Infancia y la Adolescencia",
+        "date": "2022-04-05 21:48:06",
+        "status": "CREATED",
+        "url": "http://localhost:8080/realizamos-el-lanzamiento-nacional-del-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/"
+      },
+      {
+        "id": 1167,
+        "historical_id": 3583,
+        "title": "Nuestros horarios de atención presencial",
+        "date": "2022-04-05 21:20:32",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nuestros-horarios-de-atencion-presencial/"
+      },
+      {
+        "id": 1170,
+        "historical_id": 3572,
+        "title": "Los invitamos a participar de la Jornada de Lanzamiento de la Diplomatura Abogada/a de NNyA Ed. 2022",
+        "date": "2022-03-25 19:51:19",
+        "status": "CREATED",
+        "url": "http://localhost:8080/los-invitamos-participar-de-la-jornada-de-lanzamiento-de-la-diplomatura-abogada-de-nnya-ed-2022/"
+      },
+      {
+        "id": 1178,
+        "historical_id": 3542,
+        "title": "Pre Congreso Mundial por los Derechos de la Infancia y Adolescencia – Universitat de Barcelona",
+        "date": "2022-01-27 13:48:04",
+        "status": "CREATED",
+        "url": "http://localhost:8080/pre-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia-universitat-de-barcelona/"
+      },
+      {
+        "id": 1180,
+        "historical_id": 3535,
+        "title": "Horarios de Enero",
+        "date": "2021-12-29 20:33:57",
+        "status": "CREATED",
+        "url": "http://localhost:8080/horarios-de-enero/"
+      },
+      {
+        "id": 1182,
+        "historical_id": 3530,
+        "title": "INFORMACIÓN DE SERVICIO – SÓLO PARA LA PROVINCIA DE CÓRDOBA",
+        "date": "2021-12-01 19:14:35",
+        "status": "CREATED",
+        "url": "http://localhost:8080/informacion-de-servicio-solo-para-la-provincia-de-cordoba/"
+      },
+      {
+        "id": 1185,
+        "historical_id": 3523,
+        "title": "La Defensoría los invita a participar del Conversatorio “La participación de NNyA, una deuda a resolver. Nuevos horizontes para su construcción”",
+        "date": "2021-11-19 16:40:39",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-los-invita-participar-del-conversatorio-la-participacion-de-nnya-una-deuda-resolver-nuevos-horizontes-para-su-construccion/"
+      },
+      {
+        "id": 1192,
+        "historical_id": 3504,
+        "title": "Se lanzó el Programa de Empoderamiento de NNyA 2021-2024",
+        "date": "2021-10-25 19:24:54",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-lanzo-el-programa-de-empoderamiento-de-nnya-2021-2024/"
+      },
+      {
+        "id": 1194,
+        "historical_id": 3493,
+        "title": "Desde el 4 de octubre la Defensoría tiene una nueva sede",
+        "date": "2021-10-06 11:43:53",
+        "status": "CREATED",
+        "url": "http://localhost:8080/desde-el-4-de-octubre-la-defensoria-tiene-una-nueva-sede/"
+      },
+      {
+        "id": 1196,
+        "historical_id": 3488,
+        "title": "LLEGA A CÓRDOBA EL IX CONGRESO MUNDIAL POR LOS DERECHOS DE LA INFANCIA Y LA ADOLESCENCIA",
+        "date": "2021-09-21 18:03:21",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llega-cordoba-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/"
+      },
+      {
+        "id": 1199,
+        "historical_id": 3481,
+        "title": "Se conformó la Red de Defensoras y Defensores de derechos de niñas, niños y adolescentes",
+        "date": "2021-08-20 21:48:16",
+        "status": "CREATED",
+        "url": "http://localhost:8080/los-defensores-de-ninez-y-adolescencia-del-pais-se-reunieron-para-seguir-trabajando-en-una-agenda-federal/"
+      },
+      {
+        "id": 1201,
+        "historical_id": 3478,
+        "title": "Continuamos trabajando en el plan “Primera Infancia, un futuro seguro” en la ciudad de Río Tercero",
+        "date": "2021-07-28 17:35:37",
+        "status": "CREATED",
+        "url": "http://localhost:8080/continuamos-trabajando-en-el-plan-primera-infancia-un-futuro-seguro-en-la-ciudad-de-rio-tercero/"
+      },
+      {
+        "id": 1203,
+        "historical_id": 3475,
+        "title": "Se trabaja en el Plan “Primera Infancia, un futuro seguro” en la ciudad de Río Cuarto",
+        "date": "2021-07-27 19:45:24",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-trabaja-en-el-plan-primera-infancia-un-futuro-seguro-en-la-ciudad-de-rio-cuarto/"
+      },
+      {
+        "id": 1205,
+        "historical_id": 3470,
+        "title": "Se avanza en el trabajo con la Mesa Ejecutiva Provincial del plan «Primera Infancia, un futuro seguro»",
+        "date": "2021-07-26 18:26:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-avanza-en-el-trabajo-con-la-mesa-ejecutiva-provincial-del-plan-primera-infancia-un-futuro-seguro/"
+      },
+      {
+        "id": 1207,
+        "historical_id": 3465,
+        "title": "Diplomatura en Niñeces y Adolescencias en el Mundo Digital en Oncativo",
+        "date": "2021-07-15 18:47:11",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nueva-diplomatura-en-nineces-y-adolescencias-en-el-mundo-digital-2/"
+      },
+      {
+        "id": 1209,
+        "historical_id": 3462,
+        "title": "PRIMERA INFANCIA: UN FUTURO SEGURO",
+        "date": "2021-07-07 19:03:00",
+        "status": "CREATED",
+        "url": "http://localhost:8080/primera-infancia-un-futuro-seguro/"
+      },
+      {
+        "id": 1211,
+        "historical_id": 3453,
+        "title": "Participá de la Semana de la Prevención del Consumo de Drogas",
+        "date": "2021-06-22 21:21:46",
+        "status": "CREATED",
+        "url": "http://localhost:8080/participa-de-la-semana-de-la-prevencion-del-consumo-de-drogas/"
+      },
+      {
+        "id": 1213,
+        "historical_id": 3440,
+        "title": "Se lanzó el Plan Provincial «Primera Infancia, un futuro seguro»",
+        "date": "2021-05-19 17:35:15",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-lanzo-el-plan-provincial-primera-infancia-un-futuro-seguro/"
+      },
+      {
+        "id": 1215,
+        "historical_id": 3437,
+        "title": "Participá del mapeo de instituciones que trabajan con chicas y chicos",
+        "date": "2021-05-17 16:15:33",
+        "status": "CREATED",
+        "url": "http://localhost:8080/participa-del-mapeo-de-instituciones-que-trabajan-con-chicas-y-chicos/"
+      },
+      {
+        "id": 1217,
+        "historical_id": 3397,
+        "title": "Nueva Diplomatura en Niñeces y Adolescencias en el mundo digital",
+        "date": "2021-04-22 15:31:20",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nueva-diplomatura-en-nineces-y-adolescencias-en-el-mundo-digital/"
+      },
+      {
+        "id": 1221,
+        "historical_id": 3386,
+        "title": "La Defensoría y la Universidad Nacional de Villa María firmaron un nuevo convenio de trabajo",
+        "date": "2021-04-20 14:47:54",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-y-la-universidad-nacional-de-villa-maria-firmaron-un-nuevo-convenio-de-trabajo/"
+      },
+      {
+        "id": 1223,
+        "historical_id": 3382,
+        "title": "Comenzó la Diplomatura en Derechos de Niñez y Adolescencia, Abogado del Niño, Edición 2021",
+        "date": "2021-04-16 17:32:05",
+        "status": "CREATED",
+        "url": "http://localhost:8080/comenzo-la-diplomatura-en-derechos-de-ninez-y-adolescencia-abogado-del-nino-edicion-2021/"
+      },
+      {
+        "id": 1226,
+        "historical_id": 3363,
+        "title": "El Conacai envió una solicitud a los medios de comunicación por el caso Maia",
+        "date": "2021-03-19 14:18:05",
+        "status": "CREATED",
+        "url": "http://localhost:8080/el-conacai-envio-una-solicitud-los-medios-de-comunicacion-por-el-caso-maia/"
+      },
+      {
+        "id": 1229,
+        "historical_id": 3346,
+        "title": "Diplomatura en Derechos de NNyA – Abogado del Niño. Edición 2021",
+        "date": "2021-03-09 19:10:55",
+        "status": "CREATED",
+        "url": "http://localhost:8080/diplomatura-en-derechos-de-nnya-abogado-del-nino-edicion-2021/"
+      },
+      {
+        "id": 1232,
+        "historical_id": 3309,
+        "title": "Las y los Defensores de Niñez y Adolescencia lanzaron un comunicado conjunto sobre la generación de consensos para la garantía de los derechos de niñas, niños y adolescentes",
+        "date": "2021-03-04 21:52:25",
+        "status": "CREATED",
+        "url": "http://localhost:8080/las-y-los-defensores-de-ninez-y-adolescencia-lanzaron-un-comunicado-conjunto-sobre-la-generacion-de-consensos-para-la-garantia-de-los-derechos-de-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 1240,
+        "historical_id": 3295,
+        "title": "Reunión nacional de Defensoras y Defensores de Niñez y Adolescencia: Hacia una agenda federal 2021",
+        "date": "2021-03-03 20:52:55",
+        "status": "CREATED",
+        "url": "http://localhost:8080/reunion-nacional-de-defensoras-y-defensores-de-ninez-y-adolescencia-hacia-una-agenda-federal-2021/"
+      },
+      {
+        "id": 1243,
+        "historical_id": 3290,
+        "title": "Los Defensores de niñez lanzaron un comunicado conjunto sobre la educación",
+        "date": "2021-02-12 13:43:59",
+        "status": "CREATED",
+        "url": "http://localhost:8080/los-defensores-de-ninez-lanzaron-un-comunicado-conjunto-sobre-la-educacion/"
+      },
+      {
+        "id": 1246,
+        "historical_id": 3186,
+        "title": "Llega un nuevo Pre Congreso Mundial de Infancia",
+        "date": "2020-11-19 15:33:43",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llega-un-nuevo-pre-congreso-mundial-de-infancia/"
+      },
+      {
+        "id": 1248,
+        "historical_id": 3181,
+        "title": "La Defensoría lanza una campaña por el Día Nacional de Lucha contra el Grooming",
+        "date": "2020-11-19 14:05:38",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-lanza-una-campana-por-el-dia-nacional-de-lucha-contra-el-grooming/"
+      },
+      {
+        "id": 1250,
+        "historical_id": 3178,
+        "title": "Segunda edición capacitación virtual para adultos",
+        "date": "2020-11-09 16:24:52",
+        "status": "CREATED",
+        "url": "http://localhost:8080/segunda-edicion-capacitacion-virtual-para-adultos/"
+      },
+      {
+        "id": 1254,
+        "historical_id": 3162,
+        "title": "Firmá la declaración «Compromiso de uso responsable y respetuoso de nuevas tecnologías»",
+        "date": "2020-11-09 14:41:32",
+        "status": "CREATED",
+        "url": "http://localhost:8080/firma-la-declaracion-compromiso-de-uso-responsable-y-respetuoso-de-nuevas-tecnologias/"
+      },
+      {
+        "id": 1257,
+        "historical_id": 3145,
+        "title": "La Defensoría y Casablanca lanzan un concurso para cuidar el medio ambiente.",
+        "date": "2020-10-23 17:23:32",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-y-casablanca-lanzan-un-concurso-para-cuidar-el-medio-ambiente-2/"
+      },
+      {
+        "id": 1259,
+        "historical_id": 3141,
+        "title": "La Defensoría lanza una capacitación virtual para adultos",
+        "date": "2020-10-09 15:05:58",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-lanza-una-capacitacion-virtual-para-adultos/"
+      },
+      {
+        "id": 1262,
+        "historical_id": 3136,
+        "title": "Nueva edición del Conversatorio on line sobre el Abogado del Niño",
+        "date": "2020-10-07 16:32:30",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nueva-edicion-del-conversatorio-line-sobre-el-abogado-del-nino/"
+      },
+      {
+        "id": 1264,
+        "historical_id": 3116,
+        "title": "Francesco Tonucci dará una conferencia en Córdoba",
+        "date": "2020-10-02 15:05:43",
+        "status": "CREATED",
+        "url": "http://localhost:8080/francesco-tonucci-dara-una-conferencia-en-cordoba/"
+      },
+      {
+        "id": 1268,
+        "historical_id": 3110,
+        "title": "La Defensoría firmó un convenio con la Asociación de Mujeres Jueces de Argentina (AMJA)",
+        "date": "2020-09-18 19:44:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-firmo-un-convenio-con-la-asociacion-de-mujeres-jueces-de-argentina-amja/"
+      },
+      {
+        "id": 1271,
+        "historical_id": 3085,
+        "title": "Las Defensorías del país y una propuesta por la seguridad digital de Niñas, Niños y Adolescentes",
+        "date": "2020-09-09 16:47:30",
+        "status": "CREATED",
+        "url": "http://localhost:8080/las-defensorias-del-pais-y-una-propuesta-por-la-seguridad-digital-de-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 1273,
+        "historical_id": 3075,
+        "title": "SE POSTERGA EL IX CONGRESO MUNDIAL POR LOS DERECHOS DE LA INFANCIA Y LA ADOLESCENCIA",
+        "date": "2020-08-25 18:53:48",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-posterga-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/"
+      },
+      {
+        "id": 1276,
+        "historical_id": 3064,
+        "title": "La Defensoría celebra el día de las niñeces con un festival digital",
+        "date": "2020-08-12 22:38:06",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-celebra-el-dia-de-las-nineces-con-un-festival-digital/"
+      },
+      {
+        "id": 1278,
+        "historical_id": 3053,
+        "title": "Jornadas abiertas de la Diplomatura en Derechos de la Niñez y la Adolescencia",
+        "date": "2020-07-30 14:13:26",
+        "status": "CREATED",
+        "url": "http://localhost:8080/jornadas-abiertas-de-la-diplomatura-en-derechos-de-la-ninez-y-la-adolescencia/"
+      },
+      {
+        "id": 1281,
+        "historical_id": 3050,
+        "title": "Conocé la nueva fanpage de la SENAF",
+        "date": "2020-07-23 17:39:49",
+        "status": "CREATED",
+        "url": "http://localhost:8080/conoce-la-nueva-fanpage-de-la-senaf/"
+      },
+      {
+        "id": 1283,
+        "historical_id": 3037,
+        "title": "Capacitate online en primera infancia",
+        "date": "2020-07-13 17:39:53",
+        "status": "CREATED",
+        "url": "http://localhost:8080/capacitate-online-en-primera-infancia/"
+      },
+      {
+        "id": 1286,
+        "historical_id": 3023,
+        "title": "Presentación de datos: Adolescencia en tiempos de pandemia.",
+        "date": "2020-06-29 15:52:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/presentacion-de-datos-adolescencia-en-tiempos-de-pandemia/"
+      },
+      {
+        "id": 1288,
+        "historical_id": 3012,
+        "title": "Charla sobre adicciones con Gastón Pauls",
+        "date": "2020-06-22 20:11:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/charla-sobre-adicciones-con-gaston-pauls/"
+      },
+      {
+        "id": 1291,
+        "historical_id": 2998,
+        "title": "Abuso sexual en Chubut: Defensores de niñez repudiaron la resolución del fiscal",
+        "date": "2020-06-16 14:20:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/abuso-sexual-en-chubut-defensores-de-ninez-repudiaron-la-resolucion-del-fiscal/"
+      },
+      {
+        "id": 1295,
+        "historical_id": 2991,
+        "title": "Cómo impacta la cuarentena en niñas, niños y adolescentes",
+        "date": "2020-05-27 23:41:52",
+        "status": "CREATED",
+        "url": "http://localhost:8080/como-impacta-la-cuarentena-en-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 1298,
+        "historical_id": 2982,
+        "title": "Líderes de América Latina firman declaración conjunta por la situación de la primera infancia en la región",
+        "date": "2020-05-07 15:39:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/lideres-de-america-latina-firman-declaracion-conjunta-por-la-situacion-de-la-primera-infancia-en-la-region/"
+      },
+      {
+        "id": 1303,
+        "historical_id": 2974,
+        "title": "Capacitación virtual «Abogados/as de NNyA. Desafíos en su implementación»",
+        "date": "2020-05-01 15:39:05",
+        "status": "CREATED",
+        "url": "http://localhost:8080/capacitacion-virtual-abogados-de-nnya-desafios-en-su-implementacion/"
+      },
+      {
+        "id": 1306,
+        "historical_id": 2969,
+        "title": "Primera declaración conjunta de los Defensores de Niñez de Argentina por la crisis del COVID-19",
+        "date": "2020-04-30 14:45:43",
+        "status": "CREATED",
+        "url": "http://localhost:8080/primera-declaracion-conjunta-de-los-defensores-de-ninez-de-argentina-por-la-crisis-del-covid-19/"
+      },
+      {
+        "id": 1309,
+        "historical_id": 2965,
+        "title": "Cuarentena con Derechos: mirá todas las recomendaciones de la Defensoría.",
+        "date": "2020-04-24 15:09:15",
+        "status": "CREATED",
+        "url": "http://localhost:8080/cuarentena-con-derechos-mira-todas-las-recomendaciones-de-la-defensoria/"
+      },
+      {
+        "id": 1316,
+        "historical_id": 2955,
+        "title": "Seguridad en internet y redes sociales en tiempos de cuarentena",
+        "date": "2020-04-23 15:26:44",
+        "status": "CREATED",
+        "url": "http://localhost:8080/seguridad-en-internet-y-redes-sociales-en-tiempos-de-cuarentena/"
+      },
+      {
+        "id": 1322,
+        "historical_id": 2939,
+        "title": "La Defensoría lanzó la campaña “Coronavirus, Medios y Protección de NNyA”",
+        "date": "2020-04-15 13:53:53",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-lanzo-la-campana-coronavirus-medios-y-proteccion-de-nnya/"
+      },
+      {
+        "id": 1325,
+        "historical_id": 2927,
+        "title": "La Defensoría Online, te acompañamos y cuidamos",
+        "date": "2020-04-02 21:41:55",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-online-te-acompanamos-y-cuidamos/"
+      },
+      {
+        "id": 1327,
+        "historical_id": 2793,
+        "title": "Llega a Córdoba el IX Congreso Mundial de Infancia y Adolescencia",
+        "date": "2020-01-21 23:17:22",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llega-cordoba-el-ix-congreso-mundial-de-infancia-y-adolescencia/"
+      },
+      {
+        "id": 1331,
+        "historical_id": 2781,
+        "title": "Jornada de Debate Intersectorial con Modalidad de análisis de casos “El derecho al cuidado, protección e integridad de NNyA”",
+        "date": "2019-12-09 17:52:19",
+        "status": "CREATED",
+        "url": "http://localhost:8080/jornada-de-debate-intersectorial-con-modalidad-de-analisis-de-casos-el-derecho-al-cuidado-proteccion-e-integridad-de-nnya/"
+      },
+      {
+        "id": 1333,
+        "historical_id": 2776,
+        "title": "Jornada «El Derecho al cuidado, protección e integridad de Niñas, Niños y Adolescentes»",
+        "date": "2019-11-27 20:10:14",
+        "status": "CREATED",
+        "url": "http://localhost:8080/jornada-el-derecho-al-cuidado-proteccion-e-integridad-de-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 1337,
+        "historical_id": 2769,
+        "title": "Cuarto módulo de la Diplomatura «Cuidado, crianza y educación en la primera infancia»",
+        "date": "2019-11-12 18:11:27",
+        "status": "CREATED",
+        "url": "http://localhost:8080/cuarto-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1340,
+        "historical_id": 2759,
+        "title": "Taller de Coberturas Periodísticas sobre Niñez y Adolescencia",
+        "date": "2019-11-12 18:05:34",
+        "status": "CREATED",
+        "url": "http://localhost:8080/taller-de-coberturas-periodisticas-sobre-ninez-y-adolescencia/"
+      },
+      {
+        "id": 1344,
+        "historical_id": 2748,
+        "title": "Pre Congreso Mundial sobre Infancia y Adolescencia",
+        "date": "2019-11-12 18:03:33",
+        "status": "CREATED",
+        "url": "http://localhost:8080/pre-congreso-mundial-sobre-infancia-y-adolescencia-2/"
+      },
+      {
+        "id": 1346,
+        "historical_id": 2740,
+        "title": "4º Módulo de la Diplomatura «Cuidado, Crianza y Educación en la Primera Infancia»",
+        "date": "2019-11-07 18:43:58",
+        "status": "CREATED",
+        "url": "http://localhost:8080/4o-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1348,
+        "historical_id": 2734,
+        "title": "Pre Congreso Mundial de La Infancia – Río Cuarto",
+        "date": "2019-11-01 14:20:50",
+        "status": "CREATED",
+        "url": "http://localhost:8080/pre-congreso-mundial-de-la-infancia-rio-cuarto/"
+      },
+      {
+        "id": 1351,
+        "historical_id": 2728,
+        "title": "El derecho a participar. Charla – Debate sobre la figura del Abogado/a de NNyA",
+        "date": "2019-10-29 13:54:59",
+        "status": "CREATED",
+        "url": "http://localhost:8080/el-derecho-participar-charla-debate-sobre-la-figura-del-abogado-de-nnya/"
+      },
+      {
+        "id": 1354,
+        "historical_id": 2721,
+        "title": "Jornada de Coberturas Periodísticas sobre Niñez y Adolescencia",
+        "date": "2019-10-23 16:44:47",
+        "status": "CREATED",
+        "url": "http://localhost:8080/coberturas-periodisticas/"
+      },
+      {
+        "id": 1359,
+        "historical_id": 2709,
+        "title": "Pre Congreso Mundial sobre Infancia y Adolescencia",
+        "date": "2019-10-23 16:38:37",
+        "status": "CREATED",
+        "url": "http://localhost:8080/pre-congreso-mundial-sobre-infancia-y-adolescencia/"
+      },
+      {
+        "id": 1362,
+        "historical_id": 2704,
+        "title": "Tercer módulo de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+        "date": "2019-10-18 12:01:39",
+        "status": "CREATED",
+        "url": "http://localhost:8080/tercer-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1364,
+        "historical_id": 2701,
+        "title": "Tercera jornada de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+        "date": "2019-10-15 13:29:24",
+        "status": "CREATED",
+        "url": "http://localhost:8080/tercera-jornada-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1369,
+        "historical_id": 2689,
+        "title": "Las vacunas salvan vidas: nuestra campaña de concientización",
+        "date": "2019-10-04 17:03:57",
+        "status": "CREATED",
+        "url": "http://localhost:8080/las-vacunas-salvan-vidas-nuestra-campana-de-concientizacion/"
+      },
+      {
+        "id": 1372,
+        "historical_id": 2683,
+        "title": "Segunda jornada Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+        "date": "2019-09-30 00:18:15",
+        "status": "CREATED",
+        "url": "http://localhost:8080/segunda-jornada-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1375,
+        "historical_id": 2674,
+        "title": "Declaración de Defensores de Niñas, Niños y Adolescentes en Rosario",
+        "date": "2019-09-18 15:37:36",
+        "status": "CREATED",
+        "url": "http://localhost:8080/declaracion-de-defensores-de-ninas-ninos-y-adolescentes-en-rosario/"
+      },
+      {
+        "id": 1378,
+        "historical_id": 2662,
+        "title": "Llega el 3° Congreso de Prevención y Asistencia de las Adicciones en Córdoba.",
+        "date": "2019-09-18 05:12:26",
+        "status": "CREATED",
+        "url": "http://localhost:8080/llega-el-3-congreso-de-prevencion-y-asistencia-de-las-adicciones-en-cordoba/"
+      },
+      {
+        "id": 1381,
+        "historical_id": 2657,
+        "title": "Segundo módulo de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+        "date": "2019-09-13 14:02:39",
+        "status": "CREATED",
+        "url": "http://localhost:8080/segundo-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1392,
+        "historical_id": 2630,
+        "title": "¡Gran festejo del Día del Niño!",
+        "date": "2019-08-26 19:05:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/gran-festejo-del-dia-del-nino/"
+      },
+      {
+        "id": 1395,
+        "historical_id": 2623,
+        "title": "Primera jornada de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+        "date": "2019-08-06 04:37:52",
+        "status": "CREATED",
+        "url": "http://localhost:8080/primera-jornada-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/"
+      },
+      {
+        "id": 1397,
+        "historical_id": 2513,
+        "title": "Diplomatura “Cuidado, Crianza y Educación en la Primera Infancia”",
+        "date": "2019-07-24 01:29:47",
+        "status": "CREATED",
+        "url": "http://localhost:8080/asdasd/"
+      },
+      {
+        "id": 1399,
+        "historical_id": 2122,
+        "title": "Participación en X Asamblea General del Instituto Latinoamericano del Ombudsman",
+        "date": "2019-07-15 11:35:12",
+        "status": "CREATED",
+        "url": "http://localhost:8080/participacion-en-x-asamblea-general-del-instituto-latinoamericano-del-ombudsman/"
+      },
+      {
+        "id": 1401,
+        "historical_id": 2076,
+        "title": "Sesión preparatoria del IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+        "date": "2019-07-10 16:47:00",
+        "status": "CREATED",
+        "url": "http://localhost:8080/sesion-preparatoria-del-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/"
+      },
+      {
+        "id": 1403,
+        "historical_id": 2615,
+        "title": "Día de la Patria",
+        "date": "2019-07-09 06:58:48",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dia-de-la-patria/"
+      },
+      {
+        "id": 1405,
+        "historical_id": 2603,
+        "title": "Día de Córdoba",
+        "date": "2019-07-06 06:57:14",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dia-de-cordoba/"
+      },
+      {
+        "id": 1407,
+        "historical_id": 2468,
+        "title": "Mapa interactivo de nuestras delegaciones",
+        "date": "2019-07-01 12:49:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/conoce-nuestro-mapa-interactivo-de-subsedes/"
+      },
+      {
+        "id": 1409,
+        "historical_id": 2596,
+        "title": "Aprobación de la figura del Abogado del Niño",
+        "date": "2019-07-01 06:55:42",
+        "status": "CREATED",
+        "url": "http://localhost:8080/aprobacion-de-la-figura-del-abogado-del-nino/"
+      },
+      {
+        "id": 1412,
+        "historical_id": 2554,
+        "title": "Semana provincial de Prevención del Consumo de Drogas y Alcohol",
+        "date": "2019-06-24 02:18:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/semana-provincial-de-prevencion-del-consumo-de-drogas-y-alcohol/"
+      },
+      {
+        "id": 1414,
+        "historical_id": 2586,
+        "title": "Día Mundial contra el Trabajo Infantil",
+        "date": "2019-06-12 06:52:58",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dia-mundial-contra-el-trabajo-infantil/"
+      },
+      {
+        "id": 1416,
+        "historical_id": 2579,
+        "title": "¡Felíz día del periodista!",
+        "date": "2019-06-07 06:51:25",
+        "status": "CREATED",
+        "url": "http://localhost:8080/feliz-dia-del-periodista/"
+      },
+      {
+        "id": 1479,
+        "historical_id": 2398,
+        "title": "Estreno de “Mr. Bully 2: La Evolución”",
+        "date": "2019-05-31 16:38:20",
+        "status": "CREATED",
+        "url": "http://localhost:8080/estreno-de-mr-bully-2-la-evolucion/"
+      },
+      {
+        "id": 1480,
+        "historical_id": 2395,
+        "title": "11° Jornadas Cordobesas de Derecho de las Familias",
+        "date": "2019-05-13 13:40:58",
+        "status": "CREATED",
+        "url": "http://localhost:8080/11-jornadas-cordobesas-de-derecho-de-las-familias/"
+      },
+      {
+        "id": 1502,
+        "historical_id": 2353,
+        "title": "Día internacional contra el #MaltratoInfantil",
+        "date": "2019-04-25 16:07:22",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dia-internacional-contra-el-maltratoinfantil/"
+      },
+      {
+        "id": 1503,
+        "historical_id": 2335,
+        "title": "Se viene la 5º edición del Zumbathon Solidario!",
+        "date": "2019-04-02 16:54:52",
+        "status": "CREATED",
+        "url": "http://localhost:8080/se-viene-la-5o-edicion-del-zumbathon-solidario/"
+      },
+      {
+        "id": 1504,
+        "historical_id": 2329,
+        "title": "Jornada para adolescentes #VaConVos 2019",
+        "date": "2019-03-28 11:23:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/jornada-para-adolescentes-vaconvos-2019/"
+      },
+      {
+        "id": 1507,
+        "historical_id": 2326,
+        "title": "Conocé sobre #MomoChallenge",
+        "date": "2019-03-22 14:09:02",
+        "status": "CREATED",
+        "url": "http://localhost:8080/conoce-sobre-momochallenge/"
+      },
+      {
+        "id": 1508,
+        "historical_id": 2314,
+        "title": "8 de Marzo – Día de la mujer",
+        "date": "2019-03-06 11:48:34",
+        "status": "CREATED",
+        "url": "http://localhost:8080/8-de-marzo-dia-de-la-mujer/"
+      },
+      {
+        "id": 1513,
+        "historical_id": 2293,
+        "title": "La defensoría acompañanando la obra MAUO – Un Amigo Espacial",
+        "date": "2019-02-14 06:19:47",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-defensoria-acompananando-la-obra-mauo-un-amigo-espacial/"
+      },
+      {
+        "id": 1514,
+        "historical_id": 2289,
+        "title": "Cierre del año de La Defensoría",
+        "date": "2018-12-11 21:17:39",
+        "status": "CREATED",
+        "url": "http://localhost:8080/cierre-del-ano-de-la-defensoria/"
+      },
+      {
+        "id": 1515,
+        "historical_id": 2285,
+        "title": "Programa #EncontrArte",
+        "date": "2018-12-04 18:19:43",
+        "status": "CREATED",
+        "url": "http://localhost:8080/programa-encontrarte/"
+      },
+      {
+        "id": 1516,
+        "historical_id": 2142,
+        "title": "Dado de La Paz y Actividades Recreativas en Alta Gracia",
+        "date": "2018-11-27 14:04:21",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dado-de-la-paz-y-actividades-recreativas-en-alta-gracia/"
+      },
+      {
+        "id": 1517,
+        "historical_id": 2133,
+        "title": "Festejo del Día Internacional de los Derechos del Niño",
+        "date": "2018-11-21 13:00:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/festejo-del-dia-internacional-de-los-derechos-del-nino/"
+      },
+      {
+        "id": 1518,
+        "historical_id": 2129,
+        "title": "Resumen de la Charla sobre Adicciones impartida por Gaston Pauls",
+        "date": "2018-11-20 11:42:16",
+        "status": "CREATED",
+        "url": "http://localhost:8080/resumen-de-la-charla-sobre-adicciones-impartida-por-gaston-pauls/"
+      },
+      {
+        "id": 1519,
+        "historical_id": 2125,
+        "title": "Córdoba será sede en el 2020 del Congreso Mundial por los Derechos de la Infancia y la Adolescencia",
+        "date": "2018-11-13 10:37:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/cordoba-sera-sede-en-el-2020-del-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/"
+      },
+      {
+        "id": 1520,
+        "historical_id": 2104,
+        "title": "Entrevista a los chicos en Mr. Bully",
+        "date": "2018-11-05 08:07:20",
+        "status": "CREATED",
+        "url": "http://localhost:8080/entrevista-ls-nins-en-mr-bully/"
+      },
+      {
+        "id": 1521,
+        "historical_id": 2081,
+        "title": "La DDNA presente en la 50º Edición de Feria de Ciencias y tecnología",
+        "date": "2018-10-19 00:54:45",
+        "status": "CREATED",
+        "url": "http://localhost:8080/la-ddna-presente-en-la-50o-edicion-de-feria-de-ciencias-y-tecnologia/"
+      },
+      {
+        "id": 1522,
+        "historical_id": 2068,
+        "title": "Reseña por los 10 años de la DDNA",
+        "date": "2018-10-08 11:06:16",
+        "status": "CREATED",
+        "url": "http://localhost:8080/resena-por-los-10-anos-de-la-ddna/"
+      },
+      {
+        "id": 1524,
+        "historical_id": 2052,
+        "title": "Sobre el proceso de selección del Defensor Nacional de Niñas, Niños y Adolescentes",
+        "date": "2018-10-03 10:50:23",
+        "status": "CREATED",
+        "url": "http://localhost:8080/sobre-el-proceso-de-seleccion-del-defensor-nacional-de-ninas-ninos-y-adolescentes/"
+      },
+      {
+        "id": 1525,
+        "historical_id": 2043,
+        "title": "Nuevo Video Institucional",
+        "date": "2018-09-29 00:04:44",
+        "status": "CREATED",
+        "url": "http://localhost:8080/nuevo-institucional/"
+      },
+      {
+        "id": 1528,
+        "historical_id": 2029,
+        "title": "2º Seminario Internacional: «Restaurar Derechos para NNyA. Retos Institucionales»",
+        "date": "2018-09-17 23:35:58",
+        "status": "CREATED",
+        "url": "http://localhost:8080/2o-seminario-internacional-restaurar-derechos-para-nnya-retos-institucionales/"
+      },
+      {
+        "id": 1529,
+        "historical_id": 2025,
+        "title": "Campaña: Mes de los Adolescentes",
+        "date": "2018-09-10 11:40:43",
+        "status": "CREATED",
+        "url": "http://localhost:8080/campana-mes-de-los-adolescentes/"
+      },
+      {
+        "id": 1530,
+        "historical_id": 2005,
+        "title": "#MesDelNiño – Campaña «Ser niños es mágico»",
+        "date": "2018-08-14 18:11:40",
+        "status": "CREATED",
+        "url": "http://localhost:8080/mesdelnino-campana-ser-ninos-es-magico/"
+      },
+      {
+        "id": 1531,
+        "historical_id": 2001,
+        "title": "Convenio con Facultad de Psicología",
+        "date": "2018-06-27 12:47:24",
+        "status": "CREATED",
+        "url": "http://localhost:8080/convenio-con-facultad-de-psicologia/"
+      },
+      {
+        "id": 1532,
+        "historical_id": 1997,
+        "title": "Invitación: Riesgos de #Violencia en #Niños y #Adolescentes",
+        "date": "2018-06-06 11:06:27",
+        "status": "CREATED",
+        "url": "http://localhost:8080/invitacion-riesgos-de-violencia-en-ninos-y-adolescentes/"
+      },
+      {
+        "id": 1533,
+        "historical_id": 1985,
+        "title": "Mr. Bully – Micro",
+        "date": "2018-05-30 00:04:01",
+        "status": "CREATED",
+        "url": "http://localhost:8080/mr-bully-micro/"
+      },
+      {
+        "id": 1534,
+        "historical_id": 1980,
+        "title": "Zumbathon Solidario 2018 en el Parque de las Tejas",
+        "date": "2018-05-18 16:45:32",
+        "status": "CREATED",
+        "url": "http://localhost:8080/zumbathon-solidario-2018-en-el-parque-de-las-tejas/"
+      },
+      {
+        "id": 1535,
+        "historical_id": 1975,
+        "title": "Encuentro de Defensorías de NNyA del País",
+        "date": "2018-05-16 01:12:22",
+        "status": "CREATED",
+        "url": "http://localhost:8080/encuentro-de-defensorias-de-nnya-del-pais/"
+      },
+      {
+        "id": 1536,
+        "historical_id": 1970,
+        "title": "Zumbathon solidario en el Parque de Las Tejas",
+        "date": "2018-05-08 08:34:56",
+        "status": "CREATED",
+        "url": "http://localhost:8080/zumbathon-solidario-en-el-parque-de-las-tejas/"
+      },
+      {
+        "id": 1537,
+        "historical_id": 1963,
+        "title": "Campaña ¿Y si probamos tratarnos bien? / DDNA Abril 2018",
+        "date": "2018-05-07 22:28:24",
+        "status": "CREATED",
+        "url": "http://localhost:8080/campana-y-si-probamos-tratarnos-bien-ddna-abril-2018/"
+      },
+      {
+        "id": 1538,
+        "historical_id": 1959,
+        "title": "¿Qué temas de la infancia se tocan en los medios?",
+        "date": "2018-04-21 10:29:32",
+        "status": "CREATED",
+        "url": "http://localhost:8080/que-temas-de-la-infancia-se-tocan-en-los-medios/"
+      },
+      {
+        "id": 1539,
+        "historical_id": 1937,
+        "title": "Convenio de Cooperación",
+        "date": "2018-03-23 08:23:17",
+        "status": "CREATED",
+        "url": "http://localhost:8080/convenio-de-cooperacion/"
+      },
+      {
+        "id": 1540,
+        "historical_id": 1932,
+        "title": "Felíz #DíaInternacionalDeLaMujer #8DeMarzo",
+        "date": "2018-03-08 15:16:09",
+        "status": "CREATED",
+        "url": "http://localhost:8080/feliz-diainternacionaldelamujer-8demarzo/"
+      },
+      {
+        "id": 1541,
+        "historical_id": 1928,
+        "title": "#VolverAClases ¡Valoremos la escuela!",
+        "date": "2018-03-01 21:12:38",
+        "status": "CREATED",
+        "url": "http://localhost:8080/volveraclases-valoremos-la-escuela/"
+      },
+      {
+        "id": 1542,
+        "historical_id": 1923,
+        "title": "#NavegáSeguro",
+        "date": "2018-02-15 14:34:02",
+        "status": "CREATED",
+        "url": "http://localhost:8080/navegaseguro/"
+      },
+      {
+        "id": 1543,
+        "historical_id": 1915,
+        "title": "Coro de niñ@s de la DDNA",
+        "date": "2017-12-12 18:13:25",
+        "status": "CREATED",
+        "url": "http://localhost:8080/coro-de-nins-de-la-ddna/"
+      },
+      {
+        "id": 1545,
+        "historical_id": 1911,
+        "title": "Video Institucional 2017",
+        "date": "2017-11-30 18:48:41",
+        "status": "CREATED",
+        "url": "http://localhost:8080/video-institucional-2017/"
+      },
+      {
+        "id": 1547,
+        "historical_id": 1894,
+        "title": "Dado de la Paz",
+        "date": "2017-11-28 15:09:30",
+        "status": "CREATED",
+        "url": "http://localhost:8080/dado-de-la-paz/"
+      },
+      {
+        "id": 1549,
+        "historical_id": 1890,
+        "title": "Festejo en el Teatro Real por el Día Internacional de los Derechos del Niño",
+        "date": "2017-11-24 15:47:15",
+        "status": "CREATED",
+        "url": "http://localhost:8080/festejo-en-el-teatro-real-por-el-dia-internacional-de-los-derechos-del-nino/"
+      },
+      {
+        "id": 1551,
+        "historical_id": 1886,
+        "title": "Video de la Celebración del «Día Internacional de los Derechos del Niño» en el Teatro Real",
+        "date": "2017-11-23 12:44:13",
+        "status": "CREATED",
+        "url": "http://localhost:8080/video-de-la-celebracion-del-dia-internacional-de-los-derechos-del-nino-en-el-teatro-real/"
+      },
+      {
+        "id": 1553,
+        "historical_id": 1881,
+        "title": "Festejo del «Día Internacional de los Derechos del Niño»",
+        "date": "2017-11-23 09:26:57",
+        "status": "CREATED",
+        "url": "http://localhost:8080/festejo-del-dia-internacional-de-los-derechos-de-los-ninos-en-el-teatro-real/"
+      },
+      {
+        "id": 1557,
+        "historical_id": 1839,
+        "title": "Taller para estudiantes y profesionales de la Comunicación “Comunicar con derechos: El rol de los medios en la construcción de la imagen adolescente”",
+        "date": "2017-10-26 13:51:16",
+        "status": "CREATED",
+        "url": "http://localhost:8080/taller-para-estudiantes-y-profesionales-de-la-comunicacion-comunicar-con-derechos-el-rol-de-los-medios-en-la-construccion-de-la-imagen-adolescente/"
+      },
+      {
+        "id": 1561,
+        "historical_id": 1798,
+        "title": "SEMINARIO-TALLER “CONFLICTIVIDAD JUVENIL Y JUSTICIA: SEMINARIO-TALLER “CONFLICTIVIDAD JUVENIL Y JUSTICIA: HACIA UN SISTEMA RESTAURATIVO”",
+        "date": "2017-10-25 23:09:13",
+        "status": "CREATED",
+        "url": "http://localhost:8080/seminario-taller-conflictividad-juvenil-y-justicia-seminario-taller-conflictividad-juvenil-y-justicia-hacia-un-sistema-restaurativo/"
+      },
+      {
+        "id": 1563,
+        "historical_id": 1791,
+        "title": "Jornada de visibilización del Síndrome de Down",
+        "date": "2017-10-23 13:00:29",
+        "status": "CREATED",
+        "url": "http://localhost:8080/jornada-de-sensibilizacion-en-el-mes-del-sindrome-de/"
+      },
+      {
+        "id": 1565,
+        "historical_id": 1786,
+        "title": "Talleres de Protección Digital en Devoto",
+        "date": "2017-10-18 12:34:41",
+        "status": "CREATED",
+        "url": "http://localhost:8080/talleres-de-proteccion-digital-en-devoto/"
+      },
+      {
+        "id": 1567,
+        "historical_id": 1770,
+        "title": "Taller para adultos +Libres 0 Alcohol",
+        "date": "2017-10-03 11:25:31",
+        "status": "CREATED",
+        "url": "http://localhost:8080/taller-para-adultos-libres-0-alcohol/"
+      },
+      {
+        "id": 1569,
+        "historical_id": 1762,
+        "title": "«Va con vos»: Presentamos nuestro programa para adolescentes",
+        "date": "2017-09-28 11:25:50",
+        "status": "CREATED",
+        "url": "http://localhost:8080/va-con-vos-presentamos-nuestro-programa-para-adolescentes/"
+      },
+      {
+        "id": 1570,
+        "historical_id": 1668,
+        "title": "Inauguramos subsede  de la Defensoría en Villa María",
+        "date": "2017-09-15 11:09:18",
+        "status": "CREATED",
+        "url": "http://localhost:8080/inauguramos-subsede-en-villa-maria/"
+      },
+      {
+        "id": 1572,
+        "historical_id": 1557,
+        "title": "Video: Dado de la Paz – DDNA y Movimiento de los Focolares",
+        "date": "2017-08-22 12:58:34",
+        "status": "CREATED",
+        "url": "http://localhost:8080/video-dado-de-la-paz-ddna-y-movimiento-de-los-focolares/"
+      },
+      {
+        "id": 1574,
+        "historical_id": 1554,
+        "title": "Videos de la Campaña «Tengo derecho a ser niñ@»",
+        "date": "2017-08-22 12:51:38",
+        "status": "CREATED",
+        "url": "http://localhost:8080/videos-de-la-campana-tengo-derecho-ser-nin/"
+      },
+      {
+        "id": 1576,
+        "historical_id": 784,
+        "title": "Entrevista a la Dra. Amelia Lopez en Canal C",
+        "date": "2016-10-19 14:14:50",
+        "status": "CREATED",
+        "url": "http://localhost:8080/entrevista-a-la-dra-amelia-lopez-en-canal-c/"
+      },
+      {
+        "id": 299,
+        "title": "Realizaremos la charla abierta “La mirada que sostiene: hablemos sobre la escucha activa, la validación emocional y el derecho a ser mirado y oído”",
+        "date": "2026-10-09 12:00:00",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/realizaremos-la-charla-abierta-la-mirada-que-sostiene-hablemos-sobre-la-escucha-activa-la-validacion-emocional-y-el-derecho-a-ser-mirado-y-oido/"
+      },
+      {
+        "id": 313,
+        "title": "Estudiantes del Colegio Universitario Politécnico comenzaron sus pasantías en la Defensoría",
+        "date": "2026-10-09 12:00:00",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/estudiantes-del-colegio-universitario-politecnico-comenzaron-sus-pasantias-en-la-defensoria/"
+      },
+      {
+        "id": 315,
+        "title": "Llevamos adelante la charla abierta “La mirada que sostiene” a cargo de la Lic. Beatriz Janin",
+        "date": "2026-10-09 12:00:00",
+        "status": "UPDATED",
+        "url": "http://localhost:8080/llevamos-adelante-la-charla-abierta-la-mirada-que-sostiene-a-cargo-de-la-lic-beatriz-janin/"
+      }
+    ],
+    "counts": {
+      "CREATED": 186,
+      "UPDATED": 33,
+      "SKIPPED": 0
+    },
+    "created_media": 682,
+    "completed_at": "2026-10-09 16:11:59",
+    "manifest_sha256": "ea71800640499c0921dbc7eebe500d17ddc51d3d07ac9462eaa6251977718d58"
+  },
+  "final_rows": [
+    {
+      "id": 386,
+      "historical_id": 6510,
+      "title": "“La mejor jugada es cuidarlos” ¿Cómo prevenir las apuestas online en chichas y chicos durante el Mundial?",
+      "date": "2026-06-26 17:14:37",
+      "url": "http://localhost:8080/la-mejor-jugada-es-cuidarlos-como-prevenir-las-apuestas-online-en-chicas-y-chicos-durante-el-mundial/",
+      "featured": 379,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 550,
+      "historical_id": 6490,
+      "title": "Participamos de una jornada de formación sobre desarrollo infantil temprano en Ushuaia",
+      "date": "2026-06-26 14:41:57",
+      "url": "http://localhost:8080/participamos-de-una-jornada-de-formacion-sobre-desarrollo-infantil-temprano-en-ushuaia/",
+      "featured": 540,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 404,
+      "historical_id": 6483,
+      "title": "Realizamos la charla abierta “Construir entornos seguros: ¿Cómo acompañar a chicas y chicos dentro y fuera de las pantallas?”",
+      "date": "2026-06-26 14:31:05",
+      "url": "http://localhost:8080/realizamos-la-charla-abierta-construir-entornos-seguros-como-acompanar-a-chicas-y-chicos-dentro-y-fuera-de-las-pantallas/",
+      "featured": 403,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 539,
+      "historical_id": 6463,
+      "title": "Llevamos adelante jornadas de trabajo, escucha y participación en el sur provincial",
+      "date": "2026-06-17 15:39:23",
+      "url": "http://localhost:8080/llevamos-adelante-jornadas-de-trabajo-escucha-y-participacion-en-el-sur-provincial/",
+      "featured": 529,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 512,
+      "historical_id": 6153,
+      "title": "Presentamos el informe “Adolescencias entre transformaciones y búsquedas: Una mirada sobre el bienestar adolescente en Córdoba”",
+      "date": "2026-03-20 17:20:38",
+      "url": "http://localhost:8080/presentamos-el-informe-adolescencias-entre-transformaciones-y-busquedas-una-mirada-sobre-el-bienestar-adolescente-en-cordoba/",
+      "featured": 501,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 402,
+      "historical_id": 6127,
+      "title": "Se realizó el Encuentro de reconocimiento a Municipios MUNA de Córdoba:“Entornos que cuidan: promoviendo la corresponsabilidad”",
+      "date": "2026-03-20 17:07:34",
+      "url": "http://localhost:8080/se-realizo-el-encuentro-de-reconocimiento-a-municipios-muna-de-cordoba-entornos-que-cuidan-promoviendo-la-corresponsabilidad/",
+      "featured": 395,
+      "carousel": true,
+      "gallery_count": 14,
+      "pending": []
+    },
+    {
+      "id": 417,
+      "historical_id": 6076,
+      "title": "Justicia juvenil entre el castigo y la reparación: jornada de reflexión interdisciplinaria",
+      "date": "2025-09-29 12:27:54",
+      "url": "http://localhost:8080/justicia-juvenil-entre-el-castigo-y-la-reparacion-jornada-de-reflexion-interdisciplinaria/",
+      "featured": 416,
+      "carousel": true,
+      "gallery_count": 11,
+      "pending": []
+    },
+    {
+      "id": 498,
+      "historical_id": 6058,
+      "title": "Se realizó en Chubut el Primer Encuentro Interprovincial de Municipios MUNA",
+      "date": "2025-09-22 14:12:41",
+      "url": "http://localhost:8080/se-realizo-en-chubut-el-primer-encuentro-interprovincial-de-municipios-muna/",
+      "featured": 497,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 552,
+      "historical_id": 6054,
+      "title": "Comunicado conjunto de las Defensorías de Niñas, Niños y Adolescentes del país ante el veto presidencial a la Ley de Emergencia Pediátrica",
+      "date": "2025-09-16 14:53:29",
+      "url": "http://localhost:8080/comunicado-conjunto-de-las-defensorias-de-ninas-ninos-y-adolescentes-del-pais-ante-el-veto-presidencial-a-la-ley-de-emergencia-pediatrica/",
+      "featured": 711,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 432,
+      "historical_id": 6051,
+      "title": "Participamos del I Congreso Internacional de Ciudadanía Digital con Entre Pantallas, nuestro programa de Protección Digital",
+      "date": "2025-09-16 14:25:19",
+      "url": "http://localhost:8080/participamos-del-i-congreso-internacional-de-ciudadania-digital-con-entre-pantallas-nuestro-programa-de-proteccion-digital/",
+      "featured": 713,
+      "carousel": true,
+      "gallery_count": 11,
+      "pending": []
+    },
+    {
+      "id": 457,
+      "historical_id": 6015,
+      "title": "La Defensora participó en la apertura y las tres jornadas de la Primera Cumbre Global sobre Derechos Humanos en El Salvador",
+      "date": "2025-09-10 16:39:33",
+      "url": "http://localhost:8080/la-defensora-participo-en-la-apertura-y-las-tres-jornadas-de-la-primera-cumbre-global-sobre-derechos-humanos-en-el-salvador/",
+      "featured": 715,
+      "carousel": true,
+      "gallery_count": 11,
+      "pending": []
+    },
+    {
+      "id": 419,
+      "historical_id": 6007,
+      "title": "Comunicado sobre el veto a la Ley de Emergencia en Discapacidad",
+      "date": "2025-08-21 14:03:26",
+      "url": "http://localhost:8080/comunicado-sobre-el-veto-a-la-ley-de-emergencia-en-discapacidad/",
+      "featured": 718,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 528,
+      "historical_id": 5990,
+      "title": "El Seminario Internacional “(CON)VIVIR en clave de derechos de infancias y adolescencias” reunió a referentes locales, adolescentes y organizaciones en tres espacios de diálogo y formación",
+      "date": "2025-08-13 13:11:58",
+      "url": "http://localhost:8080/el-seminario-internacional-con-vivir-en-clave-de-derechos-de-infancias-y-adolescencias-reunio-a-referentes-locales-adolescentes-y-organizaciones-en-tres-espacios-de-dialogo-y-formacion/",
+      "featured": 518,
+      "carousel": true,
+      "gallery_count": 12,
+      "pending": []
+    },
+    {
+      "id": 500,
+      "historical_id": 5978,
+      "title": "Córdoba será sede del Seminario Internacional “(CON)VIVIR en clave de derechos de Infancias y Adolescencias”",
+      "date": "2025-07-17 18:38:29",
+      "url": "http://localhost:8080/cordoba-sera-sede-del-seminario-internacional-con-vivir-en-clave-de-derechos-de-infancias-y-adolescencias/",
+      "featured": 724,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 638,
+      "historical_id": 5951,
+      "title": "III Conversatorio sobre Justicia Juvenil: Municipios de Córdoba y Buenos Aires compartieron experiencias en el marco de MUNA",
+      "date": "2025-07-03 15:59:11",
+      "url": "http://localhost:8080/iii-conversatorio-sobre-justicia-juvenil-municipios-de-cordoba-y-buenos-aires-compartieron-experiencias-en-el-marco-de-muna/",
+      "featured": 630,
+      "carousel": true,
+      "gallery_count": 8,
+      "pending": []
+    },
+    {
+      "id": 729,
+      "historical_id": 5932,
+      "title": "PRONUNCIAMIENTO CONJUNTO DE DEFENSORAS Y DEFENSORES PROVINCIALES DE NIÑAS, NIÑOS Y ADOLESCENTES.",
+      "date": "2025-05-30 22:00:15",
+      "url": "http://localhost:8080/pronunciamiento-conjunto-de-defensoras-y-defensores-provinciales-de-ninas-ninos-y-adolescentes/",
+      "featured": 728,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 378,
+      "historical_id": 5918,
+      "title": "Encuentro Federal “Cuidar la Crianza”: dos jornadas de reflexión y acción por la primera infancia junto a UNICEF Argentina y la Legislatura provincial",
+      "date": "2025-05-28 00:48:19",
+      "url": "http://localhost:8080/encuentro-federal-cuidar-la-crianza-dos-jornadas-de-reflexion-y-accion-por-la-primera-infancia-junto-a-unicef-argentina-y-la-legislatura-provincial/",
+      "featured": 377,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 476,
+      "historical_id": 5897,
+      "title": "Lanzamiento de formaciones en derechos de niñez y adolescencia para profesionales con la Conferencia Magistral del Dr. Luis Pedernera",
+      "date": "2025-04-16 22:27:24",
+      "url": "http://localhost:8080/lanzamiento-de-formaciones-en-derechos-de-ninez-y-adolescencia-para-profesionales-con-la-conferencia-magistral-del-dr-luis-pedernera/",
+      "featured": 470,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 364,
+      "historical_id": 5878,
+      "title": "Se llevó adelante el primer evento de la Red de Municipios MUNA",
+      "date": "2025-04-14 00:51:12",
+      "url": "http://localhost:8080/se-llevo-adelante-el-primer-evento-de-la-red-de-municipios-muna/",
+      "featured": 354,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 353,
+      "historical_id": 5847,
+      "title": "Firma de Convenio de Cooperación Mutua con la Universidad Siglo 21",
+      "date": "2025-03-08 02:57:14",
+      "url": "http://localhost:8080/firma-de-convenio-de-cooperacion-mutua-con-la-universidad-siglo-21/",
+      "featured": 343,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 465,
+      "historical_id": 5832,
+      "title": "Detrás del Humo: un stream hecho por jóvenes para jóvenes",
+      "date": "2025-03-07 02:47:10",
+      "url": "http://localhost:8080/detras-del-humo-un-stream-hecho-por-jovenes-para-jovenes/",
+      "featured": 458,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 444,
+      "historical_id": 5812,
+      "title": "Se realizó la Firma de Convenio para la Apertura de las Subsedes en Bell Ville y Justiniano Posse",
+      "date": "2025-02-19 02:30:00",
+      "url": "http://localhost:8080/se-realizo-la-firma-de-convenio-para-la-apertura-de-las-subsedes-en-bell-ville-y-justiniano-posse/",
+      "featured": 443,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 563,
+      "historical_id": 5752,
+      "title": "Llevamos a cabo la firma de Convenio para la apertura de Subsede en Salsipuedes",
+      "date": "2024-10-22 21:35:45",
+      "url": "http://localhost:8080/llevamos-a-cabo-la-firma-de-convenio-para-la-apertura-de-subsede-en-salsipuedes/",
+      "featured": 553,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 514,
+      "historical_id": 5743,
+      "title": "Comunicado de la Defensora Amelia López ante la Resolución General 1023/2024 emitida por la Comisión Nacional de Valores",
+      "date": "2024-10-14 12:11:01",
+      "url": "http://localhost:8080/comunicado-de-la-defensora-amelia-lopez-ante-la-resolucion-general-1023-2024-emitida-por-la-comision-nacional-de-valores/",
+      "featured": 738,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 487,
+      "historical_id": 5739,
+      "title": "Recibimos la visita del equipo de la Defensoría de los Derechos de Niñas, Niños y Adolescentes de Jujuy",
+      "date": "2024-10-02 02:46:37",
+      "url": "http://localhost:8080/recibimos-la-visita-del-equipo-de-la-defensoria-de-los-derechos-de-ninas-ninos-y-adolescentes-de-jujuy/",
+      "featured": 477,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 742,
+      "historical_id": 5715,
+      "title": "El Programa de Protección Digital fue GALARDONADO INTERNACIONALMENTE con el segundo puesto en la 5º edición del Premio Iberoamericano de Educación en Derechos Humanos “Oscar Arnulfo Romero”.",
+      "date": "2024-09-09 10:25:49",
+      "url": "http://localhost:8080/el-programa-de-proteccion-digital-fue-galardonado-internacionalmente-con-el-segundo-puesto-en-la-5o-edicion-del-premio-iberoamericano-de-educacion-en-derechos-humanos-oscar-arnulfo-romero/",
+      "featured": 741,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 629,
+      "historical_id": 5712,
+      "title": "Se realizó el lanzamiento del Trayecto Formativo “Derechos de Niñas, Niños y Adolescentes: territorialidad y políticas públicas”",
+      "date": "2024-09-09 10:20:34",
+      "url": "http://localhost:8080/se-realizo-el-lanzamiento-del-trayecto-formativo-derechos-de-ninas-ninos-y-adolescentes-territorialidad-y-politicas-publicas/",
+      "featured": 628,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 615,
+      "historical_id": 5709,
+      "title": "Se llevó adelante el Seminario Abierto de Profundización “Justicia Penal Juvenil: Entre la madurez progresiva y la protección especial”",
+      "date": "2024-09-05 02:49:35",
+      "url": "http://localhost:8080/se-llevo-adelante-el-seminario-abierto-de-profundizacion-justicia-penal-juvenil-entre-la-madurez-progresiva-y-la-proteccion-especial/",
+      "featured": 605,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 617,
+      "historical_id": 5625,
+      "title": "Se realizará el Seminario de profundización ̈Justicia penal juvenil: entre la madurez progresiva y la protección especial”",
+      "date": "2024-08-19 02:28:44",
+      "url": "http://localhost:8080/se-realizara-el-seminario-de-profundizacion-justicia-penal-juvenil-entre-la-madurez-progresiva-y-la-proteccion-especial/",
+      "featured": 745,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 366,
+      "historical_id": 5611,
+      "title": "Defensores Nacionales y Defensores Provinciales presentan una “Declaración Conjunta: Sobre los anteproyectos de ley de Justicia Juvenil”",
+      "date": "2024-08-07 20:53:55",
+      "url": "http://localhost:8080/defensores-nacionales-y-defensores-provinciales-presentan-una-declaracion-conjunta-sobre-los-anteproyectos-de-ley-de-justicia-juvenil/",
+      "featured": 365,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 749,
+      "historical_id": 5596,
+      "title": "Baja de edad de imputabilidad",
+      "date": "2024-08-01 02:46:51",
+      "url": "http://localhost:8080/baja-de-edad-de-imputabilidad/",
+      "featured": 748,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 640,
+      "historical_id": 5549,
+      "title": "El Programa de Protección Digital de la DDNA ha sido galardonado con el Premio Iberoamericano de Educación en Derechos Humanos “Oscar Arnulfo Romero”",
+      "date": "2024-07-29 09:11:54",
+      "url": "http://localhost:8080/premio-programa-proteccion-digital/",
+      "featured": 639,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 566,
+      "historical_id": 5524,
+      "title": "Ciclo de Diálogo y Formación “Cuidar para Crecer”. Estrategia Integral de Acompañamiento para una Crianza Cuidada",
+      "date": "2024-07-24 21:46:47",
+      "url": "http://localhost:8080/ciclo-de-dialogo-y-formacion-cuidar-para-crecer-estrategia-integral-de-acompanamiento-para-una-crianza-cuidada/",
+      "featured": 565,
+      "carousel": true,
+      "gallery_count": 1,
+      "pending": []
+    },
+    {
+      "id": 590,
+      "historical_id": 5521,
+      "title": "Se realizó la segunda jornada de lanzamiento del Ciclo de Diálogo y Formación “Cuidar para Crecer”",
+      "date": "2024-07-24 21:40:56",
+      "url": "http://localhost:8080/se-realizo-la-segunda-jornada-de-lanzamiento-del-ciclo-de-dialogo-y-formacion-cuidar-para-crecer/",
+      "featured": 589,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 594,
+      "historical_id": 5501,
+      "title": "Defensores Nacionales y Provinciales insisten en su Recomendación Conjunta de mayo 2022",
+      "date": "2024-07-24 21:28:02",
+      "url": "http://localhost:8080/defensores-nacionales-y-provinciales-insisten-en-su-recomendacion-conjunta-de-mayo-2022/",
+      "featured": 593,
+      "carousel": true,
+      "gallery_count": 2,
+      "pending": []
+    },
+    {
+      "id": 604,
+      "historical_id": 5489,
+      "title": "Claves para la implementación y efectividad de la figura de Abogadas/os de NNyA. Evolución de la Jurisprudencia. Honorarios",
+      "date": "2024-07-24 21:22:54",
+      "url": "http://localhost:8080/se-llevo-adelante-el-seminario-claves-para-la-implementacion-y-efectividad-de-la-figura-de-abogadas-os-de-nnya-evolucion-de-la-jurisprudencia-honorarios/",
+      "featured": 603,
+      "carousel": true,
+      "gallery_count": 8,
+      "pending": []
+    },
+    {
+      "id": 767,
+      "historical_id": 4843,
+      "title": "Llevamos adelante la 1a reunión del año de la Mesa MUNA (Municipio Unido por la Niñez y la Adolescencia)",
+      "date": "2024-05-02 00:11:54",
+      "url": "http://localhost:8080/llevamos-adelante-la-1a-reunion-del-ano-de-la-mesa-muna-municipio-unido-por-la-ninez-y-la-adolescencia/",
+      "featured": 766,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 779,
+      "historical_id": 4813,
+      "title": "Se llevó adelante la reapertura de la Subsede de Cruz del Eje",
+      "date": "2024-04-28 01:28:13",
+      "url": "http://localhost:8080/se-llevo-adelante-la-reapertura-de-la-subsede-de-cruz-del-eje/",
+      "featured": 778,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 790,
+      "historical_id": 4774,
+      "title": "Se realizó el lanzamiento de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia – Abogada/o de NNyA 2024",
+      "date": "2024-04-23 03:01:00",
+      "url": "http://localhost:8080/lanzamiento-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescencia-abogada-o-de-nnya-2024/",
+      "featured": 780,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 803,
+      "historical_id": 4748,
+      "title": "Se presentaron las líneas de trabajo 2024 para municipios MUNA",
+      "date": "2024-03-13 01:57:05",
+      "url": "http://localhost:8080/se-presentaron-las-lineas-de-trabajo-2024-para-municipios-muna/",
+      "featured": 802,
+      "carousel": true,
+      "gallery_count": 11,
+      "pending": []
+    },
+    {
+      "id": 805,
+      "historical_id": 4737,
+      "title": "MUNA (Municipio Unido por la Niñez y la Adolescencia) junto a UNICEF Argentina",
+      "date": "2024-02-29 01:30:42",
+      "url": "http://localhost:8080/muna-municipio-unido-por-la-ninez-y-la-adolescencia-junto-unicef-argentina/",
+      "featured": 804,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 808,
+      "historical_id": 4707,
+      "title": "Consideraciones de la Defensora de los Derechos de las Niñas, Niños y Adolescentes sobre el Proyecto de Ley Bases y Puntos de Partida para la Libertad de los Argentinos",
+      "date": "2024-01-18 13:07:03",
+      "url": "http://localhost:8080/consideraciones-de-la-defensora-de-los-derechos-de-las-ninas-ninos-y-adolescentes-sobre-el-proyecto-de-ley-bases-y-puntos-de-partida-para-la-libertad-de-los-argentinos/",
+      "featured": 806,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 819,
+      "historical_id": 4584,
+      "title": "UNICEF y la DDNA buscan que más municipios cordobeses se  comprometan con la niñez y la adolescencia",
+      "date": "2023-09-21 16:40:40",
+      "url": "http://localhost:8080/unicef-y-la-ddna-buscan-que-mas-municipios-cordobeses-se-comprometan-con-la-ninez-y-la-adolescencia/",
+      "featured": 809,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 822,
+      "historical_id": 4569,
+      "title": "Seminario: Abordajes de las violencias hacia Niñas, Niños y Adolescentes. Desafíos y aportes frente a la complejidad",
+      "date": "2023-09-14 02:20:35",
+      "url": "http://localhost:8080/seminario-abordajes-de-las-violencias-hacia-ninas-ninos-y-adolescentes-desafios-y-aportes-frente-la-complejidad/",
+      "featured": 820,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 825,
+      "historical_id": 4472,
+      "title": "PRONUNCIAMIENTO CONJUNTO A 40 AÑOS DE DEMOCRACIA",
+      "date": "2023-09-03 21:06:20",
+      "url": "http://localhost:8080/pronunciamiento-conjunto-40-anos-de-democracia/",
+      "featured": 823,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 829,
+      "historical_id": 4452,
+      "title": "Seminario Internacional: Abordajes de las violencias hacia Niñas, Niños y Adolescentes. Desafíos y aportes frente a la complejidad",
+      "date": "2023-08-31 05:13:27",
+      "url": "http://localhost:8080/seminario-internacional-abordajes-de-las-violencias-hacia-ninas-ninos-y-adolescentes-desafios-y-aportes-frente-la-complejidad/",
+      "featured": 828,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 834,
+      "historical_id": 4430,
+      "title": "Juegos en línea: Guía para acompañar a niñas, niños y adolescentes",
+      "date": "2023-08-24 17:24:31",
+      "url": "http://localhost:8080/juegos-en-linea-guia-para-acompanar-ninas-ninos-y-adolescentes/",
+      "featured": 833,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 835,
+      "historical_id": 4423,
+      "title": "Juegos en línea: acompañando a niñas y niños en el mundo digital",
+      "date": "2023-08-11 19:49:22",
+      "url": "http://localhost:8080/juegos-en-linea-mundo-digital-2/",
+      "featured": 831,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 837,
+      "historical_id": 4389,
+      "title": "Nuevo video institucional",
+      "date": "2023-08-10 02:23:59",
+      "url": "http://localhost:8080/nuevo-video-institucional-2/",
+      "featured": 836,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 840,
+      "historical_id": 4378,
+      "title": "Seminario Internacional de Profundización “Hacia un cambio Pragmático: Justicia  Penal Juvenil y Prácticas Restaurativas”",
+      "date": "2023-08-09 21:30:39",
+      "url": "http://localhost:8080/seminario-internacional-de-profundizacion-hacia-un-cambio-pragmatico-justicia-penal-juvenil-y-practicas-restaurativas/",
+      "featured": 839,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 843,
+      "historical_id": 4321,
+      "title": "COMUNICADO A LOS MEDIOS DE PRENSA",
+      "date": "2023-07-12 17:39:38",
+      "url": "http://localhost:8080/comunicado-los-medios-de-prensa/",
+      "featured": 842,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 855,
+      "historical_id": 4308,
+      "title": "Llevamos adelante el Laboratorio de Participación Ciudadana para adolescentes de provincia",
+      "date": "2023-06-22 18:59:29",
+      "url": "http://localhost:8080/llevamos-adelante-el-laboratorio-de-participacion-ciudadana-para-adolescentes-de-provincia/",
+      "featured": 854,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 866,
+      "historical_id": 4276,
+      "title": "Seminario de Profundización: “Derechos Humanos de Infancias y Adolescencias: un cambio de paradigma”",
+      "date": "2023-06-22 17:39:46",
+      "url": "http://localhost:8080/seminario-de-profundizacion-derechos-humanos-de-infancias-y-adolescencias-un-cambio-de-paradigma/",
+      "featured": 865,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 877,
+      "historical_id": 4259,
+      "title": "Inauguramos una nueva Subsede Regional en San Francisco",
+      "date": "2023-06-14 18:21:29",
+      "url": "http://localhost:8080/inauguramos-una-nueva-subsede-regional-en-san-francisco/",
+      "featured": 876,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 889,
+      "historical_id": 4250,
+      "title": "La Defensoría del Público y UNICEF Argentina presentaron una guía periodística para el abordaje de la comunicación de la niñez y la adolescencia",
+      "date": "2023-06-12 13:41:18",
+      "url": "http://localhost:8080/la-defensoria-del-publico-y-unicef-argentina-presentaron-una-guia-periodistica-para-el-abordaje-de-la-comunicacion-de-la-ninez-y-la-adolescencia/",
+      "featured": 888,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 891,
+      "historical_id": 4227,
+      "title": "Se dictará el Seminario de Profundización: “Derechos Humanos de Infancias y Adolescencias: un cambio de paradigma” de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia Abogada/o de NNyA",
+      "date": "2023-06-05 15:06:49",
+      "url": "http://localhost:8080/se-dictara-el-seminario-de-profundizacion-derechos-humanos-de-infancias-y-adolescencias-un-cambio-de-paradigma-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescenci/",
+      "featured": 890,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 893,
+      "historical_id": 4217,
+      "title": "Lanzamos la Diplomatura en Niñeces y Adolescencias en el Mundo Digital",
+      "date": "2023-05-04 19:42:59",
+      "url": "http://localhost:8080/lanzamos-la-diplomatura-en-nineces-y-adolescencias-en-el-mundo-digital/",
+      "featured": 892,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 905,
+      "historical_id": 4193,
+      "title": "UNICEF y la DDNA reconocen la labor de municipios de Córdoba comprometidos con la niñez y la adolescencia",
+      "date": "2023-04-26 04:44:05",
+      "url": "http://localhost:8080/unicef-y-la-ddna-reconocen-la-labor-de-municipios-de-cordoba-comprometidos-con-la-ninez-y-la-adolescencia/",
+      "featured": 904,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 914,
+      "historical_id": 4180,
+      "title": "Se inauguró una nueva Subsede de la Defensoría de Niñas, Niños y Adolescentes de la Provincia de Córdoba en Villa Cura Brochero",
+      "date": "2023-04-21 15:56:33",
+      "url": "http://localhost:8080/se-inauguro-una-nueva-subsede-de-la-defensoria-de-ninas-ninos-y-adolescentes-de-la-provincia-de-cordoba-en-villa-cura-brochero/",
+      "featured": 913,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 925,
+      "historical_id": 4141,
+      "title": "Se realizó el lanzamiento de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia – Abogada/o de NNyA",
+      "date": "2023-04-04 02:23:38",
+      "url": "http://localhost:8080/se-realizo-el-lanzamiento-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescencia-abogada-o-de-nnya/",
+      "featured": 924,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 936,
+      "historical_id": 4114,
+      "title": "III Foro Mundial de Derechos Humanos 2023",
+      "date": "2023-03-31 18:25:09",
+      "url": "http://localhost:8080/iii-foro-mundial-de-derechos-humanos-2023/",
+      "featured": 935,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 946,
+      "historical_id": 4075,
+      "title": "Las adolescencias y juventudes dijeron presente en el Encuentro Suprarregional de Mujeres",
+      "date": "2023-02-14 18:35:52",
+      "url": "http://localhost:8080/las-adolescencias-y-juventudes-dijeron-presente-en-el-encuentro-suprarregional-de-mujeres/",
+      "featured": 945,
+      "carousel": true,
+      "gallery_count": 8,
+      "pending": []
+    },
+    {
+      "id": 957,
+      "historical_id": 4052,
+      "title": "Con propuestas, reclamos y compromisos, cerró el IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+      "date": "2022-11-25 18:51:26",
+      "url": "http://localhost:8080/con-propuestas-reclamos-y-compromisos-cerro-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/",
+      "featured": 956,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 968,
+      "historical_id": 4037,
+      "title": "Se llevó a cabo la segunda jornada del IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+      "date": "2022-11-18 18:09:25",
+      "url": "http://localhost:8080/se-llevo-cabo-la-segunda-jornada-del-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/",
+      "featured": 967,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 980,
+      "historical_id": 4021,
+      "title": "Comenzó el IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+      "date": "2022-11-17 12:24:51",
+      "url": "http://localhost:8080/comenzo-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/",
+      "featured": 979,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 989,
+      "historical_id": 4009,
+      "title": "Llevamos adelante la Reunión Red Córdoba Primera Infancia",
+      "date": "2022-10-25 02:53:13",
+      "url": "http://localhost:8080/llevamos-adelante-la-reunion-red-cordoba-primera-infancia/",
+      "featured": 988,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 997,
+      "historical_id": 3997,
+      "title": "Acompañamos el Seminario Internacional: “Igualdad en la Educación: brechas, debates y oportunidades” de Fundación Arcor",
+      "date": "2022-10-25 02:43:46",
+      "url": "http://localhost:8080/acompanamos-el-seminario-internacional-igualdad-en-la-educacion-brechas-debates-y-oportunidades-de-fundacion-arcor/",
+      "featured": 996,
+      "carousel": true,
+      "gallery_count": 6,
+      "pending": []
+    },
+    {
+      "id": 1007,
+      "historical_id": 3993,
+      "title": "Se celebró el Encuentro de Presentación y Entrega de Reconocimientos a las Buenas Prácticas en Primera Infancia",
+      "date": "2022-10-25 02:34:01",
+      "url": "http://localhost:8080/se-celebro-el-encuentro-de-presentacion-y-entrega-de-reconocimientos-las-buenas-practicas-en-primera-infancia/",
+      "featured": 1006,
+      "carousel": true,
+      "gallery_count": 8,
+      "pending": []
+    },
+    {
+      "id": 1017,
+      "historical_id": 3986,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Santiago del Estero y Jornada Preparatoria en La Rioja",
+      "date": "2022-10-25 02:17:27",
+      "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-santiago-del-estero-y-jornada-preparatoria-en-la-rioja/",
+      "featured": 1016,
+      "carousel": true,
+      "gallery_count": 8,
+      "pending": []
+    },
+    {
+      "id": 1026,
+      "historical_id": 3907,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Chaco",
+      "date": "2022-10-11 16:53:32",
+      "url": "http://localhost:8080/precongreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia-chaco-argentina/",
+      "featured": 1025,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 1037,
+      "historical_id": 3890,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Partido de La Costa",
+      "date": "2022-10-05 20:15:09",
+      "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-partido-de-la-costa/",
+      "featured": 1036,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 1048,
+      "historical_id": 3876,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso La Pampa",
+      "date": "2022-10-04 02:28:47",
+      "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-la-pampa/",
+      "featured": 1047,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 1060,
+      "historical_id": 3854,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Casa de Córdoba",
+      "date": "2022-09-09 20:36:41",
+      "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-casa-de-cordoba/",
+      "featured": 1059,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 1069,
+      "historical_id": 3839,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso San Francisco.",
+      "date": "2022-08-30 03:29:40",
+      "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-san-francisco/",
+      "featured": 1068,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 1078,
+      "historical_id": 3821,
+      "title": "Rumbo al IX Congreso Mundial por los Derechos de las Infancias y Adolescencias: Precongreso Lanús",
+      "date": "2022-08-26 20:17:59",
+      "url": "http://localhost:8080/rumbo-al-ix-congreso-mundial-por-los-derechos-de-las-infancias-y-adolescencias-precongreso-lanus/",
+      "featured": 1077,
+      "carousel": true,
+      "gallery_count": 7,
+      "pending": []
+    },
+    {
+      "id": 1085,
+      "historical_id": 3809,
+      "title": "Jornada de trabajo en Ciudad de Córdoba, Malvinas Argentinas y Río Tercero en el marco del Programa MUNA",
+      "date": "2022-08-11 14:22:41",
+      "url": "http://localhost:8080/jornada-de-trabajo-en-ciudad-de-cordoba-malvinas-argentinas-y-rio-tercero-en-el-marco-del-programa-muna/",
+      "featured": 1084,
+      "carousel": true,
+      "gallery_count": 5,
+      "pending": []
+    },
+    {
+      "id": 1093,
+      "historical_id": 3787,
+      "title": "Villa María, Cosquín y Río Cuarto se suman al Programa MUNA",
+      "date": "2022-06-28 15:31:55",
+      "url": "http://localhost:8080/villa-maria-cosquin-y-rio-cuarto-se-suman-al-programa-muna/",
+      "featured": 1092,
+      "carousel": true,
+      "gallery_count": 6,
+      "pending": []
+    },
+    {
+      "id": 1104,
+      "historical_id": 3774,
+      "title": "Diálogo sobre infancias, adolescencias y noticias con periodistas de Córdoba",
+      "date": "2022-06-16 19:46:52",
+      "url": "http://localhost:8080/dialogo-sobre-infancias-adolescencias-y-noticias-con-periodistas-de-cordoba/",
+      "featured": 1103,
+      "carousel": true,
+      "gallery_count": 9,
+      "pending": []
+    },
+    {
+      "id": 1108,
+      "historical_id": 3754,
+      "title": "Campaña Hay Otra forma: Hablemos de Bullying",
+      "date": "2022-06-13 19:52:37",
+      "url": "http://localhost:8080/campana-hay-otra-forma-hablemos-de-bullying/",
+      "featured": 1107,
+      "carousel": true,
+      "gallery_count": 2,
+      "pending": []
+    },
+    {
+      "id": 1111,
+      "historical_id": 3749,
+      "title": "La ONU designó a la Dra. Mary Beloff como miembro del Comité de los Derechos del Niño",
+      "date": "2022-06-07 17:59:19",
+      "url": "http://localhost:8080/la-onu-designo-la-dra-mary-beloff-como-miembro-del-comite-de-los-derechos-del-nino/",
+      "featured": 1110,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1119,
+      "historical_id": 3728,
+      "title": "Participamos del Encuentro Nacional de Vicegobernadoras/es y Legisladoras/es Provinciales por las Infancias y Adolescencias en Argentina",
+      "date": "2022-06-03 19:59:43",
+      "url": "http://localhost:8080/participamos-del-encuentro-nacional-de-vicegobernadoras-es-y-legisladoras-es-provinciales-por-las-infancias-y-adolescencias-en-argentina/",
+      "featured": 1118,
+      "carousel": true,
+      "gallery_count": 6,
+      "pending": []
+    },
+    {
+      "id": 1124,
+      "historical_id": 3677,
+      "title": "Se lanzó el Programa Provincial “MUNA” (Municipios Unidos por la Niñez y la Adolescencia)",
+      "date": "2022-05-06 19:47:40",
+      "url": "http://localhost:8080/se-lanzo-el-programa-provincial-muna-municipios-unidos-por-la-ninez-y-la-adolescencia/",
+      "featured": 1123,
+      "carousel": true,
+      "gallery_count": 3,
+      "pending": []
+    },
+    {
+      "id": 1136,
+      "historical_id": 3658,
+      "title": "Hay Otra Forma: unidos para derribar mitos y costumbres",
+      "date": "2022-04-29 13:30:40",
+      "url": "http://localhost:8080/hay-otra-forma-unidos-para-derribar-mitos-y-costumbres/",
+      "featured": 1135,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 1141,
+      "historical_id": 3647,
+      "title": "Nos visitó Victor Giorgi, Director General del Instituto Interamericano del Niño, la Niña y Adolescentes de la OEA",
+      "date": "2022-04-21 19:20:56",
+      "url": "http://localhost:8080/nos-visito-victor-giorgi-director-general-del-instituto-interamericano-del-nino-la-nina-y-adolescentes-de-la-oea/",
+      "featured": 1140,
+      "carousel": true,
+      "gallery_count": 3,
+      "pending": []
+    },
+    {
+      "id": 1143,
+      "historical_id": 3640,
+      "title": "Hay Otra Forma: Una campaña contra el maltrato en las infancias",
+      "date": "2022-04-20 16:29:39",
+      "url": "http://localhost:8080/hay-otra-forma-una-campana-contra-el-maltrato-en-las-infancias/",
+      "featured": 1142,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1157,
+      "historical_id": 3598,
+      "title": "Realizamos la Jornada de Lanzamiento de la Diplomatura Universitaria en Derechos de la Niñez y Adolescencia Abogada/o de NNyA",
+      "date": "2022-04-12 20:49:08",
+      "url": "http://localhost:8080/realizamos-la-jornada-de-lanzamiento-de-la-diplomatura-universitaria-en-derechos-de-la-ninez-y-adolescencia-abogada-o-de-nnya/",
+      "featured": 1156,
+      "carousel": true,
+      "gallery_count": 10,
+      "pending": []
+    },
+    {
+      "id": 1165,
+      "historical_id": 3585,
+      "title": "Realizamos el Lanzamiento Nacional del IX Congreso Mundial por los Derechos de la Infancia y la Adolescencia",
+      "date": "2022-04-05 21:48:06",
+      "url": "http://localhost:8080/realizamos-el-lanzamiento-nacional-del-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/",
+      "featured": 1164,
+      "carousel": true,
+      "gallery_count": 6,
+      "pending": []
+    },
+    {
+      "id": 1167,
+      "historical_id": 3583,
+      "title": "Nuestros horarios de atención presencial",
+      "date": "2022-04-05 21:20:32",
+      "url": "http://localhost:8080/nuestros-horarios-de-atencion-presencial/",
+      "featured": 1166,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1170,
+      "historical_id": 3572,
+      "title": "Los invitamos a participar de la Jornada de Lanzamiento de la Diplomatura Abogada/a de NNyA Ed. 2022",
+      "date": "2022-03-25 19:51:19",
+      "url": "http://localhost:8080/los-invitamos-participar-de-la-jornada-de-lanzamiento-de-la-diplomatura-abogada-de-nnya-ed-2022/",
+      "featured": 1169,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1178,
+      "historical_id": 3542,
+      "title": "Pre Congreso Mundial por los Derechos de la Infancia y Adolescencia – Universitat de Barcelona",
+      "date": "2022-01-27 13:48:04",
+      "url": "http://localhost:8080/pre-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia-universitat-de-barcelona/",
+      "featured": 1177,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1180,
+      "historical_id": 3535,
+      "title": "Horarios de Enero",
+      "date": "2021-12-29 20:33:57",
+      "url": "http://localhost:8080/horarios-de-enero/",
+      "featured": 1179,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1182,
+      "historical_id": 3530,
+      "title": "INFORMACIÓN DE SERVICIO – SÓLO PARA LA PROVINCIA DE CÓRDOBA",
+      "date": "2021-12-01 19:14:35",
+      "url": "http://localhost:8080/informacion-de-servicio-solo-para-la-provincia-de-cordoba/",
+      "featured": 1181,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1185,
+      "historical_id": 3523,
+      "title": "La Defensoría los invita a participar del Conversatorio “La participación de NNyA, una deuda a resolver. Nuevos horizontes para su construcción”",
+      "date": "2021-11-19 16:40:39",
+      "url": "http://localhost:8080/la-defensoria-los-invita-participar-del-conversatorio-la-participacion-de-nnya-una-deuda-resolver-nuevos-horizontes-para-su-construccion/",
+      "featured": 1184,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1192,
+      "historical_id": 3504,
+      "title": "Se lanzó el Programa de Empoderamiento de NNyA 2021-2024",
+      "date": "2021-10-25 19:24:54",
+      "url": "http://localhost:8080/se-lanzo-el-programa-de-empoderamiento-de-nnya-2021-2024/",
+      "featured": 1191,
+      "carousel": true,
+      "gallery_count": 5,
+      "pending": []
+    },
+    {
+      "id": 1194,
+      "historical_id": 3493,
+      "title": "Desde el 4 de octubre la Defensoría tiene una nueva sede",
+      "date": "2021-10-06 11:43:53",
+      "url": "http://localhost:8080/desde-el-4-de-octubre-la-defensoria-tiene-una-nueva-sede/",
+      "featured": 1193,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1196,
+      "historical_id": 3488,
+      "title": "LLEGA A CÓRDOBA EL IX CONGRESO MUNDIAL POR LOS DERECHOS DE LA INFANCIA Y LA ADOLESCENCIA",
+      "date": "2021-09-21 18:03:21",
+      "url": "http://localhost:8080/llega-cordoba-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/",
+      "featured": 1195,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1199,
+      "historical_id": 3481,
+      "title": "Se conformó la Red de Defensoras y Defensores de derechos de niñas, niños y adolescentes",
+      "date": "2021-08-20 21:48:16",
+      "url": "http://localhost:8080/los-defensores-de-ninez-y-adolescencia-del-pais-se-reunieron-para-seguir-trabajando-en-una-agenda-federal/",
+      "featured": 1198,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1201,
+      "historical_id": 3478,
+      "title": "Continuamos trabajando en el plan “Primera Infancia, un futuro seguro” en la ciudad de Río Tercero",
+      "date": "2021-07-28 17:35:37",
+      "url": "http://localhost:8080/continuamos-trabajando-en-el-plan-primera-infancia-un-futuro-seguro-en-la-ciudad-de-rio-tercero/",
+      "featured": 1200,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1203,
+      "historical_id": 3475,
+      "title": "Se trabaja en el Plan “Primera Infancia, un futuro seguro” en la ciudad de Río Cuarto",
+      "date": "2021-07-27 19:45:24",
+      "url": "http://localhost:8080/se-trabaja-en-el-plan-primera-infancia-un-futuro-seguro-en-la-ciudad-de-rio-cuarto/",
+      "featured": 1202,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1205,
+      "historical_id": 3470,
+      "title": "Se avanza en el trabajo con la Mesa Ejecutiva Provincial del plan «Primera Infancia, un futuro seguro»",
+      "date": "2021-07-26 18:26:29",
+      "url": "http://localhost:8080/se-avanza-en-el-trabajo-con-la-mesa-ejecutiva-provincial-del-plan-primera-infancia-un-futuro-seguro/",
+      "featured": 1204,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1207,
+      "historical_id": 3465,
+      "title": "Diplomatura en Niñeces y Adolescencias en el Mundo Digital en Oncativo",
+      "date": "2021-07-15 18:47:11",
+      "url": "http://localhost:8080/nueva-diplomatura-en-nineces-y-adolescencias-en-el-mundo-digital-2/",
+      "featured": 1206,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1209,
+      "historical_id": 3462,
+      "title": "PRIMERA INFANCIA: UN FUTURO SEGURO",
+      "date": "2021-07-07 19:03:00",
+      "url": "http://localhost:8080/primera-infancia-un-futuro-seguro/",
+      "featured": 1208,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1211,
+      "historical_id": 3453,
+      "title": "Participá de la Semana de la Prevención del Consumo de Drogas",
+      "date": "2021-06-22 21:21:46",
+      "url": "http://localhost:8080/participa-de-la-semana-de-la-prevencion-del-consumo-de-drogas/",
+      "featured": 1210,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1213,
+      "historical_id": 3440,
+      "title": "Se lanzó el Plan Provincial «Primera Infancia, un futuro seguro»",
+      "date": "2021-05-19 17:35:15",
+      "url": "http://localhost:8080/se-lanzo-el-plan-provincial-primera-infancia-un-futuro-seguro/",
+      "featured": 1212,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1215,
+      "historical_id": 3437,
+      "title": "Participá del mapeo de instituciones que trabajan con chicas y chicos",
+      "date": "2021-05-17 16:15:33",
+      "url": "http://localhost:8080/participa-del-mapeo-de-instituciones-que-trabajan-con-chicas-y-chicos/",
+      "featured": 1214,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1217,
+      "historical_id": 3397,
+      "title": "Nueva Diplomatura en Niñeces y Adolescencias en el mundo digital",
+      "date": "2021-04-22 15:31:20",
+      "url": "http://localhost:8080/nueva-diplomatura-en-nineces-y-adolescencias-en-el-mundo-digital/",
+      "featured": 1216,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1221,
+      "historical_id": 3386,
+      "title": "La Defensoría y la Universidad Nacional de Villa María firmaron un nuevo convenio de trabajo",
+      "date": "2021-04-20 14:47:54",
+      "url": "http://localhost:8080/la-defensoria-y-la-universidad-nacional-de-villa-maria-firmaron-un-nuevo-convenio-de-trabajo/",
+      "featured": 1220,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1223,
+      "historical_id": 3382,
+      "title": "Comenzó la Diplomatura en Derechos de Niñez y Adolescencia, Abogado del Niño, Edición 2021",
+      "date": "2021-04-16 17:32:05",
+      "url": "http://localhost:8080/comenzo-la-diplomatura-en-derechos-de-ninez-y-adolescencia-abogado-del-nino-edicion-2021/",
+      "featured": 1222,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1226,
+      "historical_id": 3363,
+      "title": "El Conacai envió una solicitud a los medios de comunicación por el caso Maia",
+      "date": "2021-03-19 14:18:05",
+      "url": "http://localhost:8080/el-conacai-envio-una-solicitud-los-medios-de-comunicacion-por-el-caso-maia/",
+      "featured": 1225,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1229,
+      "historical_id": 3346,
+      "title": "Diplomatura en Derechos de NNyA – Abogado del Niño. Edición 2021",
+      "date": "2021-03-09 19:10:55",
+      "url": "http://localhost:8080/diplomatura-en-derechos-de-nnya-abogado-del-nino-edicion-2021/",
+      "featured": 1228,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1232,
+      "historical_id": 3309,
+      "title": "Las y los Defensores de Niñez y Adolescencia lanzaron un comunicado conjunto sobre la generación de consensos para la garantía de los derechos de niñas, niños y adolescentes",
+      "date": "2021-03-04 21:52:25",
+      "url": "http://localhost:8080/las-y-los-defensores-de-ninez-y-adolescencia-lanzaron-un-comunicado-conjunto-sobre-la-generacion-de-consensos-para-la-garantia-de-los-derechos-de-ninas-ninos-y-adolescentes/",
+      "featured": 1231,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1240,
+      "historical_id": 3295,
+      "title": "Reunión nacional de Defensoras y Defensores de Niñez y Adolescencia: Hacia una agenda federal 2021",
+      "date": "2021-03-03 20:52:55",
+      "url": "http://localhost:8080/reunion-nacional-de-defensoras-y-defensores-de-ninez-y-adolescencia-hacia-una-agenda-federal-2021/",
+      "featured": 1239,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1243,
+      "historical_id": 3290,
+      "title": "Los Defensores de niñez lanzaron un comunicado conjunto sobre la educación",
+      "date": "2021-02-12 13:43:59",
+      "url": "http://localhost:8080/los-defensores-de-ninez-lanzaron-un-comunicado-conjunto-sobre-la-educacion/",
+      "featured": 1242,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1246,
+      "historical_id": 3186,
+      "title": "Llega un nuevo Pre Congreso Mundial de Infancia",
+      "date": "2020-11-19 15:33:43",
+      "url": "http://localhost:8080/llega-un-nuevo-pre-congreso-mundial-de-infancia/",
+      "featured": 1245,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1248,
+      "historical_id": 3181,
+      "title": "La Defensoría lanza una campaña por el Día Nacional de Lucha contra el Grooming",
+      "date": "2020-11-19 14:05:38",
+      "url": "http://localhost:8080/la-defensoria-lanza-una-campana-por-el-dia-nacional-de-lucha-contra-el-grooming/",
+      "featured": 1247,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1250,
+      "historical_id": 3178,
+      "title": "Segunda edición capacitación virtual para adultos",
+      "date": "2020-11-09 16:24:52",
+      "url": "http://localhost:8080/segunda-edicion-capacitacion-virtual-para-adultos/",
+      "featured": 1249,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1254,
+      "historical_id": 3162,
+      "title": "Firmá la declaración «Compromiso de uso responsable y respetuoso de nuevas tecnologías»",
+      "date": "2020-11-09 14:41:32",
+      "url": "http://localhost:8080/firma-la-declaracion-compromiso-de-uso-responsable-y-respetuoso-de-nuevas-tecnologias/",
+      "featured": 1253,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1257,
+      "historical_id": 3145,
+      "title": "La Defensoría y Casablanca lanzan un concurso para cuidar el medio ambiente.",
+      "date": "2020-10-23 17:23:32",
+      "url": "http://localhost:8080/la-defensoria-y-casablanca-lanzan-un-concurso-para-cuidar-el-medio-ambiente-2/",
+      "featured": 1256,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1259,
+      "historical_id": 3141,
+      "title": "La Defensoría lanza una capacitación virtual para adultos",
+      "date": "2020-10-09 15:05:58",
+      "url": "http://localhost:8080/la-defensoria-lanza-una-capacitacion-virtual-para-adultos/",
+      "featured": 1258,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1262,
+      "historical_id": 3136,
+      "title": "Nueva edición del Conversatorio on line sobre el Abogado del Niño",
+      "date": "2020-10-07 16:32:30",
+      "url": "http://localhost:8080/nueva-edicion-del-conversatorio-line-sobre-el-abogado-del-nino/",
+      "featured": 1261,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1264,
+      "historical_id": 3116,
+      "title": "Francesco Tonucci dará una conferencia en Córdoba",
+      "date": "2020-10-02 15:05:43",
+      "url": "http://localhost:8080/francesco-tonucci-dara-una-conferencia-en-cordoba/",
+      "featured": 1263,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1268,
+      "historical_id": 3110,
+      "title": "La Defensoría firmó un convenio con la Asociación de Mujeres Jueces de Argentina (AMJA)",
+      "date": "2020-09-18 19:44:09",
+      "url": "http://localhost:8080/la-defensoria-firmo-un-convenio-con-la-asociacion-de-mujeres-jueces-de-argentina-amja/",
+      "featured": 1267,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1271,
+      "historical_id": 3085,
+      "title": "Las Defensorías del país y una propuesta por la seguridad digital de Niñas, Niños y Adolescentes",
+      "date": "2020-09-09 16:47:30",
+      "url": "http://localhost:8080/las-defensorias-del-pais-y-una-propuesta-por-la-seguridad-digital-de-ninas-ninos-y-adolescentes/",
+      "featured": 1270,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1273,
+      "historical_id": 3075,
+      "title": "SE POSTERGA EL IX CONGRESO MUNDIAL POR LOS DERECHOS DE LA INFANCIA Y LA ADOLESCENCIA",
+      "date": "2020-08-25 18:53:48",
+      "url": "http://localhost:8080/se-posterga-el-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/",
+      "featured": 1272,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1276,
+      "historical_id": 3064,
+      "title": "La Defensoría celebra el día de las niñeces con un festival digital",
+      "date": "2020-08-12 22:38:06",
+      "url": "http://localhost:8080/la-defensoria-celebra-el-dia-de-las-nineces-con-un-festival-digital/",
+      "featured": 1275,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1278,
+      "historical_id": 3053,
+      "title": "Jornadas abiertas de la Diplomatura en Derechos de la Niñez y la Adolescencia",
+      "date": "2020-07-30 14:13:26",
+      "url": "http://localhost:8080/jornadas-abiertas-de-la-diplomatura-en-derechos-de-la-ninez-y-la-adolescencia/",
+      "featured": 1277,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1281,
+      "historical_id": 3050,
+      "title": "Conocé la nueva fanpage de la SENAF",
+      "date": "2020-07-23 17:39:49",
+      "url": "http://localhost:8080/conoce-la-nueva-fanpage-de-la-senaf/",
+      "featured": 1280,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1283,
+      "historical_id": 3037,
+      "title": "Capacitate online en primera infancia",
+      "date": "2020-07-13 17:39:53",
+      "url": "http://localhost:8080/capacitate-online-en-primera-infancia/",
+      "featured": 1282,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1286,
+      "historical_id": 3023,
+      "title": "Presentación de datos: Adolescencia en tiempos de pandemia.",
+      "date": "2020-06-29 15:52:09",
+      "url": "http://localhost:8080/presentacion-de-datos-adolescencia-en-tiempos-de-pandemia/",
+      "featured": 1285,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1288,
+      "historical_id": 3012,
+      "title": "Charla sobre adicciones con Gastón Pauls",
+      "date": "2020-06-22 20:11:40",
+      "url": "http://localhost:8080/charla-sobre-adicciones-con-gaston-pauls/",
+      "featured": 1287,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1291,
+      "historical_id": 2998,
+      "title": "Abuso sexual en Chubut: Defensores de niñez repudiaron la resolución del fiscal",
+      "date": "2020-06-16 14:20:09",
+      "url": "http://localhost:8080/abuso-sexual-en-chubut-defensores-de-ninez-repudiaron-la-resolucion-del-fiscal/",
+      "featured": 1290,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1295,
+      "historical_id": 2991,
+      "title": "Cómo impacta la cuarentena en niñas, niños y adolescentes",
+      "date": "2020-05-27 23:41:52",
+      "url": "http://localhost:8080/como-impacta-la-cuarentena-en-ninas-ninos-y-adolescentes/",
+      "featured": 1294,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1298,
+      "historical_id": 2982,
+      "title": "Líderes de América Latina firman declaración conjunta por la situación de la primera infancia en la región",
+      "date": "2020-05-07 15:39:09",
+      "url": "http://localhost:8080/lideres-de-america-latina-firman-declaracion-conjunta-por-la-situacion-de-la-primera-infancia-en-la-region/",
+      "featured": 1297,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1303,
+      "historical_id": 2974,
+      "title": "Capacitación virtual «Abogados/as de NNyA. Desafíos en su implementación»",
+      "date": "2020-05-01 15:39:05",
+      "url": "http://localhost:8080/capacitacion-virtual-abogados-de-nnya-desafios-en-su-implementacion/",
+      "featured": 1302,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1306,
+      "historical_id": 2969,
+      "title": "Primera declaración conjunta de los Defensores de Niñez de Argentina por la crisis del COVID-19",
+      "date": "2020-04-30 14:45:43",
+      "url": "http://localhost:8080/primera-declaracion-conjunta-de-los-defensores-de-ninez-de-argentina-por-la-crisis-del-covid-19/",
+      "featured": 1305,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1309,
+      "historical_id": 2965,
+      "title": "Cuarentena con Derechos: mirá todas las recomendaciones de la Defensoría.",
+      "date": "2020-04-24 15:09:15",
+      "url": "http://localhost:8080/cuarentena-con-derechos-mira-todas-las-recomendaciones-de-la-defensoria/",
+      "featured": 1308,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1316,
+      "historical_id": 2955,
+      "title": "Seguridad en internet y redes sociales en tiempos de cuarentena",
+      "date": "2020-04-23 15:26:44",
+      "url": "http://localhost:8080/seguridad-en-internet-y-redes-sociales-en-tiempos-de-cuarentena/",
+      "featured": 1315,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1322,
+      "historical_id": 2939,
+      "title": "La Defensoría lanzó la campaña “Coronavirus, Medios y Protección de NNyA”",
+      "date": "2020-04-15 13:53:53",
+      "url": "http://localhost:8080/la-defensoria-lanzo-la-campana-coronavirus-medios-y-proteccion-de-nnya/",
+      "featured": 1321,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1325,
+      "historical_id": 2927,
+      "title": "La Defensoría Online, te acompañamos y cuidamos",
+      "date": "2020-04-02 21:41:55",
+      "url": "http://localhost:8080/la-defensoria-online-te-acompanamos-y-cuidamos/",
+      "featured": 1324,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1327,
+      "historical_id": 2793,
+      "title": "Llega a Córdoba el IX Congreso Mundial de Infancia y Adolescencia",
+      "date": "2020-01-21 23:17:22",
+      "url": "http://localhost:8080/llega-cordoba-el-ix-congreso-mundial-de-infancia-y-adolescencia/",
+      "featured": 1326,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1331,
+      "historical_id": 2781,
+      "title": "Jornada de Debate Intersectorial con Modalidad de análisis de casos “El derecho al cuidado, protección e integridad de NNyA”",
+      "date": "2019-12-09 17:52:19",
+      "url": "http://localhost:8080/jornada-de-debate-intersectorial-con-modalidad-de-analisis-de-casos-el-derecho-al-cuidado-proteccion-e-integridad-de-nnya/",
+      "featured": 1330,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1333,
+      "historical_id": 2776,
+      "title": "Jornada «El Derecho al cuidado, protección e integridad de Niñas, Niños y Adolescentes»",
+      "date": "2019-11-27 20:10:14",
+      "url": "http://localhost:8080/jornada-el-derecho-al-cuidado-proteccion-e-integridad-de-ninas-ninos-y-adolescentes/",
+      "featured": 1332,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1337,
+      "historical_id": 2769,
+      "title": "Cuarto módulo de la Diplomatura «Cuidado, crianza y educación en la primera infancia»",
+      "date": "2019-11-12 18:11:27",
+      "url": "http://localhost:8080/cuarto-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1334,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1340,
+      "historical_id": 2759,
+      "title": "Taller de Coberturas Periodísticas sobre Niñez y Adolescencia",
+      "date": "2019-11-12 18:05:34",
+      "url": "http://localhost:8080/taller-de-coberturas-periodisticas-sobre-ninez-y-adolescencia/",
+      "featured": 1339,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1344,
+      "historical_id": 2748,
+      "title": "Pre Congreso Mundial sobre Infancia y Adolescencia",
+      "date": "2019-11-12 18:03:33",
+      "url": "http://localhost:8080/pre-congreso-mundial-sobre-infancia-y-adolescencia-2/",
+      "featured": 1341,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1346,
+      "historical_id": 2740,
+      "title": "4º Módulo de la Diplomatura «Cuidado, Crianza y Educación en la Primera Infancia»",
+      "date": "2019-11-07 18:43:58",
+      "url": "http://localhost:8080/4o-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1345,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1348,
+      "historical_id": 2734,
+      "title": "Pre Congreso Mundial de La Infancia – Río Cuarto",
+      "date": "2019-11-01 14:20:50",
+      "url": "http://localhost:8080/pre-congreso-mundial-de-la-infancia-rio-cuarto/",
+      "featured": 1347,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1351,
+      "historical_id": 2728,
+      "title": "El derecho a participar. Charla – Debate sobre la figura del Abogado/a de NNyA",
+      "date": "2019-10-29 13:54:59",
+      "url": "http://localhost:8080/el-derecho-participar-charla-debate-sobre-la-figura-del-abogado-de-nnya/",
+      "featured": 1350,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1354,
+      "historical_id": 2721,
+      "title": "Jornada de Coberturas Periodísticas sobre Niñez y Adolescencia",
+      "date": "2019-10-23 16:44:47",
+      "url": "http://localhost:8080/coberturas-periodisticas/",
+      "featured": 1353,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1359,
+      "historical_id": 2709,
+      "title": "Pre Congreso Mundial sobre Infancia y Adolescencia",
+      "date": "2019-10-23 16:38:37",
+      "url": "http://localhost:8080/pre-congreso-mundial-sobre-infancia-y-adolescencia/",
+      "featured": 1356,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1362,
+      "historical_id": 2704,
+      "title": "Tercer módulo de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+      "date": "2019-10-18 12:01:39",
+      "url": "http://localhost:8080/tercer-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1361,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1364,
+      "historical_id": 2701,
+      "title": "Tercera jornada de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+      "date": "2019-10-15 13:29:24",
+      "url": "http://localhost:8080/tercera-jornada-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1363,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1369,
+      "historical_id": 2689,
+      "title": "Las vacunas salvan vidas: nuestra campaña de concientización",
+      "date": "2019-10-04 17:03:57",
+      "url": "http://localhost:8080/las-vacunas-salvan-vidas-nuestra-campana-de-concientizacion/",
+      "featured": 1366,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1372,
+      "historical_id": 2683,
+      "title": "Segunda jornada Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+      "date": "2019-09-30 00:18:15",
+      "url": "http://localhost:8080/segunda-jornada-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1370,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1375,
+      "historical_id": 2674,
+      "title": "Declaración de Defensores de Niñas, Niños y Adolescentes en Rosario",
+      "date": "2019-09-18 15:37:36",
+      "url": "http://localhost:8080/declaracion-de-defensores-de-ninas-ninos-y-adolescentes-en-rosario/",
+      "featured": 1374,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1378,
+      "historical_id": 2662,
+      "title": "Llega el 3° Congreso de Prevención y Asistencia de las Adicciones en Córdoba.",
+      "date": "2019-09-18 05:12:26",
+      "url": "http://localhost:8080/llega-el-3-congreso-de-prevencion-y-asistencia-de-las-adicciones-en-cordoba/",
+      "featured": 1377,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1381,
+      "historical_id": 2657,
+      "title": "Segundo módulo de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+      "date": "2019-09-13 14:02:39",
+      "url": "http://localhost:8080/segundo-modulo-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1380,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1392,
+      "historical_id": 2630,
+      "title": "¡Gran festejo del Día del Niño!",
+      "date": "2019-08-26 19:05:40",
+      "url": "http://localhost:8080/gran-festejo-del-dia-del-nino/",
+      "featured": 1391,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1395,
+      "historical_id": 2623,
+      "title": "Primera jornada de la Diplomatura “Cuidado, crianza y educación en la primera infancia”",
+      "date": "2019-08-06 04:37:52",
+      "url": "http://localhost:8080/primera-jornada-de-la-diplomatura-cuidado-crianza-y-educacion-en-la-primera-infancia/",
+      "featured": 1393,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1397,
+      "historical_id": 2513,
+      "title": "Diplomatura “Cuidado, Crianza y Educación en la Primera Infancia”",
+      "date": "2019-07-24 01:29:47",
+      "url": "http://localhost:8080/asdasd/",
+      "featured": 1396,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1399,
+      "historical_id": 2122,
+      "title": "Participación en X Asamblea General del Instituto Latinoamericano del Ombudsman",
+      "date": "2019-07-15 11:35:12",
+      "url": "http://localhost:8080/participacion-en-x-asamblea-general-del-instituto-latinoamericano-del-ombudsman/",
+      "featured": 1398,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1401,
+      "historical_id": 2076,
+      "title": "Sesión preparatoria del IX Congreso Mundial por los Derechos de la Infancia y Adolescencia",
+      "date": "2019-07-10 16:47:00",
+      "url": "http://localhost:8080/sesion-preparatoria-del-ix-congreso-mundial-por-los-derechos-de-la-infancia-y-adolescencia/",
+      "featured": 1400,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1403,
+      "historical_id": 2615,
+      "title": "Día de la Patria",
+      "date": "2019-07-09 06:58:48",
+      "url": "http://localhost:8080/dia-de-la-patria/",
+      "featured": 1402,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1405,
+      "historical_id": 2603,
+      "title": "Día de Córdoba",
+      "date": "2019-07-06 06:57:14",
+      "url": "http://localhost:8080/dia-de-cordoba/",
+      "featured": 1404,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1407,
+      "historical_id": 2468,
+      "title": "Mapa interactivo de nuestras delegaciones",
+      "date": "2019-07-01 12:49:29",
+      "url": "http://localhost:8080/conoce-nuestro-mapa-interactivo-de-subsedes/",
+      "featured": 1406,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1409,
+      "historical_id": 2596,
+      "title": "Aprobación de la figura del Abogado del Niño",
+      "date": "2019-07-01 06:55:42",
+      "url": "http://localhost:8080/aprobacion-de-la-figura-del-abogado-del-nino/",
+      "featured": 1408,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1412,
+      "historical_id": 2554,
+      "title": "Semana provincial de Prevención del Consumo de Drogas y Alcohol",
+      "date": "2019-06-24 02:18:29",
+      "url": "http://localhost:8080/semana-provincial-de-prevencion-del-consumo-de-drogas-y-alcohol/",
+      "featured": 1410,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1414,
+      "historical_id": 2586,
+      "title": "Día Mundial contra el Trabajo Infantil",
+      "date": "2019-06-12 06:52:58",
+      "url": "http://localhost:8080/dia-mundial-contra-el-trabajo-infantil/",
+      "featured": 1413,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1416,
+      "historical_id": 2579,
+      "title": "¡Felíz día del periodista!",
+      "date": "2019-06-07 06:51:25",
+      "url": "http://localhost:8080/feliz-dia-del-periodista/",
+      "featured": 1415,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1479,
+      "historical_id": 2398,
+      "title": "Estreno de “Mr. Bully 2: La Evolución”",
+      "date": "2019-05-31 16:38:20",
+      "url": "http://localhost:8080/estreno-de-mr-bully-2-la-evolucion/",
+      "featured": 1478,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1480,
+      "historical_id": 2395,
+      "title": "11° Jornadas Cordobesas de Derecho de las Familias",
+      "date": "2019-05-13 13:40:58",
+      "url": "http://localhost:8080/11-jornadas-cordobesas-de-derecho-de-las-familias/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": [
+        "Unavailable source image: https://scontent.fcor5-1.fna.fbcdn.net/v/t1.0-9/60346413_2213979142019042_6265362093696876544_n.jpg?_nc_cat=103&_nc_ht=scontent.fcor5-1.fna&oh=d3f86c9c83b097529ffa4b5133952830&oe=5D296A97"
+      ]
+    },
+    {
+      "id": 1502,
+      "historical_id": 2353,
+      "title": "Día internacional contra el #MaltratoInfantil",
+      "date": "2019-04-25 16:07:22",
+      "url": "http://localhost:8080/dia-internacional-contra-el-maltratoinfantil/",
+      "featured": 1501,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1503,
+      "historical_id": 2335,
+      "title": "Se viene la 5º edición del Zumbathon Solidario!",
+      "date": "2019-04-02 16:54:52",
+      "url": "http://localhost:8080/se-viene-la-5o-edicion-del-zumbathon-solidario/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1504,
+      "historical_id": 2329,
+      "title": "Jornada para adolescentes #VaConVos 2019",
+      "date": "2019-03-28 11:23:09",
+      "url": "http://localhost:8080/jornada-para-adolescentes-vaconvos-2019/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1507,
+      "historical_id": 2326,
+      "title": "Conocé sobre #MomoChallenge",
+      "date": "2019-03-22 14:09:02",
+      "url": "http://localhost:8080/conoce-sobre-momochallenge/",
+      "featured": 1505,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1508,
+      "historical_id": 2314,
+      "title": "8 de Marzo – Día de la mujer",
+      "date": "2019-03-06 11:48:34",
+      "url": "http://localhost:8080/8-de-marzo-dia-de-la-mujer/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1513,
+      "historical_id": 2293,
+      "title": "La defensoría acompañanando la obra MAUO – Un Amigo Espacial",
+      "date": "2019-02-14 06:19:47",
+      "url": "http://localhost:8080/la-defensoria-acompananando-la-obra-mauo-un-amigo-espacial/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1514,
+      "historical_id": 2289,
+      "title": "Cierre del año de La Defensoría",
+      "date": "2018-12-11 21:17:39",
+      "url": "http://localhost:8080/cierre-del-ano-de-la-defensoria/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1515,
+      "historical_id": 2285,
+      "title": "Programa #EncontrArte",
+      "date": "2018-12-04 18:19:43",
+      "url": "http://localhost:8080/programa-encontrarte/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1516,
+      "historical_id": 2142,
+      "title": "Dado de La Paz y Actividades Recreativas en Alta Gracia",
+      "date": "2018-11-27 14:04:21",
+      "url": "http://localhost:8080/dado-de-la-paz-y-actividades-recreativas-en-alta-gracia/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1517,
+      "historical_id": 2133,
+      "title": "Festejo del Día Internacional de los Derechos del Niño",
+      "date": "2018-11-21 13:00:09",
+      "url": "http://localhost:8080/festejo-del-dia-internacional-de-los-derechos-del-nino/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1518,
+      "historical_id": 2129,
+      "title": "Resumen de la Charla sobre Adicciones impartida por Gaston Pauls",
+      "date": "2018-11-20 11:42:16",
+      "url": "http://localhost:8080/resumen-de-la-charla-sobre-adicciones-impartida-por-gaston-pauls/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1519,
+      "historical_id": 2125,
+      "title": "Córdoba será sede en el 2020 del Congreso Mundial por los Derechos de la Infancia y la Adolescencia",
+      "date": "2018-11-13 10:37:29",
+      "url": "http://localhost:8080/cordoba-sera-sede-en-el-2020-del-congreso-mundial-por-los-derechos-de-la-infancia-y-la-adolescencia/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1520,
+      "historical_id": 2104,
+      "title": "Entrevista a los chicos en Mr. Bully",
+      "date": "2018-11-05 08:07:20",
+      "url": "http://localhost:8080/entrevista-ls-nins-en-mr-bully/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1521,
+      "historical_id": 2081,
+      "title": "La DDNA presente en la 50º Edición de Feria de Ciencias y tecnología",
+      "date": "2018-10-19 00:54:45",
+      "url": "http://localhost:8080/la-ddna-presente-en-la-50o-edicion-de-feria-de-ciencias-y-tecnologia/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1522,
+      "historical_id": 2068,
+      "title": "Reseña por los 10 años de la DDNA",
+      "date": "2018-10-08 11:06:16",
+      "url": "http://localhost:8080/resena-por-los-10-anos-de-la-ddna/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1524,
+      "historical_id": 2052,
+      "title": "Sobre el proceso de selección del Defensor Nacional de Niñas, Niños y Adolescentes",
+      "date": "2018-10-03 10:50:23",
+      "url": "http://localhost:8080/sobre-el-proceso-de-seleccion-del-defensor-nacional-de-ninas-ninos-y-adolescentes/",
+      "featured": 1523,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1525,
+      "historical_id": 2043,
+      "title": "Nuevo Video Institucional",
+      "date": "2018-09-29 00:04:44",
+      "url": "http://localhost:8080/nuevo-institucional/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1528,
+      "historical_id": 2029,
+      "title": "2º Seminario Internacional: «Restaurar Derechos para NNyA. Retos Institucionales»",
+      "date": "2018-09-17 23:35:58",
+      "url": "http://localhost:8080/2o-seminario-internacional-restaurar-derechos-para-nnya-retos-institucionales/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1529,
+      "historical_id": 2025,
+      "title": "Campaña: Mes de los Adolescentes",
+      "date": "2018-09-10 11:40:43",
+      "url": "http://localhost:8080/campana-mes-de-los-adolescentes/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1530,
+      "historical_id": 2005,
+      "title": "#MesDelNiño – Campaña «Ser niños es mágico»",
+      "date": "2018-08-14 18:11:40",
+      "url": "http://localhost:8080/mesdelnino-campana-ser-ninos-es-magico/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1531,
+      "historical_id": 2001,
+      "title": "Convenio con Facultad de Psicología",
+      "date": "2018-06-27 12:47:24",
+      "url": "http://localhost:8080/convenio-con-facultad-de-psicologia/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": [
+        "Unavailable source image: https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/36321577_1758200124263615_2023348497461280768_n.jpg?_nc_cat=0&oh=1021bf35c6d4a0f6639abfac03528a71&oe=5BA6DD16"
+      ]
+    },
+    {
+      "id": 1532,
+      "historical_id": 1997,
+      "title": "Invitación: Riesgos de #Violencia en #Niños y #Adolescentes",
+      "date": "2018-06-06 11:06:27",
+      "url": "http://localhost:8080/invitacion-riesgos-de-violencia-en-ninos-y-adolescentes/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": [
+        "Unavailable source image: https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/34018845_1723216697761958_3522145565250945024_n.jpg?_nc_cat=0&oh=ac091b04e0c87b03510fc39c780e847e&oe=5B83F9CE"
+      ]
+    },
+    {
+      "id": 1533,
+      "historical_id": 1985,
+      "title": "Mr. Bully – Micro",
+      "date": "2018-05-30 00:04:01",
+      "url": "http://localhost:8080/mr-bully-micro/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1534,
+      "historical_id": 1980,
+      "title": "Zumbathon Solidario 2018 en el Parque de las Tejas",
+      "date": "2018-05-18 16:45:32",
+      "url": "http://localhost:8080/zumbathon-solidario-2018-en-el-parque-de-las-tejas/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1535,
+      "historical_id": 1975,
+      "title": "Encuentro de Defensorías de NNyA del País",
+      "date": "2018-05-16 01:12:22",
+      "url": "http://localhost:8080/encuentro-de-defensorias-de-nnya-del-pais/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1536,
+      "historical_id": 1970,
+      "title": "Zumbathon solidario en el Parque de Las Tejas",
+      "date": "2018-05-08 08:34:56",
+      "url": "http://localhost:8080/zumbathon-solidario-en-el-parque-de-las-tejas/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1537,
+      "historical_id": 1963,
+      "title": "Campaña ¿Y si probamos tratarnos bien? / DDNA Abril 2018",
+      "date": "2018-05-07 22:28:24",
+      "url": "http://localhost:8080/campana-y-si-probamos-tratarnos-bien-ddna-abril-2018/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1538,
+      "historical_id": 1959,
+      "title": "¿Qué temas de la infancia se tocan en los medios?",
+      "date": "2018-04-21 10:29:32",
+      "url": "http://localhost:8080/que-temas-de-la-infancia-se-tocan-en-los-medios/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1539,
+      "historical_id": 1937,
+      "title": "Convenio de Cooperación",
+      "date": "2018-03-23 08:23:17",
+      "url": "http://localhost:8080/convenio-de-cooperacion/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1540,
+      "historical_id": 1932,
+      "title": "Felíz #DíaInternacionalDeLaMujer #8DeMarzo",
+      "date": "2018-03-08 15:16:09",
+      "url": "http://localhost:8080/feliz-diainternacionaldelamujer-8demarzo/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1541,
+      "historical_id": 1928,
+      "title": "#VolverAClases ¡Valoremos la escuela!",
+      "date": "2018-03-01 21:12:38",
+      "url": "http://localhost:8080/volveraclases-valoremos-la-escuela/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1542,
+      "historical_id": 1923,
+      "title": "#NavegáSeguro",
+      "date": "2018-02-15 14:34:02",
+      "url": "http://localhost:8080/navegaseguro/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1543,
+      "historical_id": 1915,
+      "title": "Coro de niñ@s de la DDNA",
+      "date": "2017-12-12 18:13:25",
+      "url": "http://localhost:8080/coro-de-nins-de-la-ddna/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1545,
+      "historical_id": 1911,
+      "title": "Video Institucional 2017",
+      "date": "2017-11-30 18:48:41",
+      "url": "http://localhost:8080/video-institucional-2017/",
+      "featured": 1544,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1547,
+      "historical_id": 1894,
+      "title": "Dado de la Paz",
+      "date": "2017-11-28 15:09:30",
+      "url": "http://localhost:8080/dado-de-la-paz/",
+      "featured": 1546,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1549,
+      "historical_id": 1890,
+      "title": "Festejo en el Teatro Real por el Día Internacional de los Derechos del Niño",
+      "date": "2017-11-24 15:47:15",
+      "url": "http://localhost:8080/festejo-en-el-teatro-real-por-el-dia-internacional-de-los-derechos-del-nino/",
+      "featured": 1548,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1551,
+      "historical_id": 1886,
+      "title": "Video de la Celebración del «Día Internacional de los Derechos del Niño» en el Teatro Real",
+      "date": "2017-11-23 12:44:13",
+      "url": "http://localhost:8080/video-de-la-celebracion-del-dia-internacional-de-los-derechos-del-nino-en-el-teatro-real/",
+      "featured": 1550,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1553,
+      "historical_id": 1881,
+      "title": "Festejo del «Día Internacional de los Derechos del Niño»",
+      "date": "2017-11-23 09:26:57",
+      "url": "http://localhost:8080/festejo-del-dia-internacional-de-los-derechos-de-los-ninos-en-el-teatro-real/",
+      "featured": 1552,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1557,
+      "historical_id": 1839,
+      "title": "Taller para estudiantes y profesionales de la Comunicación “Comunicar con derechos: El rol de los medios en la construcción de la imagen adolescente”",
+      "date": "2017-10-26 13:51:16",
+      "url": "http://localhost:8080/taller-para-estudiantes-y-profesionales-de-la-comunicacion-comunicar-con-derechos-el-rol-de-los-medios-en-la-construccion-de-la-imagen-adolescente/",
+      "featured": 1554,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1561,
+      "historical_id": 1798,
+      "title": "SEMINARIO-TALLER “CONFLICTIVIDAD JUVENIL Y JUSTICIA: SEMINARIO-TALLER “CONFLICTIVIDAD JUVENIL Y JUSTICIA: HACIA UN SISTEMA RESTAURATIVO”",
+      "date": "2017-10-25 23:09:13",
+      "url": "http://localhost:8080/seminario-taller-conflictividad-juvenil-y-justicia-seminario-taller-conflictividad-juvenil-y-justicia-hacia-un-sistema-restaurativo/",
+      "featured": 1558,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": [
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-1-Norberto-Liwski-1.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-C%C3%B3rdoba-2.11-Norberto-Liwski-1.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Art%C3%ADculo-Mediaci%C3%B3n-con-adolescentes.-La-experiencia-de-Joinville-Juan-Carlos-Vezzulla.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Art%C3%ADculo-Osvaldo-V%C3%A1zquez-Experiencia-Chile-en-RPA-2017.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-3-Anal%C3%ADa-Kiehl.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-5-Gonzalo-Assusa.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-8-Dar%C3%ADo-Gigena-Parker.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-9-Osvaldo-V%C3%A1zquez.pdf",
+        "Unavailable source document/image: https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-11-Juan-Carlos-Vezzulla.pdf"
+      ]
+    },
+    {
+      "id": 1563,
+      "historical_id": 1791,
+      "title": "Jornada de visibilización del Síndrome de Down",
+      "date": "2017-10-23 13:00:29",
+      "url": "http://localhost:8080/jornada-de-sensibilizacion-en-el-mes-del-sindrome-de/",
+      "featured": 1562,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1565,
+      "historical_id": 1786,
+      "title": "Talleres de Protección Digital en Devoto",
+      "date": "2017-10-18 12:34:41",
+      "url": "http://localhost:8080/talleres-de-proteccion-digital-en-devoto/",
+      "featured": 1564,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1567,
+      "historical_id": 1770,
+      "title": "Taller para adultos +Libres 0 Alcohol",
+      "date": "2017-10-03 11:25:31",
+      "url": "http://localhost:8080/taller-para-adultos-libres-0-alcohol/",
+      "featured": 1566,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1569,
+      "historical_id": 1762,
+      "title": "«Va con vos»: Presentamos nuestro programa para adolescentes",
+      "date": "2017-09-28 11:25:50",
+      "url": "http://localhost:8080/va-con-vos-presentamos-nuestro-programa-para-adolescentes/",
+      "featured": 1568,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1570,
+      "historical_id": 1668,
+      "title": "Inauguramos subsede  de la Defensoría en Villa María",
+      "date": "2017-09-15 11:09:18",
+      "url": "http://localhost:8080/inauguramos-subsede-en-villa-maria/",
+      "featured": 0,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": [
+        "Featured source unavailable"
+      ]
+    },
+    {
+      "id": 1572,
+      "historical_id": 1557,
+      "title": "Video: Dado de la Paz – DDNA y Movimiento de los Focolares",
+      "date": "2017-08-22 12:58:34",
+      "url": "http://localhost:8080/video-dado-de-la-paz-ddna-y-movimiento-de-los-focolares/",
+      "featured": 1571,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1574,
+      "historical_id": 1554,
+      "title": "Videos de la Campaña «Tengo derecho a ser niñ@»",
+      "date": "2017-08-22 12:51:38",
+      "url": "http://localhost:8080/videos-de-la-campana-tengo-derecho-ser-nin/",
+      "featured": 1573,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    },
+    {
+      "id": 1576,
+      "historical_id": 784,
+      "title": "Entrevista a la Dra. Amelia Lopez en Canal C",
+      "date": "2016-10-19 14:14:50",
+      "url": "http://localhost:8080/entrevista-a-la-dra-amelia-lopez-en-canal-c/",
+      "featured": 1575,
+      "carousel": false,
+      "gallery_count": 0,
+      "pending": []
+    }
+  ],
+  "first15": [
+    {
+      "id": 299,
+      "title": "Realizaremos la charla abierta “La mirada que sostiene: hablemos sobre la escucha activa, la validación emocional y el derecho a ser mirado y oído”",
+      "date": "2026-10-09 12:00:00",
+      "url": "http://localhost:8080/realizaremos-la-charla-abierta-la-mirada-que-sostiene-hablemos-sobre-la-escucha-activa-la-validacion-emocional-y-el-derecho-a-ser-mirado-y-oido/"
+    },
+    {
+      "id": 313,
+      "title": "Estudiantes del Colegio Universitario Politécnico comenzaron sus pasantías en la Defensoría",
+      "date": "2026-10-09 12:00:00",
+      "url": "http://localhost:8080/estudiantes-del-colegio-universitario-politecnico-comenzaron-sus-pasantias-en-la-defensoria/"
+    },
+    {
+      "id": 315,
+      "title": "Llevamos adelante la charla abierta “La mirada que sostiene” a cargo de la Lic. Beatriz Janin",
+      "date": "2026-10-09 12:00:00",
+      "url": "http://localhost:8080/llevamos-adelante-la-charla-abierta-la-mirada-que-sostiene-a-cargo-de-la-lic-beatriz-janin/"
+    },
+    {
+      "id": 386,
+      "title": "“La mejor jugada es cuidarlos” ¿Cómo prevenir las apuestas online en chichas y chicos durante el Mundial?",
+      "date": "2026-06-26 17:14:37",
+      "url": "http://localhost:8080/la-mejor-jugada-es-cuidarlos-como-prevenir-las-apuestas-online-en-chicas-y-chicos-durante-el-mundial/"
+    },
+    {
+      "id": 550,
+      "title": "Participamos de una jornada de formación sobre desarrollo infantil temprano en Ushuaia",
+      "date": "2026-06-26 14:41:57",
+      "url": "http://localhost:8080/participamos-de-una-jornada-de-formacion-sobre-desarrollo-infantil-temprano-en-ushuaia/"
+    },
+    {
+      "id": 404,
+      "title": "Realizamos la charla abierta “Construir entornos seguros: ¿Cómo acompañar a chicas y chicos dentro y fuera de las pantallas?”",
+      "date": "2026-06-26 14:31:05",
+      "url": "http://localhost:8080/realizamos-la-charla-abierta-construir-entornos-seguros-como-acompanar-a-chicas-y-chicos-dentro-y-fuera-de-las-pantallas/"
+    },
+    {
+      "id": 539,
+      "title": "Llevamos adelante jornadas de trabajo, escucha y participación en el sur provincial",
+      "date": "2026-06-17 15:39:23",
+      "url": "http://localhost:8080/llevamos-adelante-jornadas-de-trabajo-escucha-y-participacion-en-el-sur-provincial/"
+    },
+    {
+      "id": 512,
+      "title": "Presentamos el informe “Adolescencias entre transformaciones y búsquedas: Una mirada sobre el bienestar adolescente en Córdoba”",
+      "date": "2026-03-20 17:20:38",
+      "url": "http://localhost:8080/presentamos-el-informe-adolescencias-entre-transformaciones-y-busquedas-una-mirada-sobre-el-bienestar-adolescente-en-cordoba/"
+    },
+    {
+      "id": 402,
+      "title": "Se realizó el Encuentro de reconocimiento a Municipios MUNA de Córdoba:“Entornos que cuidan: promoviendo la corresponsabilidad”",
+      "date": "2026-03-20 17:07:34",
+      "url": "http://localhost:8080/se-realizo-el-encuentro-de-reconocimiento-a-municipios-muna-de-cordoba-entornos-que-cuidan-promoviendo-la-corresponsabilidad/"
+    },
+    {
+      "id": 417,
+      "title": "Justicia juvenil entre el castigo y la reparación: jornada de reflexión interdisciplinaria",
+      "date": "2025-09-29 12:27:54",
+      "url": "http://localhost:8080/justicia-juvenil-entre-el-castigo-y-la-reparacion-jornada-de-reflexion-interdisciplinaria/"
+    },
+    {
+      "id": 498,
+      "title": "Se realizó en Chubut el Primer Encuentro Interprovincial de Municipios MUNA",
+      "date": "2025-09-22 14:12:41",
+      "url": "http://localhost:8080/se-realizo-en-chubut-el-primer-encuentro-interprovincial-de-municipios-muna/"
+    },
+    {
+      "id": 552,
+      "title": "Comunicado conjunto de las Defensorías de Niñas, Niños y Adolescentes del país ante el veto presidencial a la Ley de Emergencia Pediátrica",
+      "date": "2025-09-16 14:53:29",
+      "url": "http://localhost:8080/comunicado-conjunto-de-las-defensorias-de-ninas-ninos-y-adolescentes-del-pais-ante-el-veto-presidencial-a-la-ley-de-emergencia-pediatrica/"
+    },
+    {
+      "id": 432,
+      "title": "Participamos del I Congreso Internacional de Ciudadanía Digital con Entre Pantallas, nuestro programa de Protección Digital",
+      "date": "2025-09-16 14:25:19",
+      "url": "http://localhost:8080/participamos-del-i-congreso-internacional-de-ciudadania-digital-con-entre-pantallas-nuestro-programa-de-proteccion-digital/"
+    },
+    {
+      "id": 457,
+      "title": "La Defensora participó en la apertura y las tres jornadas de la Primera Cumbre Global sobre Derechos Humanos en El Salvador",
+      "date": "2025-09-10 16:39:33",
+      "url": "http://localhost:8080/la-defensora-participo-en-la-apertura-y-las-tres-jornadas-de-la-primera-cumbre-global-sobre-derechos-humanos-en-el-salvador/"
+    },
+    {
+      "id": 419,
+      "title": "Comunicado sobre el veto a la Ley de Emergencia en Discapacidad",
+      "date": "2025-08-21 14:03:26",
+      "url": "http://localhost:8080/comunicado-sobre-el-veto-a-la-ley-de-emergencia-en-discapacidad/"
+    }
+  ],
+  "http_qa": {
+    "articles": 222,
+    "pages": 19,
+    "local_media_urls": 2694,
+    "errors": [],
+    "archive_pages": [
+      {
+        "url": "http://localhost:8080/category/novedades/",
+        "ids": [
+          299,
+          313,
+          315,
+          386,
+          550,
+          404,
+          539,
+          512,
+          402,
+          417,
+          498,
+          552
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=2",
+        "ids": [
+          432,
+          457,
+          419,
+          528,
+          500,
+          638,
+          729,
+          378,
+          476,
+          364,
+          353,
+          465
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=3",
+        "ids": [
+          444,
+          563,
+          514,
+          487,
+          742,
+          629,
+          615,
+          617,
+          366,
+          749,
+          640,
+          566
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=4",
+        "ids": [
+          590,
+          594,
+          604,
+          767,
+          779,
+          790,
+          803,
+          805,
+          808,
+          819,
+          822,
+          825
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=5",
+        "ids": [
+          829,
+          834,
+          835,
+          837,
+          840,
+          843,
+          855,
+          866,
+          877,
+          889,
+          891,
+          893
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=6",
+        "ids": [
+          905,
+          914,
+          925,
+          936,
+          946,
+          957,
+          968,
+          980,
+          989,
+          997,
+          1007,
+          1017
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=7",
+        "ids": [
+          1026,
+          1037,
+          1048,
+          1060,
+          1069,
+          1078,
+          1085,
+          1093,
+          1104,
+          1108,
+          1111,
+          1119
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=8",
+        "ids": [
+          1124,
+          1136,
+          1141,
+          1143,
+          1157,
+          1165,
+          1167,
+          1170,
+          1178,
+          1180,
+          1182,
+          1185
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=9",
+        "ids": [
+          1192,
+          1194,
+          1196,
+          1199,
+          1201,
+          1203,
+          1205,
+          1207,
+          1209,
+          1211,
+          1213,
+          1215
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=10",
+        "ids": [
+          1217,
+          1221,
+          1223,
+          1226,
+          1229,
+          1232,
+          1240,
+          1243,
+          1246,
+          1248,
+          1250,
+          1254
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=11",
+        "ids": [
+          1257,
+          1259,
+          1262,
+          1264,
+          1268,
+          1271,
+          1273,
+          1276,
+          1278,
+          1281,
+          1283,
+          1286
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=12",
+        "ids": [
+          1288,
+          1291,
+          1295,
+          1298,
+          1303,
+          1306,
+          1309,
+          1316,
+          1322,
+          1325,
+          1327,
+          1331
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=13",
+        "ids": [
+          1333,
+          1337,
+          1340,
+          1344,
+          1346,
+          1348,
+          1351,
+          1354,
+          1359,
+          1362,
+          1364,
+          1369
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=14",
+        "ids": [
+          1372,
+          1375,
+          1378,
+          1381,
+          1392,
+          1395,
+          1397,
+          1399,
+          1401,
+          1403,
+          1405,
+          1407
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=15",
+        "ids": [
+          1409,
+          1412,
+          1414,
+          1416,
+          1479,
+          1480,
+          1502,
+          1503,
+          1504,
+          1507,
+          1508,
+          1513
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=16",
+        "ids": [
+          1514,
+          1515,
+          1516,
+          1517,
+          1518,
+          1519,
+          1520,
+          1521,
+          1522,
+          1524,
+          1525,
+          1528
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=17",
+        "ids": [
+          1529,
+          1530,
+          1531,
+          1532,
+          1533,
+          1534,
+          1535,
+          1536,
+          1537,
+          1538,
+          1539,
+          1540
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=18",
+        "ids": [
+          1541,
+          1542,
+          1543,
+          1545,
+          1547,
+          1549,
+          1551,
+          1553,
+          1557,
+          1561,
+          1563,
+          1565
+        ]
+      },
+      {
+        "url": "http://localhost:8080/category/novedades/?paged=19",
+        "ids": [
+          1567,
+          1569,
+          1570,
+          1572,
+          1574,
+          1576
+        ]
+      }
+    ],
+    "first15": [
+      {
+        "id": 299,
+        "title": "Realizaremos la charla abierta “La mirada que sostiene: hablemos sobre la escucha activa, la validación emocional y el derecho a ser mirado y oído”",
+        "date": "2026-10-09 12:00:00",
+        "url": "http://localhost:8080/realizaremos-la-charla-abierta-la-mirada-que-sostiene-hablemos-sobre-la-escucha-activa-la-validacion-emocional-y-el-derecho-a-ser-mirado-y-oido/"
+      },
+      {
+        "id": 313,
+        "title": "Estudiantes del Colegio Universitario Politécnico comenzaron sus pasantías en la Defensoría",
+        "date": "2026-10-09 12:00:00",
+        "url": "http://localhost:8080/estudiantes-del-colegio-universitario-politecnico-comenzaron-sus-pasantias-en-la-defensoria/"
+      },
+      {
+        "id": 315,
+        "title": "Llevamos adelante la charla abierta “La mirada que sostiene” a cargo de la Lic. Beatriz Janin",
+        "date": "2026-10-09 12:00:00",
+        "url": "http://localhost:8080/llevamos-adelante-la-charla-abierta-la-mirada-que-sostiene-a-cargo-de-la-lic-beatriz-janin/"
+      },
+      {
+        "id": 386,
+        "title": "“La mejor jugada es cuidarlos” ¿Cómo prevenir las apuestas online en chichas y chicos durante el Mundial?",
+        "date": "2026-06-26 17:14:37",
+        "url": "http://localhost:8080/la-mejor-jugada-es-cuidarlos-como-prevenir-las-apuestas-online-en-chicas-y-chicos-durante-el-mundial/"
+      },
+      {
+        "id": 550,
+        "title": "Participamos de una jornada de formación sobre desarrollo infantil temprano en Ushuaia",
+        "date": "2026-06-26 14:41:57",
+        "url": "http://localhost:8080/participamos-de-una-jornada-de-formacion-sobre-desarrollo-infantil-temprano-en-ushuaia/"
+      },
+      {
+        "id": 404,
+        "title": "Realizamos la charla abierta “Construir entornos seguros: ¿Cómo acompañar a chicas y chicos dentro y fuera de las pantallas?”",
+        "date": "2026-06-26 14:31:05",
+        "url": "http://localhost:8080/realizamos-la-charla-abierta-construir-entornos-seguros-como-acompanar-a-chicas-y-chicos-dentro-y-fuera-de-las-pantallas/"
+      },
+      {
+        "id": 539,
+        "title": "Llevamos adelante jornadas de trabajo, escucha y participación en el sur provincial",
+        "date": "2026-06-17 15:39:23",
+        "url": "http://localhost:8080/llevamos-adelante-jornadas-de-trabajo-escucha-y-participacion-en-el-sur-provincial/"
+      },
+      {
+        "id": 512,
+        "title": "Presentamos el informe “Adolescencias entre transformaciones y búsquedas: Una mirada sobre el bienestar adolescente en Córdoba”",
+        "date": "2026-03-20 17:20:38",
+        "url": "http://localhost:8080/presentamos-el-informe-adolescencias-entre-transformaciones-y-busquedas-una-mirada-sobre-el-bienestar-adolescente-en-cordoba/"
+      },
+      {
+        "id": 402,
+        "title": "Se realizó el Encuentro de reconocimiento a Municipios MUNA de Córdoba:“Entornos que cuidan: promoviendo la corresponsabilidad”",
+        "date": "2026-03-20 17:07:34",
+        "url": "http://localhost:8080/se-realizo-el-encuentro-de-reconocimiento-a-municipios-muna-de-cordoba-entornos-que-cuidan-promoviendo-la-corresponsabilidad/"
+      },
+      {
+        "id": 417,
+        "title": "Justicia juvenil entre el castigo y la reparación: jornada de reflexión interdisciplinaria",
+        "date": "2025-09-29 12:27:54",
+        "url": "http://localhost:8080/justicia-juvenil-entre-el-castigo-y-la-reparacion-jornada-de-reflexion-interdisciplinaria/"
+      },
+      {
+        "id": 498,
+        "title": "Se realizó en Chubut el Primer Encuentro Interprovincial de Municipios MUNA",
+        "date": "2025-09-22 14:12:41",
+        "url": "http://localhost:8080/se-realizo-en-chubut-el-primer-encuentro-interprovincial-de-municipios-muna/"
+      },
+      {
+        "id": 552,
+        "title": "Comunicado conjunto de las Defensorías de Niñas, Niños y Adolescentes del país ante el veto presidencial a la Ley de Emergencia Pediátrica",
+        "date": "2025-09-16 14:53:29",
+        "url": "http://localhost:8080/comunicado-conjunto-de-las-defensorias-de-ninas-ninos-y-adolescentes-del-pais-ante-el-veto-presidencial-a-la-ley-de-emergencia-pediatrica/"
+      },
+      {
+        "id": 432,
+        "title": "Participamos del I Congreso Internacional de Ciudadanía Digital con Entre Pantallas, nuestro programa de Protección Digital",
+        "date": "2025-09-16 14:25:19",
+        "url": "http://localhost:8080/participamos-del-i-congreso-internacional-de-ciudadania-digital-con-entre-pantallas-nuestro-programa-de-proteccion-digital/"
+      },
+      {
+        "id": 457,
+        "title": "La Defensora participó en la apertura y las tres jornadas de la Primera Cumbre Global sobre Derechos Humanos en El Salvador",
+        "date": "2025-09-10 16:39:33",
+        "url": "http://localhost:8080/la-defensora-participo-en-la-apertura-y-las-tres-jornadas-de-la-primera-cumbre-global-sobre-derechos-humanos-en-el-salvador/"
+      },
+      {
+        "id": 419,
+        "title": "Comunicado sobre el veto a la Ley de Emergencia en Discapacidad",
+        "date": "2025-08-21 14:03:26",
+        "url": "http://localhost:8080/comunicado-sobre-el-veto-a-la-ley-de-emergencia-en-discapacidad/"
+      }
+    ],
+    "home_count": 12,
+    "excluded_searches": 8
+  },
+  "unavailable_sources": [
+    {
+      "url": "https://scontent.fcor5-1.fna.fbcdn.net/v/t1.0-9/60346413_2213979142019042_6265362093696876544_n.jpg?_nc_cat=103&_nc_ht=scontent.fcor5-1.fna&oh=d3f86c9c83b097529ffa4b5133952830&oe=5D296A97",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/36321577_1758200124263615_2023348497461280768_n.jpg?_nc_cat=0&oh=1021bf35c6d4a0f6639abfac03528a71&oe=5BA6DD16",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/34018845_1723216697761958_3522145565250945024_n.jpg?_nc_cat=0&oh=ac091b04e0c87b03510fc39c780e847e&oe=5B83F9CE",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-1-Norberto-Liwski-1.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-C%C3%B3rdoba-2.11-Norberto-Liwski-1.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Art%C3%ADculo-Mediaci%C3%B3n-con-adolescentes.-La-experiencia-de-Joinville-Juan-Carlos-Vezzulla.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Art%C3%ADculo-Osvaldo-V%C3%A1zquez-Experiencia-Chile-en-RPA-2017.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-3-Anal%C3%ADa-Kiehl.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-5-Gonzalo-Assusa.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-8-Dar%C3%ADo-Gigena-Parker.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-9-Osvaldo-V%C3%A1zquez.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/10/Presentaci%C3%B3n-11-Juan-Carlos-Vezzulla.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://ddna.cba.gov.ar/wp-content/uploads/2017/09/Inauguraci%C3%B3n-Villa-Mar%C3%ADa.jpg",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "validation": {
+    "news": "PASS",
+    "source_text_fidelity": "PASS",
+    "idempotence": "222 SKIPPED, no new posts/media",
+    "legacy_checks": "Outdated conventions count, Comunicados title and fixed five-post baseline"
+  },
+  "publication_gate": "LISTO PARA PUSH; commit/push feature only; no PR/merge/VPS"
+}

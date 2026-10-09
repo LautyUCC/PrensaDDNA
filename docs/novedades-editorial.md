@@ -1,6 +1,6 @@
 # Sistema editorial de Novedades
 
-Implementado en la feature branch actual, exclusivamente en WordPress local. La importación agrega 44 novedades (34 YA PUBLICADAS y 10 FALTA PUBLICAR). Las cuatro novedades demostrativas anteriores se retiraron a la papelera local por instrucción del usuario el 9 de octubre; quedan 44 novedades publicadas. No crea usuarios ni modifica roles.
+Estado local vigente: **222 novedades publicadas** (219 históricas oficiales + las nuevas locales 1–3), en `feature/novedades-reconciliation`. La carga anterior de 44 sigue documentada como antecedente; producción no se modificó en esta reconciliación. Ver `novedades-reconciliation-control.md` para inventario, fechas, exclusiones, medios y QA. No se crean usuarios ni se modifican roles.
 
 ## Cómo publicar una novedad
 
@@ -20,22 +20,17 @@ El contenido sigue siendo una Entrada nativa; se puede editar también desde **E
 - Home y sección Actualidad: `http://localhost:8080/#actualidad`.
 - Archivo y Ver más: `http://localhost:8080/category/novedades/`.
 - Se conserva la categoría histórica para su URL y el menú; las consultas usan el tag `novedad` como criterio editorial.
-- Home mantiene la configuración existente de 12 entradas; el archivo muestra 12 por página con búsqueda y paginación, por fecha descendente e ID como desempate.
+- Home mantiene la configuración existente de 12 entradas; el archivo muestra 12 por página con búsqueda y paginación, exclusivamente por fecha editorial descendente, sin ordenar por ID.
 - Los individuales usan un template común de título, fecha, imagen destacada, contenido y galería/carrusel opcional. No hay contenido hardcodeado.
 
-## Fuentes y decisiones de esta carga
+## Fuentes y decisiones vigentes
 
-Consultar `novedades-inventario.md`, `novedades-control.md` y `../content/novedades-manifest.json`.
-
-- Los títulos y textos provienen de los PDF/DOCX entregados. Si existen ambos se prefiere DOCX para los párrafos y se recuperan también los hipervínculos de las anotaciones PDF.
-- Las imágenes principales provienen de los filenames/carpetas PORTADA; en PRECONGRESO se distingue Novedades Web.png de la miniatura. No se escoge la primera foto de cada carpeta.
-- El usuario autorizó carrusel para las novedades con varias fotos. Se excluyen portadas, miniaturas y gráficos de botones de la galería adicional. Las referencias `(Imagen N)` de Entre Pantallas y Va con Vos se convierten en bloques de imagen en su lugar original, sin duplicarlas en un carrusel.
-- Cuando los filenames numeran fotos se respeta su orden natural. No se inventan captions; se utiliza el título fuente como texto alternativo de contexto, editable en Medios.
-- No hay fechas de publicación original completas e inequívocas. Las fechas de eventos no se usan como fechas de publicación. Esta carga utiliza su fecha efectiva y registra `first_import_time`; todas quedan pendientes de verificación histórica.
-- DIPLO UCASAL y FORO JUEGO DE LOS DERECHOS no traen imágenes: quedan publicados con el texto real y sin imagen destacada.
-- Premio Programa Protección Digital trae solo una portada: se publica localmente con el título literal de carpeta y sin inventar texto. Su texto y confirmación de título siguen pendientes.
-- El comunicado de Discapacidad incluye un PDF adjunto local proporcionado; se importa en Medios y se enlaza desde el cuerpo.
-- Los PDFs usados solo como fuente de redacción no se agregan como adjuntos públicos. Tampoco se importan miniaturas/botones auxiliares no utilizados. Los originales permanecen en el bundle fuente.
+- El archivo oficial completo aporta 219 entradas, sus fechas originales y contenido. Se conserva el texto literal; se retiran wrappers/CSS/controles del constructor anterior y encabezados que repiten el título, y se adaptan galerías a markup semántico del template nuevo.
+- Las nuevas locales 1–3 usan **2026-10-09**, fecha confirmada por el usuario. Sus tres fotos distintas son portadas únicas; dos archivos numerados eran idénticos a sus PORTADA por SHA256 y no se repiten como carrusel.
+- Las carpetas 4–10 se conservan en disco y se excluyen de publicación/importación. No existen fuentes numeradas 11–13 en el bundle revisado; la política también las bloquea.
+- Los carruseles históricos se identifican por su semántica original y conservan el orden declarado. Galerías estáticas e imágenes interiores conservan su posición; no se convierten automáticamente en carrusel.
+- Las imágenes y PDFs recuperables se sirven desde Medios local. Los videos externos conservan enlaces a sus fuentes. Los 13 recursos inaccesibles se documentan en el informe: no se inventan sustitutos ni se dejan enlaces locales rotos.
+- La nota local de lanzamiento del ciclo «Cuidar para Crecer» en zona norte permanece en borrador REVIEW; no se confunde con el encuentro de zona sur ni se destruye su material.
 
 ## Importación reproducible
 
@@ -56,18 +51,33 @@ Reemplazar `dry-run` por `apply` únicamente para aplicar. El mount es de lectur
 
 La deduplicación usa SHA-256 de archivos originales existentes y del bundle. Los uploads tienen filenames deterministas. Los IDs de origen dependen de la carpeta, no del título o del hash del texto. Repetir `apply` conserva las entradas ya completadas y las ediciones hechas por Prensa, sin duplicar posts/media. Una importación interrumpida puede completar solo sus entradas incompletas.
 
-El recibo `ddna_news_import_receipt` identifica todos los posts/media creados y las etiquetas añadidas a entradas previas. Un fallo detiene la carga y conserva ese recibo: no restaura ni borra toda la DB. Antes de la carga local se exportó la DB y se registraron los posts previos en `/tmp/ddna-news-review/`, fuera del repositorio.
+El importador local de PDF/DOCX acepta solo las fuentes 1–3 y conserva entradas completadas. Las fuentes YA PUBLICADAS ahora se reconcilian mediante el inventario histórico; el builder no vuelve a incorporarlas desde carpetas sin fecha.
 
-Fuera de un WordPress con entorno `local` y hostname loopback, el importador está bloqueado salvo que se proporcionen **ambas** condiciones: `DDNA_NEWS_APPROVAL=APROBADO PARA PUBLICAR` y `DDNA_NEWS_TARGET_ORIGIN` igual al origen real del WordPress. Esta fase no las configuró ni ejecutó producción. La publicación de código y una carga productiva posterior siguen pendientes de la aprobación exacta del usuario y del checkpoint requerido.
+Para el histórico se usa `scripts/reconcile-novedades.php`, **bloqueado fuera de localhost, sin override productivo**. Dry-run por defecto; valida identidades, slugs, originales, SHA256, MIME, fechas y política antes de escribir. El recibo `ddna_news_reconciliation_receipt` y la marca por entrada preservan la idempotencia y las ediciones posteriores cuando el manifiesto no cambia. Los medios se deduplican por hash del archivo original. La DB y el snapshot previo están respaldados fuera del repo en `../news-reconciliation-20261009/`.
+
+```sh
+docker compose --profile tools run --rm cli eval-file /var/www/html/scripts/reconcile-novedades.php dry-run
+```
+
+Reemplazar por `apply` requiere la autorización local vigente y el mismo bundle revisado. `inventory-historical-novedades.py --output <carpeta-externa>` hace un nuevo inventario de lectura y detecta todas las páginas reales, sin asumir cantidades ni fusionar automáticamente nuevas coincidencias. `build-historical-novedades.py --cache <carpeta-externa>` genera contenido desde el inventario reconciliado versionado, descarga originales recuperables y requiere `beautifulsoup4`; las dependencias probadas están en `scripts/requirements-news-reconciliation.txt`.
+
+La presente fase no autoriza commit/push/PR/merge/VPS. Solo **LISTO PARA PUSH** autoriza después commit y push de esta feature, sin PR ni despliegue.
 
 ## Validaciones
 
 `verify-novedades.php` coteja cada título, texto, fecha, tag, imagen principal, selección/orden de galería, inline, URLs y checksum de medios con el manifest. `test-novedades-editorial.php` prueba el flujo editorial con fixtures locales descartables y limpieza en finally. El informe de control incluye resultados HTTP y pendientes por novedad.
 
-## Publicación autorizada — 9 de octubre de 2026
+## Antecedente: publicación de la carga inicial — 9 de octubre de 2026
 
 El usuario autorizó «APROBADO PARA PUBLICAR EN REPOSIROTIO Y VPS», incluyendo el sistema, la carga inicial, los ajustes visuales revisados y la retirada de contenidos de prueba. La fase de publicación integra el código aprobado a main mediante PR, conserva los originales ajenos al lote y utiliza el reemplazo exclusivo del servicio WordPress del VPS de revisión (`http://179.199.132.207`).
 
 Antes de escribir se crea checkpoint privado de imagen, contenedor, filas DB, uploads y servicios. Se reutilizan la imagen y Compose vigentes sin actualizar Core ni dependencias. El bundle versionado contiene las fuentes exactas de Novedades; los assets se importan mediante Medios, sin rutas locales en runtime. `retire-demo-content.php` resuelve las cuatro noticias seed por slug y verifica título/texto antes de enviarlas a papelera; los eventos deben estar marcados como demo. Dry-run por defecto y origen/aprobación exactos fuera de local. El recibo permite restauración selectiva, sin borrar Medios ni sustituir DB.
 
 Las validaciones editoriales con fixtures son exclusivamente locales. `verify-novedades.php` es de lectura y admite el destino remoto con `DDNA_NEWS_VERIFY_ORIGIN` igual al origen exacto. El registro operativo y backups quedan fuera del repositorio en `news-publication-20261009/` y el release privado del VPS.
+
+
+## Publicación autorizada — 9 de octubre de 2026
+
+La instrucción posterior `LISTO PARA PUSH Y PUBLICAR EN VPS` autoriza commit/push de la feature y publicación controlada en `http://179.199.132.207`, sin PR/merge ni cambios en otros servicios. Los estados «solo local» anteriores describen la fase de revisión cerrada. El importador ahora exige aprobación/origen exactos fuera de local; resuelve históricos existentes, retiros y REVIEW por `_ddna_news_source_id`, sin transportar IDs locales. Preflight completo antes de escribir, respaldo editorial por entrada y recibo incremental de medios, además del checkpoint privado DB/uploads. El verificador remoto es de lectura y el auditor HTTP toma el origen del resultado validado.
+
+El bundle procede del commit, sin recursos ajenos ni base local. Se verifica la imagen activa contra los bytes de la revisión base, se deriva la nueva imagen sin actualizar Core/dependencias, y se sustituye únicamente WordPress con los mismos mounts, variables y Compose. Backups y evidencias operativas permanecen fuera de Git en `news-reconciliation-publication-20261009/` y el release privado del VPS. Las 13 fuentes inaccesibles y el borrador REVIEW se conservan como pendientes ya informados.

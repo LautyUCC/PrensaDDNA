@@ -1,5 +1,7 @@
 # Inventario previo a la importación de Novedades
 
+> Antecedente de la carga inicial. El estado local vigente y las exclusiones de importación están en [novedades-reconciliation-control.md](novedades-reconciliation-control.md): 219 históricos + 3 nuevas. Este inventario de fuentes no habilita importar las excluidas.
+
 44 novedades: 34 YA PUBLICADAS y 10 FALTA PUBLICAR. Inventario confeccionado antes de importar.
 
 No hay fecha de publicación original completa e inequívoca en las fuentes; las fechas de eventos permanecen en el texto. Se usará la fecha efectiva de carga para publicar, sin atribuirla a la fuente.
