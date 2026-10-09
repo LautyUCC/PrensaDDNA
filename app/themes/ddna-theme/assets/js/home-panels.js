@@ -9,6 +9,18 @@
 	const closeTimers = new WeakMap();
 	let activeId = '';
 
+	document.querySelectorAll( '[data-inner-accordion], [data-institutional-accordion]' ).forEach( function ( accordion ) {
+		accordion.querySelectorAll( '.knowledge-accordion__trigger, .institutional-accordion__trigger' ).forEach( function ( trigger ) {
+			trigger.addEventListener( 'click', function () {
+				const panel = document.getElementById( trigger.getAttribute( 'aria-controls' ) );
+				if ( ! panel ) { return; }
+				const expanded = 'true' === trigger.getAttribute( 'aria-expanded' );
+				trigger.setAttribute( 'aria-expanded', String( ! expanded ) );
+				panel.hidden = expanded;
+			} );
+		} );
+	} );
+
 	if ( ! roots.length || ! triggers.length || ! panels.length ) {
 		return;
 	}
@@ -104,18 +116,6 @@
 				return;
 			}
 			activate( id, { history: true, scroll: true } );
-		} );
-	} );
-
-	document.querySelectorAll( '[data-inner-accordion], [data-institutional-accordion]' ).forEach( function ( accordion ) {
-		accordion.querySelectorAll( '.knowledge-accordion__trigger, .institutional-accordion__trigger' ).forEach( function ( trigger ) {
-			trigger.addEventListener( 'click', function () {
-				const panel = document.getElementById( trigger.getAttribute( 'aria-controls' ) );
-				if ( ! panel ) { return; }
-				const expanded = 'true' === trigger.getAttribute( 'aria-expanded' );
-				trigger.setAttribute( 'aria-expanded', String( ! expanded ) );
-				panel.hidden = expanded;
-			} );
 		} );
 	} );
 

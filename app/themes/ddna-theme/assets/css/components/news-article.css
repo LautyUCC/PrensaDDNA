@@ -1,0 +1,26 @@
+/* El equipo edita contenido; el tema aporta la presentación DDNA. */
+.news-article { width: min(100%, 72rem); margin-block: clamp(1rem, 3vw, 3rem); padding: clamp(1.25rem, 3vw, 3rem); border: var(--border-width) solid var(--color-border); border-radius: var(--radius-lg); background: #fff; min-width: 0; }
+.news-article .entry-header { margin-block: 1.5rem 2rem; }
+.news-article .entry-title { font-size: clamp(1.6rem, 3.3vw, 3.5rem); line-height: 1.1; overflow-wrap: anywhere; }
+.news-article .entry-meta { margin: 0; }
+.news-article__back { background: #ff8c00; color: #000; white-space: normal; }
+.news-article .entry-media { margin: 0 0 2rem; }
+.news-article__cover img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); }
+.news-article .entry-content { min-width: 0; font-size: clamp(1.05rem, 1.3vw, 1.25rem); line-height: 1.65; overflow-wrap: anywhere; }
+.news-article .entry-content p { margin-block: 0 1.25rem; }
+.news-article .entry-content figure { margin: 1.5rem 0; }
+.news-article .entry-content img { max-width: 100%; height: auto; border-radius: var(--radius-md); }
+.news-gallery { position: relative; margin-top: 2rem; min-width: 0; }
+.news-gallery h2 { font-size: clamp(1.4rem, 2.4vw, 2rem); }
+.news-gallery__track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.news-gallery__slide { min-width: 0; margin: 0; }
+.news-gallery__slide img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #fff2e9; border-radius: var(--radius-md); }
+.news-gallery__slide figcaption { margin-top: .5rem; font-size: .95rem; overflow-wrap: anywhere; }
+.news-gallery--carousel .news-gallery__track { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 100%; gap: 0; }
+.news-gallery--carousel .carousel-controls { position: static; width: auto; margin-block: 0 1rem; justify-content: flex-end; gap: .75rem; }
+.news-gallery .carousel-control { display: inline-flex; align-items: center; justify-content: center; border: 1px solid #000; border-radius: var(--radius-pill); background: #ff8c00; color: #000; }
+.news-gallery__track:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
+@media (max-width: 47.9375rem) {
+ .news-article { border-radius: var(--radius-md); }
+ .news-gallery__track { grid-template-columns: 1fr; }
+}

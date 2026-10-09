@@ -9,9 +9,9 @@ get_header();
 
 $search_term   = isset( $_GET['buscar'] ) && is_scalar( $_GET['buscar'] ) ? sanitize_text_field( wp_unslash( $_GET['buscar'] ) ) : '';
 $current_page  = max( 1, (int) get_query_var( 'paged' ), (int) get_query_var( 'page' ) );
-$news_category = get_category_by_slug( 'novedades' );
 $query_args    = array(
 	'post_type'           => 'post',
+	'tag'                 => 'novedad',
 	'post_status'         => 'publish',
 	'posts_per_page'      => 12,
 	'paged'               => $current_page,
@@ -19,10 +19,6 @@ $query_args    = array(
 	'order'               => 'DESC',
 	'ignore_sticky_posts' => true,
 );
-
-if ( $news_category ) {
-	$query_args['cat'] = $news_category->term_id;
-}
 
 if ( '' !== $search_term ) {
 	$query_args['s'] = $search_term;

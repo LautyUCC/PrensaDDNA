@@ -123,3 +123,9 @@
 	.territory-marker,
 	.territory-marker__label { transition: none; }
 }
+
+/* Más espacio solo para las dos subsedes con correos largos. */
+@media (min-width: 48rem) {
+ #territory-popover-sierras-chicas-salsipuedes,
+ #territory-popover-cosquin { width: min(27rem, calc(100% - var(--popover-left))); }
+}

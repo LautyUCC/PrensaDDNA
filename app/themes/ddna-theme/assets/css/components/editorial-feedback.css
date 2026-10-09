@@ -69,3 +69,63 @@
 .statement-titles { display: grid; gap: 1.25rem; padding-left: 1.5rem; }
 .statement-titles li, .statement-titles a { white-space: normal; overflow-wrap: anywhere; }
 .statement-titles a { display: inline-block; min-height: 2.75rem; padding-block: .5rem; }
+
+/* Normativas y Comunicados comparten el accordion institucional y sus controles. */
+.document-collection > section { margin: 0 0 1.75rem; padding: 0; border: 0; background: transparent; }
+.document-collection > section > h2 { margin: 0; }
+.document-collection .institutional-accordion__trigger {
+ width: fit-content;
+ max-width: 100%;
+ gap: 1.5rem;
+ border: 1px solid #000;
+ border-radius: var(--radius-pill);
+ background: #fff;
+ color: #000;
+ font-size: clamp(1.125rem, 1.6vw, 1.5rem);
+ line-height: 1.3;
+ cursor: pointer;
+ overflow-wrap: anywhere;
+}
+.document-collection .institutional-accordion__trigger > span { flex: 0 0 .65rem; }
+.document-collection .institutional-accordion__panel { padding: 1rem 0 0; }
+.document-collection .institutional-accordion__panel[hidden] { display: none; }
+.document-collection .normativa-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.document-collection .statement-titles { margin: 0; padding: 0; list-style: none; gap: 1rem; }
+.document-collection .statement-titles li { min-width: 0; }
+.document-collection .document-collection__document {
+ display: grid;
+ grid-template-columns: 3rem minmax(0, 1fr);
+ align-items: center;
+ gap: 1rem;
+ min-height: 5.5rem;
+ max-width: 100%;
+ padding: 1rem 1.25rem;
+ border: 0;
+ border-radius: 1.25rem;
+ background: #ff8c00;
+ color: #000;
+ font-family: inherit;
+ font-size: clamp(1rem, 1.4vw, 1.25rem);
+ font-weight: var(--font-weight-bold);
+ line-height: 1.4;
+ text-align: center;
+ text-decoration: none;
+ white-space: normal;
+ overflow-wrap: anywhere;
+}
+.document-collection__document > span { min-width: 0; }
+.document-collection__icon { display: block; width: 100%; height: auto; object-fit: contain; }
+.document-collection a.document-collection__document:hover { text-decoration: underline; text-underline-offset: .2em; }
+.document-collection a.document-collection__document:focus-visible,
+.document-collection .institutional-accordion__trigger:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
+@media (max-width: 47.9375rem) {
+ .document-collection .normativa-links { grid-template-columns: 1fr; }
+ .document-collection .document-collection__document { grid-template-columns: 2.25rem minmax(0, 1fr); gap: .75rem; padding: 1rem; }
+}
+
+.entry--statements .entry-title {
+ font-size: clamp(1.35rem, 5vw, 4.5rem);
+ line-height: 1.1;
+ text-transform: uppercase;
+ overflow-wrap: normal;
+}

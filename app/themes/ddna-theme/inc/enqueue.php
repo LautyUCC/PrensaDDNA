@@ -53,6 +53,12 @@ function ddna_theme_enqueue_assets() {
 		$styles['ddna-theme-news-archive'] = 'components/news-archive.css';
 	}
 
+	if ( is_singular( 'post' ) && function_exists( 'ddna_core_is_news' ) && ddna_core_is_news( get_queried_object_id() ) ) {
+		$styles['ddna-theme-news-article'] = 'components/news-article.css';
+		wp_enqueue_script( 'ddna-theme-carousel', $theme_uri . '/assets/js/carousel.js', array(), (string) filemtime( $theme_path . '/assets/js/carousel.js' ), true );
+		wp_script_add_data( 'ddna-theme-carousel', 'strategy', 'defer' );
+	}
+
 	if ( is_page( 'informes-anuales' ) ) {
 		$styles['ddna-theme-annual-reports'] = 'components/annual-reports.css';
 	}
@@ -90,6 +96,11 @@ function ddna_theme_enqueue_assets() {
 		true
 	);
 	wp_script_add_data( 'ddna-theme-navigation', 'strategy', 'defer' );
+
+	if ( is_page( array( 'normativa', 'normativas', 'comunicados' ) ) ) {
+		wp_enqueue_script( 'ddna-theme-home-panels', $theme_uri . '/assets/js/home-panels.js', array(), (string) filemtime( $theme_path . '/assets/js/home-panels.js' ), true );
+		wp_script_add_data( 'ddna-theme-home-panels', 'strategy', 'defer' );
+	}
 
 	if ( is_front_page() ) {
 		wp_enqueue_style( 'ddna-theme-back-to-top', $theme_uri . '/assets/css/components/back-to-top.css', array( 'ddna-theme-tokens' ), (string) filemtime( $theme_path . '/assets/css/components/back-to-top.css' ) );
