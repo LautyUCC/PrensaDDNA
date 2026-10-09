@@ -91,7 +91,7 @@ No hay fecha de publicación original completa e inequívoca en las fuentes; las
 
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL/NOVEDAD DIPLO UCASAL.pdf`
 
-### 6 5) NOVEDAD FORO JUEGO DE LOS DERECHOS 
+### 6 5) NOVEDAD FORO JUEGO DE LOS DERECHOS
 
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /NOVEDAD EL JUEGO DE LOS DERECHOS.pdf`
 
@@ -244,7 +244,7 @@ No hay fecha de publicación original completa e inequívoca en las fuentes; las
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD COMERCIO Y JUSTICIA/FOTOS/9.jpg`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD COMERCIO Y JUSTICIA/FOTOS/PORTADA.jpg`
 
-### 19 NOVEDAD COMUNICADO LEY 
+### 19 NOVEDAD COMUNICADO LEY
 
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD COMUNICADO LEY /COMUNICADO /Comunicado sobre el veto a la Ley de Emergencia en Discapacidad.pdf`
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD COMUNICADO LEY /Novedad veto Ley Discapacidad.pdf`
@@ -252,7 +252,7 @@ No hay fecha de publicación original completa e inequívoca en las fuentes; las
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD COMUNICADO LEY /FOTOS/MINIATURA /Portada Comunicado 645x305.jpg`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD COMUNICADO LEY /FOTOS/PORTADA INICIO /Portada Comunicado.jpg`
 
-### 20 NOVEDAD CONGRESO CIUDADANIA 
+### 20 NOVEDAD CONGRESO CIUDADANIA
 
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD CONGRESO CIUDADANIA /Novedad Congreso Ciudadania .pdf`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD CONGRESO CIUDADANIA /FOTOS/01.jpg`
@@ -269,7 +269,7 @@ No hay fecha de publicación original completa e inequívoca en las fuentes; las
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD CONGRESO CIUDADANIA /FOTOS/MINIATURA.jpg`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD CONGRESO CIUDADANIA /FOTOS/PORTADA HOME.jpg`
 
-### 21 NOVEDAD CONVENIO BELL VILLE 
+### 21 NOVEDAD CONVENIO BELL VILLE
 
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD CONVENIO BELL VILLE /Novedad Firma de Convenio.pdf`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD CONVENIO BELL VILLE /FOTOS/1 (1).jpg`
@@ -430,7 +430,7 @@ No hay fecha de publicación original completa e inequívoca en las fuentes; las
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD USHUAIA/FOTOS/9.jpg`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/NOVEDAD USHUAIA/FOTOS/PORTADA.jpg`
 
-### 33 Novedad Comunicado Ley de Emergencia Pediatrica 
+### 33 Novedad Comunicado Ley de Emergencia Pediatrica
 
 - Documento: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/Novedad Comunicado Ley de Emergencia Pediatrica /Novedad Comunicado Ley de Emergencia Pediatrica.pdf`
 - Imagen: `RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/YA PUBLICADAS/Novedad Comunicado Ley de Emergencia Pediatrica /FOTOS/BOTÓN/BOTÓN Comunicado Ley Pediátrica.png`
