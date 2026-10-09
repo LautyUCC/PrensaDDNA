@@ -43,8 +43,20 @@ function ddna_theme_enqueue_assets() {
 		'ddna-theme-accessibility' => 'utilities/accessibility.css',
 	);
 
-	if ( is_page( 'novedades' ) ) {
+	if ( is_page( 'agenda' ) ) {
+		$styles['ddna-theme-agenda'] = 'components/agenda.css';
+		wp_enqueue_script( 'ddna-theme-agenda', $theme_uri . '/assets/js/agenda.js', array(), (string) filemtime( $theme_path . '/assets/js/agenda.js' ), true );
+		wp_script_add_data( 'ddna-theme-agenda', 'strategy', 'defer' );
+	}
+
+	if ( is_page( 'novedades' ) || is_category( 'novedades' ) ) {
 		$styles['ddna-theme-news-archive'] = 'components/news-archive.css';
+	}
+
+	if ( is_singular( 'post' ) && function_exists( 'ddna_core_is_news' ) && ddna_core_is_news( get_queried_object_id() ) ) {
+		$styles['ddna-theme-news-article'] = 'components/news-article.css';
+		wp_enqueue_script( 'ddna-theme-carousel', $theme_uri . '/assets/js/carousel.js', array(), (string) filemtime( $theme_path . '/assets/js/carousel.js' ), true );
+		wp_script_add_data( 'ddna-theme-carousel', 'strategy', 'defer' );
 	}
 
 	if ( is_page( 'informes-anuales' ) ) {
@@ -62,6 +74,7 @@ function ddna_theme_enqueue_assets() {
 	}
 
 	$styles['ddna-theme-editorial-feedback'] = 'components/editorial-feedback.css';
+	$styles['ddna-theme-additional-adjustments'] = 'components/additional-adjustments.css';
 
 	foreach ( $styles as $handle => $relative_path ) {
 		$file_path = $theme_path . '/assets/css/' . $relative_path;
@@ -84,7 +97,15 @@ function ddna_theme_enqueue_assets() {
 	);
 	wp_script_add_data( 'ddna-theme-navigation', 'strategy', 'defer' );
 
+	if ( is_page( array( 'normativa', 'normativas', 'comunicados' ) ) ) {
+		wp_enqueue_script( 'ddna-theme-home-panels', $theme_uri . '/assets/js/home-panels.js', array(), (string) filemtime( $theme_path . '/assets/js/home-panels.js' ), true );
+		wp_script_add_data( 'ddna-theme-home-panels', 'strategy', 'defer' );
+	}
+
 	if ( is_front_page() ) {
+		wp_enqueue_style( 'ddna-theme-back-to-top', $theme_uri . '/assets/css/components/back-to-top.css', array( 'ddna-theme-tokens' ), (string) filemtime( $theme_path . '/assets/css/components/back-to-top.css' ) );
+		wp_enqueue_script( 'ddna-theme-back-to-top', $theme_uri . '/assets/js/back-to-top.js', array(), (string) filemtime( $theme_path . '/assets/js/back-to-top.js' ), true );
+		wp_script_add_data( 'ddna-theme-back-to-top', 'strategy', 'defer' );
 		wp_enqueue_script(
 			'ddna-theme-hero-video',
 			$theme_uri . '/assets/js/hero-video.js',

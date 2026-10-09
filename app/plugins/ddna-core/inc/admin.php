@@ -103,7 +103,7 @@ function ddna_core_render_field( $meta_key, $field_id, $field, $value ) {
 			echo '</div>';
 			break;
 		default:
-			$input_type = in_array( $field['type'], array( 'date', 'email', 'url', 'number' ), true ) ? $field['type'] : 'text';
+			$input_type = in_array( $field['type'], array( 'date', 'time', 'email', 'url', 'number' ), true ) ? $field['type'] : 'text';
 			$attributes = '';
 			foreach ( array( 'min', 'max', 'step' ) as $attribute ) {
 				if ( isset( $field[ $attribute ] ) ) {
@@ -136,7 +136,10 @@ function ddna_core_save_meta_box( $post_id ) {
 		return;
 	}
 
+	if ( wp_is_post_revision( $post_id ) || wp_is_post_autosave( $post_id ) ) { return; }
+
 	$submitted = isset( $_POST['ddna_core_fields'] ) && is_array( $_POST['ddna_core_fields'] ) ? wp_unslash( $_POST['ddna_core_fields'] ) : array();
+	if ( 'agenda_evento' === $post_type && is_wp_error( ddna_core_agenda_validate_fields( $submitted, 'publish' === get_post_status( $post_id ) ) ) ) { return; }
 	foreach ( $groups[ $post_type ] as $meta_key => $field ) {
 		$raw_value = isset( $submitted[ $meta_key ] ) ? $submitted[ $meta_key ] : ( 'checkbox' === $field['type'] ? false : '' );
 		if ( ! is_scalar( $raw_value ) && ! is_bool( $raw_value ) ) {

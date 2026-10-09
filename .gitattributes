@@ -10,3 +10,7 @@
 
 # Preserve curated PDF bytes; disable textual diffs and whitespace normalization.
 content/media/feedback-octubre/** binary
+content/media/prevention/*.pdf binary
+
+# Preserve the approved Novedades source bundle exactly.
+"RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/**" binary

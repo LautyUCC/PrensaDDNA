@@ -1,0 +1,40 @@
+.back-to-top {
+ position: fixed;
+ z-index: 40;
+ right: max(1rem, env(safe-area-inset-right));
+ bottom: calc(1rem + env(safe-area-inset-bottom));
+ display: grid;
+ place-items: center;
+ width: 3.25rem;
+ height: 3.25rem;
+ padding: 0;
+ border: 2px solid var(--color-secondary);
+ border-radius: 50%;
+ background: var(--color-secondary);
+ color: #fff;
+ font-size: 2rem;
+ line-height: 1;
+ box-shadow: 0 3px 12px rgb(0 0 0 / 20%);
+ cursor: pointer;
+ transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+.back-to-top[hidden] { display: none; }
+.back-to-top:hover { background: #262626; color: #fff; }
+.back-to-top:active { transform: translateY(1px); }
+.back-to-top:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 4px; }
+/* The mobile header has a free centre slot: keep the control off reading/cards. */
+@media (max-width: 74.9375rem) {
+ .site-header--home .site-header__brand { flex: 0 0 auto; width: min(18rem, calc(50vw - 3.75rem)); }
+ .site-header--home .site-header__brand img { max-width: 100%; }
+ .back-to-top {
+  top: .75rem;
+  bottom: auto;
+  right: auto;
+  left: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  transform: translateX(-50%);
+ }
+ .back-to-top:active { transform: translate(-50%, 1px); }
+ .admin-bar .back-to-top { top: calc(46px + .75rem); }
+}

@@ -50,6 +50,7 @@ $get_document_file = static function ( $slug ) {
 <main class="site-main" id="main-content">
 	<div class="site-container site-container--annual-reports">
 		<article class="annual-reports">
+			<?php get_template_part( 'template-parts/components/return-home-menu' ); ?>
 			<header class="annual-reports__header">
 				<h1><?php esc_html_e( 'Informes Anuales', 'ddna-theme' ); ?></h1>
 				<p><?php esc_html_e( 'Consultá y descargá los informes anuales de la Defensoría.', 'ddna-theme' ); ?></p>
