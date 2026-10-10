@@ -1,6 +1,6 @@
 # Sistema editorial de Novedades
 
-Estado local vigente: **222 novedades publicadas** (219 históricas oficiales + las nuevas locales 1–3), en `feature/novedades-reconciliation`. La carga anterior de 44 sigue documentada como antecedente; producción no se modificó en esta reconciliación. Ver `novedades-reconciliation-control.md` para inventario, fechas, exclusiones, medios y QA. No se crean usuarios ni se modifican roles.
+Estado vigente local y VPS de revisión: **222 novedades publicadas** (219 históricas oficiales + las nuevas locales 1–3), en `feature/novedades-reconciliation`. La carga anterior de 44 sigue documentada como antecedente; La publicación posterior autorizada ya se ejecutó en http://179.199.132.207; el sitio anterior se conserva intacto. Ver `novedades-reconciliation-control.md` para inventario, fechas, exclusiones, medios y QA. No se crean usuarios ni se modifican roles.
 
 ## Cómo publicar una novedad
 
@@ -81,3 +81,5 @@ Las validaciones editoriales con fixtures son exclusivamente locales. `verify-no
 La instrucción posterior `LISTO PARA PUSH Y PUBLICAR EN VPS` autoriza commit/push de la feature y publicación controlada en `http://179.199.132.207`, sin PR/merge ni cambios en otros servicios. Los estados «solo local» anteriores describen la fase de revisión cerrada. El importador ahora exige aprobación/origen exactos fuera de local; resuelve históricos existentes, retiros y REVIEW por `_ddna_news_source_id`, sin transportar IDs locales. Preflight completo antes de escribir, respaldo editorial por entrada y recibo incremental de medios, además del checkpoint privado DB/uploads. El verificador remoto es de lectura y el auditor HTTP toma el origen del resultado validado.
 
 El bundle procede del commit, sin recursos ajenos ni base local. Se verifica la imagen activa contra los bytes de la revisión base, se deriva la nueva imagen sin actualizar Core/dependencias, y se sustituye únicamente WordPress con los mismos mounts, variables y Compose. Backups y evidencias operativas permanecen fuera de Git en `news-reconciliation-publication-20261009/` y el release privado del VPS. Las 13 fuentes inaccesibles y el borrador REVIEW se conservan como pendientes ya informados.
+
+Publicación verificada: código activo `867d067`, 222 artículos/19 páginas/2.694 URLs de medios, sin errores; siete retiros a papelera y un borrador REVIEW. El informe de control registra checkpoint, preservación e idempotencia remotos.

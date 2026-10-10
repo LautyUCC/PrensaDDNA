@@ -25,11 +25,15 @@ def run(path,out):
   if not any(a.get_text(' ',strip=True)=='Siguiente' for a in s.select('.news-archive__pagination a')):break
   n+=1;assert n<30
  assert len(cards)==222 and len({id for id,d in cards})==222,'Duplicate/missing archive IDs'
+ assert {id for id,d in cards}==set(expected),'Actual archive differs from approved entries'
  assert [d for id,d in cards]==sorted([d for id,d in cards],reverse=True),'Actual archive chronology'
- assert [id for id,d in cards[:15]]==[x['id'] for x in data['first15']],'Actual first15 differs from WP query'
+ # Equal editorial timestamps have no ID tie-breaker by design.
+ assert [expected[id]['date'] for id,d in cards[:15]]==[x['date'] for x in data['first15']],'Actual first15 chronology differs from WP query'
  home=BeautifulSoup(read(base+'/'),'html.parser')
  homeurls=[a.select_one('.news-card__title a')['href'] for a in home.select('article.news-card')]
- assert homeurls==[x['url'] for x in data['first15'][:len(homeurls)]],'Home order differs'
+ byurl={x['url']:x for x in expected.values()}
+ assert len(homeurls)==12 and len(set(homeurls))==12 and all(u in byurl for u in homeurls),'Home entries differ'
+ assert [byurl[u]['date'] for u in homeurls]==[x['date'] for x in data['first15'][:len(homeurls)]],'Home chronology differs'
  # All published articles, with dates shown once and images hosted locally.
  def article(item):
   try:
