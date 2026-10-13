@@ -49,7 +49,7 @@ $institutional = ddna_core_get_institutional_settings();
 $institutional = array_merge( $institutional, array(
 	'assistance_label' => 'Línea de Asistencia', 'assistance_phone' => '351 402 0503',
 	'adolescence_label' => 'Línea Adolescencia', 'adolescence_phone' => '351 239 8953',
-	'phone' => '351 428 8881', 'email' => 'consulta.defensoria@cba.gov.ar', 'case_email' => 'casosasistencia@gmail.com',
+	'phone' => '+54 351 428-8881 / 82 / 83 / 88', 'email' => 'consulta.defensoria@cba.gov.ar', 'case_email' => 'casosasistencia@gmail.com',
 	'address' => 'Dámaso Larrañaga 94, Nueva Córdoba, Córdoba Capital.',
 ) );
 update_option( 'ddna_institutional', ddna_core_sanitize_institutional_settings( $institutional ) );

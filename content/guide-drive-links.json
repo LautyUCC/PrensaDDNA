@@ -1,0 +1,96 @@
+{
+  "version": "ddna-guide-drive-links-v1",
+  "verified_date": "2026-10-13",
+  "folder_url": "https://drive.google.com/drive/folders/1GGwH65NrFIzlUiax6JtZFpXBR8aWOuz6",
+  "access": "anyone-with-link-reader",
+  "guides": [
+    {
+      "slug": "prevencion-juegos-en-linea",
+      "label": "Guía de Juegos en Línea",
+      "file": "media/prevention/guia-prevencion-juegos-en-linea.pdf",
+      "size": 3501241,
+      "sha256": "aea368d609eebb01b99f9218e055687beb0cc833dc7eb1149c62629b9843bdef",
+      "drive_url": "https://drive.google.com/file/d/1-BIpbilwA8Mp-zAlfQ4I9AOwBA54X7Kp/view"
+    },
+    {
+      "slug": "prevencion-abuso-sexual",
+      "label": "Guía sobre abuso sexual hacia NNyA",
+      "file": "media/prevention/guia-prevencion-abuso-sexual.pdf",
+      "size": 1181660,
+      "sha256": "2dc12f10d0c02cdc07dff81f5fbde329abcf49e0a8b6a8f8bbdf2a9f9b6894d7",
+      "drive_url": "https://drive.google.com/file/d/1sptEz6j3yojULximf_E2FEg7ImrDmb1Q/view"
+    },
+    {
+      "slug": "guia-crianza-juegos-en-linea",
+      "label": "Juegos en Línea: previniendo riesgos",
+      "file": "media/feedback-octubre/juegos-en-linea.pdf",
+      "size": 358860,
+      "sha256": "eb8abf913bc305cde788e0f60929bbbfab62cadd411deedde0bcd12f249322e2",
+      "drive_url": "https://drive.google.com/file/d/1pJ1Uj9WK5Bg-s3rokP9OSmId72QKO_A5/view"
+    },
+    {
+      "slug": "guia-crianza-apuestas-en-linea",
+      "label": "Apuestas en Línea: prevención en NNyA",
+      "file": "media/feedback-octubre/apuestas-en-linea.pdf",
+      "size": 692370,
+      "sha256": "6893d55a4b756bb966a1239e0b741855635858ceb7f3a07765801496027fd66e",
+      "drive_url": "https://drive.google.com/file/d/1otVTbtkDVfB7PaPCAUr2h7WprlWRNtKJ/view"
+    },
+    {
+      "slug": "guia-crianza-entornos-digitales",
+      "label": "Acompañar a chicas y chicos en entornos digitales",
+      "file": "media/feedback-octubre/entornos-digitales.pdf",
+      "size": 364570,
+      "sha256": "f9281c44c98deb04a5e67288bd4204d1a61c6ff5517f086c727c7a5b0790bdc5",
+      "drive_url": "https://drive.google.com/file/d/1zhfZ9hfSsbRk6HAzsorlwSfyk12RI2n5/view"
+    },
+    {
+      "slug": "guia-crianza-prevencion-abuso",
+      "label": "Prevención del abuso y el acoso sexual hacia niñas, niños y adolescentes",
+      "file": "media/feedback-octubre/prevencion-abuso.pdf",
+      "size": 397798,
+      "sha256": "adca802e982a87b93bb273cd25c997bfea10bc2da5e99145dc352fffbf18b8fa",
+      "drive_url": "https://drive.google.com/file/d/1pIHYsviJspqpss383EZcan1TfgwOVzfK/view"
+    },
+    {
+      "slug": "guia-crianza-prevencion-bullying",
+      "label": "Prevención del bullying o acoso entre pares",
+      "file": "media/feedback-octubre/prevencion-bullying.pdf",
+      "size": 408023,
+      "sha256": "bf148ae5951d790c49c224784bcb581a86b18f8ab34482e4ff5eaef14d26ac3b",
+      "drive_url": "https://drive.google.com/file/d/1ZNz8_2vA6vvGV2RgW9ziEDUVIeZ1dMEN/view"
+    },
+    {
+      "slug": "guia-crianza-entornos-seguros",
+      "label": "Entornos seguros y libres de violencia hacia NNyA",
+      "file": "media/feedback-octubre/entornos-seguros.pdf",
+      "size": 621611,
+      "sha256": "77b69b36a2419a47f621a321160cdebdeaeca168809cd0924d4bd1af7b06dd8d",
+      "drive_url": "https://drive.google.com/file/d/1Hg8snlR4dH7PRmjX3IGfC3bk6_2aka1s/view"
+    },
+    {
+      "slug": "guia-crianza-hablemos-crianza",
+      "label": "Hablemos de crianza",
+      "file": "media/feedback-octubre/hablemos-crianza.pdf",
+      "size": 352833,
+      "sha256": "e9ceb9bfe6a8d800f0dada94862cfabf043a3d42fc007e5ae9d7ad41ce49d9f4",
+      "drive_url": "https://drive.google.com/file/d/10qZXkph6aGYEivC-yhKcmM6HXI34ffOj/view"
+    },
+    {
+      "slug": "guia-crianza-prevencion-consumo",
+      "label": "¿Cómo acompañar la prevención del consumo de sustancias?",
+      "file": "media/feedback-octubre/prevencion-consumo.pdf",
+      "size": 497158,
+      "sha256": "d8f89ed6f2a384f740ca37028a46aaa58bfb22a0b5ac583793e27e0eade5aba0",
+      "drive_url": "https://drive.google.com/file/d/1tgqGJig2GDXqplzF36CjRucGM60yFvVa/view"
+    },
+    {
+      "slug": "guia-crianza-primeros-anos",
+      "label": "Acompañar y estimular en los primeros años",
+      "file": "media/feedback-octubre/primeros-anos.pdf",
+      "size": 26361821,
+      "sha256": "ea9d53185020e53e0ad9a5267e96c1bdb562a74ad0dfe4cc20d246c7b2c30e87",
+      "drive_url": "https://drive.google.com/file/d/1aTAqPj1OiiHical3KEet5n8101-aDq7q/view"
+    }
+  ]
+}

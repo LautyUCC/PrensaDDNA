@@ -147,3 +147,11 @@ Consultar `final-sept-2026-gap-analysis.md`, `final-sept-2026-implementation-rep
 - `docs/design-specification.md`: especificación visual de la Home.
 - `docs/content-model.md`: preparación del modelo administrable; no obliga a importar contenido histórico.
 - `Home WEB NUEVA DDNA 2026-02.pdf`: referencia gráfica oficial de la Home.
+
+### Reconciliación histórica autorizada — 9 de octubre de 2026
+
+La solicitud explícita autoriza recorrer íntegramente el archivo oficial, reconciliar e importar su contenido y medios exclusivamente en WordPress local, conservar solo las nuevas 1–3 y excluir 4–13 sin destruir sus fuentes. El usuario confirmó 2026-10-09 como fecha de publicación de las tres nuevas. Trabajo en `feature/novedades-reconciliation`: no commit/push/PR/merge/VPS. Solo la respuesta exacta `LISTO PARA PUSH` autoriza commit y push de la feature, sin PR ni despliegue.
+
+### Publicación de la reconciliación — 9 de octubre de 2026
+
+El usuario autorizó explícitamente `LISTO PARA PUSH Y PUBLICAR EN VPS`. Amplía la fase anterior: commit y push de `feature/novedades-reconciliation` y despliegue controlado en el VPS de revisión `http://179.199.132.207`, incluyendo los 219 históricos, las tres nuevas con fecha confirmada, siete retiros a papelera y un borrador REVIEW. No autoriza PR/merge, DNS, SSL/TLS, el sitio anterior ni otros servicios. Respaldo DB/uploads previo; reutilizar imagen/configuración vigente y reemplazar únicamente WordPress. Resolver identidades por source_id, nunca por IDs locales; preservar medios anteriores y contenido ajeno.

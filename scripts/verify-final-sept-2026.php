@@ -24,7 +24,7 @@ foreach ( array( 'programa' => 6, 'campana' => $campaign_count ) as $type => $ex
 $backup = get_option( 'ddna_backup_before_final_sept_2026', array() );
 if ( ! $backup ) { $errors[] = 'No hay respaldo editorial.'; }
 foreach ( $backup['posts'] ?? array() as $id => $record ) { if ( ! get_post( $id ) ) { $errors[] = 'Registro previo perdido: ' . $id; } }
-if ( '351 428 8881' !== ddna_core_get_institutional_settings()['phone'] ) { $errors[] = 'Teléfono fijo'; }
+if ( '+54 351 428-8881 / 82 / 83 / 88' !== ddna_core_get_institutional_settings()['phone'] ) { $errors[] = 'Teléfono fijo'; }
 if ( 5 !== (int) wp_count_posts( 'post' )->publish ) { $errors[] = 'Posts previos modificados'; }
 if ( ! shortcode_exists( 'ddna_contact' ) || ! shortcode_exists( 'ddna_statements' ) ) { $errors[] = 'Shortcodes'; }
 $input = ddna_core_sanitize_institutional_settings( array( 'case_email' => 'invalid', 'phone' => '<script>x</script>351' ) );

@@ -39,6 +39,11 @@ $render_item = static function ( array $item, $variant = 'document' ) use ( $res
 		$document = get_page_by_path( $item['slug'], OBJECT, 'documento' );
 		$file_id = $document ? absint( get_post_meta( $document->ID, '_ddna_file_id', true ) ) : 0;
 		$url = $file_id ? wp_get_attachment_url( $file_id ) : ( $document ? get_post_meta( $document->ID, '_ddna_external_url', true ) : '' );
+		$external_url = $document ? get_post_meta( $document->ID, '_ddna_external_url', true ) : '';
+		// Drive takes precedence only for guides; retain their original Media Library copy.
+		if ( 'guide' === $variant && preg_match( '~^https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?.*)?$~D', $external_url ) ) {
+			$url = $external_url;
+		}
 	} else {
 		$url = $resolve_item( array_merge( array( $item['label'] ), $item['aliases'] ?? array() ) );
 	}

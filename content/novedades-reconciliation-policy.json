@@ -1,0 +1,134 @@
+{
+  "local_only": true,
+  "allowed_local_numbers": [
+    1,
+    2,
+    3
+  ],
+  "excluded_local_numbers": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "not_found_local_numbers": [
+    11,
+    12,
+    13
+  ],
+  "retire": [
+    {
+      "id": 311,
+      "title": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes",
+      "slug": "hablemos-de-vinculos-una-jornada-de-participacion-y-reflexion-junto-a-adolescentes",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-354a7be7ecd45f7016da",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026",
+      "featured": 305,
+      "action": "REMOVED"
+    },
+    {
+      "id": 316,
+      "title": "Comenzó la segunda edición de la Diplomatura en Inteligencia Artificial y Derechos Digitales de Niñas, Niños y Adolescentes",
+      "slug": "comenzo-la-segunda-edicion-de-la-diplomatura-en-inteligencia-artificial-y-derechos-digitales-de-ninas-ninos-y-adolescentes",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-c4ac8c1d9bbb1d0a6222",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL",
+      "featured": 0,
+      "action": "REMOVED"
+    },
+    {
+      "id": 317,
+      "title": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi",
+      "slug": "comenzamos-el-juego-de-los-derechos-junto-a-chicas-y-chicos-de-barrio-sacchi",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-b944ba04a08c2be896a5",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS ",
+      "featured": 0,
+      "action": "REMOVED"
+    },
+    {
+      "id": 327,
+      "title": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión",
+      "slug": "realizamos-el-segundo-encuentro-de-el-juego-de-los-derechos-junto-a-chicas-y-chicos-de-barrio-villa-union",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-867444ab5bd387eb767c",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”",
+      "featured": 322,
+      "action": "REMOVED"
+    },
+    {
+      "id": 329,
+      "title": "Realizamos la charla abierta “Lo que no dicen con palabras. Señales, vínculos y violencias en las adolescencias. ¿Qué podemos hacer los adultos?”",
+      "slug": "realizamos-la-charla-abierta-lo-que-no-dicen-con-palabras-senales-vinculos-y-violencias-en-las-adolescencias-que-podemos-hacer-los-adultos",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-77ea16e539bc2abc9ed3",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras.",
+      "featured": 328,
+      "action": "REMOVED"
+    },
+    {
+      "id": 337,
+      "title": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto",
+      "slug": "entre-pantallas-continuamos-promoviendo-la-ciudadania-digital-en-las-escuelas-durante-agosto",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-5e1ba134bba0a73077b9",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO",
+      "featured": 330,
+      "action": "REMOVED"
+    },
+    {
+      "id": 342,
+      "title": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades",
+      "slug": "durante-agosto-el-programa-va-con-vos-continuo-llegando-a-escuelas-y-comunidades",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-c5d76048ea58e82d8b9f",
+      "original_group": "FALTA PUBLICAR",
+      "origin": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS",
+      "featured": 338,
+      "action": "REMOVED"
+    }
+  ],
+  "review": [
+    {
+      "id": 578,
+      "title": "Se llevó a cabo el lanzamiento del Ciclo de Diálogo y Formación “Cuidar para Crecer”",
+      "slug": "se-llevo-a-cabo-el-lanzamiento-del-ciclo-de-dialogo-y-formacion-cuidar-para-crecer",
+      "date": "2026-10-09 14:47:56",
+      "date_gmt": "2026-10-09 14:47:56",
+      "status": "publish",
+      "source_id": "ddna-news-4bc0445b92efd41fd176",
+      "original_group": "YA PUBLICADAS",
+      "origin": "YA PUBLICADAS/Novedad LANZAMIENTO ZONA NORTE",
+      "featured": 577,
+      "action": "REVIEW"
+    }
+  ],
+  "new_local_date": "2026-10-09"
+}

@@ -91,7 +91,7 @@ if ( isset( $address_parts[1] ) && 'Nueva Córdoba' === $address_parts[1] ) {
 					<a href="mailto:<?php echo esc_attr( $details['email'] ); ?>"><?php echo esc_html( $details['email'] ); ?></a>
 				<?php endif; ?>
 				<?php if ( ! empty( $details['phone'] ) ) : ?>
-					<a href="<?php echo esc_url( ddna_theme_phone_uri( $details['phone'] ) ); ?>">+54 <?php echo esc_html( $details['phone'] ); ?></a>
+					<a href="<?php echo esc_url( ddna_theme_phone_uri( $details['phone'] ) ); ?>"><?php echo esc_html( $details['phone'] ); ?></a>
 				<?php endif; ?>
 			</address>
 		</div>

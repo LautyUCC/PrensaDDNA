@@ -6,6 +6,7 @@
 }
 
 .site-header__inner {
+	position: relative;
 	display: flex;
 	min-height: clamp(4rem, 4.5vw, 5rem);
 	align-items: center;

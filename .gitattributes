@@ -14,3 +14,5 @@ content/media/prevention/*.pdf binary
 
 # Preserve the approved Novedades source bundle exactly.
 "RECURSOS GRÁFICOS - WEB DDNA 2026/novedades/**" binary
+
+content/media/historical-novedades/** binary

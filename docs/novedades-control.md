@@ -1,5 +1,7 @@
 # Control de Novedades — LOCAL, 9 de octubre de 2026
 
+> Antecedente de la carga inicial. El estado local vigente y las exclusiones de importación están en [novedades-reconciliation-control.md](novedades-reconciliation-control.md): 219 históricos + 3 nuevas. Este inventario de fuentes no habilita importar las excluidas.
+
 Branch: `feature/agenda-prevention-guides`. WordPress local permanece en `http://localhost:8080/`. Sin commit final, push, PR, merge, deploy ni acceso a VPS/producción en esta fase. Los cambios locales anteriores se preservaron.
 
 ## Inventario y resultado
