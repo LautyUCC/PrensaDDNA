@@ -2,6 +2,8 @@
 /** Verificación no mutante del lote editorial y archivos de Media Library. */
 if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) { return; }
 $manifest = json_decode( file_get_contents( dirname( __DIR__ ) . '/content/feedback-prensa-octubre.json' ), true );
+$drive_manifest = json_decode( file_get_contents( dirname( __DIR__ ) . '/content/guide-drive-links.json' ), true );
+$drive_urls = array_column( $drive_manifest['guides'], 'drive_url', 'slug' );
 $errors = array();
 $check = static function ( $condition, $message ) use ( &$errors ) { if ( ! $condition ) { $errors[] = $message; } };
 $check( 9 === count( get_option( 'ddna_care_guides', array() ) ), 'Deben existir nueve guías.' );
@@ -12,7 +14,7 @@ foreach ( $pdfs as $guide ) {
 	$file = $id ? get_attached_file( $id ) : '';
 	$check( $file && is_file( $file ) && filesize( $file ) === $guide['size'] && hash_file( 'sha256', $file ) === $guide['sha256'], 'Archivo/Media Library: ' . $guide['slug'] );
 	$check( $id && 'application/pdf' === get_post_mime_type( $id ), 'MIME: ' . $guide['slug'] );
-	$check( $post && ! get_post_meta( $post->ID, '_ddna_external_url', true ), 'La guía debe usar media propia.' );
+	$check( $post && get_post_meta( $post->ID, '_ddna_external_url', true ) === ( $drive_urls[ $guide['slug'] ] ?? '' ), 'Destino externo de guía/Normativa: ' . $guide['slug'] );
 }
 $help = get_page_by_path( 'asistencia' );
 $html = apply_filters( 'the_content', $help->post_content );

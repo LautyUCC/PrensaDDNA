@@ -6,6 +6,9 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'entry entry--single' ); ?>>
+	<?php if ( ddna_theme_is_program_page() ) {
+		get_template_part( 'template-parts/components/return-home-menu', null, array( 'url' => home_url( '/' ), 'label' => __( 'Volver al inicio', 'ddna-theme' ) ) );
+	} ?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="entry-meta"><?php ddna_theme_post_meta(); ?></div>

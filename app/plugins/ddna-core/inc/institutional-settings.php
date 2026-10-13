@@ -6,13 +6,19 @@ function ddna_core_get_institutional_defaults() {
 	return array(
 		'assistance_label' => 'Línea Asistencia', 'assistance_phone' => '',
 		'adolescence_label' => 'Línea Adolescencia', 'adolescence_phone' => '',
-		'address' => '', 'phone' => '', 'email' => '', 'case_email' => '',
+		'address' => '', 'phone' => '+54 351 428-8881 / 82 / 83 / 88', 'email' => '', 'case_email' => '',
 		'facebook_url' => '', 'instagram_url' => '', 'x_url' => '', 'youtube_url' => '', 'google_play_url' => '',
 	);
 }
 
 function ddna_core_get_institutional_settings() {
-	return wp_parse_args( get_option( 'ddna_institutional', array() ), ddna_core_get_institutional_defaults() );
+	$settings = wp_parse_args( get_option( 'ddna_institutional', array() ), ddna_core_get_institutional_defaults() );
+	// Preserve stored settings while upgrading the former institutional number.
+	$phone_digits = preg_replace( '/\D+/', '', $settings['phone'] );
+	if ( in_array( $phone_digits, array( '3514288881', '543514288881' ), true ) ) {
+		$settings['phone'] = ddna_core_get_institutional_defaults()['phone'];
+	}
+	return $settings;
 }
 
 function ddna_core_sanitize_institutional_settings( $input ) {

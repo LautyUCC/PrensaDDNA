@@ -3,6 +3,17 @@
 .contact-card__label { font-size: clamp(.95rem, .85rem + .35vw, 1.15rem); line-height: 1.3; }
 .contact-card__value { font-size: clamp(1.125rem, 1rem + .45vw, 1.5rem); line-height: 1.35; }
 .contact-card a[href^="tel:"] { font-size: clamp(1.4rem, 1rem + 1.1vw, 2.25rem); white-space: nowrap; }
+.contact-card--landline .contact-card__content { container-type: inline-size; }
+.contact-card--landline a[href^="tel:"] {
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: .25em;
+ font-size: min(clamp(1.4rem, 1rem + 1.1vw, 2.25rem), clamp(1.25rem, 7.3cqi, 2.25rem));
+ line-height: 1.3;
+ white-space: normal;
+}
+.contact-card__phone-main,
+.contact-card__phone-alternatives { white-space: nowrap; }
 .contact-card__description { font-size: clamp(1rem, .95rem + .3vw, 1.2rem); line-height: 1.5; }
 .contact-card__icon { width: 100%; height: auto; }
 #panel-necesito-ayuda .home-panel__content,

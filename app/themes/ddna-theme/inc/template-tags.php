@@ -35,14 +35,34 @@ function ddna_theme_container_classes( $classes = array() ) {
 }
 
 /**
- * Determines whether the current page belongs to the institutional area.
- *
- * Institutional child pages inherit the Home header and its panel menu,
- * without duplicating that header or the Home hero.
+ * Identifies Programa CPT entries and their corresponding editorial pages.
  *
  * @return bool
  */
+function ddna_theme_is_program_page() {
+	if ( is_singular( 'programa' ) ) {
+		return true;
+	}
+	if ( ! is_page() ) {
+		return false;
+	}
+	$page_id = get_queried_object_id();
+	while ( $page_id ) {
+		$page = get_post( $page_id );
+		if ( ! $page ) { return false; }
+		// The editorial pages share their slug with the corresponding Programa CPT.
+		$program = get_page_by_path( $page->post_name, OBJECT, 'programa' );
+		if ( $program && 'publish' === $program->post_status ) { return true; }
+		$page_id = (int) $page->post_parent;
+	}
+	return false;
+}
+
+/** Institutional pages and programs reuse the Home header without its hero. */
 function ddna_theme_is_institutional_page() {
+	if ( ddna_theme_is_program_page() ) {
+		return true;
+	}
 	if ( is_category( 'novedades' ) ) {
 		return true;
 	}
@@ -116,7 +136,8 @@ function ddna_theme_primary_menu_fallback() {
  * @return string
  */
 function ddna_theme_phone_uri( $phone ) {
-	$phone = trim( $phone );
+	// Alternatives are shown in the label; only the first number is dialled.
+	$phone = trim( explode( '/', $phone )[0] );
 	$has_plus = str_starts_with( $phone, '+' );
 	$digits = preg_replace( '/\D+/', '', $phone );
 	if ( ! $digits ) { return ''; }
