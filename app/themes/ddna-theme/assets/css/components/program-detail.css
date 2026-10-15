@@ -1,0 +1,47 @@
+/* Scoped to the two editorial Programas pages; other pages keep their scale. */
+.program-detail .program-resource-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: fit-content;
+ max-width: 100%;
+ min-height: 2.75rem;
+ padding: .7rem 1.2rem;
+ border: 2px solid #000;
+ border-radius: var(--radius-pill);
+ background: #ff8c00;
+ color: #000;
+ font-weight: var(--font-weight-bold);
+ line-height: 1.35;
+ text-align: center;
+ text-decoration: none;
+ white-space: normal;
+ overflow-wrap: break-word;
+}
+.program-detail .program-resource-button:hover { background: #fff; }
+.program-detail .program-resource-button:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
+.program-detail .program-accordion { margin-block: 1rem; }
+.program-detail .program-accordion summary { max-width: 100%; }
+.program-detail .program-accordion summary > :is(h2, h3) { margin: 0; font: inherit; }
+.program-detail .program-accordion summary::after { flex-shrink: 0; }
+@media (max-width: 48rem) {
+ .program-detail .entry-title { font-size: clamp(1.8rem, 5.6vw, 2.5rem); line-height: 1.12; }
+ .program-detail .entry-content h2 { font-size: clamp(1.4rem, 4.5vw, 2rem); line-height: 1.2; margin-block: 1.75rem .8rem; }
+ .program-detail .entry-content h3 { font-size: clamp(1.2rem, 3.8vw, 1.6rem); line-height: 1.25; }
+ .program-detail :is(.entry-title, .entry-content h2, .entry-content h3) { word-break: normal; overflow-wrap: normal; hyphens: manual; }
+ .program-detail .entry-content { font-size: 1.0625rem; line-height: 1.6; }
+ .program-detail .entry-header { margin-bottom: 1.25rem; }
+ .program-detail .entry-content :is(.panel-accordion, .program-accordion) summary {
+  width: 100%;
+  min-width: 0;
+  gap: .8rem;
+  padding: .65rem .85rem;
+  font-size: 1.0625rem;
+  line-height: 1.35;
+  white-space: normal;
+  overflow-wrap: break-word;
+ }
+ .program-detail .entry-content .program-accordion summary > :is(h2, h3) { font: inherit; margin: 0; min-width: 0; }
+ .program-detail .panel-accordion__content { padding: 1rem .25rem .25rem; }
+ .program-detail .program-resource-button { font-size: 1rem; padding: .7rem 1rem; }
+}
