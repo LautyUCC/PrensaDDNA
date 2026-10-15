@@ -22,19 +22,18 @@
 .back-to-top:hover { background: #262626; color: #fff; }
 .back-to-top:active { transform: translateY(1px); }
 .back-to-top:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 4px; }
-/* The mobile header has a free centre slot: keep the control off reading/cards. */
+/* Keep the existing header proportions; the control floats clear of it. */
 @media (max-width: 74.9375rem) {
  .site-header--home .site-header__brand { flex: 0 0 auto; width: min(18rem, calc(50vw - 3.75rem)); }
  .site-header--home .site-header__brand img { max-width: 100%; }
  .back-to-top {
-  top: .75rem;
-  bottom: auto;
-  right: auto;
-  left: 50%;
+  top: auto;
+  bottom: calc(1.25rem + env(safe-area-inset-bottom));
+  right: calc(1.25rem + env(safe-area-inset-right));
+  left: auto;
   width: 2.75rem;
   height: 2.75rem;
-  transform: translateX(-50%);
+  transform: none;
  }
- .back-to-top:active { transform: translate(-50%, 1px); }
- .admin-bar .back-to-top { top: calc(46px + .75rem); }
+ .back-to-top:active { transform: translateY(1px); }
 }

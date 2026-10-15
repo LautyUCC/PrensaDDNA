@@ -33,7 +33,15 @@
  .agenda-toolbar > a { flex: 1; padding: .65rem .6rem; }
  .agenda-month-form { width: 100%; order: -1; }
  .agenda-calendar { padding: .75rem; }
- .agenda-grid { min-width: 42rem; }
- .agenda-grid-wrap::before { content: 'Deslizá para ver todos los días. También podés usar la lista de actividades debajo.'; display: block; padding: .75rem; font-size: .9rem; }
+ .agenda-grid { min-width: 0; }
+ .agenda-grid th { width: calc(100% / 7); padding: .4rem .1rem; font-size: .85rem; }
+ .agenda-grid td { height: 3.5rem; padding: .2rem .1rem; }
+ .agenda-day__number { width: 1.6rem; height: 1.6rem; margin-bottom: .1rem; font-size: .875rem; }
+ .agenda-event { align-items: center; justify-content: center; min-height: 1.25rem; margin-bottom: .15rem; padding: .2rem .05rem; border-left-width: 2px; font-size: .65rem; }
+ /* The full event title stays accessible and in the unchanged details list. */
+ .agenda-event > span { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+ .agenda-event time { white-space: nowrap; }
+ .agenda-month-form select { min-width: 0; flex: 1; padding-inline: .6rem; }
+ .agenda-month-form button { padding-inline: .6rem; }
  .agenda-details h3 { font-size: 1.5rem; }
 }
