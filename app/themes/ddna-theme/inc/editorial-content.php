@@ -106,8 +106,6 @@ add_shortcode( 'ddna_conventions', static function () {
 	$items = get_option( 'ddna_feedback_conventions', array() );
 	ob_start();
 	?><div class="conventions-grid"><?php foreach ( $items as $item ) : ?>
-			<?php // Última institución verificada del orden actual; ocultar solo su presentación.
-			if ( 'convenio-92.png' === ( $item['logo'] ?? '' ) && 'Secretaría de Fortalecimiento Vecinal, Cultura y Deportes' === ( $item['name'] ?? '' ) ) { continue; } ?>
 			<?php if ( ! empty( $item['logo'] ) ) : ?><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/convenios/' . basename( $item['logo'] ) ); ?>" alt="<?php echo esc_attr( $item['name'] ); ?>" loading="lazy" decoding="async"><?php endif; ?>
 	<?php endforeach; ?></div><?php
 	return ob_get_clean();

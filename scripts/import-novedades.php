@@ -3,12 +3,16 @@
 if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) { return; }
 $mode = $args[0] ?? 'dry-run';
 if ( ! in_array( $mode, array( 'dry-run', 'apply' ), true ) ) { WP_CLI::error( 'Usar dry-run o apply.' ); }
+$batch = $args[1] ?? 'reconciliation';
+if ( ! in_array( $batch, array( 'reconciliation', 'octubre-2026' ), true ) ) { WP_CLI::error( 'Lote desconocido.' ); }
+$october = 'octubre-2026' === $batch;
 $local = 'local' === wp_get_environment_type() && in_array( wp_parse_url( home_url(), PHP_URL_HOST ), array( 'localhost', '127.0.0.1', '::1' ), true );
 if ( ! $local && ( getenv( 'DDNA_NEWS_APPROVAL' ) !== 'APROBADO PARA PUBLICAR' || untrailingslashit( home_url() ) !== getenv( 'DDNA_NEWS_TARGET_ORIGIN' ) ) ) { WP_CLI::error( 'Destino no local bloqueado: requiere aprobación explícita y origen exacto.' ); }
 if ( ! function_exists( 'ddna_core_news_assign_terms' ) ) { WP_CLI::error( 'DDNA Core editorial no está activo.' ); }
-$manifest_path = dirname( __DIR__ ) . '/content/novedades-manifest.json';
+$manifest_path = dirname( __DIR__ ) . '/content/' . ( $october ? 'novedades-octubre-2026.json' : 'novedades-manifest.json' );
 $manifest = json_decode( file_get_contents( $manifest_path ), true );
 if ( ! is_array( $manifest ) || 'ddna-novedades-2026-v1' !== ( $manifest['version'] ?? '' ) || empty( $manifest['entries'] ) || ! isset( $manifest['assets'] ) ) { WP_CLI::error( 'Manifiesto inválido.' ); }
+if ( $october && ( 'ddna-news-october-2026' !== ( $manifest['batch_id'] ?? '' ) || 8 !== count( $manifest['entries'] ) ) ) { WP_CLI::error( 'Lote de octubre inválido.' ); }
 $root = realpath( getenv( 'DDNA_NEWS_ASSET_ROOT' ) ?: dirname( __DIR__ ) . '/' . $manifest['source_root'] );
 if ( ! $root ) { WP_CLI::error( 'Falta el bundle de fuentes. Definir DDNA_NEWS_ASSET_ROOT con la ruta montada.' ); }
 $resolve = static function ( $relative ) use ( $root ) {
@@ -24,19 +28,38 @@ foreach ( $manifest['assets'] as $key => $asset ) {
 	$mime = ( new finfo( FILEINFO_MIME_TYPE ) )->file( $file );
 	if ( ! in_array( $mime, array( 'image/jpeg', 'image/png', 'image/webp', 'application/pdf' ), true ) ) { WP_CLI::error( 'Formato no permitido: ' . $asset['path'] ); }
 }
-$seen = array(); $existing_ids = array();
+$seen = array(); $seen_titles = array(); $existing_ids = array();
+$title_key = static function ( $title ) { return sanitize_title( html_entity_decode( $title, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) ); };
+$all_posts = $october ? get_posts( array( 'post_type' => 'post', 'post_status' => array_keys( get_post_stati() ), 'posts_per_page' => -1 ) ) : array();
 foreach ( $manifest['entries'] as $entry ) {
-	if ( ! preg_match( '~^FALTA PUBLICAR/([123])\)~', $entry['origin'] ) ) { WP_CLI::error( 'Fuente excluida por reconciliación: ' . $entry['origin'] ); }
+	$allowed = $october ? '~^FALTA PUBLICAR/(?:[4-9]|10|11)\)~' : '~^FALTA PUBLICAR/([123])\)~';
+	if ( ! preg_match( $allowed, $entry['origin'] ) ) { WP_CLI::error( 'Fuente fuera del lote explícito: ' . $entry['origin'] ); }
 	$source_id = $entry['source_id'];
 	if ( isset( $seen[ $source_id ] ) || empty( $entry['title'] ) || empty( $entry['slug'] ) || 'novedad' !== $entry['tag'] || 'publish' !== $entry['status'] ) { WP_CLI::error( 'Entrada inválida o repetida.' ); }
 	$seen[ $source_id ] = true;
+	if ( $october ) {
+		$expected_id = 'ddna-news-' . substr( hash( 'sha256', $entry['origin'] ), 0, 20 );
+		$key = $title_key( $entry['title'] );
+		if ( $source_id !== $expected_id || isset( $seen_titles[ $key ] ) || empty( $entry['featured_image'] ) || ! empty( $entry['pending'] ) || '2026-10-21' !== $entry['original_publication_date'] ) { WP_CLI::error( 'Identidad/fecha/portada editorial de octubre inválida.' ); }
+		$seen_titles[ $key ] = true;
+	}
 	foreach ( $entry['sources'] as $source ) { if ( hash_file( 'sha256', $resolve( $source['path'] ) ) !== $source['sha256'] ) { WP_CLI::error( 'Documento fuente cambió: ' . $source['path'] ); } }
 	foreach ( array_merge( $entry['gallery'], $entry['inline_images'], $entry['attachments'], $entry['featured_image'] ? array( $entry['featured_image'] ) : array() ) as $key ) { if ( ! isset( $manifest['assets'][ $key ] ) ) { WP_CLI::error( 'Asset desconocido: ' . $source_id ); } }
 	preg_match_all( '/\{\{(?:image|media):([a-f0-9]{64})\}\}/', $entry['content'], $matches );
 	foreach ( $matches[1] as $key ) { if ( ! isset( $manifest['assets'][ $key ] ) ) { WP_CLI::error( 'Placeholder inválido.' ); } }
-	$matches = get_posts( array( 'post_type' => 'post', 'post_status' => 'any', 'posts_per_page' => 2, 'meta_key' => '_ddna_news_source_id', 'meta_value' => $source_id, 'fields' => 'ids' ) );
+	$matches = get_posts( array( 'post_type' => 'post', 'post_status' => $october ? array_keys( get_post_stati() ) : 'any', 'posts_per_page' => 2, 'meta_key' => '_ddna_news_source_id', 'meta_value' => $source_id, 'fields' => 'ids' ) );
 	if ( count( $matches ) > 1 ) { WP_CLI::error( 'ID de origen duplicado: ' . $source_id ); }
 	$existing_ids[ $source_id ] = $matches ? $matches[0] : 0;
+	if ( $october ) {
+		// Include trash: title, date+title and canonical slug cannot create a second identity.
+		foreach ( $all_posts as $post ) {
+			$same_title = $title_key( $post->post_title ) === $title_key( $entry['title'] );
+			$same_date_title = $same_title && substr( $post->post_date, 0, 10 ) === $entry['original_publication_date'];
+			$same_slug = preg_replace( '/__trashed$/', '', $post->post_name ) === $entry['slug'];
+			if ( ( $same_title || $same_date_title || $same_slug ) && (int) $post->ID !== (int) $existing_ids[ $source_id ] ) { WP_CLI::error( 'Colisión de título/fecha/slug: ' . $entry['slug'] . ' (ID ' . $post->ID . '). Requiere revisión, no se duplica ni sobrescribe.' ); }
+		}
+		WP_CLI::log( ( $existing_ids[ $source_id ] ? 'Identidad existente ID ' . $existing_ids[ $source_id ] : 'Identidad nueva' ) . ': ' . $entry['slug'] );
+	}
 	$collision = get_page_by_path( $entry['slug'], OBJECT, 'post' );
 	if ( $collision && $collision->ID !== $existing_ids[ $source_id ] ) { WP_CLI::error( 'Slug ocupado por contenido ajeno: ' . $entry['slug'] ); }
 	if ( $entry['original_publication_date'] && ( ! preg_match( '/^\d{4}-\d{2}-\d{2}$/D', $entry['original_publication_date'] ) || ! strtotime( $entry['original_publication_date'] ) ) ) { WP_CLI::error( 'Fecha inválida.' ); }
@@ -46,9 +69,10 @@ if ( 'dry-run' === $mode ) { WP_CLI::success( 'Dry-run correcto. Sin escrituras.
 require_once ABSPATH . 'wp-admin/includes/file.php';
 require_once ABSPATH . 'wp-admin/includes/media.php';
 require_once ABSPATH . 'wp-admin/includes/image.php';
-$receipt = get_option( 'ddna_news_import_receipt', array( 'started_at' => current_time( 'mysql' ), 'created_posts' => array(), 'created_media' => array(), 'legacy_posts_tagged' => array() ) );
+$receipt_option = $october ? 'ddna_news_october_2026_receipt' : 'ddna_news_import_receipt';
+$receipt = get_option( $receipt_option, array( 'started_at' => current_time( 'mysql' ), 'created_posts' => array(), 'created_media' => array(), 'legacy_posts_tagged' => array(), 'updated_before' => array() ) );
 $receipt['manifest_sha256'] = hash_file( 'sha256', $manifest_path );
-$save_receipt = static function () use ( &$receipt ) { update_option( 'ddna_news_import_receipt', $receipt, false ); };
+$save_receipt = static function () use ( &$receipt, $receipt_option ) { update_option( $receipt_option, $receipt, false ); };
 $media_index = array();
 // Hash existing originals once, including media created by earlier institutional imports.
 foreach ( get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'posts_per_page' => -1, 'fields' => 'ids' ) ) as $id ) {
@@ -70,11 +94,16 @@ $media_id = static function ( $key ) use ( &$media_index, $manifest, $resolve, &
 	$media_index[ $key ] = $id;
 	return $id;
 };
-// Classification is scoped to the three approved entries below.
+// Classification is scoped to the selected explicit manifest.
 $created = 0; $updated = 0; $skipped = 0;
 foreach ( $manifest['entries'] as $entry ) {
 	$id = $existing_ids[ $entry['source_id'] ];
-	if ( $id && get_post_meta( $id, '_ddna_news_import_complete', true ) ) { $skipped++; WP_CLI::log( 'Conservada (sin sobrescribir ediciones): ' . $entry['slug'] ); continue; }
+	$entry_hash = hash( 'sha256', wp_json_encode( $entry ) );
+	if ( $id && get_post_meta( $id, '_ddna_news_import_complete', true ) && ( ! $october || get_post_meta( $id, '_ddna_news_import_entry_sha256', true ) === $entry_hash ) ) { $skipped++; WP_CLI::log( 'SKIPPED (sin sobrescribir ediciones): ' . $entry['slug'] ); continue; }
+	if ( $october && $id && ! isset( $receipt['updated_before'][ $id ] ) ) {
+		$receipt['updated_before'][ $id ] = array( 'post' => get_post( $id, ARRAY_A ), 'meta' => get_post_meta( $id ), 'terms' => wp_get_object_terms( $id, get_object_taxonomies( 'post' ), array( 'fields' => 'all' ) ) );
+		$save_receipt();
+	}
 	$gallery = array_map( $media_id, $entry['gallery'] );
 	$featured = $entry['featured_image'] ? $media_id( $entry['featured_image'] ) : 0;
 	$content = preg_replace_callback( '/\{\{(image|media):([a-f0-9]{64})\}\}/', static function ( $match ) use ( $media_id ) {
@@ -86,6 +115,7 @@ foreach ( $manifest['entries'] as $entry ) {
 	$id = wp_insert_post( wp_slash( array( 'ID' => $id, 'post_type' => 'post', 'post_status' => $entry['status'], 'post_name' => $entry['slug'], 'post_title' => $entry['title'], 'post_content' => wp_kses_post( $content ), 'post_date' => $date, 'post_date_gmt' => get_gmt_from_date( $date ), 'comment_status' => 'closed', 'meta_input' => array( '_ddna_news_enabled' => true, '_ddna_news_source_id' => $entry['source_id'] ) ) ), true );
 	if ( is_wp_error( $id ) ) { $receipt['error'] = $id->get_error_message(); $save_receipt(); WP_CLI::error( $receipt['error'] ); }
 	if ( $is_new ) { $receipt['created_posts'][] = $id; $save_receipt(); }
+	if ( $october ) { delete_post_meta( $id, '_wp_trash_meta_status' ); delete_post_meta( $id, '_wp_trash_meta_time' ); delete_post_meta( $id, '_wp_desired_post_slug' ); }
 	if ( $featured ) { set_post_thumbnail( $id, $featured ); }
 	update_post_meta( $id, '_ddna_news_carousel', $entry['carousel'] );
 	update_post_meta( $id, '_ddna_news_gallery', $gallery );
@@ -98,7 +128,7 @@ foreach ( $manifest['entries'] as $entry ) {
 	ddna_core_news_assign_terms( $id );
 	update_post_meta( $id, '_ddna_news_import_complete', true );
 	if ( $is_new ) { $created++; } else { $updated++; }
-	WP_CLI::log( ( $is_new ? 'Creada: ' : 'Completada: ' ) . $entry['slug'] );
+	WP_CLI::log( ( $is_new ? 'CREATED: ' : 'UPDATED: ' ) . $entry['slug'] );
 }
 $receipt['completed_at'] = current_time( 'mysql' ); unset( $receipt['error'] ); $save_receipt();
-WP_CLI::success( $created . ' creadas; ' . $updated . ' completadas; ' . $skipped . ' conservadas; ' . count( $receipt['created_media'] ) . ' media creados acumulados. Recibo: ddna_news_import_receipt.' );
+WP_CLI::success( $created . ' creadas; ' . $updated . ' completadas; ' . $skipped . ' conservadas; ' . count( $receipt['created_media'] ) . ' media creados acumulados. Recibo: ' . $receipt_option . '.' );

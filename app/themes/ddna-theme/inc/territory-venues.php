@@ -73,7 +73,7 @@ function ddna_theme_territory_venues( array $institutional = array() ) {
 		),
 		array(
 			'id' => 'laguna-larga', 'name' => 'Laguna Larga', 'department' => 'Río Segundo',
-			'address' => 'Hipólito Yrigoyen esquina Julio A. Roca', 'phone' => '351 2021792', 'email' => 'defensorialagunalarga@gmail.com',
+			'address' => 'Juan Domingo Perón esquina Entre Rios - Barrio Arturo Illia', 'phone' => '351 2021792', 'email' => 'defensorialagunalarga@gmail.com',
 			'hours' => 'Lunes a viernes, 9:00 a 13:00 hs.', 'map_url' => '',
 			'left' => '49.6%', 'top' => '40%', 'stack' => 3, 'popover_left' => '56%', 'popover_top' => '31%',
 			'muna' => true, 'muna_participation_note' => '',
@@ -81,14 +81,14 @@ function ddna_theme_territory_venues( array $institutional = array() ) {
 		array(
 			'id' => 'las-varillas', 'name' => 'Las Varillas', 'department' => 'San Justo',
 			'address' => 'España Nº 51', 'phone' => '3533/434410', 'email' => 'ddnalasvarillas@gmail.com',
-			'hours' => 'Lunes a viernes, 8:00 a 14:00 hs.', 'map_url' => '',
+			'hours' => 'Lunes a viernes, 8:00 a 13:00 hs.', 'map_url' => '',
 			'left' => '71.1%', 'top' => '41.1%', 'stack' => 3, 'popover_left' => '48%', 'popover_top' => '36%',
 			'muna' => true, 'muna_participation_note' => '',
 		),
 		array(
 			'id' => 'san-francisco', 'name' => 'San Francisco', 'department' => 'San Justo',
 			'address' => 'Av. Garibaldi esq. Suipacha', 'phone' => '', 'email' => 'ddna.sanfrancisco@gmail.com',
-			'hours' => 'Lunes a viernes, 7:30 a 13:00 hs.', 'map_url' => '',
+			'hours' => 'Lunes a viernes, 8:00 a 13:00 hs.', 'map_url' => '',
 			'left' => '85.2%', 'top' => '35.5%', 'stack' => 3, 'popover_left' => '48%', 'popover_top' => '28%',
 			'muna' => true, 'muna_participation_note' => '',
 		),
