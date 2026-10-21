@@ -1,5 +1,13 @@
 # Alcance vigente del proyecto DDNA
 
+### Lote de contenidos de octubre — 21 de octubre de 2026, fase local
+
+La solicitud explícita autoriza corregir únicamente la dirección de Laguna Larga y los horarios de San Francisco y Las Varillas, mostrar el Convenio 92 en el orden institucional existente, incorporar las ocho fuentes actuales de `FALTA PUBLICAR` (4–11) al sistema editorial y sustituir la imagen de Entre Pantallas por `entre pantallas-67.png`. El usuario confirmó **2026-10-21 para las ocho fechas de publicación**. Esta autorización actualiza la exclusión anterior de esas siete identidades retiradas: se reutilizan sus entradas, sin duplicarlas; Polideportivos es una identidad nueva.
+
+Trabajo exclusivamente local en `feature/actualizacion-contenidos-octubre`, con WordPress/MariaDB y volúmenes existentes. Sin commit, push, PR, merge ni intervención en VPS/producción. Solo la futura respuesta exacta `APROBADO PARA PUBLICAR`, después de la revisión, habilita la fase de publicación descrita en el pedido. Ver `actualizacion-contenidos-octubre-2026.md` y el manifiesto independiente `content/novedades-octubre-2026.json`. No ejecutar la reconciliación histórica de octubre 9 sobre este lote actualizado.
+
+**Publicación autorizada — 21/10/2026:** tras la revisión local, el usuario respondió exactamente `APROBADO PARA PUBLICAR`. Autoriza commit selectivo, push, PR/integración y deploy controlado únicamente de WordPress y las ocho novedades de este lote, con checkpoint previo, importación idempotente y rollback selectivo. Se preservan MariaDB, uploads anteriores y los demás servicios; no autoriza cambios de infraestructura, Dashboard, Supabase, Caddy, Cloudflare ni DNS. El informe local anterior documenta el estado previo a esta autorización.
+
 **Estado:** confirmado  
 **Fecha de formalización:** 11 de agosto de 2026  
 **Aplicación:** este documento rige el trabajo del rebuild hasta que exista una instrucción explícita que modifique su alcance.

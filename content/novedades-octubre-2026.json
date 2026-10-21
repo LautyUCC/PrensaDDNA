@@ -1,0 +1,777 @@
+{
+  "version": "ddna-novedades-2026-v1",
+  "batch_id": "ddna-news-october-2026",
+  "source_root": "RECURSOS GRÁFICOS - WEB DDNA 2026",
+  "editorial_decisions": {
+    "publication_date": "2026-10-21 explicitly confirmed by user for all eight",
+    "featured": "Unique PORTADA file in each supplied folder",
+    "photos": "Numbered inline images at source positions; otherwise natural filename order in existing editorial carousel; featured not repeated in gallery",
+    "source_documents": "Editorial sources only, not public PDF attachments"
+  },
+  "assets": {
+    "44eed0998c4a7091bab2f29580387c1c08e42ec68c176298cca4c2945e05a2ba": {
+      "path": "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL/FOTOS/PORTADA - Novedad web (7).png",
+      "sha256": "44eed0998c4a7091bab2f29580387c1c08e42ec68c176298cca4c2945e05a2ba",
+      "size": 687809,
+      "filename": "PORTADA - Novedad web (7).png",
+      "alt": "Comenzó la segunda edición de la Diplomatura en Inteligencia Artificial y Derechos Digitales de Niñas, Niños y Adolescentes"
+    },
+    "2af2cb54a2a925c6ce1f6f7bb032a363d7b9d7c3d34adeefdfe2780c799276d3": {
+      "path": "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL/FOTOS/CARRUSEL - Novedad web (1).png",
+      "sha256": "2af2cb54a2a925c6ce1f6f7bb032a363d7b9d7c3d34adeefdfe2780c799276d3",
+      "size": 1915359,
+      "filename": "CARRUSEL - Novedad web (1).png",
+      "alt": "Comenzó la segunda edición de la Diplomatura en Inteligencia Artificial y Derechos Digitales de Niñas, Niños y Adolescentes"
+    },
+    "59bfb23233307f01005481de061117a6127c5b81c5e5facaefa7c2d9eb80215a": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/PORTADA - Novedad web.png",
+      "sha256": "59bfb23233307f01005481de061117a6127c5b81c5e5facaefa7c2d9eb80215a",
+      "size": 2681498,
+      "filename": "PORTADA - Novedad web.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "bdd923eff8435228a0115125fe80ac80f4734c9a35dd142965b09591e83aa0a8": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/1.png",
+      "sha256": "bdd923eff8435228a0115125fe80ac80f4734c9a35dd142965b09591e83aa0a8",
+      "size": 2713650,
+      "filename": "1.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "bac93926fd51fdec601b0b33dbd4add6316aca0314d279bd3f03ac717410f484": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/2.png",
+      "sha256": "bac93926fd51fdec601b0b33dbd4add6316aca0314d279bd3f03ac717410f484",
+      "size": 2305055,
+      "filename": "2.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "b07d29ba70f12017650bc131e4c8a04df519c1e851bd686e8ff40985fdc17385": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/3.png",
+      "sha256": "b07d29ba70f12017650bc131e4c8a04df519c1e851bd686e8ff40985fdc17385",
+      "size": 2356322,
+      "filename": "3.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "b8170de2434a9033bdb5260e651db0086f120ff9e8e48031eb4081854be29daf": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/4.png",
+      "sha256": "b8170de2434a9033bdb5260e651db0086f120ff9e8e48031eb4081854be29daf",
+      "size": 2340203,
+      "filename": "4.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "6585e717e2741f72b138aaf2d7c95e074e8d44a82529da6046983c6a63350c25": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/5.png",
+      "sha256": "6585e717e2741f72b138aaf2d7c95e074e8d44a82529da6046983c6a63350c25",
+      "size": 2363565,
+      "filename": "5.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "f8a77c6e5b7120f08e69ddb2657a967cc48aec54b9940bf8bb60d5609444d69d": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/6.png",
+      "sha256": "f8a77c6e5b7120f08e69ddb2657a967cc48aec54b9940bf8bb60d5609444d69d",
+      "size": 2613478,
+      "filename": "6.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "a87aaf32af42b50256bca24766e61b2f3f896896c0c2cf957a3b55cd66c1da57": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/7.png",
+      "sha256": "a87aaf32af42b50256bca24766e61b2f3f896896c0c2cf957a3b55cd66c1da57",
+      "size": 2231121,
+      "filename": "7.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "ff0a2c195591bc442764ea3b182eeba6ef4dbf11509c3b952a5d0342e0317e9b": {
+      "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/8.png",
+      "sha256": "ff0a2c195591bc442764ea3b182eeba6ef4dbf11509c3b952a5d0342e0317e9b",
+      "size": 2727579,
+      "filename": "8.png",
+      "alt": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi"
+    },
+    "96ab203b07a374bc64cde2fc9aec06d79d4b8d033cbaf5e9cdaede0a2b3c1ff4": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (2).png",
+      "sha256": "96ab203b07a374bc64cde2fc9aec06d79d4b8d033cbaf5e9cdaede0a2b3c1ff4",
+      "size": 2954908,
+      "filename": "PORTADA - Novedad web (2).png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "df3fd40d30aee682abbb933d424fb73de35b733cd62d3677a36d31e7a0f37dc7": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/1.png",
+      "sha256": "df3fd40d30aee682abbb933d424fb73de35b733cd62d3677a36d31e7a0f37dc7",
+      "size": 3390021,
+      "filename": "1.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "daa5f1516c3ad5868345bfb565ed457ed197375078d0894d897850a17a19b44c": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/2.png",
+      "sha256": "daa5f1516c3ad5868345bfb565ed457ed197375078d0894d897850a17a19b44c",
+      "size": 2820046,
+      "filename": "2.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "d794ad52611c6c688eee6ea3b080c2ff54dbf2738c72de2c941c7363064e796b": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/3.png",
+      "sha256": "d794ad52611c6c688eee6ea3b080c2ff54dbf2738c72de2c941c7363064e796b",
+      "size": 3374942,
+      "filename": "3.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "8247bf41c2ab11c47119c4c06d93d6a2da45eb2d728bbe5425393c6a98554733": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/4.png",
+      "sha256": "8247bf41c2ab11c47119c4c06d93d6a2da45eb2d728bbe5425393c6a98554733",
+      "size": 3192198,
+      "filename": "4.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "7a8bc66672da2935a1efbaeffdd818d68523e658e01031384bbc677c5823bab9": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/5.png",
+      "sha256": "7a8bc66672da2935a1efbaeffdd818d68523e658e01031384bbc677c5823bab9",
+      "size": 3130759,
+      "filename": "5.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "5d276a7b05e63ba9b6eba7d60e9b83715c221bcac2fe7332684e75768b693559": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/6.png",
+      "sha256": "5d276a7b05e63ba9b6eba7d60e9b83715c221bcac2fe7332684e75768b693559",
+      "size": 2975761,
+      "filename": "6.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "1c5a0c655f845637106786eee0c958317c9c69c2ed01ddfc9e54bc54f9b09300": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/7.png",
+      "sha256": "1c5a0c655f845637106786eee0c958317c9c69c2ed01ddfc9e54bc54f9b09300",
+      "size": 3013879,
+      "filename": "7.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "c7f5183788fb792e1f8ee69ad74ac86f7a15fe5f2059ddf865bdd0b889163d9d": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/8.png",
+      "sha256": "c7f5183788fb792e1f8ee69ad74ac86f7a15fe5f2059ddf865bdd0b889163d9d",
+      "size": 3180051,
+      "filename": "8.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "2da9cd0de60dc04cbc3b3fccecef7cd558195f46d44973ffdaccefe37c1050fa": {
+      "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/9.png",
+      "sha256": "2da9cd0de60dc04cbc3b3fccecef7cd558195f46d44973ffdaccefe37c1050fa",
+      "size": 3397122,
+      "filename": "9.png",
+      "alt": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión"
+    },
+    "a0693ffc346771583393ebff45b32834ea57ced4d3ec7bfbc5af850b170d9369": {
+      "path": "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras./FOTOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (3).png",
+      "sha256": "a0693ffc346771583393ebff45b32834ea57ced4d3ec7bfbc5af850b170d9369",
+      "size": 1073625,
+      "filename": "PORTADA - Novedad web (3).png",
+      "alt": "Realizamos la charla abierta “Lo que no dicen con palabras. Señales, vínculos y violencias en las adolescencias. ¿Qué podemos hacer los adultos?”"
+    },
+    "bf4e200635d2f7a237c5c4b1e5961a8022fd63cf23e767d279a6205d6c8a7f39": {
+      "path": "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras./FOTOS/FOTOS REDIMENSIONADAS/CARRUSEL - Novedad web.png",
+      "sha256": "bf4e200635d2f7a237c5c4b1e5961a8022fd63cf23e767d279a6205d6c8a7f39",
+      "size": 1746072,
+      "filename": "CARRUSEL - Novedad web.png",
+      "alt": "Realizamos la charla abierta “Lo que no dicen con palabras. Señales, vínculos y violencias en las adolescencias. ¿Qué podemos hacer los adultos?”"
+    },
+    "11242f5fa28e15e0b91366f2916951ecb03740cc1367d42f90697c831ec87dda": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/1.png",
+      "sha256": "11242f5fa28e15e0b91366f2916951ecb03740cc1367d42f90697c831ec87dda",
+      "size": 1946160,
+      "filename": "1.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "93d1d699f190d40b294c638352227425d927cd83fdce7520331bcea97426fb6a": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/2.png",
+      "sha256": "93d1d699f190d40b294c638352227425d927cd83fdce7520331bcea97426fb6a",
+      "size": 1567747,
+      "filename": "2.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "ff8f1eb91e3e75ac1ed8f6f1695c1b1ff022c2070586640cd637846f38f51845": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/3.png",
+      "sha256": "ff8f1eb91e3e75ac1ed8f6f1695c1b1ff022c2070586640cd637846f38f51845",
+      "size": 1618602,
+      "filename": "3.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "60e6bc304de88cfefb22e1c9ce8c704799ce201fb55b6f5e60a9b434b4432f36": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/4.png",
+      "sha256": "60e6bc304de88cfefb22e1c9ce8c704799ce201fb55b6f5e60a9b434b4432f36",
+      "size": 1823995,
+      "filename": "4.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "b6e5da3332cf9d62fa0ae406c57f7425c4b4e65979f28d2997c87855bad4dfdc": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/5.png",
+      "sha256": "b6e5da3332cf9d62fa0ae406c57f7425c4b4e65979f28d2997c87855bad4dfdc",
+      "size": 1383199,
+      "filename": "5.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "127e35de6c3b7037c6892f1085f4c8cc92d6c0df79731027f69e9400dccdf229": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/6.png",
+      "sha256": "127e35de6c3b7037c6892f1085f4c8cc92d6c0df79731027f69e9400dccdf229",
+      "size": 1134060,
+      "filename": "6.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "ec37015392a681d9bd5fe8724bca81d636b6bce10ff2fbe737a5b2375c7307de": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/7.png",
+      "sha256": "ec37015392a681d9bd5fe8724bca81d636b6bce10ff2fbe737a5b2375c7307de",
+      "size": 1815631,
+      "filename": "7.png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "91dc2b47aa41cafc2f49fe75c2d4f8db5abb07672f1abce398b0d069256ec9e6": {
+      "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (4).png",
+      "sha256": "91dc2b47aa41cafc2f49fe75c2d4f8db5abb07672f1abce398b0d069256ec9e6",
+      "size": 2214829,
+      "filename": "PORTADA - Novedad web (4).png",
+      "alt": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto"
+    },
+    "f0a6d56040b05466f175142aaddbd82a96e341ed4078f5254c243c00e8bea30f": {
+      "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/1.png",
+      "sha256": "f0a6d56040b05466f175142aaddbd82a96e341ed4078f5254c243c00e8bea30f",
+      "size": 2025279,
+      "filename": "1.png",
+      "alt": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades"
+    },
+    "47859baf75e9c19f6858d1ceb06492fb5a7ad672c14b93fe7c2c57491e8a3888": {
+      "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/2.png",
+      "sha256": "47859baf75e9c19f6858d1ceb06492fb5a7ad672c14b93fe7c2c57491e8a3888",
+      "size": 1328640,
+      "filename": "2.png",
+      "alt": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades"
+    },
+    "fd2282dda965ae773fdf3d1fc7289d535882d62ca0d6de4f8f77c86e79256965": {
+      "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/3.png",
+      "sha256": "fd2282dda965ae773fdf3d1fc7289d535882d62ca0d6de4f8f77c86e79256965",
+      "size": 1546679,
+      "filename": "3.png",
+      "alt": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades"
+    },
+    "bd3d7fc6cfc337c778494e0803b8187436cf7fdc9641988ac15f3c5cc53beb0c": {
+      "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/4.png",
+      "sha256": "bd3d7fc6cfc337c778494e0803b8187436cf7fdc9641988ac15f3c5cc53beb0c",
+      "size": 1629116,
+      "filename": "4.png",
+      "alt": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades"
+    },
+    "3b6fb8794a078f4577f816bd3589051bd915a366b396d49ef6a674b5dc49e4ee": {
+      "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (1).png",
+      "sha256": "3b6fb8794a078f4577f816bd3589051bd915a366b396d49ef6a674b5dc49e4ee",
+      "size": 2997016,
+      "filename": "PORTADA - Novedad web (1).png",
+      "alt": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades"
+    },
+    "83125bfe077cc4debcae2038b3675a50c86dbdcef04c7c56f5cdd6539675846a": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (5).png",
+      "sha256": "83125bfe077cc4debcae2038b3675a50c86dbdcef04c7c56f5cdd6539675846a",
+      "size": 2170369,
+      "filename": "PORTADA - Novedad web (5).png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "c22e2259057f95f907cc912feff35b698e0b5a7b9b6f08ec225f79210ff53a64": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/1.png",
+      "sha256": "c22e2259057f95f907cc912feff35b698e0b5a7b9b6f08ec225f79210ff53a64",
+      "size": 2529989,
+      "filename": "1.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "3b8b4c99a0035b5d0afd6818a25aeaea9930f749eed18c97dcde2113a1b3c265": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/2.png",
+      "sha256": "3b8b4c99a0035b5d0afd6818a25aeaea9930f749eed18c97dcde2113a1b3c265",
+      "size": 2235456,
+      "filename": "2.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "4d04d82c02f09a93d2bfd95930e9c9e287ebb958105e777810f91f1ce620c550": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/3.png",
+      "sha256": "4d04d82c02f09a93d2bfd95930e9c9e287ebb958105e777810f91f1ce620c550",
+      "size": 2370952,
+      "filename": "3.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "56f42856b0cf6f39289eff606dced750bf50ec1c8b6c31c21623e3a6ab48b74e": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/4.png",
+      "sha256": "56f42856b0cf6f39289eff606dced750bf50ec1c8b6c31c21623e3a6ab48b74e",
+      "size": 2498915,
+      "filename": "4.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "5aa6a2a0b2b603550c9f96925121d227174c3b1b7da300ae4e902becf0788b3b": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/5.png",
+      "sha256": "5aa6a2a0b2b603550c9f96925121d227174c3b1b7da300ae4e902becf0788b3b",
+      "size": 2001114,
+      "filename": "5.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "ddb1de94122b7777d413523231fd5c0f06520125b659eed9a52185789cec8e89": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/6.png",
+      "sha256": "ddb1de94122b7777d413523231fd5c0f06520125b659eed9a52185789cec8e89",
+      "size": 2296632,
+      "filename": "6.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "d7f0491d38266ea49375878fce24e8a66f7fc79e40287f22f401b855e7b47582": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/7.png",
+      "sha256": "d7f0491d38266ea49375878fce24e8a66f7fc79e40287f22f401b855e7b47582",
+      "size": 1934816,
+      "filename": "7.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "6e541362edca22843343c7ec3d4d85d427020d2bba35e17b82463da781067dd2": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/8.png",
+      "sha256": "6e541362edca22843343c7ec3d4d85d427020d2bba35e17b82463da781067dd2",
+      "size": 2818954,
+      "filename": "8.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "0195ba3f8e11e5e1bd7ff71920ce87740a754e67dfeae558b9c7b13b33bd9696": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/9.png",
+      "sha256": "0195ba3f8e11e5e1bd7ff71920ce87740a754e67dfeae558b9c7b13b33bd9696",
+      "size": 2365170,
+      "filename": "9.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "6fd15ff3dfbf064cef57df046420a14ebcdc3338038c55496e4e8b5d05cfa4be": {
+      "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/10.png",
+      "sha256": "6fd15ff3dfbf064cef57df046420a14ebcdc3338038c55496e4e8b5d05cfa4be",
+      "size": 2344218,
+      "filename": "10.png",
+      "alt": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes"
+    },
+    "dc5970eadbc74e1611217a800806aa3ed5cc36f46491a0060354d9726677a3d5": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (6).png",
+      "sha256": "dc5970eadbc74e1611217a800806aa3ed5cc36f46491a0060354d9726677a3d5",
+      "size": 2754904,
+      "filename": "PORTADA - Novedad web (6).png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "ac9ac9ec9e8017ae40206a6c01ab951e55ab836c2bff93e186d13068f9bfb56a": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/1.png",
+      "sha256": "ac9ac9ec9e8017ae40206a6c01ab951e55ab836c2bff93e186d13068f9bfb56a",
+      "size": 2865060,
+      "filename": "1.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "a689dfb9655630a7b24909363017109357b63dfe214b3d6073af3f1f6de340dc": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/2.png",
+      "sha256": "a689dfb9655630a7b24909363017109357b63dfe214b3d6073af3f1f6de340dc",
+      "size": 2776957,
+      "filename": "2.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "f493e744283b639247a05f3e9b69ce525461776f48c9e95fc017be4b522506f1": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/3.png",
+      "sha256": "f493e744283b639247a05f3e9b69ce525461776f48c9e95fc017be4b522506f1",
+      "size": 2398748,
+      "filename": "3.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "19bb2e7da13fe7824532ce71ec28213258c624d1cfeaaaa97a46322c534cd3ff": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/4.png",
+      "sha256": "19bb2e7da13fe7824532ce71ec28213258c624d1cfeaaaa97a46322c534cd3ff",
+      "size": 2633291,
+      "filename": "4.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "24677e9e3ebdd70981b28e040c98bcfbe2342c6b6f902ab7e6b93e9cd6df8bd2": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/5.png",
+      "sha256": "24677e9e3ebdd70981b28e040c98bcfbe2342c6b6f902ab7e6b93e9cd6df8bd2",
+      "size": 2512028,
+      "filename": "5.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "b9faf36c5c3b5b227c95e9206a774651d6acf9f5ad93a78532f0df9b13c2b103": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/6.png",
+      "sha256": "b9faf36c5c3b5b227c95e9206a774651d6acf9f5ad93a78532f0df9b13c2b103",
+      "size": 3296666,
+      "filename": "6.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "0292dff266bfc234911542bdf2c723e492057399a46a18f39c499ab1b7dd3740": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/7.png",
+      "sha256": "0292dff266bfc234911542bdf2c723e492057399a46a18f39c499ab1b7dd3740",
+      "size": 2506415,
+      "filename": "7.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    },
+    "c454b52c59820ecb66670a68584d647bad394f05e3335931eba945a56ad37d00": {
+      "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/8.png",
+      "sha256": "c454b52c59820ecb66670a68584d647bad394f05e3335931eba945a56ad37d00",
+      "size": 2741447,
+      "filename": "8.png",
+      "alt": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales"
+    }
+  },
+  "entries": [
+    {
+      "source_id": "ddna-news-c4ac8c1d9bbb1d0a6222",
+      "origin": "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Comenzó la segunda edición de la Diplomatura en Inteligencia Artificial y Derechos Digitales de Niñas, Niños y Adolescentes",
+      "slug": "comenzo-la-segunda-edicion-de-la-diplomatura-en-inteligencia-artificial-y-derechos-digitales-de-ninas-ninos-y-adolescentes",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>Con el dictado del módulo <strong>“Niñas, niños y adolescentes en el mundo digital”</strong>, a cargo de la Lic. <strong>Georgina Tavella, autoridad a cargo de la Defensoría</strong>, comenzó la segunda edición de la <strong>Diplomatura en Inteligencia Artificial y Derechos Digitales de Niñas, </strong> <strong>Niños y Adolescentes</strong>, una propuesta de formación impulsada junto a la Universidad Católica de Salta (UCASAL).</p>\n<p>El primer módulo propuso reflexionar sobre las transformaciones que atraviesan las infancias y adolescencias en el contexto digital desde un enfoque de derechos, abordando especialmente la autonomía progresiva y los derechos al juego, la participación, la protección y el desarrollo integral.</p>\n<p>La diplomatura está dirigida a profesionales de la educación, psicopedagogía, psicología, trabajo social, salud, comunicación y derecho interesados en incorporar herramientas para abordar los desafíos que plantean los entornos digitales y la Inteligencia Artificial en la vida de niñas, niños y adolescentes.</p>\n<p>A lo largo de la cursada se desarrollarán <strong>ocho módulos</strong> sobre crianza y vínculos en la era digital, ciudadanía y derechos digitales, violencias en línea, identidad y bienestar emocional, algoritmos e Inteligencia Artificial, desinformación, pensamiento crítico y educación ético-digital.</p>\n<p>La propuesta busca brindar herramientas para fortalecer el acompañamiento de niñas, niños y adolescentes frente a las transformaciones tecnológicas, promoviendo su desarrollo integral y la protección y el ejercicio de sus derechos en los entornos digitales.</p>\n<p>A través de esta iniciativa, continuamos promoviendo espacios de formación que permitan abordar los desafíos actuales de la cultura digital desde una perspectiva de derechos y fortalecer las herramientas de quienes acompañan a las infancias y adolescencias.</p>",
+      "featured_image": "44eed0998c4a7091bab2f29580387c1c08e42ec68c176298cca4c2945e05a2ba",
+      "carousel": true,
+      "gallery": [
+        "2af2cb54a2a925c6ce1f6f7bb032a363d7b9d7c3d34adeefdfe2780c799276d3"
+      ],
+      "inline_images": [],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [
+        "FOTOS"
+      ],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL/NOVEDAD DIPLO UCASAL.pdf",
+          "sha256": "f9ca195f670313b318fe6ac6a4b1f44d24b9f4d76b9f98a2cf18de7177ee3336"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL/FOTOS/CARRUSEL - Novedad web (1).png",
+        "FALTA PUBLICAR/4) NOVEDAD DIPLO UCASAL/FOTOS/PORTADA - Novedad web (7).png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-b944ba04a08c2be896a5",
+      "origin": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS ",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Comenzamos “El Juego de los Derechos” junto a chicas y chicos de barrio Sacchi",
+      "slug": "comenzamos-el-juego-de-los-derechos-junto-a-chicas-y-chicos-de-barrio-sacchi",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>En <strong>barrio Sacchi</strong> llevamos adelante el primer encuentro de <strong>“El Juego de los Derechos: </strong> <strong>aprendemos nuestros derechos jugando”</strong>, una propuesta lúdica y participativa destinada a niñas y niños de entre 6 y 11 años que continuará desarrollándose durante el mes de agosto.</p>\n<p>La actividad se realizó junto al <strong>Ministerio de Vinculación y Gestión Institucional</strong>, con la participación de <strong>Oscar Arias, secretario de Gestión Territorial</strong>, y los <strong>Consejos Barriales</strong>, como parte del trabajo articulado y la presencia territorial.</p>\n<p>A través del juego, chicas y chicos pudieron conocer y reflexionar sobre sus derechos, expresar sus opiniones y compartir experiencias vinculadas con situaciones de su vida cotidiana. La propuesta busca, además, fortalecer la participación, el pensamiento crítico, el trabajo colaborativo y el respeto por las distintas miradas.</p>\n<p>Durante el encuentro se desarrollaron dinámicas grupales, preguntas, desafíos y actividades vinculadas con los derechos reconocidos en la <strong>Convención sobre los </strong> <strong>Derechos del Niño</strong>, promoviendo el aprendizaje desde una experiencia participativa y cercana.</p>\n<p>Con esta iniciativa se busca generar espacios donde niñas y niños no solo puedan conocer sus derechos, sino también <strong>ejercer su derecho a expresarse, ser escuchados y </strong> <strong>participar</strong>, fortaleciendo al mismo tiempo los vínculos comunitarios y la convivencia respetuosa.</p>",
+      "featured_image": "59bfb23233307f01005481de061117a6127c5b81c5e5facaefa7c2d9eb80215a",
+      "carousel": true,
+      "gallery": [
+        "bdd923eff8435228a0115125fe80ac80f4734c9a35dd142965b09591e83aa0a8",
+        "bac93926fd51fdec601b0b33dbd4add6316aca0314d279bd3f03ac717410f484",
+        "b07d29ba70f12017650bc131e4c8a04df519c1e851bd686e8ff40985fdc17385",
+        "b8170de2434a9033bdb5260e651db0086f120ff9e8e48031eb4081854be29daf",
+        "6585e717e2741f72b138aaf2d7c95e074e8d44a82529da6046983c6a63350c25",
+        "f8a77c6e5b7120f08e69ddb2657a967cc48aec54b9940bf8bb60d5609444d69d",
+        "a87aaf32af42b50256bca24766e61b2f3f896896c0c2cf957a3b55cd66c1da57",
+        "ff0a2c195591bc442764ea3b182eeba6ef4dbf11509c3b952a5d0342e0317e9b"
+      ],
+      "inline_images": [],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [
+        "FOTOS"
+      ],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /NOVEDAD EL JUEGO DE LOS DERECHOS.pdf",
+          "sha256": "b7a156722bc34a1609780ae607335aa0f16b46102c56988621169e0f6b6f355d"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/1.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/2.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/3.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/4.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/5.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/6.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/7.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/8.png",
+        "FALTA PUBLICAR/5) NOVEDAD FORO JUEGO DE LOS DERECHOS /FOTOS/PORTADA - Novedad web.png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-867444ab5bd387eb767c",
+      "origin": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Realizamos el segundo encuentro de “El juego de los derechos” junto a chicas y chicos de barrio Villa Unión",
+      "slug": "realizamos-el-segundo-encuentro-de-el-juego-de-los-derechos-junto-a-chicas-y-chicos-de-barrio-villa-union",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>En barrio <strong>Villa Unión</strong>, la Escuela de Fútbol Los Petaquitas fue escenario del <strong>segundo encuentro de “El Juego de los Derechos”</strong>. Una propuesta lúdica y participativa impulsada junto al Ministerio de Vinculación y Gestión Institucional y los Consejos Barriales como parte del trabajo articulado y la presencia territorial.</p>\n<p>La jornada fue pensada para que chicas y chicos puedan <strong>conocer y reflexionar sobre sus derechos </strong>de una manera diferente, jugando, compartiendo y siendo protagonistas. La iniciativa busca generar espacios de participación donde niñas y niños puedan expresar sus opiniones, compartir experiencias y fortalecer los vínculos con su comunidad.</p>\n<p><strong>Mediante juego de desafíos, preguntas y distintas actividades grupales</strong>, las y los participantes pudieron aprender sobre situaciones de la vida cotidiana y reflexionar acerca de la importancia de respetar, escuchar, participar y ponerse en el lugar del otro.</p>\n<p>Al finalizar cada encuentro, se genera un espacio de intercambio para que chicas y chicos puedan compartir qué aprendieron, reconocer nuevos derechos y charlar sobre la importancia del trabajo en equipo.</p>",
+      "featured_image": "96ab203b07a374bc64cde2fc9aec06d79d4b8d033cbaf5e9cdaede0a2b3c1ff4",
+      "carousel": true,
+      "gallery": [
+        "df3fd40d30aee682abbb933d424fb73de35b733cd62d3677a36d31e7a0f37dc7",
+        "daa5f1516c3ad5868345bfb565ed457ed197375078d0894d897850a17a19b44c",
+        "d794ad52611c6c688eee6ea3b080c2ff54dbf2738c72de2c941c7363064e796b",
+        "8247bf41c2ab11c47119c4c06d93d6a2da45eb2d728bbe5425393c6a98554733",
+        "7a8bc66672da2935a1efbaeffdd818d68523e658e01031384bbc677c5823bab9",
+        "5d276a7b05e63ba9b6eba7d60e9b83715c221bcac2fe7332684e75768b693559",
+        "1c5a0c655f845637106786eee0c958317c9c69c2ed01ddfc9e54bc54f9b09300",
+        "c7f5183788fb792e1f8ee69ad74ac86f7a15fe5f2059ddf865bdd0b889163d9d",
+        "2da9cd0de60dc04cbc3b3fccecef7cd558195f46d44973ffdaccefe37c1050fa"
+      ],
+      "inline_images": [],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [
+        "FOTOS"
+      ],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/NOVEDAD SEGUNDO ENCUENTRO _EL JUEGO DE LOS DERECHOS_.docx",
+          "sha256": "c43d0ac5cdc9a9b6dcbad6fd9745bb586de3d810dd3a79d7e52141bcc181fc40"
+        },
+        {
+          "path": "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/NOVEDAD SEGUNDO ENCUENTRO _EL JUEGO DE LOS DERECHOS_.pdf",
+          "sha256": "187349c7dc3e3d7ce9cef875891011b79fdb9f14a12847538674b891db5584d3"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/1.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/2.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/3.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/4.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/5.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/6.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/7.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/8.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/9.png",
+        "FALTA PUBLICAR/6) NOVEDAD “El juego de los derechos”/FOTO/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (2).png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-77ea16e539bc2abc9ed3",
+      "origin": "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras.",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Realizamos la charla abierta “Lo que no dicen con palabras. Señales, vínculos y violencias en las adolescencias. ¿Qué podemos hacer los adultos?”",
+      "slug": "realizamos-la-charla-abierta-lo-que-no-dicen-con-palabras-senales-vinculos-y-violencias-en-las-adolescencias-que-podemos-hacer-los-adultos",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>Llevamos adelante la charla abierta <strong>“Lo que no dicen con palabras. Señales, vínculos y violencias en las adolescencias. ¿Qué podemos hacer los adultos?”</strong>, a cargo de la Lic. María Zysman, psicopedagoga y fundadora de Libres de Bullying.</p>\n<p>Un espacio virtual donde se compartieron herramientas para mejorar el acompañamiento a chicas y chicos, reconocer sus emociones y construir vínculos basados en la escucha, el respeto y la atención a sus necesidades.</p>\n<p>Este tipo de iniciativas busca seguir generando espacios de encuentro y formación para fortalecer los vínculos y promover entornos que acompañen y sostengan a niñas, niños y adolescentes.</p>\n<p>Quienes no pudieron participar, pueden acceder a la <a href=\"https://www.youtube.com/live/BFurEJ4k3fQ?si=gfIE6UHsDYUq4_dB\">charla completa a través del canal de Youtube</a> de la Defensoría.</p>",
+      "featured_image": "a0693ffc346771583393ebff45b32834ea57ced4d3ec7bfbc5af850b170d9369",
+      "carousel": true,
+      "gallery": [
+        "bf4e200635d2f7a237c5c4b1e5961a8022fd63cf23e767d279a6205d6c8a7f39"
+      ],
+      "inline_images": [],
+      "attachments": [],
+      "links": [
+        "https://www.youtube.com/live/BFurEJ4k3fQ?si=gfIE6UHsDYUq4_dB"
+      ],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [
+        "FOTO"
+      ],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras./Novedad charla 10_9.docx",
+          "sha256": "c87d92528766fb4ac835b844b2fb90f8c0f65e964119cd9cea85674985067cf7"
+        },
+        {
+          "path": "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras./Novedad charla 10_9.docx.pdf",
+          "sha256": "d7a703fee46c0fb446ec2a6e313e559aed557d0726713b8163e130cb67ae8d96"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras./FOTOS/FOTOS REDIMENSIONADAS/CARRUSEL - Novedad web.png",
+        "FALTA PUBLICAR/7) NOVEDAD charla abierta “Lo que no dicen con palabras./FOTOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (3).png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-5e1ba134bba0a73077b9",
+      "origin": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Entre Pantallas: continuamos promoviendo la ciudadanía digital en las escuelas durante agosto",
+      "slug": "entre-pantallas-continuamos-promoviendo-la-ciudadania-digital-en-las-escuelas-durante-agosto",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>Durante el mes de agosto, el Programa de Protección Digital <strong>Entre Pantallas</strong> continuó llevando adelante talleres en instituciones educativas, con propuestas destinadas a promover una participación segura, responsable y consciente en los entornos digitales.</p>\n<p>A través de estos espacios se brindan herramientas para que niñas, niños y adolescentes puedan <strong>reconocer situaciones de riesgo y violencia en internet, reflexionar sobre sus prácticas digitales y fortalecer el ejercicio de una ciudadanía digital responsable</strong>. Los encuentros abordan temáticas como grooming, ciberacoso, sexting, discursos de odio, uso responsable de redes sociales e inteligencia artificial, adecuando los contenidos a las edades y experiencias de cada grupo.</p>\n<h2>7 de agosto | Escuela Honorato Laconi</h2>\n<p></strong>Estudiantes de 5.º y 6.º grado participaron de un taller sobre <strong>violencias en entornos digitales</strong>, en el que se abordaron situaciones vinculadas al grooming, el ciberacoso, el sexting y los discursos de odio.</p>\n{{image:11242f5fa28e15e0b91366f2916951ecb03740cc1367d42f90697c831ec87dda}}\n<h2>10 de agosto | IPEM Nº 342 Dr. René Favaloro e Instituto Secundario General José María Paz de Laguna Larga</h2>\n<p></strong>Junto a nuestra subsede de la localidad de Laguna Larga, se desarrollaron encuentros con estudiantes de 1.º a 3.º año para trabajar sobre la <strong>prevención de las violencias en entornos digitales</strong> y las herramientas necesarias para identificarlas y actuar frente a ellas.</p>\n{{image:93d1d699f190d40b294c638352227425d927cd83fdce7520331bcea97426fb6a}}\n<h2>18 de agosto | Instituto Nuestra Señora</h2>\n<p></strong>Estudiantes de 5.º grado participaron de una propuesta destinada a reconocer y prevenir distintas formas de <strong>violencia que pueden presentarse en los entornos digitales</strong>.</p>\n{{image:ff8f1eb91e3e75ac1ed8f6f1695c1b1ff022c2070586640cd637846f38f51845}}\n<h2>20 de agosto | Leonila Lemos</h2>\n<p></strong>Junto a estudiantes de 5.º y 6.º grado se trabajó sobre<strong> grooming, ciberbullying, discursos de odio</strong>, promoviendo prácticas de cuidado y buen trato.</p>\n{{image:60e6bc304de88cfefb22e1c9ce8c704799ce201fb55b6f5e60a9b434b4432f36}}\n<h2>25 de agosto | IPEM N.º 41 Jorge Luis Borges</h2>\n<p></strong>Estudiantes de 6.º año participaron de un taller sobre <strong>ciudadanía digital</strong>, orientado a reflexionar sobre derechos, responsabilidades y formas de participación en los entornos digitales.</p>\n{{image:b6e5da3332cf9d62fa0ae406c57f7425c4b4e65979f28d2997c87855bad4dfdc}}\n<h2>28 de agosto | Instituto Tránsito de María, Cura Brochero</h2>\n<p></strong>Con estudiantes de 4.º, 5.º y 6.º grado de Cura Brochero se desarrolló un encuentro sobre <strong>ciudadanía digital</strong>, con herramientas para favorecer usos responsables y seguros de las tecnologías.</p>\n{{image:127e35de6c3b7037c6892f1085f4c8cc92d6c0df79731027f69e9400dccdf229}}\n<h2>31 de agosto | Instituto Padre Claret</h2>\n<p></strong>Estudiantes de 1.º, 2.º y 3.º año participaron de un encuentro sobre <strong>ciberacoso y manipulación de imágenes mediante inteligencia artificial</strong>, reflexionando sobre los riesgos de estas prácticas y sus posibles consecuencias.</p>\n{{image:ec37015392a681d9bd5fe8724bca81d636b6bce10ff2fbe737a5b2375c7307de}}\n<p>Estas acciones forman parte del trabajo sostenido que la Defensoría desarrolla para acompañar a las comunidades educativas en la promoción de entornos digitales más seguros, respetuosos y responsables. <strong>Entre Pantallas</strong> continúa fortaleciendo espacios de formación y reflexión junto a niñas, niños, adolescentes y adultos referentes.</p>",
+      "featured_image": "91dc2b47aa41cafc2f49fe75c2d4f8db5abb07672f1abce398b0d069256ec9e6",
+      "carousel": false,
+      "gallery": [],
+      "inline_images": [
+        "11242f5fa28e15e0b91366f2916951ecb03740cc1367d42f90697c831ec87dda",
+        "93d1d699f190d40b294c638352227425d927cd83fdce7520331bcea97426fb6a",
+        "ff8f1eb91e3e75ac1ed8f6f1695c1b1ff022c2070586640cd637846f38f51845",
+        "60e6bc304de88cfefb22e1c9ce8c704799ce201fb55b6f5e60a9b434b4432f36",
+        "b6e5da3332cf9d62fa0ae406c57f7425c4b4e65979f28d2997c87855bad4dfdc",
+        "127e35de6c3b7037c6892f1085f4c8cc92d6c0df79731027f69e9400dccdf229",
+        "ec37015392a681d9bd5fe8724bca81d636b6bce10ff2fbe737a5b2375c7307de"
+      ],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/NOVEDAD ENTRE PANTALLAS AGOSTO.docx",
+          "sha256": "e0293f505383de0f65b06c7938c14bef2b1f28124138afd5a900c4fce853e557"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/1.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/2.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/3.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/4.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/5.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/6.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/7.png",
+        "FALTA PUBLICAR/8) NOVEDAD ENTRE PANTALLAS AGOSTO/FOTOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (4).png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-c5d76048ea58e82d8b9f",
+      "origin": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Durante agosto, el programa Va con Vos continuó llegando a escuelas y comunidades",
+      "slug": "durante-agosto-el-programa-va-con-vos-continuo-llegando-a-escuelas-y-comunidades",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>Durante agosto, se llevaron adelante distintos<strong> talleres interactivos</strong> en el marco del programa <strong>Va con Vos</strong>, una propuesta orientada a generar espacios de escucha, participación y acompañamiento para chicas y chicos.</p>\n<p>Los talleres buscan visibilizar, reflexionar y conversar sobre situaciones presentes en la vida cotidiana de niñas, niños y adolescentes, a través de dinámicas participativas que recuperan sus opiniones, experiencias e inquietudes. Entre las temáticas que aborda el programa se encuentran la prevención del acoso entre pares, el manejo de las emociones, los consumos problemáticos y la sexualidad responsable, entre otras.</p>\n<h2>6 de agosto | Escuela Bandera Argentina</h2>\n<p></strong>70 estudiantes de 5.º y 6.º grado participaron del taller <strong>“Rompiendo el silencio: cómo prevenir y detener el acoso entre pares”</strong>, un espacio para reconocer distintas situaciones de acoso, reflexionar sobre sus consecuencias y conversar sobre herramientas para prevenirlas y abordarlas.</p>\n{{image:f0a6d56040b05466f175142aaddbd82a96e341ed4078f5254c243c00e8bea30f}}\n<h2>12 de agosto | Segundo Encuentro de las Infancias 2026 – Villa María</h2>\n<p></strong>En el marco del Segundo Encuentro de las Infancias 2026, se desarrolló el taller <strong>“Rompiendo el silencio: cómo prevenir y detener el acoso entre pares”</strong>, del que participaron alrededor de 100 estudiantes de 6.º grado de distintas escuelas de Villa María.</p>\n{{image:47859baf75e9c19f6858d1ceb06492fb5a7ad672c14b93fe7c2c57491e8a3888}}\n<h2>21 de agosto | Villa Giardino y Los Cocos</h2>\n<p></strong>En el colegio Juana Micono de Giardino de la localidad de Villa Giardino, 60 estudiantes de 4.º año participaron del taller<strong> “Frenemos el acoso entre pares”</strong>, destinado a reflexionar sobre los vínculos, la convivencia y las herramientas para prevenir situaciones de acoso.</p>\n<p>Durante la misma jornada, en el Museo La Loma de Los Cocos, se brindó el taller <strong>“¿Qué ves cuando me ves? Miradas sobre la adolescencia”</strong>, dirigido a personas adultas referentes, con el objetivo de generar un espacio de reflexión sobre las adolescencias y las formas de acompañarlas.</p>\n{{image:fd2282dda965ae773fdf3d1fc7289d535882d62ca0d6de4f8f77c86e79256965}}\n<h2>26 de agosto | Colegio Dalmacio Vélez Sarsfield – Saturnino María Laspiur</h2>\n<p></strong>Unos 85 estudiantes de 5.º y 6.º grado participaron del taller <strong>“Conociéndonos mejor: aprendiendo sobre nuestras emociones”</strong>, una propuesta orientada a reconocer, expresar y comprender las emociones y fortalecer herramientas para su manejo cotidiano.</p>\n{{image:bd3d7fc6cfc337c778494e0803b8187436cf7fdc9641988ac15f3c5cc53beb0c}}\n<p>A través de estos encuentros, el programa Va con Vos continúa generando espacios donde chicas y chicos pueden expresarse, compartir sus experiencias y acceder a herramientas para afrontar distintas situaciones de su vida cotidiana. La propuesta busca fortalecer su participación y acompañarlos desde una perspectiva de derechos, escucha y cuidado.</p>",
+      "featured_image": "3b6fb8794a078f4577f816bd3589051bd915a366b396d49ef6a674b5dc49e4ee",
+      "carousel": false,
+      "gallery": [],
+      "inline_images": [
+        "f0a6d56040b05466f175142aaddbd82a96e341ed4078f5254c243c00e8bea30f",
+        "47859baf75e9c19f6858d1ceb06492fb5a7ad672c14b93fe7c2c57491e8a3888",
+        "fd2282dda965ae773fdf3d1fc7289d535882d62ca0d6de4f8f77c86e79256965",
+        "bd3d7fc6cfc337c778494e0803b8187436cf7fdc9641988ac15f3c5cc53beb0c"
+      ],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/NOVEDAD TALLERES VA CON VOS.docx",
+          "sha256": "5665cdd978dddff87358d10c1686bf8702461d6235c21c8df8cf7e0cbdf23f5e"
+        },
+        {
+          "path": "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/NOVEDAD TALLERES VA CON VOS.pdf",
+          "sha256": "aadc69bda4b56e2d8571d8847f0fd2d0cff0ccbaed9a0a8505302ab60dfd78f8"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/1.png",
+        "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/2.png",
+        "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/3.png",
+        "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/4.png",
+        "FALTA PUBLICAR/9) NOVEDAD TALLERES VA CON VOS/FOTOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (1).png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-354a7be7ecd45f7016da",
+      "origin": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Hablemos de vínculos: una jornada de participación y reflexión junto a adolescentes",
+      "slug": "hablemos-de-vinculos-una-jornada-de-participacion-y-reflexion-junto-a-adolescentes",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>Llevamos adelante <strong>“Hablemos de vínculos”</strong>, una propuesta destinada a estudiantes de 1.º y 2.º año que tuvo lugar en el Centro Cultural Córdoba. El encuentro fue pensado como un espacio para participar y reflexionar sobre los vínculos que chicas y chicos construyen con sus pares.</p>\n<p>La apertura estuvo a cargo de <strong>Georgina Tavella, autoridad a cargo de la Defensoría, y Silvana Piscitelli, directora del área de Participación y Promoción de Derechos</strong>, quienes dieron la bienvenida a las y los estudiantes y acompañaron el inicio de la jornada.</p>\n<p>La actividad contó con una <strong>obra de títeres para adolescentes de Titiriarte</strong>, pensada como recurso artístico disparador, y distintas propuestas participativas orientadas a generar espacios de intercambio, expresión y reflexión. A partir de estas dinámicas, las y los adolescentes pudieron compartir sus ideas, experiencias y miradas sobre los vínculos que forman parte de su vida cotidiana.</p>\n<p>La propuesta tuvo como eje reconocer a chicas y chicos como <strong>protagonistas en la construcción de sus propios vínculos y de los espacios que habitan</strong>, promoviendo su participación y dando valor a sus opiniones y experiencias.</p>\n<p>Escuchar a las adolescencias implica no solo habilitar espacios para su palabra, sino también <strong>reconocer sus voces como parte fundamental de la construcción colectiva</strong>. Desde esta perspectiva, “Hablemos de vínculos” <strong>también es hablar de participación, derechos y escucha.</strong></p>",
+      "featured_image": "83125bfe077cc4debcae2038b3675a50c86dbdcef04c7c56f5cdd6539675846a",
+      "carousel": true,
+      "gallery": [
+        "c22e2259057f95f907cc912feff35b698e0b5a7b9b6f08ec225f79210ff53a64",
+        "3b8b4c99a0035b5d0afd6818a25aeaea9930f749eed18c97dcde2113a1b3c265",
+        "4d04d82c02f09a93d2bfd95930e9c9e287ebb958105e777810f91f1ce620c550",
+        "56f42856b0cf6f39289eff606dced750bf50ec1c8b6c31c21623e3a6ab48b74e",
+        "5aa6a2a0b2b603550c9f96925121d227174c3b1b7da300ae4e902becf0788b3b",
+        "ddb1de94122b7777d413523231fd5c0f06520125b659eed9a52185789cec8e89",
+        "d7f0491d38266ea49375878fce24e8a66f7fc79e40287f22f401b855e7b47582",
+        "6e541362edca22843343c7ec3d4d85d427020d2bba35e17b82463da781067dd2",
+        "0195ba3f8e11e5e1bd7ff71920ce87740a754e67dfeae558b9c7b13b33bd9696",
+        "6fd15ff3dfbf064cef57df046420a14ebcdc3338038c55496e4e8b5d05cfa4be"
+      ],
+      "inline_images": [],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [
+        "FOTOS"
+      ],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/NOVEDAD HABLEMOS DE VINCULOS.docx",
+          "sha256": "92d887bd3bd9a99c239c01ae9c8eeb461da596897ec0e026ed24f6efdf6734ac"
+        },
+        {
+          "path": "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/NOVEDAD HABLEMOS DE VINCULOS.pdf",
+          "sha256": "f7312bb2f0a11e01a36e8072a279397566b19296b070d96b25a56d4ced441f6a"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/1.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/10.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/2.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/3.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/4.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/5.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/6.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/7.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/8.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/9.png",
+        "FALTA PUBLICAR/10) NOVEDAD ENCUENTRO ADOLESCENTES 2026/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (5).png"
+      ]
+    },
+    {
+      "source_id": "ddna-news-3135200c82d6b2e6d60f",
+      "origin": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS",
+      "original_group": "FALTA PUBLICAR",
+      "title": "Programa de Protección Digital: Entre Pantallas, más herramientas para cuidar a chicas y chicos en los entornos digitales",
+      "slug": "programa-de-proteccion-digital-entre-pantallas-mas-herramientas-para-cuidar-a-chicas-y-chicos-en-los-entornos-digitales",
+      "original_publication_date": "2026-10-21",
+      "date_policy": "user_confirmed_2026-10-21_all_eight",
+      "content": "<p>La autoridad a cargo de la Defensoría, Georgina Tavella, firmó un convenio de cooperación junto al Secretario de Fortalecimiento Vecinal, Cultura y Deportes, Héctor “Pichi” Campana, de la Municipalidad de Córdoba para trabajar en conjunto en los Polideportivos Sociales de la ciudad a través de nuestro Programa de Protección Digital “<strong>Entre Pantallas”</strong>.</p>\n<p>La iniciativa se desarrolla con el objetivo de acercar herramientas para promover una participación segura, crítica y responsable en los entornos digitales, fortaleciendo el acompañamiento de niñas, niños y adolescentes también en estos espacios.</p>\n<p>El proyecto contempla distintas instancias de trabajo, entre ellas <strong>talleres destinados a chicas y chicos de 11 a 14 años</strong> y <strong>espacios de formación para coordinadores y referentes territoriales</strong> de los Polideportivos Sociales. Las propuestas abordan ciudadanía digital, derechos en internet, prevención de violencias en los entornos digitales y herramientas para el acompañamiento adulto.</p>\n<h2>Primer encuentro con adolescentes</h2>\n<p>Como parte de la puesta en marcha de esta iniciativa, se realizó en el <strong>Centro Cultural Alta Córdoba</strong> el primero de los talleres destinados a adolescentes.</p>\n<p>Durante la jornada, chicas y chicos participaron de una propuesta sobre <strong>ciudadanía digital</strong>, a través de dinámicas que promovieron el intercambio de experiencias y la reflexión sobre sus prácticas cotidianas en internet.</p>\n<p>El encuentro permitió acercar herramientas para que puedan reconocer sus derechos y desenvolverse en los entornos digitales de manera <strong>segura, crítica y responsable</strong>, poniendo en valor sus propias experiencias y formas de habitar estos espacios.</p>\n<p>Este primer taller marca el comienzo de un ciclo de encuentros que continuará desarrollándose junto a distintos Polideportivos Sociales de la ciudad, ampliando el alcance territorial del Programa Entre Pantallas.</p>\n<p>Desde la Defensoría continuamos fortaleciendo acciones articuladas que permitan <strong>acompañar a las adolescencias, promover sus derechos y construir entornos digitales más seguros y respetuosos</strong>.</p>",
+      "featured_image": "dc5970eadbc74e1611217a800806aa3ed5cc36f46491a0060354d9726677a3d5",
+      "carousel": true,
+      "gallery": [
+        "ac9ac9ec9e8017ae40206a6c01ab951e55ab836c2bff93e186d13068f9bfb56a",
+        "a689dfb9655630a7b24909363017109357b63dfe214b3d6073af3f1f6de340dc",
+        "f493e744283b639247a05f3e9b69ce525461776f48c9e95fc017be4b522506f1",
+        "19bb2e7da13fe7824532ce71ec28213258c624d1cfeaaaa97a46322c534cd3ff",
+        "24677e9e3ebdd70981b28e040c98bcfbe2342c6b6f902ab7e6b93e9cd6df8bd2",
+        "b9faf36c5c3b5b227c95e9206a774651d6acf9f5ad93a78532f0df9b13c2b103",
+        "0292dff266bfc234911542bdf2c723e492057399a46a18f39c499ab1b7dd3740",
+        "c454b52c59820ecb66670a68584d647bad394f05e3335931eba945a56ad37d00"
+      ],
+      "inline_images": [],
+      "attachments": [],
+      "links": [],
+      "tag": "novedad",
+      "status": "publish",
+      "instructions": [
+        "FOTOS"
+      ],
+      "pending": [],
+      "sources": [
+        {
+          "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/NOVEDAD POLIDEPORTIVOS.docx",
+          "sha256": "6b9ca78d476185e268921591e72a80334857b7d6d007c14472a335c02d0f6f2d"
+        },
+        {
+          "path": "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/NOVEDAD POLIDEPORTIVOS.pdf",
+          "sha256": "84bfc6eefb048ecc66f5f1e4b5bce8b4b5bde175bfeecf69db5fe3726d83e9f7"
+        }
+      ],
+      "available_images": [
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/1.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/2.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/3.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/4.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/5.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/6.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/7.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/8.png",
+        "FALTA PUBLICAR/11) NOVEDAD POLIDEPORTIVOS/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (6).png"
+      ]
+    }
+  ]
+}

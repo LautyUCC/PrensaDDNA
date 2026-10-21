@@ -7,7 +7,7 @@ $program_images = array(
 	'programas-participacion-nnya'                => 'participacion-nnya.png',
 	'acompanamiento-formacion-adultos'             => 'formacion-adultos.png',
 	'programa-va-con-vos'                          => 'va-con-vos.png',
-	'programa-entre-pantallas'                     => 'entre-pantallas.png',
+	'programa-entre-pantallas'                     => 'entre-pantallas-67.png',
 	'cooperacion-internacional-interinstitucional' => 'cooperacion-internacional.png',
 	'desarrollo-integral-primeros-anos-vida'       => 'desarrollo-integral.png',
 );
