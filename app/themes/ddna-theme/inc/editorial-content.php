@@ -111,30 +111,31 @@ add_shortcode( 'ddna_conventions', static function () {
 	return ob_get_clean();
 } );
 
-/** Categorías y documentos canónicos; los enlaces resuelven media del WordPress actual. */
+/** Normativas: estructura editorial versionada, con destinos exactos de Prensa. */
 add_shortcode( 'ddna_normativa', static function () {
-	$sections = get_option( 'ddna_normativa_sections', array() );
+	$resources = json_decode( file_get_contents( get_template_directory() . '/assets/data/normativas.json' ), true );
+	if ( ! is_array( $resources ) ) { return ''; }
+	$document = static function ( $item ) {
+		return '<a class="document-collection__document normativa-document" href="' . esc_url( $item['url'] ) . '" target="_blank" rel="noopener noreferrer">' . ddna_theme_document_icon( 'documentos-46.png' ) . '<span>' . esc_html( $item['title'] ) . '<span class="screen-reader-text"> (abre en otra pestaña)</span></span></a>';
+	};
 	ob_start();
-	?><div class="document-collection document-collection--normativa" data-institutional-accordion><?php
-	foreach ( $sections as $section ) :
-		$id = wp_unique_id( 'normativa-' ); ?>
-		<section class="normativa-section">
-			<?php echo ddna_theme_document_accordion_header( $section['title'], $id ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-			<div class="institutional-accordion__panel" id="<?php echo esc_attr( $id ); ?>" aria-labelledby="<?php echo esc_attr( $id . '-trigger' ); ?>" hidden>
+	?><div class="document-collection document-collection--normativa" data-institutional-accordion>
+		<section class="normativa-section" aria-label="<?php esc_attr_e( 'Recursos generales', 'ddna-theme' ); ?>">
 			<div class="normativa-links">
-			<?php foreach ( $section['documents'] as $item ) :
-				$post = $item['slug'] ? get_page_by_path( $item['slug'], OBJECT, 'documento' ) : null;
-				$file_id = $post ? absint( get_post_meta( $post->ID, '_ddna_file_id', true ) ) : 0;
-				$url = $file_id ? wp_get_attachment_url( $file_id ) : '';
-				if ( $url ) : ?>
-					<a class="document-collection__document normativa-document" href="<?php echo esc_url( $url ); ?>" target="_blank" rel="noopener noreferrer"><?php echo ddna_theme_document_icon( 'documentos-46.png' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><span><?php echo esc_html( $item['title'] ); ?><span class="screen-reader-text"> (PDF, abre en otra pestaña)</span></span></a>
-				<?php else : ?>
-					<span class="document-collection__document normativa-document resource-unavailable" aria-disabled="true"><?php echo ddna_theme_document_icon( 'documentos-46.png' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><span><?php echo esc_html( $item['title'] ); ?><span class="screen-reader-text"> — sin enlace en la fuente original</span></span></span>
-				<?php endif;
-			endforeach; ?>
-			</div>
+				<?php foreach ( $resources['resources'] as $item ) { echo $document( $item ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</div>
 		</section>
-	<?php endforeach; ?></div><?php
+		<?php foreach ( $resources['sections'] as $section ) :
+			$id = wp_unique_id( 'normativa-' ); ?>
+			<section class="normativa-section">
+				<?php echo ddna_theme_document_accordion_header( $section['title'], $id ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				<div class="institutional-accordion__panel" id="<?php echo esc_attr( $id ); ?>" aria-labelledby="<?php echo esc_attr( $id . '-trigger' ); ?>" hidden>
+					<div class="normativa-links">
+						<?php foreach ( $section['documents'] as $item ) { echo $document( $item ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					</div>
+				</div>
+			</section>
+		<?php endforeach; ?>
+	</div><?php
 	return ob_get_clean();
 } );
