@@ -100,7 +100,13 @@ def build():
             parts=re.split(r'<br\s*/?>',text)
             if len(parts)>1 and re.match(r'^\d+ de agosto',plain(parts[0])):
                 body.append('<h2>'+plain(parts[0])+'</h2>')
-                if plain(' '.join(parts[1:])):body.append('<p>'+' '.join(parts[1:])+'</p>')
+                description=' '.join(parts[1:])
+                # Word wraps the heading AND its break in one bold run. Its
+                # closing tag belongs to the heading, not the following p.
+                if parts[0].count('<strong>') > parts[0].count('</strong>'):
+                    assert description.startswith('</strong>'), 'Review unexpected heading/run boundary'
+                    description=description[len('</strong>'):]
+                if plain(description):body.append('<p>'+description+'</p>')
             elif value=='Primer encuentro con adolescentes':body.append('<h2>'+html.escape(value)+'</h2>')
             else:body.append('<p>'+text+'</p>')
         other=[p for p in images if p!=cover and p not in inline]

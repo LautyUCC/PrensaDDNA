@@ -13,7 +13,7 @@ $gallery_id = 'news-gallery-' . get_the_ID();
 	<?php if ( has_post_thumbnail() ) : ?>
 		<figure class="entry-media news-article__cover"><?php the_post_thumbnail( 'large', array( 'loading' => 'eager', 'decoding' => 'async' ) ); ?></figure>
 	<?php endif; ?>
-	<div class="entry-content"><?php the_content(); ?><?php wp_link_pages(); ?></div>
+	<div class="entry-content"<?php if ( ddna_october_news_number( get_the_ID() ) ) : ?> lang="es"<?php endif; ?>><?php the_content(); ?><?php wp_link_pages(); ?></div>
 	<?php if ( $gallery ) : ?>
 		<section class="news-gallery<?php echo $carousel ? ' news-gallery--carousel' : ''; ?>" aria-label="Imágenes de la novedad"<?php if ( $carousel ) : ?> data-carousel<?php endif; ?>>
 			<h2>Imágenes</h2>
