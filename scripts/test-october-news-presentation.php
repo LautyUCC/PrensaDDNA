@@ -11,8 +11,10 @@ foreach ( $sources as $source => $rank ) {
 	$fail( false === strpos( get_post( $matches[0] )->post_content, '<p></strong>' ), 'Artefacto de importación.' );
 }
 $select = static function ( $args ) {
-	$q = new WP_Query( array_merge( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1, 'fields' => 'ids', 'ignore_sticky_posts' => true, 'orderby' => 'date', 'order' => 'DESC' ), $args ) );
-	return array_map( 'intval', $q->posts );
+	// Match frontend post queries. An ID-only covering index can reorder legacy
+	// date ties before this filter; bypass cache when comparing both SQL variants.
+	$q = new WP_Query( array_merge( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1, 'cache_results' => false, 'ignore_sticky_posts' => true, 'orderby' => 'date', 'order' => 'DESC' ), $args ) );
+	return array_map( 'intval', wp_list_pluck( $q->posts, 'ID' ) );
 };
 $cases = array( 'archive_home' => array( 'tag' => 'novedad' ), 'news_search' => array( 'tag' => 'novedad', 's' => 'agosto' ), 'global_search' => array( 's' => 'agosto', 'post_type' => 'any', 'orderby' => '' ), 'unrelated_listing' => array( 'post_type' => 'page' ), 'ascending' => array( 'tag' => 'novedad', 'order' => 'ASC' ) );
 $results = array();
