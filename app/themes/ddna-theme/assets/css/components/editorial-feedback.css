@@ -90,6 +90,7 @@
 .document-collection .institutional-accordion__panel { padding: 1rem 0 0; }
 .document-collection .institutional-accordion__panel[hidden] { display: none; }
 .document-collection .normativa-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.document-collection .normativa-links--general { grid-template-columns: minmax(0, 1fr); }
 .document-collection .statement-titles { margin: 0; padding: 0; list-style: none; gap: 1rem; }
 .document-collection .statement-titles li { min-width: 0; }
 .document-collection .document-collection__document {
@@ -126,6 +127,6 @@
 .entry--statements .entry-title {
  font-size: clamp(1.35rem, 5vw, 4.5rem);
  line-height: 1.1;
- text-transform: uppercase;
+ text-transform: none;
  overflow-wrap: normal;
 }

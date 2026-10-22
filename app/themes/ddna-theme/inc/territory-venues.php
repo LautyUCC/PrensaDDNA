@@ -13,6 +13,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/** Preserve a supplied destination; otherwise search the exact public address. */
+function ddna_theme_territory_map_url( array $venue ) {
+	if ( ! empty( $venue['map_url'] ) ) { return $venue['map_url']; }
+	$address = trim( (string) ( $venue['address'] ?? '' ) );
+	if ( '' === $address ) { return ''; }
+	$locality = 'sierras-chicas-salsipuedes' === ( $venue['id'] ?? '' ) ? 'Salsipuedes' : ( $venue['name'] ?? '' );
+	$query = $address;
+	if ( $locality && false === stripos( remove_accents( $address ), remove_accents( $locality ) ) ) {
+		$query .= ', ' . $locality;
+	}
+	$query .= ', Córdoba, Argentina';
+	return 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode( $query );
+}
+
 /**
  * Devuelve la única fuente de datos usada por marcadores y fichas del mapa.
  *
