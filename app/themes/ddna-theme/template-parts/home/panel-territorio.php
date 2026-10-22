@@ -17,6 +17,10 @@ $venues = array_map(
 	},
 	$venue_defaults
 );
+foreach ( $venues as &$venue ) {
+	$venue['map_url'] = ddna_theme_territory_map_url( $venue );
+}
+unset( $venue );
 $territory_phone_uri = static function ( $phone ) {
 	$digits = preg_replace( '/\D+/', '', (string) $phone );
 	if ( $digits && str_starts_with( $digits, '35' ) ) { $digits = '54' . $digits; }

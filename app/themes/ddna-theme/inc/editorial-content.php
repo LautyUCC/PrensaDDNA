@@ -121,7 +121,7 @@ add_shortcode( 'ddna_normativa', static function () {
 	ob_start();
 	?><div class="document-collection document-collection--normativa" data-institutional-accordion>
 		<section class="normativa-section" aria-label="<?php esc_attr_e( 'Recursos generales', 'ddna-theme' ); ?>">
-			<div class="normativa-links">
+			<div class="normativa-links normativa-links--general">
 				<?php foreach ( $resources['resources'] as $item ) { echo $document( $item ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</div>
 		</section>
