@@ -28,10 +28,9 @@
    if(cell%7===0){row=node('tr');body.append(row);} const td=node('td'), day=cell-offset+1; row.append(td);
    if(day<1||day>days){td.className='agenda-day--empty';continue;} const date=iso(day);td.className=`agenda-day${date===today?' is-today':date<today?' is-past':''}`;
    const number=node('span',String(day),'agenda-day__number'); if(date===today)number.append(node('span',', hoy','screen-reader-text'));td.append(number);
-   for(const event of groups.get(date)||[]){const a=node('a',undefined,'agenda-event');a.href=`#agenda-event-${event.id}`;a.dataset.agendaEvent=String(event.id);const time=node('time',event.time);time.dateTime=`${event.date}T${event.time}`;a.append(time,node('span',event.title));td.append(a);}
+   for(const event of groups.get(date)||[]){const a=node('a',undefined,'agenda-event');a.href=`#agenda-event-${event.id}`;a.dataset.agendaEvent=String(event.id);a.append(node('span',event.title));td.append(a);}
   }table.append(body);grid.replaceChildren(table);details.replaceChildren();
-  for(const event of events){const d=node('details',undefined,'agenda-detail');d.id=`agenda-event-${event.id}`;d.append(node('summary',event.title));const dl=node('dl');for(const [label,value] of [['Fecha',event.date.split('-').reverse().join('/')],['Hora',event.time],['Lugar',event.location]])dl.append(node('dt',label),node('dd',value));d.append(dl);const description=node('div',undefined,'agenda-description');description.innerHTML=event.description; // HTML allowlist enforced by our same-origin WordPress endpoint.
-   d.append(description);details.append(d);
+  for(const event of events){const d=node('details',undefined,'agenda-detail');d.id=`agenda-event-${event.id}`;d.append(node('summary',event.title));const dl=node('dl');dl.append(node('dt','Fecha'),node('dd',new Date(`${event.date}T12:00:00`).toLocaleDateString('es-AR',{day:'numeric',month:'long',year:'numeric'})));d.append(dl);details.append(d);
   }
   heading.textContent=`${months[month-1]} ${year}`;
   status.textContent=events.length?'Seleccioná una actividad para consultar sus detalles.':'No hay actividades publicadas para este mes.';

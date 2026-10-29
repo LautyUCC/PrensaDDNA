@@ -20,7 +20,6 @@ $events = function_exists( 'ddna_core_agenda_events' ) ? ddna_core_agenda_events
   <p class="agenda-status" role="status" aria-live="polite"><?php echo $events ? 'Seleccioná una actividad para consultar sus detalles.' : 'No hay actividades publicadas para este mes.'; ?></p>
   <div class="agenda-grid-wrap" role="region" aria-label="Calendario mensual" tabindex="0"><?php ddna_theme_agenda_grid( $year, $month, $events, $now->format( 'Y-m-d' ) ); ?></div>
   <div class="agenda-details"><h3>Actividades del mes</h3><div data-agenda-details><?php ddna_theme_agenda_details( $events ); ?></div></div>
-  <p class="agenda-timezone">Horarios según la zona configurada en WordPress: <?php echo esc_html( wp_timezone_string() ); ?>.</p>
  </section>
 </div></main>
 <?php get_footer(); ?>
