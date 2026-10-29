@@ -20,15 +20,6 @@
 .agenda-event { display: flex; flex-direction: column; gap: .2rem; background: #fff0dc; border-left: 3px solid var(--ddna-orange); border-radius: .4rem; padding: .45rem; margin-bottom: .4rem; text-decoration: none; color: var(--color-text); font-size: .9rem; overflow-wrap: anywhere; line-height: 1.35; }
 .agenda-event:hover { background: var(--ddna-orange); color: var(--color-text); }
 .agenda-event time { font-weight: bold; }
-.agenda-detail { border: 2px solid; border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1rem; scroll-margin-top: 6rem; }
-.agenda-detail summary { cursor: pointer; font-weight: bold; min-height: 2.75rem; padding: .5rem; }
-.agenda-detail[open] summary { border-bottom: 1px solid; margin-bottom: 1rem; }
-.agenda-detail dl { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1rem; }
-.agenda-detail dt { font-weight: bold; }
-.agenda-detail dd { margin: 0; overflow-wrap: anywhere; }
-.agenda-description { overflow-wrap: anywhere; }
-.agenda-description img { max-width: 100%; height: auto; }
-.agenda-timezone { color: var(--color-muted); font-size: .9rem; }
 @media (max-width: 47.9375rem) {
  .agenda-toolbar > a { flex: 1; padding: .65rem .6rem; }
  .agenda-month-form { width: 100%; order: -1; }
@@ -43,5 +34,4 @@
  .agenda-event time { white-space: nowrap; }
  .agenda-month-form select { min-width: 0; flex: 1; padding-inline: .6rem; }
  .agenda-month-form button { padding-inline: .6rem; }
- .agenda-details h3 { font-size: 1.5rem; }
 }

@@ -4,7 +4,7 @@
  if (!root) return;
  const select = root.querySelector('select'), form = root.querySelector('form');
  const prev = root.querySelector('[data-agenda-prev]'), next = root.querySelector('[data-agenda-next]');
- const grid = root.querySelector('.agenda-grid-wrap'), details = root.querySelector('[data-agenda-details]');
+ const grid = root.querySelector('.agenda-grid-wrap');
  const heading = root.querySelector('h2'), status = root.querySelector('.agenda-status');
  let year = Number(root.dataset.year), month = Number(root.dataset.month), today = root.dataset.today, request;
  const months = [...select.options].map(o => o.textContent);
@@ -28,12 +28,10 @@
    if(cell%7===0){row=node('tr');body.append(row);} const td=node('td'), day=cell-offset+1; row.append(td);
    if(day<1||day>days){td.className='agenda-day--empty';continue;} const date=iso(day);td.className=`agenda-day${date===today?' is-today':date<today?' is-past':''}`;
    const number=node('span',String(day),'agenda-day__number'); if(date===today)number.append(node('span',', hoy','screen-reader-text'));td.append(number);
-   for(const event of groups.get(date)||[]){const a=node('a',undefined,'agenda-event');a.href=`#agenda-event-${event.id}`;a.dataset.agendaEvent=String(event.id);a.append(node('span',event.title));td.append(a);}
-  }table.append(body);grid.replaceChildren(table);details.replaceChildren();
-  for(const event of events){const d=node('details',undefined,'agenda-detail');d.id=`agenda-event-${event.id}`;d.append(node('summary',event.title));const dl=node('dl');dl.append(node('dt','Fecha'),node('dd',new Date(`${event.date}T12:00:00`).toLocaleDateString('es-AR',{day:'numeric',month:'long',year:'numeric'})));d.append(dl);details.append(d);
-  }
+   for(const event of groups.get(date)||[]){const a=node('span',undefined,'agenda-event');a.dataset.agendaEvent=String(event.id);a.append(node('span',event.title));td.append(a);}
+  }table.append(body);grid.replaceChildren(table);
   heading.textContent=`${months[month-1]} ${year}`;
-  status.textContent=events.length?'Seleccioná una actividad para consultar sus detalles.':'No hay actividades publicadas para este mes.';
+  status.textContent=events.length?'Eventos publicados para este mes.':'No hay actividades publicadas para este mes.';
  }
  async function load(wanted) {
   if(wanted<1||wanted>12)return;
@@ -45,6 +43,5 @@
  }
  form.addEventListener('submit',e=>{e.preventDefault();load(Number(select.value));});select.addEventListener('change',()=>load(Number(select.value)));
  for(const [link,delta] of [[prev,-1],[next,1]])link.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();load(month+delta);});
- root.addEventListener('click',e=>{const a=e.target.closest('[data-agenda-event]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;const detail=document.getElementById(`agenda-event-${a.dataset.agendaEvent}`);if(detail){e.preventDefault();detail.open=true;detail.querySelector('summary').focus();detail.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'nearest'});}});
  navigation();
 })();
