@@ -73,7 +73,7 @@ function ddna_core_agenda_events( $year, $month ) {
  foreach ( $query->posts as $post ) {
   $fields = array( '_agenda_fecha' => get_post_meta( $post->ID, '_agenda_fecha', true ), '_agenda_hora' => get_post_meta( $post->ID, '_agenda_hora', true ), '_agenda_lugar' => get_post_meta( $post->ID, '_agenda_lugar', true ) );
   if ( is_wp_error( ddna_core_agenda_validate_fields( $fields ) ) ) { continue; }
-  $events[] = array( 'id' => $post->ID, 'title' => ddna_core_agenda_decode_text( get_the_title( $post ) ), 'date' => $fields['_agenda_fecha'], 'time' => $fields['_agenda_hora'], 'location' => sanitize_text_field( $fields['_agenda_lugar'] ), 'description' => wp_kses_post( wpautop( strip_shortcodes( $post->post_content ) ) ) );
+  $events[] = array( 'id' => $post->ID, 'title' => ddna_core_agenda_decode_text( get_post_field( 'post_title', $post->ID ) ), 'date' => $fields['_agenda_fecha'], 'time' => $fields['_agenda_hora'], 'location' => sanitize_text_field( $fields['_agenda_lugar'] ), 'description' => wp_kses_post( wpautop( strip_shortcodes( $post->post_content ) ) ) );
  }
  return $events;
 }
