@@ -21,7 +21,7 @@ function ddna_theme_agenda_grid( $year, $month, $events, $today ) {
   <?php else : $date = sprintf( '%04d-%02d-%02d', $year, $month, $day ); ?>
    <td class="agenda-day<?php echo $date === $today ? ' is-today' : ( $date < $today ? ' is-past' : '' ); ?>"><span class="agenda-day__number"><?php echo esc_html( $day ); ?><?php if ( $date === $today ) : ?><span class="screen-reader-text">, hoy</span><?php endif; ?></span>
    <?php foreach ( $by_day[ $date ] ?? array() as $event ) : ?>
-    <a class="agenda-event" href="#agenda-event-<?php echo esc_attr( $event['id'] ); ?>" data-agenda-event="<?php echo esc_attr( $event['id'] ); ?>"><time datetime="<?php echo esc_attr( $date . 'T' . $event['time'] ); ?>"><?php echo esc_html( $event['time'] ); ?></time><span><?php echo esc_html( $event['title'] ); ?></span></a>
+    <a class="agenda-event" href="#agenda-event-<?php echo esc_attr( $event['id'] ); ?>" data-agenda-event="<?php echo esc_attr( $event['id'] ); ?>"><span><?php echo esc_html( $event['title'] ); ?></span></a>
    <?php endforeach; ?></td>
   <?php endif; ?>
   <?php if ( 6 === $cell % 7 ) { echo '</tr>'; } ?>
@@ -31,6 +31,6 @@ function ddna_theme_agenda_grid( $year, $month, $events, $today ) {
 }
 function ddna_theme_agenda_details( $events ) {
  foreach ( $events as $event ) : ?>
- <details class="agenda-detail" id="agenda-event-<?php echo esc_attr( $event['id'] ); ?>"><summary><?php echo esc_html( $event['title'] ); ?></summary><dl><dt>Fecha</dt><dd><?php echo esc_html( wp_date( 'd/m/Y', ( new DateTimeImmutable( $event['date'], wp_timezone() ) )->getTimestamp(), wp_timezone() ) ); ?></dd><dt>Hora</dt><dd><?php echo esc_html( $event['time'] ); ?></dd><dt>Lugar</dt><dd><?php echo esc_html( $event['location'] ); ?></dd></dl><div class="agenda-description"><?php echo wp_kses_post( $event['description'] ); ?></div></details>
+ <details class="agenda-detail" id="agenda-event-<?php echo esc_attr( $event['id'] ); ?>"><summary><?php echo esc_html( $event['title'] ); ?></summary><dl><dt>Fecha</dt><dd><?php echo esc_html( wp_date( 'j \d\e F \d\e Y', ( new DateTimeImmutable( $event['date'], wp_timezone() ) )->getTimestamp(), wp_timezone() ) ); ?></dd></dl></details>
  <?php endforeach;
 }

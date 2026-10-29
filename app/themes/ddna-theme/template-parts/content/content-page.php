@@ -10,6 +10,8 @@
 		get_template_part( 'template-parts/components/return-home-menu', null, array( 'url' => home_url( '/' ), 'label' => __( 'Volver al inicio', 'ddna-theme' ) ) );
 	} elseif ( is_page( array( 'normativa', 'normativas' ) ) ) {
 		get_template_part( 'template-parts/components/return-home-menu', null, array( 'url' => home_url( '/' ), 'label' => __( 'Volver al inicio', 'ddna-theme' ) ) );
+	} elseif ( is_page( 'comunicados' ) ) {
+		get_template_part( 'template-parts/components/return-home-menu', null, array( 'url' => home_url( '/' ), 'label' => __( 'Volver al inicio', 'ddna-theme' ) ) );
 	} elseif ( is_page( array( 'defensoria', 'informes-anuales', 'convenios', 'contacto' ) ) ) {
 		get_template_part( 'template-parts/components/return-home-menu' );
 	} ?>
