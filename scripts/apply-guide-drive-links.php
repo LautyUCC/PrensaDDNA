@@ -19,7 +19,7 @@ $changes = array(); $urls = array(); $slugs = array();
 foreach ( $manifest['guides'] as $guide ) {
 	$source = $sources[ $guide['slug'] ] ?? array();
 	if ( ( $source['sha256'] ?? '' ) !== $guide['sha256'] || ( $source['file'] ?? '' ) !== $guide['file'] || ( $source['size'] ?? 0 ) !== $guide['size'] ) { WP_CLI::error( 'Fuente distinta: ' . $guide['slug'] ); }
-	if ( ! preg_match( '~^https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view$~D', $guide['drive_url'] ) || in_array( $guide['drive_url'], $urls, true ) || in_array( $guide['slug'], $slugs, true ) ) { WP_CLI::error( 'URL/slug inválido o repetido.' ); }
+	if ( ! preg_match( '~^https://drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?[^#]*)?$~D', $guide['drive_url'] ) || in_array( $guide['drive_url'], $urls, true ) || in_array( $guide['slug'], $slugs, true ) ) { WP_CLI::error( 'URL/slug inválido o repetido.' ); }
 	$urls[] = $guide['drive_url']; $slugs[] = $guide['slug'];
 	$post = get_page_by_path( $guide['slug'], OBJECT, 'documento' );
 	$id = $post ? absint( get_post_meta( $post->ID, '_ddna_file_id', true ) ) : 0;
