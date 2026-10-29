@@ -73,9 +73,20 @@ function ddna_core_agenda_events( $year, $month ) {
  foreach ( $query->posts as $post ) {
   $fields = array( '_agenda_fecha' => get_post_meta( $post->ID, '_agenda_fecha', true ), '_agenda_hora' => get_post_meta( $post->ID, '_agenda_hora', true ), '_agenda_lugar' => get_post_meta( $post->ID, '_agenda_lugar', true ) );
   if ( is_wp_error( ddna_core_agenda_validate_fields( $fields ) ) ) { continue; }
-  $events[] = array( 'id' => $post->ID, 'title' => wp_specialchars_decode( get_the_title( $post ), ENT_QUOTES ), 'date' => $fields['_agenda_fecha'], 'time' => $fields['_agenda_hora'], 'location' => sanitize_text_field( $fields['_agenda_lugar'] ), 'description' => wp_kses_post( wpautop( strip_shortcodes( $post->post_content ) ) ) );
+  $events[] = array( 'id' => $post->ID, 'title' => ddna_core_agenda_decode_text( get_the_title( $post ) ), 'date' => $fields['_agenda_fecha'], 'time' => $fields['_agenda_hora'], 'location' => sanitize_text_field( $fields['_agenda_lugar'] ), 'description' => wp_kses_post( wpautop( strip_shortcodes( $post->post_content ) ) ) );
  }
  return $events;
+}
+
+/** Decode editorial entities once or twice, without changing the stored data. */
+function ddna_core_agenda_decode_text( $value ) {
+ $decoded = (string) $value;
+ for ( $i = 0; $i < 2; $i++ ) {
+  $next = html_entity_decode( $decoded, ENT_QUOTES | ENT_HTML5, 'UTF-8' );
+  if ( $next === $decoded ) { break; }
+  $decoded = $next;
+ }
+ return $decoded;
 }
 add_action( 'rest_api_init', static function () {
  register_rest_route( 'ddna/v1', '/agenda', array(
