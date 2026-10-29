@@ -1,0 +1,29 @@
+{
+  "version": "agenda-prensa-2026-10-29",
+  "events": [
+    {
+      "id": "agenda-prensa-20261030-oajnu",
+      "date": "2026-10-30",
+      "title": "30° Modelo Regional de Naciones Unidas organizado por OAJNU - Feria de las Colectividades.",
+      "location": "Feria de las Colectividades"
+    },
+    {
+      "id": "agenda-prensa-20261113-move-la-data",
+      "date": "2026-11-13",
+      "title": "Presentación de la herramienta “Mové la Data” en Bell Ville.",
+      "location": "Bell Ville"
+    },
+    {
+      "id": "agenda-prensa-20261125-titeres",
+      "date": "2026-11-25",
+      "title": "Jornada de títeres para niñas y niños en Cosquín.",
+      "location": "Cosquín"
+    },
+    {
+      "id": "agenda-prensa-20261130-muna-unicef",
+      "date": "2026-11-30",
+      "title": "Jornada de Certificación de Municipios MUNA - UNICEF Argentina.",
+      "location": ""
+    }
+  ]
+}
