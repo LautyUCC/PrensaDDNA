@@ -102,6 +102,18 @@ function ddna_theme_program_presentation( $content ) {
 			$summary->appendChild( $heading ); $panel->appendChild( $list );
 			$details->appendChild( $summary ); $details->appendChild( $panel );
 		}
+	} elseif ( 'programa-va-con-vos' === $program ) {
+		$url = ddna_theme_editorial_url( 'va_con_vos_dossier' );
+		if ( $url ) {
+			$cta = $doc->createElement( 'p' );
+			$link = $doc->createElement( 'a', 'Dossier Va Con Vos' );
+			$link->setAttribute( 'href', $url );
+			$link->setAttribute( 'target', '_blank' );
+			$link->setAttribute( 'rel', 'noopener noreferrer' );
+			$add_class( $link, 'program-resource-button' );
+			$cta->appendChild( $link );
+			$root->appendChild( $cta );
+		}
 	}
 	$output = '';
 	foreach ( $root->childNodes as $node ) { $output .= $doc->saveHTML( $node ); }
