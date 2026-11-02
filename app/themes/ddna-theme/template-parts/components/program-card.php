@@ -4,9 +4,9 @@ $program_url  = ddna_theme_card_destination( get_the_ID() );
 $link_tag = $program_url ? 'a' : 'div';
 $heading_tag  = isset( $args['heading_level'] ) && 4 === (int) $args['heading_level'] ? 'h4' : 'h3';
 $program_images = array(
-	'programas-participacion-nnya'                => 'participacion-nnya.png',
-	'acompanamiento-formacion-adultos'             => 'formacion-adultos.png',
-	'programa-va-con-vos'                          => 'va-con-vos.png',
+	'programas-participacion-nnya'                => 'protagonistas-del-presente.png',
+	'acompanamiento-formacion-adultos'             => 'acompanamiento-adultos.png',
+	'programa-va-con-vos'                          => 'espacio-va-con-vos.png',
 	'programa-entre-pantallas'                     => 'entre-pantallas-67.png',
 	'cooperacion-internacional-interinstitucional' => 'cooperacion-internacional.png',
 	'desarrollo-integral-primeros-anos-vida'       => 'desarrollo-integral.png',
