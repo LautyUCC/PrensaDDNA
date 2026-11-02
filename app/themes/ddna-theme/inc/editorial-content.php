@@ -97,6 +97,9 @@ function ddna_theme_program_dossier_key( $post_id ) {
 function ddna_theme_card_destination( $post_id ) {
 	$external = get_post_meta( $post_id, '_ddna_external_url', true );
 	$dossier_key = ddna_theme_program_dossier_key( $post_id );
+	if ( 'programa-va-con-vos' === get_post_field( 'post_name', $post_id ) ) {
+		return get_permalink( $post_id );
+	}
 	$resource = $dossier_key ? ddna_theme_editorial_url( $dossier_key ) : '';
 	return $resource ?: ( $external ?: ( get_post_meta( $post_id, '_ddna_destination_pending', true ) ? '' : get_permalink( $post_id ) ) );
 }
