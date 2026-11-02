@@ -2,6 +2,15 @@
 /** Frontend-only presentation of the two reviewed program pages; no DB writes. */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
+add_action( 'template_redirect', static function () {
+	if ( ! is_page( 'programas-participacion-nnya' ) ) { return; }
+	$program = get_page_by_path( 'programas-participacion-nnya', OBJECT, 'programa' );
+	if ( $program && 'publish' === $program->post_status ) {
+		wp_safe_redirect( get_permalink( $program ), 301 );
+		exit;
+	}
+} );
+
 function ddna_theme_reviewed_program() {
 	if ( is_page( 'programas-participacion-nnya' ) ) { return 'participation'; }
 	if ( is_page( 'cooperacion-internacional-interinstitucional' ) ) { return 'cooperation'; }
