@@ -15,6 +15,7 @@ function ddna_theme_reviewed_program() {
 	if ( is_singular( 'programa' ) ) { return (string) get_post_field( 'post_name', get_queried_object_id() ); }
 	if ( is_page( 'programas-participacion-nnya' ) ) { return 'participation'; }
 	if ( is_page( 'cooperacion-internacional-interinstitucional' ) ) { return 'cooperation'; }
+	if ( is_page( 'acompanamiento-formacion-adultos' ) ) { return 'acompanamiento-formacion-adultos'; }
 	return '';
 }
 

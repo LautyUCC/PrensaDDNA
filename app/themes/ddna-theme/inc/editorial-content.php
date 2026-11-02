@@ -100,6 +100,10 @@ function ddna_theme_card_destination( $post_id ) {
 	if ( 'programa-va-con-vos' === get_post_field( 'post_name', $post_id ) ) {
 		return get_permalink( $post_id );
 	}
+	if ( 'acompanamiento-formacion-adultos' === get_post_field( 'post_name', $post_id ) ) {
+		$page = get_page_by_path( 'acompanamiento-formacion-adultos', OBJECT, 'page' );
+		if ( $page && 'publish' === $page->post_status ) { return get_permalink( $page ); }
+	}
 	$resource = $dossier_key ? ddna_theme_editorial_url( $dossier_key ) : '';
 	return $resource ?: ( $external ?: ( get_post_meta( $post_id, '_ddna_destination_pending', true ) ? '' : get_permalink( $post_id ) ) );
 }
