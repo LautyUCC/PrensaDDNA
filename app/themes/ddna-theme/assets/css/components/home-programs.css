@@ -2,6 +2,8 @@
 	grid-auto-flow: column;
 	grid-auto-columns: calc(50% - 0.75rem);
 	gap: var(--space-5);
+	justify-content: start;
+	align-content: start;
 	padding: var(--space-3);
 	margin: calc(0rem - var(--space-3));
 }

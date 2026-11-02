@@ -12,6 +12,7 @@ add_action( 'template_redirect', static function () {
 } );
 
 function ddna_theme_reviewed_program() {
+	if ( is_singular( 'programa' ) ) { return (string) get_post_field( 'post_name', get_queried_object_id() ); }
 	if ( is_page( 'programas-participacion-nnya' ) ) { return 'participation'; }
 	if ( is_page( 'cooperacion-internacional-interinstitucional' ) ) { return 'cooperation'; }
 	return '';
@@ -80,7 +81,7 @@ function ddna_theme_program_presentation( $content ) {
 		foreach ( $xpath->query( './/p/a', $root ) as $anchor ) {
 			if ( str_starts_with( $anchor->getAttribute( 'href' ), 'https://drive.google.com/' ) ) { $add_class( $anchor, 'program-resource-button' ); }
 		}
-	} else {
+	} elseif ( 'cooperation' === $program ) {
 		$headings = iterator_to_array( $xpath->query( './/h2 | .//h3', $root ) );
 		foreach ( $headings as $heading ) {
 			if ( 'El programa promueve:' !== $label( $heading ) && ! preg_match( '/^Cohorte [1-4]\b/u', $label( $heading ) ) ) { continue; }
