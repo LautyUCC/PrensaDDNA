@@ -7,7 +7,7 @@
 
 get_header();
 ?>
-<main class="site-main<?php echo 'diplomatura-ia-derechos-digitales-nnya' === get_post_field( 'post_name', get_queried_object_id() ) ? ' diplomatura-ia' : ''; ?>" id="main-content">
+<main class="site-main<?php echo 'diplomatura-ia-derechos-digitales-nnya' === get_post_field( 'post_name', get_queried_object_id() ) ? ' diplomatura-ia' : ''; ?><?php echo function_exists( 'ddna_theme_is_program_page' ) && ddna_theme_is_program_page() ? ' program-detail' : ''; ?>" id="main-content">
 	<div class="<?php echo esc_attr( ddna_theme_container_classes() ); ?>">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>

@@ -1,4 +1,19 @@
 /* Scoped to the two editorial Programas pages; other pages keep their scale. */
+.program-detail > .site-container {
+ width: min(calc(100% - 2 * var(--container-gutter)), var(--container-wide));
+}
+.program-detail .entry--single,
+.program-detail .entry--page {
+ box-sizing: border-box;
+ padding: clamp(1rem, 2.5vw, 2.5rem);
+ border: 1px solid #000;
+ border-radius: var(--radius-lg);
+ background: #fff;
+}
+.program-detail .entry-title,
+.program-detail .entry-content,
+.program-detail .entry-content * { word-break: normal; overflow-wrap: normal; hyphens: manual; }
+.program-detail .entry-title { max-width: 100%; }
 .program-detail .program-resource-button {
  display: inline-flex;
  align-items: center;
@@ -44,4 +59,9 @@
  .program-detail .entry-content .program-accordion summary > :is(h2, h3) { font: inherit; margin: 0; min-width: 0; }
  .program-detail .panel-accordion__content { padding: 1rem .25rem .25rem; }
  .program-detail .program-resource-button { font-size: 1rem; padding: .7rem 1rem; }
+}
+
+@media (min-width: 48rem) {
+ .program-detail .entry--single,
+ .program-detail .entry--page { padding-inline: clamp(2rem, 4vw, 4rem); }
 }
