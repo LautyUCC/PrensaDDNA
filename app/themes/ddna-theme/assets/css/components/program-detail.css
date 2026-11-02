@@ -1,6 +1,7 @@
 /* Scoped to the two editorial Programas pages; other pages keep their scale. */
 .program-detail .site-container {
- width: min(calc(100% - 2 * var(--container-gutter)), var(--container-wide));
+ width: min(88vw, var(--container-wide));
+ max-width: var(--container-wide);
 }
 .program-detail .entry--single,
 .program-detail .entry--page {
@@ -13,7 +14,13 @@
 .program-detail .entry-title,
 .program-detail .entry-content,
 .program-detail .entry-content * { word-break: normal; overflow-wrap: normal; hyphens: manual; }
-.program-detail .entry-title { max-width: 100%; }
+.program-detail .entry-title {
+ max-width: 100%;
+ min-width: 0;
+ font-size: clamp(2rem, 4.5vw, 4rem);
+ line-height: 1.08;
+ text-wrap: balance;
+}
 .program-detail .program-resource-button {
  display: inline-flex;
  align-items: center;
