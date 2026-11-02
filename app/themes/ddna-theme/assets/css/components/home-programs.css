@@ -1,6 +1,6 @@
 .carousel--programs {
 	grid-auto-flow: column;
-	grid-auto-columns: calc(50% - 0.75rem);
+	grid-auto-columns: minmax(0, calc((100% - var(--space-5)) / 2));
 	gap: var(--space-5);
 	justify-content: start;
 	align-content: start;
