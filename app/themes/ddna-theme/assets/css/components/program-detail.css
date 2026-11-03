@@ -27,6 +27,17 @@ main.program-detail {
 }
 .program-detail .entry-content h2 { font-size: clamp(1.5rem, 2.4vw, 2.35rem); line-height: 1.18; }
 .program-detail .entry-content h3 { font-size: clamp(1.25rem, 1.8vw, 1.75rem); line-height: 1.22; }
+.program-detail--programas-participacion-nnya .program-subprogram-heading { margin-top: clamp(2.5rem, 4vw, 4rem); }
+.program-detail--programas-participacion-nnya .program-subprogram-list { margin-block: 1.25rem 2.5rem; }
+.program-detail--programas-participacion-nnya .program-subprogram-list li { font-weight: var(--font-weight-bold); }
+.program-detail--programas-participacion-nnya .program-subprogram-list li + li { margin-top: clamp(.75rem, 1.3vw, 1.25rem); }
+.program-detail--programas-participacion-nnya .program-social-link {
+ color: inherit;
+ text-decoration: underline;
+ text-decoration-color: #ff8c00;
+ text-decoration-thickness: .12em;
+ text-underline-offset: .15em;
+}
 .program-detail .program-resource-button {
  display: inline-flex;
  align-items: center;
