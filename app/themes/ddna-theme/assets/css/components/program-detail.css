@@ -1,4 +1,7 @@
-/* Scoped to the two editorial Programas pages; other pages keep their scale. */
+/* Scoped to internal Programas pages; other pages keep their scale. */
+main.program-detail {
+ padding-block: clamp(2rem, 4vw, 4rem) clamp(3rem, 6vw, 6rem);
+}
 .program-detail .site-container {
  width: min(calc(100% - 2 * var(--container-gutter)), var(--container-wide));
  max-width: var(--container-wide);
