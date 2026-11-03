@@ -1,6 +1,6 @@
 /* Scoped to the two editorial Programas pages; other pages keep their scale. */
 .program-detail .site-container {
- width: min(88vw, var(--container-wide));
+ width: min(calc(100% - 2 * var(--container-gutter)), var(--container-wide));
  max-width: var(--container-wide);
 }
 .program-detail .entry--single,
