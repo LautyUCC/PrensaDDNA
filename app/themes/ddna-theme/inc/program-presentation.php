@@ -50,7 +50,7 @@ function ddna_theme_program_presentation( $content ) {
 		$node->setAttribute( 'class', trim( implode( ' ', array_unique( array_merge( $classes, array( $class ) ) ) ) ) );
 	};
 
-	if ( 'participation' === $program ) {
+	if ( in_array( $program, array( 'participation', 'programas-participacion-nnya' ), true ) ) {
 		$heading = null;
 		foreach ( $xpath->query( './/h2 | .//h3', $root ) as $node ) {
 			if ( 'Detrás del Humo' === $label( $node ) ) { $heading = $node; break; }
