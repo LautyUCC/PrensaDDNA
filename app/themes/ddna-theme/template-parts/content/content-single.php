@@ -8,7 +8,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'entry entry--single' ); ?>>
 	<?php
 	$program_slug = get_post_field( 'post_name', get_the_ID() );
-	$hide_program_meta = in_array( $program_slug, array( 'programa-va-con-vos', 'mesas-interinstitucionales' ), true );
+	$hide_program_meta = in_array( $program_slug, array( 'programa-va-con-vos', 'mesas-interinstitucionales', 'programas-participacion-nnya' ), true );
 	?>
 	<?php if ( ddna_theme_is_program_page() ) {
 		get_template_part( 'template-parts/components/return-home-menu', null, array( 'url' => home_url( '/' ), 'label' => __( 'Volver al inicio', 'ddna-theme' ) ) );
