@@ -51,6 +51,15 @@ function ddna_theme_program_presentation( $content ) {
 	};
 
 	if ( in_array( $program, array( 'participation', 'programas-participacion-nnya' ), true ) ) {
+		foreach ( $xpath->query( './/h2 | .//h3', $root ) as $node ) {
+			if ( 'Articulación, asesoramiento y acompañamiento a territorios' !== $label( $node ) ) { continue; }
+			$add_class( $node, 'program-subprogram-heading' );
+			for ( $next = $node->nextSibling; $next; $next = $next->nextSibling ) {
+				if ( $next instanceof DOMElement && 'ul' === $next->tagName ) { $add_class( $next, 'program-subprogram-list' ); break; }
+				if ( $next instanceof DOMElement && in_array( $next->tagName, array( 'h2', 'h3' ), true ) ) { break; }
+			}
+			break;
+		}
 		$heading = null;
 		foreach ( $xpath->query( './/h2 | .//h3', $root ) as $node ) {
 			if ( 'Detrás del Humo' === $label( $node ) ) { $heading = $node; break; }
