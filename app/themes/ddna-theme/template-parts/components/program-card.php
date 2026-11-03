@@ -6,6 +6,7 @@ $heading_tag  = isset( $args['heading_level'] ) && 4 === (int) $args['heading_le
 $program_images = array(
 	'programas-participacion-nnya'                => 'protagonistas-del-presente.png',
 	'acompanamiento-formacion-adultos'             => 'acompanamiento-adultos.png',
+	'mesas-interinstitucionales'                   => 'programas-63.png',
 	'programa-va-con-vos'                          => 'espacio-va-con-vos.png',
 	'programa-entre-pantallas'                     => 'entre-pantallas-67.png',
 	'cooperacion-internacional-interinstitucional' => 'cooperacion-internacional.png',
