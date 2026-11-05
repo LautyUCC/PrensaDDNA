@@ -18,6 +18,12 @@
  overflow-wrap: break-word;
 }
 .news-article--october-2026 .entry-content p { margin-inline: 0; text-indent: 0; }
+.news-article--first-childhood-20261105 .entry-content p {
+ text-align: justify;
+ text-align-last: start;
+ hyphens: auto;
+ overflow-wrap: break-word;
+}
 .news-article--october-2026 .entry-content h2 {
  margin-block: 1.75rem 1rem;
  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
