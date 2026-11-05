@@ -21,7 +21,7 @@ $manifest = json_decode( file_get_contents( $manifest_path ), true );
 if ( ! is_array( $manifest ) || 'agenda-dossier-october-2026' !== ( $manifest['version'] ?? '' ) ) { WP_CLI::error( 'Manifiesto inválido.' ); }
 $digest = hash_file( 'sha256', $manifest_path );
 $events = $manifest['events'] ?? array();
-if ( 34 !== count( $events ) ) { WP_CLI::error( 'Se esperaban 34 eventos.' ); }
+if ( 33 !== count( $events ) ) { WP_CLI::error( 'Se esperaban 33 eventos.' ); }
 $ids = array();
 foreach ( $events as $event ) {
 	$id = (string) ( $event['id'] ?? '' );
@@ -30,6 +30,12 @@ foreach ( $events as $event ) {
 	$location = (string) ( $event['location'] ?? '' );
 	if ( ! $id || isset( $ids[ $id ] ) || ! preg_match( '/^2026-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01])$/D', $date ) || ! $title || ! $location ) { WP_CLI::error( 'Evento inválido: ' . $id ); }
 	$ids[ $id ] = true;
+}
+// This batch is one-shot. Later corrections use selective scripts so a rerun
+// cannot overwrite editorial updates made after the original import.
+if ( 'rollback' !== $mode && get_option( 'ddna_agenda_dossier_october_digest' ) ) {
+	WP_CLI::success( 'Lote ya importado; sin escrituras.' );
+	return;
 }
 $pdf_path = getenv( 'DDNA_AGENDA_DOSSIER_PDF' );
 if ( ! $pdf_path ) {
@@ -128,7 +134,6 @@ if ( '1' === getenv( 'DDNA_AGENDA_DOSSIER_DRY_RUN' ) || 'dry-run' === $mode ) {
 	WP_CLI::success( wp_json_encode( $summary, JSON_UNESCAPED_UNICODE ) );
 	return;
 }
-if ( get_option( 'ddna_agenda_dossier_october_digest' ) === $digest ) { WP_CLI::success( 'Manifiesto ya aplicado; sin escrituras.' ); return; }
 $backup = array( 'date' => current_time( 'mysql' ), 'digest' => $digest, 'events' => array(), 'links' => get_option( 'ddna_editorial_links', array() ), 'attachment_created' => 0 );
 add_option( $backup_key, $backup, '', false );
 foreach ( $events as $event ) { $upsert( $event, $summary, $backup ); }
