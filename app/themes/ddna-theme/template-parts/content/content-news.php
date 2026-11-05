@@ -3,8 +3,9 @@
 $gallery = function_exists( 'ddna_core_news_image_ids' ) ? ddna_core_news_image_ids( get_post_meta( get_the_ID(), '_ddna_news_gallery', true ) ) : array();
 $carousel = (bool) get_post_meta( get_the_ID(), '_ddna_news_carousel', true );
 $gallery_id = 'news-gallery-' . get_the_ID();
+$first_childhood_class = 'ddna-news-first-childhood-mesa-provincial-20261105' === get_post_meta( get_the_ID(), '_ddna_news_source_id', true ) ? ' news-article--first-childhood-20261105' : '';
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry entry--single news-article' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry entry--single news-article' . $first_childhood_class ); ?>>
 	<a class="button news-article__back" href="<?php $category = get_category_by_slug( 'novedades' ); echo esc_url( $category ? get_category_link( $category ) : home_url( '/novedades/' ) ); ?>">Volver a Novedades</a>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

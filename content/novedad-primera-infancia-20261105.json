@@ -1,0 +1,58 @@
+{
+  "version": "ddna-first-childhood-news-v1",
+  "source_id": "ddna-news-first-childhood-mesa-provincial-20261105",
+  "title": "La Mesa Provincial de Primera Infancia avanzó en nuevas líneas de trabajo intersectorial",
+  "slug": "la-mesa-provincial-de-primera-infancia-avanzo-en-nuevas-lineas-de-trabajo-intersectorial",
+  "publication_date": "2026-11-05",
+  "date_policy": "user_confirmed_2026-11-05",
+  "content": "<p>Junto a <strong>UNICEF Argentina</strong> llevamos adelante un nuevo encuentro de la <strong>Mesa Provincial de Primera Infancia</strong>, un espacio de articulación intersectorial orientado a fortalecer las políticas públicas destinadas a niñas, niños y sus familias en la provincia de Córdoba.</p>\n<p>La jornada fue encabezada por <strong>Georgina Tavella, autoridad a cargo de la Defensoría</strong>, y contó con la participación de <strong>Luis Franchi</strong>, secretario de Educación; <strong>María Eugenia Pomazan</strong>, secretaria de Coordinación y Fortalecimiento Familiar; <strong>Julia Reartes</strong>, secretaria de Niñez, Adolescencia y Familia; <strong>Inés Zinny</strong>, directora general de Salas Cuna y Centros de Desarrollo Infantil; <strong>Inés Panzetta y Marcelo Barilla</strong>, integrantes de la Dirección de Maternidad e Infancia del Ministerio de Salud; <strong>Carolina Aulicino</strong>, oficial de Políticas Sociales de UNICEF Argentina; <strong>Cecilia del Bono</strong>, consultora del área de Protección y referente técnica en Primera Infancia de UNICEF Argentina; y <strong>Fabián Repetto</strong>, consultor internacional en políticas sociales.</p>\n<p>También participaron <strong>Luca Laporta, Sofía Nieva y Antonella Mazzitello</strong>, integrantes del equipo técnico de la Defensoría.</p>\n<p>Durante el encuentro se profundizó el trabajo sobre los principales desafíos identificados por los distintos organismos y se avanzó en la definición de posibles líneas de acción conjunta. Entre los ejes abordados se destacó la necesidad de <strong>fortalecer la articulación y el intercambio de información entre organismos</strong>, consolidar las <strong>rutas de atención integral y los circuitos de acompañamiento a las familias</strong>, e incorporar una <strong>mirada territorial</strong> que contemple las particularidades y desigualdades presentes en las distintas regiones de la provincia.</p>\n<p>Asimismo, se avanzó en la posibilidad de desarrollar una <strong>experiencia piloto territorial</strong>, con el objetivo de poner en práctica una modalidad de intervención articulada entre instituciones y servicios y fortalecer las respuestas integrales destinadas a la primera infancia y sus familias.</p>\n<p>La Mesa Provincial de Primera Infancia continúa consolidándose como un espacio para <strong>construir una agenda común, generar acuerdos y fortalecer el trabajo intersectorial</strong>, poniendo en el centro los derechos y el bienestar integral de niñas y niños desde sus primeros años de vida.</p>",
+  "sources": [
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/Novedad Mesa Provincial de Primera Infancia.docx",
+      "sha256": "8c72e46bd57043e0db56d8822cb58bdae04672d0539cff7e9a533b7950489687",
+      "size": 8850
+    },
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/Novedad Mesa Provincial de Primera Infancia.pdf",
+      "sha256": "3bcc6d1391e76fc9c586cacb4a2f38acbf6c4d8dd1c965297871be7b60f113fb",
+      "size": 67405
+    }
+  ],
+  "featured": {
+    "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/FOTOS REDIMENSIONADAS/PORTADA - Novedad web (8).png",
+    "sha256": "ad7d74b51b3fc6869c91bba6ab4820f2f0af5e86892844cb0a854ae13295a020",
+    "size": 1803548
+  },
+  "gallery": [
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/FOTOS REDIMENSIONADAS/1.png",
+      "sha256": "dfabde61b477ae25fcadfb9383dec3573e173ae203222da99b4b9392ccc7be96",
+      "size": 2497712
+    },
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/FOTOS REDIMENSIONADAS/2.png",
+      "sha256": "6a2bdc91719ffca3ac6ac7f3134fdb09a6b2390177b71b9444e591cd347e961c",
+      "size": 2113826
+    },
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/FOTOS REDIMENSIONADAS/3.png",
+      "sha256": "6c3485f683af1a09b5431d75e8306b751bdb5e57b772de6ae9342dd5faf383c7",
+      "size": 2352835
+    },
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/FOTOS REDIMENSIONADAS/4.png",
+      "sha256": "f7d23d2e40acff999b08e04bb67a0331d1372318f253a8ab71bc66ca98436369",
+      "size": 2475514
+    },
+    {
+      "path": "RECURSOS GRÁFICOS - WEB DDNA 2026/NOVEDAD PRIMERA INFANCIA/FOTOS REDIMENSIONADAS/5.png",
+      "sha256": "99d090d1f9a1499a5dffb9a3113a78067191a360a24db800234329de4a5cdb47",
+      "size": 2311808
+    }
+  ],
+  "carousel": true,
+  "classification": {
+    "post_tag": "novedad",
+    "category": "novedades"
+  }
+}
