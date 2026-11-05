@@ -50,6 +50,15 @@ $media_id = static function ( $asset ) use ( $resolve, &$receipt ) {
 	if ( ! $tmp || ! copy( $path, $tmp ) ) { WP_CLI::error( 'No se pudo preparar imagen.' ); }
 	$id = media_handle_sideload( array( 'name' => 'ddna-news-' . substr( $asset['sha256'], 0, 24 ) . '.png', 'tmp_name' => $tmp ), 0, basename( $path ) );
 	if ( is_wp_error( $id ) ) { @unlink( $tmp ); WP_CLI::error( $id->get_error_message() ); }
+	// WP-CLI may run as root in production; Apache must be able to read every generated size.
+	$original = get_attached_file( $id );
+	$files = array( $original );
+	$metadata = wp_get_attachment_metadata( $id );
+	if ( is_array( $metadata ) ) {
+		foreach ( $metadata['sizes'] ?? array() as $size ) { if ( ! empty( $size['file'] ) ) { $files[] = dirname( $original ) . '/' . basename( $size['file'] ); } }
+		if ( ! empty( $metadata['original_image'] ) ) { $files[] = dirname( $original ) . '/' . basename( $metadata['original_image'] ); }
+	}
+	foreach ( array_unique( $files ) as $file ) { if ( ! is_file( $file ) || ! chmod( $file, 0644 ) ) { WP_CLI::error( 'No se pudo habilitar lectura pública de la imagen importada.' ); } }
 	update_post_meta( $id, '_ddna_news_asset_sha256', $asset['sha256'] );
 	$receipt['created_media'][] = $id;
 	update_option( 'ddna_first_childhood_news_20261105_receipt', $receipt, false );
