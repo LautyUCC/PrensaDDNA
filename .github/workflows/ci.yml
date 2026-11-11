@@ -1,0 +1,49 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  controller:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s deploy/host -p 'test_*.py'
+  application:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22.23.3'
+      - name: PHP syntax, no DB or editorial bootstrap
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL \
+            -v "$PWD/app:/code:ro" -v "$PWD/scripts:/scripts:ro" --entrypoint sh \
+            wordpress@sha256:b2d7e3153c8a96f90305a3102fb6439335237fb1a9655b617d15c5168ce2f7a3 \
+            -c 'find /code /scripts -name "*.php" -print0 | xargs -0 -n1 php -l'
+      - name: Theme JavaScript syntax
+        run: find app/themes/ddna-theme/assets/js -name '*.js' -exec node --check '{}' ';'
+      - name: Build production-compatible WordPress image
+        run: docker build --build-arg SOURCE_REVISION="$GITHUB_SHA" -f deploy/Dockerfile -t ddna-ci:wordpress .
+  validate:
+    name: Validate wordpress
+    if: always()
+    needs: [controller, application]
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Require every check to succeed
+        env:
+          ALL_OK: ${{ needs.controller.result == 'success' && needs.application.result == 'success' }}
+        run: test "$ALL_OK" = true

@@ -1,0 +1,7 @@
+**
+!app/
+!app/**
+!deploy/
+!deploy/Dockerfile
+!deploy/wp-config.php
+!deploy/wordpress.htaccess
