@@ -101,7 +101,7 @@ function ddna_theme_territory_venues( array $institutional = array() ) {
 		),
 		array(
 			'id' => 'san-francisco', 'name' => 'San Francisco', 'department' => 'San Justo',
-			'address' => 'Av. Garibaldi esq. Suipacha', 'phone' => '', 'email' => 'ddna.sanfrancisco@gmail.com',
+			'address' => 'Av. Garibaldi esq. Suipacha', 'phone' => '3564-439122 / 439126', 'phone_alternate_dial_prefix' => '3564', 'email' => 'ddna.sanfrancisco@gmail.com',
 			'hours' => 'Lunes a viernes, 8:00 a 13:00 hs.', 'map_url' => '',
 			'left' => '85.2%', 'top' => '35.5%', 'stack' => 3, 'popover_left' => '48%', 'popover_top' => '28%',
 			'muna' => true, 'muna_participation_note' => '',
