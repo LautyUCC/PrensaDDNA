@@ -63,6 +63,39 @@ main.program-detail {
 .program-detail .program-accordion summary { max-width: 100%; }
 .program-detail .program-accordion summary > :is(h2, h3) { margin: 0; font: inherit; }
 .program-detail .program-accordion summary::after { flex-shrink: 0; }
+.program-detail:is(.program-detail--programas-participacion-nnya, .program-detail--acompanamiento-formacion-adultos, .program-detail--mesas-interinstitucionales) .entry-title {
+ font-size: clamp(2rem, 4vw, 4.25rem);
+ line-height: 1.06;
+ text-wrap: pretty;
+}
+.program-detail .program-visual-row {
+ display: grid;
+ grid-template-columns: clamp(10rem, 19vw, 16rem) minmax(0, 1fr);
+ align-items: start;
+ gap: clamp(1.25rem, 2.4vw, 2.5rem);
+ margin-block: clamp(2.5rem, 4vw, 4.5rem);
+}
+.program-detail .program-visual-row__figure { margin: 0; min-width: 0; }
+.program-detail .program-visual-row__figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+.program-detail .program-visual-row__body { min-width: 0; }
+.program-detail .program-visual-row__body > :first-child { margin-top: 0; }
+.program-detail .program-visual-row__body :is(h2, h3) {
+ font-size: clamp(1.8rem, 3.1vw, 3.25rem);
+ line-height: 1.08;
+ margin-bottom: .65rem;
+ text-wrap: pretty;
+}
+.program-detail .program-visual-row__body p { margin-block: 0 1.15rem; }
+.program-detail .program-visual-row__body p + p { margin-top: 1.5rem; }
+.program-detail .program-visual-row__body ul { margin-block: 1rem; }
+.program-detail .program-visual-row__body li + li { margin-top: .3rem; }
+.program-detail .program-visual-row__body .program-social-button { margin: .4rem .75rem .4rem 0; }
+.program-detail .program-social-button { gap: .5rem; }
+.program-detail .program-social-button img { display: block; width: 1.5rem; height: 1.5rem; object-fit: contain; }
+.program-detail .program-dossier-actions { text-align: center; }
+.program-detail .program-visual-row__body .program-video-button { margin-top: .3rem; }
+.program-detail--mesas-interinstitucionales .program-visual-row { margin-block: clamp(3rem, 5vw, 5rem); }
+.program-detail--mesas-interinstitucionales .program-visual-row__figure img { border-radius: 1.25rem; }
 @media (max-width: 48rem) {
  .program-detail .entry-title { font-size: clamp(1.8rem, 5.6vw, 2.5rem); line-height: 1.12; }
  .program-detail .entry-content h2 { font-size: clamp(1.4rem, 4.5vw, 2rem); line-height: 1.2; margin-block: 1.75rem .8rem; }
@@ -84,6 +117,14 @@ main.program-detail {
  .program-detail .entry-content .program-accordion summary > :is(h2, h3) { font: inherit; margin: 0; min-width: 0; }
  .program-detail .panel-accordion__content { padding: 1rem .25rem .25rem; }
  .program-detail .program-resource-button { font-size: 1rem; padding: .7rem 1rem; }
+}
+
+@media (max-width: 40rem) {
+ .program-detail:is(.program-detail--programas-participacion-nnya, .program-detail--acompanamiento-formacion-adultos, .program-detail--mesas-interinstitucionales) .entry-title { font-size: clamp(1.45rem, 5.4vw, 2rem); line-height: 1.12; }
+ .program-detail.program-detail--mesas-interinstitucionales .entry-title { font-size: clamp(1.3rem, 4.9vw, 1.8rem); }
+ .program-detail .program-visual-row { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; margin-block: 2.5rem; }
+ .program-detail .program-visual-row__figure { width: min(13rem, 65%); }
+ .program-detail .program-visual-row__body :is(h2, h3) { font-size: clamp(1.6rem, 6vw, 2.15rem); margin-block: 0 .6rem; }
 }
 
 @media (min-width: 48rem) {

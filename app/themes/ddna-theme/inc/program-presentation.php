@@ -49,6 +49,43 @@ function ddna_theme_program_presentation( $content ) {
 		$classes = preg_split( '/\s+/', trim( $node->getAttribute( 'class' ) ) );
 		$node->setAttribute( 'class', trim( implode( ' ', array_unique( array_merge( $classes, array( $class ) ) ) ) ) );
 	};
+	$make_rows = static function ( $items ) use ( $doc, $root, $label ) {
+		$headings = iterator_to_array( $root->getElementsByTagName( 'h2' ) );
+		$headings = array_merge( $headings, iterator_to_array( $root->getElementsByTagName( 'h3' ) ) );
+		foreach ( $headings as $heading ) {
+			$title = $label( $heading );
+			if ( ! isset( $items[ $title ] ) || $heading->parentNode !== $root ) { continue; }
+			$section = $doc->createElement( 'section' );
+			$section->setAttribute( 'class', 'program-visual-row' );
+			$figure = $doc->createElement( 'figure' );
+			$figure->setAttribute( 'class', 'program-visual-row__figure' );
+			$img = $doc->createElement( 'img' );
+			$img->setAttribute( 'src', get_template_directory_uri() . '/assets/images/program-details/' . $items[ $title ]['image'] );
+			$img->setAttribute( 'alt', $title );
+			$img->setAttribute( 'loading', 'lazy' );
+			$img->setAttribute( 'decoding', 'async' );
+			$figure->appendChild( $img );
+			$body = $doc->createElement( 'div' );
+			$body->setAttribute( 'class', 'program-visual-row__body' );
+			$root->insertBefore( $section, $heading );
+			$section->appendChild( $figure );
+			$section->appendChild( $body );
+			for ( $node = $heading; $node && ( $node === $heading || ! ( $node instanceof DOMElement && in_array( $node->tagName, array( 'h2', 'h3' ), true ) ) ); $node = $next ) {
+				$next = $node->nextSibling;
+				$body->appendChild( $node );
+			}
+			if ( ! empty( $items[ $title ]['video'] ) ) {
+				$actions = $doc->createElement( 'p' );
+				$link = $doc->createElement( 'a', '▶ VER CHARLA' );
+				$link->setAttribute( 'class', 'program-resource-button program-video-button' );
+				$link->setAttribute( 'href', $items[ $title ]['video'] );
+				$link->setAttribute( 'target', '_blank' );
+				$link->setAttribute( 'rel', 'noopener noreferrer' );
+				$actions->appendChild( $link );
+				$body->appendChild( $actions );
+			}
+		}
+	};
 
 	if ( in_array( $program, array( 'participation', 'programas-participacion-nnya' ), true ) ) {
 		foreach ( $xpath->query( './/h2 | .//h3', $root ) as $node ) {
@@ -82,15 +119,44 @@ function ddna_theme_program_presentation( $content ) {
 		$cta = array_shift( $candidates );
 		if ( ! $cta ) { $p = $doc->createElement( 'p' ); $cta = $doc->createElement( 'a' ); $p->appendChild( $cta ); $heading->parentNode->insertBefore( $p, $section_end ); }
 		foreach ( $candidates as $duplicate ) { $duplicate->parentNode->removeChild( $duplicate ); }
-		$cta->textContent = 'Detrás del Humo';
+		$cta->textContent = 'Dossier Detrás del Humo';
 		$cta->setAttribute( 'href', $url );
 		$cta->setAttribute( 'target', '_blank' );
 		$cta->setAttribute( 'rel', 'noopener noreferrer' );
-		$cta->setAttribute( 'aria-label', 'Detrás del Humo (abre en otra pestaña)' );
+		$cta->setAttribute( 'aria-label', 'Dossier Detrás del Humo (abre en otra pestaña)' );
 		$add_class( $cta, 'program-resource-button' );
+		if ( $cta->parentNode instanceof DOMElement && 'p' === $cta->parentNode->tagName ) { $add_class( $cta->parentNode, 'program-dossier-actions' ); }
 		foreach ( $xpath->query( './/p/a', $root ) as $anchor ) {
 			if ( str_starts_with( $anchor->getAttribute( 'href' ), 'https://drive.google.com/' ) ) { $add_class( $anchor, 'program-resource-button' ); }
+			$icon = str_contains( $anchor->getAttribute( 'href' ), 'instagram.com/detrasdelhumoo_' ) ? 'social-40.png' : ( str_contains( $anchor->getAttribute( 'href' ), 'youtube.com/@detrasdelhumoo' ) ? 'social-42.png' : '' );
+			if ( $icon ) {
+				$add_class( $anchor, 'program-resource-button' ); $add_class( $anchor, 'program-social-button' );
+				if ( $anchor->getElementsByTagName( 'img' )->length ) { continue; }
+				$image = $doc->createElement( 'img' );
+				$image->setAttribute( 'src', get_template_directory_uri() . '/assets/icons/social/' . $icon );
+				$image->setAttribute( 'alt', '' );
+				$image->setAttribute( 'width', '28' );
+				$image->setAttribute( 'height', '28' );
+				$anchor->insertBefore( $image, $anchor->firstChild );
+			}
 		}
+		$make_rows( array(
+			'Jóvenes Protagonistas' => array( 'image' => 'protagonistas-23.png' ),
+			'El juego de los derechos' => array( 'image' => 'protagonistas-24.png' ),
+			'Laboratorio Literario Adolescente' => array( 'image' => 'protagonistas-25.png' ),
+			'Detrás del Humo' => array( 'image' => 'protagonistas-26.png' ),
+		) );
+	} elseif ( 'acompanamiento-formacion-adultos' === $program ) {
+		$make_rows( array(
+			'“La escucha activa de niñas, niños y adolescentes”' => array( 'image' => 'adultos-30.png' ),
+			'Mes de las Infancias: “La mirada que sostiene”' => array( 'image' => 'adultos-31.png', 'video' => 'https://www.youtube.com/live/YFaXuhFU2Us?si=6VNaHd1gaDH4vVaq' ),
+			'Mes del Adolescente: “Lo que no dicen las palabras”' => array( 'image' => 'adultos-32.png', 'video' => 'https://www.youtube.com/live/BFurEJ4k3fQ?si=0jhluRKDtq9e_y2a' ),
+		) );
+	} elseif ( 'mesas-interinstitucionales' === $program ) {
+		$make_rows( array(
+			'Copreti' => array( 'image' => 'mesas-copreti.png' ),
+			'RediPaz' => array( 'image' => 'mesas-redipaz.png' ),
+		) );
 	} elseif ( 'cooperation' === $program ) {
 		$headings = iterator_to_array( $xpath->query( './/h2 | .//h3', $root ) );
 		foreach ( $headings as $heading ) {
