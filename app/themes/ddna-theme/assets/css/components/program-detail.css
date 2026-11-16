@@ -108,6 +108,11 @@ main.program-detail {
  margin: 0;
  justify-self: center;
 }
+.program-detail--programas-participacion-nnya .program-social-actions .program-social-button img {
+ width: 2rem;
+ height: 2rem;
+ flex: 0 0 2rem;
+}
 .program-detail .program-visual-row__body .program-video-button { margin-top: .3rem; }
 .program-detail--mesas-interinstitucionales .program-visual-row { margin-block: clamp(3rem, 5vw, 5rem); }
 .program-detail--mesas-interinstitucionales .program-visual-row__figure img { border-radius: 1.25rem; }
