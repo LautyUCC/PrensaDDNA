@@ -131,6 +131,10 @@ function ddna_theme_program_presentation( $content ) {
 			$icon = str_contains( $anchor->getAttribute( 'href' ), 'instagram.com/detrasdelhumoo_' ) ? 'social-40.png' : ( str_contains( $anchor->getAttribute( 'href' ), 'youtube.com/@detrasdelhumoo' ) ? 'social-42.png' : '' );
 			if ( $icon ) {
 				$add_class( $anchor, 'program-resource-button' ); $add_class( $anchor, 'program-social-button' );
+				if ( 'social-42.png' === $icon ) {
+					$anchor->textContent = '@detrasdelhumoo';
+					$anchor->setAttribute( 'aria-label', 'YouTube de Detrás del Humo' );
+				}
 				if ( $anchor->getElementsByTagName( 'img' )->length ) { continue; }
 				$image = $doc->createElement( 'img' );
 				$image->setAttribute( 'src', get_template_directory_uri() . '/assets/icons/social/' . $icon );
@@ -139,6 +143,28 @@ function ddna_theme_program_presentation( $content ) {
 				$image->setAttribute( 'height', '28' );
 				$anchor->insertBefore( $image, $anchor->firstChild );
 			}
+		}
+		foreach ( $xpath->query( './/p', $root ) as $paragraph ) {
+			$links = $xpath->query( './/a', $paragraph );
+			$has_instagram = false;
+			$has_youtube = false;
+			foreach ( $links as $link ) {
+				$has_instagram = $has_instagram || str_contains( $link->getAttribute( 'href' ), 'instagram.com/detrasdelhumoo_' );
+				$has_youtube = $has_youtube || str_contains( $link->getAttribute( 'href' ), 'youtube.com/@detrasdelhumoo' );
+			}
+			if ( ! $has_instagram || ! $has_youtube ) { continue; }
+			$add_class( $paragraph, 'program-social-actions' );
+			foreach ( iterator_to_array( $paragraph->childNodes ) as $child ) {
+				if ( XML_TEXT_NODE === $child->nodeType ) { $paragraph->removeChild( $child ); }
+			}
+			if ( $cta->parentNode !== $paragraph ) {
+				$old_parent = $cta->parentNode;
+				$paragraph->appendChild( $cta );
+				if ( $old_parent instanceof DOMElement && 'p' === $old_parent->tagName && ! trim( $old_parent->textContent ) ) {
+					$old_parent->parentNode->removeChild( $old_parent );
+				}
+			}
+			break;
 		}
 		$make_rows( array(
 			'Jóvenes Protagonistas' => array( 'image' => 'protagonistas-23.png' ),

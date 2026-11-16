@@ -93,6 +93,21 @@ main.program-detail {
 .program-detail .program-social-button { gap: .5rem; }
 .program-detail .program-social-button img { display: block; width: 1.5rem; height: 1.5rem; object-fit: contain; }
 .program-detail .program-dossier-actions { text-align: center; }
+.program-detail--programas-participacion-nnya .program-visual-row__body .program-social-actions {
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ align-items: stretch;
+ gap: 1rem;
+ margin-top: 2rem;
+}
+.program-detail--programas-participacion-nnya .program-social-actions .program-resource-button {
+ box-sizing: border-box;
+ width: 100%;
+ max-width: 18rem;
+ height: 100%;
+ margin: 0;
+ justify-self: center;
+}
 .program-detail .program-visual-row__body .program-video-button { margin-top: .3rem; }
 .program-detail--mesas-interinstitucionales .program-visual-row { margin-block: clamp(3rem, 5vw, 5rem); }
 .program-detail--mesas-interinstitucionales .program-visual-row__figure img { border-radius: 1.25rem; }
@@ -125,6 +140,10 @@ main.program-detail {
  .program-detail .program-visual-row { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; margin-block: 2.5rem; }
  .program-detail .program-visual-row__figure { width: min(13rem, 65%); }
  .program-detail .program-visual-row__body :is(h2, h3) { font-size: clamp(1.6rem, 6vw, 2.15rem); margin-block: 0 .6rem; }
+}
+
+@media (max-width: 70rem) {
+ .program-detail--programas-participacion-nnya .program-social-actions { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (min-width: 48rem) {

@@ -29,6 +29,10 @@ foreach ( array( 'programas-participacion-nnya', 'cooperacion-internacional-inte
 		$result = ddna_theme_program_presentation( $fixture );
 		$check( 1 === substr_count( $result, '1jF07LSJaQlx6s5WHTJDKvTMXZaLlrVf2' ) && ! str_contains( $result, 'Ver Dossier' ), 'Un solo CTA equivalente, sin botón redundante' );
 		$check( str_contains( $result, 'Descripción que debe conservarse.' ) && str_contains( $result, 'Otro texto.' ), 'Descripciones vecinas preservadas al reutilizar CTA' );
+		$social_fixture = '<h2>Detrás del Humo</h2><p>Texto editorial.</p><p>Dónde encontrarlo: Instagram <a href="https://www.instagram.com/detrasdelhumoo_/">@detrasdelhumoo_</a> y <a href="https://www.youtube.com/@detrasdelhumoo">canal de YouTube “Detrás del Humo”</a>.</p><p><a href="' . $url . '">Ver Dossier</a></p>';
+		$social_result = ddna_theme_program_presentation( $social_fixture );
+		$check( str_contains( $social_result, 'Texto editorial.' ) && ! str_contains( $social_result, 'Dónde encontrarlo' ), 'Texto editorial conservado sin el texto alrededor de los botones' );
+		$check( 1 === substr_count( $social_result, 'program-social-actions' ) && 2 === substr_count( $social_result, 'program-social-button' ) && str_contains( $social_result, 'Dossier Detrás del Humo' ), 'Instagram, YouTube y dossier reunidos en un bloque' );
 	}
 	$check( hash( 'sha256', get_post_field( 'post_content', get_the_ID() ) ) === $before, 'Contenido DB sin escrituras' );
 	wp_reset_postdata();
