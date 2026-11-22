@@ -24,6 +24,12 @@
  hyphens: auto;
  overflow-wrap: break-word;
 }
+.news-article--preprunape .entry-content p {
+ text-align: justify;
+ text-align-last: start;
+ hyphens: auto;
+ overflow-wrap: break-word;
+}
 .news-article--october-2026 .entry-content h2 {
  margin-block: 1.75rem 1rem;
  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
