@@ -1,0 +1,50 @@
+{
+  "version": "agenda-prensa-yellow-2026-11-22",
+  "source_url": "https://docs.google.com/document/d/1j-RqhQiYLx8niDaRWKmQ7qlfpNL1CJruAaFOqNxK9Zk/edit",
+  "exported_docx_sha256": "db7dbdc785d1b9dc83a68470ee4d2059168b3aa1357b8e6f3dd06cb78ddffc1f",
+  "selection": "yellow highlight with editorial comment agregar",
+  "events": [
+    {
+      "id": "agenda-prensa-20261124-conferencia-violencias-mujeres",
+      "date": "2026-11-24",
+      "title": "Conferencia “Reflexiones sobre conductas en el espacio digital que constituyen violencias contra las mujeres”.",
+      "location": "No informado por Prensa",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261124-mesa-ley-ema",
+      "date": "2026-11-24",
+      "title": "Mesa interinstitucional - Ley Ema",
+      "location": "No informado por Prensa",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261125-ciudadania-digital-cruz-del-eje",
+      "date": "2026-11-25",
+      "title": "Taller sobre Ciudadanía Digital en Cruz del Eje.",
+      "location": "Cruz del Eje",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261126-titeres-el-manzano",
+      "date": "2026-11-26",
+      "title": "Jornada de títeres para niñas y niños en El Manzano.",
+      "location": "El Manzano",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261127-defensores-misiones",
+      "date": "2026-11-27",
+      "title": "Encuentro Nacional de defensores en Misiones.",
+      "location": "Misiones",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261127-violencias-laguna-larga",
+      "date": "2026-11-27",
+      "title": "Taller sobre Violencias en entornos digitales en Laguna Larga.",
+      "location": "Laguna Larga",
+      "instruction": "agregar"
+    }
+  ]
+}
