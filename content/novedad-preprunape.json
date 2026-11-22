@@ -1,0 +1,79 @@
+{
+  "version": "ddna-preprunape-news-v1",
+  "source_id": "ddna-news-preprunape-municipal-teams-2026",
+  "source_url": "https://drive.google.com/drive/folders/10LAVjBGKQ6HAK4HOk899o5KHza4tqcfn?usp=drive_link",
+  "title": "Reunimos a equipos municipales PrePRUNAPE para fortalecer la detección temprana de señales de alerta en los primeros años de vida",
+  "slug": "reunimos-a-equipos-municipales-preprunape-para-fortalecer-la-deteccion-temprana-de-senales-de-alerta-en-los-primeros-anos-de-vida",
+  "publication_date": "2026-11-19",
+  "date_policy": "user_confirmed_2026-11-19",
+  "content": "<p>Llevamos adelante una jornada de trabajo junto a equipos municipales que implementan la herramienta <strong>PrePRUNAPE</strong>, con el objetivo de compartir experiencias, buenas prácticas y desafíos vinculados al trabajo que desarrollan en sus respectivos territorios.</p>\n<p>El encuentro, realizado en la sede de la Defensoría, estuvo a cargo de <strong>Georgina Tavella, autoridad a cargo de la institución</strong>, y permitió generar un espacio de intercambio y reflexión sobre las distintas experiencias de implementación de esta herramienta en los municipios.</p>\n<p>Durante la jornada, los equipos compartieron aprendizajes y analizaron los <strong>datos agregados del sistema de monitoreo “Primeros Pasos”</strong>, con el propósito de identificar desafíos comunes y fortalecer las estrategias de <strong>detección temprana de señales de alerta en los primeros años de vida</strong>, así como los circuitos de acompañamiento a niñas, niños y sus familias.</p>\n<p>El intercambio propuso poner en común las particularidades de cada localidad y continuar avanzando en la construcción de <strong>respuestas integrales y oportunas</strong>, a partir de una mirada territorial que contemple las necesidades y experiencias de las distintas comunidades.</p>\n<p>Desde la Defensoría promovemos estos espacios de articulación con los municipios, orientados a <strong>fortalecer el trabajo conjunto y la protección integral de los derechos de niñas y niños desde sus primeros años de vida</strong>.</p>",
+  "sources": [
+    {
+      "path": "content/media/preprunape/Novedad PREPRUNAPE.docx",
+      "sha256": "ed4d5dd20ddf8126eae988f80f52143c86f6f1df758cac5ed4c47d9ff986f146",
+      "size": 7685
+    }
+  ],
+  "featured": {
+    "path": "content/media/preprunape/PORTADA - Novedad web (10).png",
+    "sha256": "700b6ddc77baedd2c3857e68108c1e207a96d1a2912b62194cef29c8058be5f4",
+    "size": 2721483
+  },
+  "gallery": [
+    {
+      "path": "content/media/preprunape/1.png",
+      "sha256": "c776696b80f669d29b8ca0c3a9442ef8311082ae7ab74bf4f082b6b042aabf78",
+      "size": 2408620
+    },
+    {
+      "path": "content/media/preprunape/2.png",
+      "sha256": "ce2d3c60b988b8e3cd19b99eb87b0cd4b6e0032e46e3fbda74217ff19f9c21cb",
+      "size": 2379761
+    },
+    {
+      "path": "content/media/preprunape/3.png",
+      "sha256": "5a06c696bc4d136dae0dda916d54d66c904dd1d32bef0d92352d8e419ae18b18",
+      "size": 2764944
+    },
+    {
+      "path": "content/media/preprunape/4.png",
+      "sha256": "21c03ca3697fb725ce8374b0586538d8683486527fb8dabb0e6a8f6a10d39b75",
+      "size": 2660773
+    },
+    {
+      "path": "content/media/preprunape/5.png",
+      "sha256": "788899762548231a921dac0ae3e27bcf1d20dd90801015954088260a8529e967",
+      "size": 2529865
+    },
+    {
+      "path": "content/media/preprunape/6.png",
+      "sha256": "3a61df2a27faa54de3874f5eaabbb3346f231e82ad7d03f1c16a4261faa5a138",
+      "size": 2640815
+    },
+    {
+      "path": "content/media/preprunape/7.png",
+      "sha256": "6a1bfc79d5b2c43804d821e68dec9db36c81f3857d8ee94674531108610eca6e",
+      "size": 2565371
+    },
+    {
+      "path": "content/media/preprunape/8.png",
+      "sha256": "b55d18d2249d07fd1fc5affb84f6d45cce48903633899bfb30ecb3da07b01ff3",
+      "size": 2667906
+    },
+    {
+      "path": "content/media/preprunape/9.png",
+      "sha256": "08762ae7c67f5ea08cebe391b9403af2ea557812cc6a47da9e0e4be95b650fd5",
+      "size": 2469340
+    },
+    {
+      "path": "content/media/preprunape/10.png",
+      "sha256": "285aee5ad469ac0c4255945406ced8fcd64883d772e6cc0b08693df5cc350f38",
+      "size": 2691205
+    }
+  ],
+  "carousel": true,
+  "classification": {
+    "post_tag": "novedad",
+    "category": "novedades"
+  }
+}
