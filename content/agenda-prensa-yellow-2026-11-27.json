@@ -1,0 +1,29 @@
+{
+  "version": "agenda-prensa-yellow-2026-11-27",
+  "source_url": "https://docs.google.com/document/d/1j-RqhQiYLx8niDaRWKmQ7qlfpNL1CJruAaFOqNxK9Zk/edit",
+  "exported_docx_sha256": "c770df523ffc113b5d7655f5a4f4b6e61354c8fa254e57a29872df80b36cce1d",
+  "selection": "yellow highlight with editorial comment agregar",
+  "events": [
+    {
+      "id": "agenda-prensa-20261125-emociones-cruz-del-eje",
+      "date": "2026-11-25",
+      "title": "Taller \"Conociéndonos mejor, aprendiendo sobre nuestras emociones\" en Cruz del Eje.",
+      "location": "Cruz del Eje",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261202-conversatorio-crianza-pantallas",
+      "date": "2026-12-02",
+      "title": "Conversatorio Primera Infancia “Crianza y Pantallas”. 15 hs. Transmisión por Youtube: @defensoríaderechosnnya",
+      "location": "No informado por Prensa",
+      "instruction": "agregar"
+    },
+    {
+      "id": "agenda-prensa-20261210-cierre-practicas-trabajo-social",
+      "date": "2026-12-10",
+      "title": "Cierre de prácticas preprofesionales de estudiantes de Trabajo Social.",
+      "location": "No informado por Prensa",
+      "instruction": "agregar"
+    }
+  ]
+}
